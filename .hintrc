@@ -3,6 +3,36 @@
     "development"
   ],
   "hints": {
-    "typescript-config/consistent-casing": "off"
-  }
+    "typescript-config/consistent-casing": "off",
+    "axe/name-role-value": [
+      "default",
+      {
+        "button-name": "off"
+      }
+    ],
+    "no-inline-styles": "off",
+    "axe/keyboard": [
+      "default",
+      {
+        "nested-interactive": "off"
+      }
+    ],
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "@layer"
+        ]
+      }
+    ]
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not and_chr <= 125",
+    "not chrome <= 126",
+    "not edge <= 125",
+    "not opera <= 110",
+    "not samsung <= 25"
+  ]
 }
