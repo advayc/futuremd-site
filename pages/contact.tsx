@@ -2,11 +2,15 @@ import React from 'react';
 import { FaInstagram, FaLinkedin } from 'react-icons/fa';
 import Navbar from "@/components/navbar";
 import ContactForm from "@/components/ContactForm";
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
+
 
 export default function Contact() {
     return (
         <>
-            <main className={`min-h-screen flex-col items-center justify-between p-[25px]`}>
+            <main className={`min-h-screen flex-col items-center justify-between p-[25px] ${inter.className}`}>
                 <Navbar />
                 <h1 className="text-6xl font-bold my-8 mb-4 text-black text-center">Contact Us</h1>
                 <p className="text-center mb-1 text-2xl font-bold text-[#828282]">
