@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 import Typewriter from "typewriter-effect";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -28,7 +29,7 @@ export default function Home() {
           goal to educate teens about life during & after <br></br>
           medical school!
         </p>
-
+        <Footer />
     </main>
   );
 }

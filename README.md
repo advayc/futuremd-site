@@ -1,40 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Welcome to FutureMD
+![alt text](image.png)
+## Our Background
 
-## Getting Started
+FutureMD is a student-led nonprofit organization dedicated to inspiring enthusiasm for the medical sector among students. Our council comprises students from 1B and AP programs, with an ongoing invitation for others to join our team.
 
-First, run the development server:
+## Our Mission
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+At FutureMD, our mission is to prepare teens for careers in healthcare. We achieve this by connecting them with medical students, physicians, and specialists through interactive workshops, skill-building sessions, and hands-on clinical experiences. We aim to instill confidence and knowledge, ensuring students are ready to pursue their passion in the medical field upon entering post-secondary education.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Our Events
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+During the 2024-2025 year, FutureMD will host two events in the Mississauga — Toronto area. These events will feature professional guest speakers educating youth, followed by workshops that provide insights into medical school life. Additionally, attendees can enjoy FREE food, drinks, and have the chance to win prizes!
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Social Media
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Instagram: [futuremd_team](https://www.instagram.com/futuremd_team/)
+- LinkedIn: [FutureMD Team](https://www.linkedin.com/company/futuremdteam/)
