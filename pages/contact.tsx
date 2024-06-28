@@ -14,7 +14,7 @@ export default function Contact() {
                 </p>
                 <ContactForm />
             </main>
-            <footer className="flex flex-col items-center mt-6 p-8 bg-[#D9EAFF]">
+            <div className="flex flex-col items-center mt-6 p-8 bg-[#D9EAFF]">
                 <h2 className="text-4xl font-bold mb-4 text-black">Connect With Us</h2>
                 <div className="flex space-x-4">
                     <a href="https://www.instagram.com/yourinstagram" target="_blank" rel="noopener noreferrer">
@@ -24,7 +24,7 @@ export default function Contact() {
                         <FaLinkedin size={40} className="text-blue-600 hover:text-blue-900 transition-all duration-300" />
                     </a>
                 </div>
-            </footer>
+            </div>
         </>
     );
 }
