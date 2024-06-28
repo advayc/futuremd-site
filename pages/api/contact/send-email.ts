@@ -9,8 +9,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             host: 'smtp.gmail.com',
             port: 587,
             auth: {
-                user: process.env.EMAIL,
-                pass: process.env.EMAIL_PASS,
+                user: 'contact.futuremd@gmail.com',
+                pass: 'dclx nbvb ifdm xmfs',
             },
         });
 
