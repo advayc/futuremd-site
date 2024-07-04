@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FiMoon, FiSun } from 'react-icons/fi';
 
@@ -11,8 +11,22 @@ const ToggleButton = ({
   selected: ToggleOptionsType;
   setSelected: React.Dispatch<React.SetStateAction<ToggleOptionsType>>;
 }) => {
+    
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      setSelected(savedTheme as ToggleOptionsType);
+    } else {
+      // Default to 'dark' if no theme is set
+      setSelected('dark');
+      localStorage.setItem('theme', 'dark');
+    }
+  }, []); // Run once on component mount
+
   const toggleTheme = () => {
-    setSelected((prev) => (prev === 'dark' ? 'light' : 'dark'));
+    const newTheme = selected === 'dark' ? 'light' : 'dark';
+    setSelected(newTheme);
+    localStorage.setItem('theme', newTheme);
   };
 
   return (
