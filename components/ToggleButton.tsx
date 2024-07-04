@@ -15,8 +15,8 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({ selected, setSelected }) =>
     if (savedTheme) {
       setSelected(savedTheme);
     } else {
-      setSelected('light'); // Default to 'light' if no theme is set
-      localStorage.setItem('theme', 'light');
+      setSelected('dark'); // Default to 'dark' if no theme is set
+      localStorage.setItem('theme', 'dark');
     }
   }, []); // Run once on component mount
 
