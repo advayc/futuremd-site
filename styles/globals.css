@@ -18,3 +18,12 @@
   transform: rotate(360deg);
 }
 
+.light {
+  color: #333333; /* Text color for light mode */
+  background-color: #ffffff; /* Background color for light mode */
+}
+
+.dark {
+  color: #ffffff; /* Text color for dark mode */
+  background-color: #333333; /* Background color for dark mode */
+}
