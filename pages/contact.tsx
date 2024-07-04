@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Contact() {
   return (
-    <main className={`min-h-screen flex-col items-center justify-between pt-[25px] ${inter.className} transition-colors duration-500 dark:bg-black bg-light-bg`}>
+    <main className={`min-h-screen flex-col items-center justify-between pt-[25px] ${inter.className} dark:bg-black bg-light-bg`}>
       <Navbar />
       <div className="pt-[10px]">
         <h1 className="text-6xl font-bold my-8 mb-4 text-center dark:text-white text-black">Contact Us</h1>

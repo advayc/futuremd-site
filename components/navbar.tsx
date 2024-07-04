@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ToggleButton from '@/components/ToggleButton';
+
 type ToggleOptionsType = 'dark' | 'light';
 
 const Navbar: React.FC = () => {
@@ -16,7 +17,7 @@ const Navbar: React.FC = () => {
   }, [selected]);
 
   return (
-    <header className={`transition-colors duration-500 ${selected === 'light' ? 'bg-light-bg' : 'bg-dark-bg'}`}>
+    <header className={`${selected === 'light' ? 'bg-light-bg' : 'bg-dark-bg'}`}>
       <nav className="flex items-center justify-center">
         <a href="/">
           <img src="logo.png" alt="Logo" className="h-[50px] mr-9 logo" />
