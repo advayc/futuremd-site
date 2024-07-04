@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
         <a href="#" className="text-gray-100 mr-9 hover:text-hov font-semibold transition delay-50">Sponsors</a>
         <a href="#" className="text-gray-100 mr-9 hover:text-hov font-semibold transition delay-50">Schedule</a>
         <a href="#" className="text-gray-100 mr-9 hover:text-hov font-semibold transition delay-50">Media</a>
-        <a href="#" className="text-gray-100 mr-9 hover:text-hov font-semibold transition delay-50">Contact Us</a>
+        <a href="/contact" className="text-gray-100 mr-9 hover:text-hov font-semibold transition delay-50">Contact Us</a>
       </nav>
     </header>
   );
