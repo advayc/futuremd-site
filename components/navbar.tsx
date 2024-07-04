@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import { FiMoon, FiSun } from 'react-icons/fi';
 
 type ToggleOptionsType = 'dark' | 'light';
@@ -17,12 +18,19 @@ const ToggleButton = ({
   return (
     <button
       onClick={toggleTheme}
-      className={`flex items-center gap-2 px-3 py-1.5 transition-colors ${
-        selected === 'light' ? 'text-black' : 'text-white'
+      className={`flex items-center p-2.5 transition-colors duration-300 rounded-md border ${
+        selected === 'light' ? 'text-black bg-white hover:bg-gray-300' : 'text-white hover:bg-[#191919] border-none'
       }`}
     >
-      {selected === 'light' ? <FiSun className="text-lg" /> : <FiMoon className="text-lg" />}
-      <span></span>
+      <motion.div
+        key={selected}
+        initial={{ opacity: 0, rotate: -90 }}
+        animate={{ opacity: 1, rotate: 0 }}
+        exit={{ opacity: 0, rotate: 90 }}
+        transition={{ duration: 0.5 }}
+      >
+        {selected === 'light' ? <FiSun className="text-lg" /> : <FiMoon className="text-lg" />}
+      </motion.div>
     </button>
   );
 };
@@ -41,7 +49,7 @@ const Navbar: React.FC = () => {
   }, [selected]);
 
   return (
-    <header className={`transition-colors ${selected === 'light' ? 'bg-white' : 'bg-black'}`}>
+    <header className={`transition-colors duration-500 ${selected === 'light' ? 'bg-white' : 'bg-black'}`}>
       <nav className="flex items-center justify-center">
         <a href="/">
           <img src="logo.png" alt="Logo" className="h-[50px] mr-9 logo"/>
