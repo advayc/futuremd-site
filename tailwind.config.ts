@@ -15,11 +15,11 @@ const config: Config = {
         navy: "28387D",
         light: {
           text: "#00000", 
-          bg: "#ffffff", 
+          bg: "#EFF6FF", 
         },
         dark: {
           text: "#828282",
-          bg: "#000000", 
+          bg: "#010A18", 
         },
       },
     },

@@ -15,8 +15,8 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({ selected, setSelected }) =>
     if (savedTheme) {
       setSelected(savedTheme);
     } else {
-      setSelected('light'); // Default to 'light' if no theme is set
-      localStorage.setItem('theme', 'light');
+      setSelected('dark'); // Default to 'light' if no theme is set
+      localStorage.setItem('theme', 'dark');
     }
   }, []); // Run once on component mount
 
@@ -29,9 +29,9 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({ selected, setSelected }) =>
   return (
     <button
       onClick={toggleTheme}
-      className={`flex items-center p-2.5 rounded-md border ${
+      className={`flex items-center p-2.5 rounded-md border-none${
         selected === 'light'
-          ? 'text-black bg-white hover:bg-gray-300'
+          ? 'text-black hover:bg-gray-300'
           : 'text-white hover:bg-[#191919] border-none'
       }`}
     >

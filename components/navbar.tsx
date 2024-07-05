@@ -22,8 +22,8 @@ const Navbar: React.FC = () => {
         <a href="/">
           <img src="logo.png" alt="Logo" className="h-[50px] mr-9 logo" />
         </a>
-        <a href="#" className={`mr-9 font-bold transition delay-50 ${selected === 'light' ? 'text-light-text' : 'text-white'} hover:text-hov`}>
-          About
+        <a href="/about" className={`mr-9 font-bold transition delay-50 ${selected === 'light' ? 'text-light-text' : 'text-white'} hover:text-hov`}>
+          About Us
         </a>
         <a href="#" className={`mr-9 font-bold transition delay-50 ${selected === 'light' ? 'text-light-text' : 'text-white'} hover:text-hov`}>
           Sponsors
