@@ -67,12 +67,12 @@ const ContactForm: React.FC = () => {
                 <div className="flex-col border-2 border-[#3C55B7] rounded-lg w-3/4 p-8 shadow hover:shadow-lgshadow-md mt-12">
                     <div className="flex justify-center">
                         <div className="flex flex-col w-5/6 mt-4">
-                            <label className="font-bold text-white light:text-black text-xl mb-2" htmlFor="name">
+                            <label className="font-bold dark:text-white text-black text-xl mb-2" htmlFor="name">
                                 Name:
                             </label>
                             <input
                                 id="name"
-                                className="text-white light:text-black w-full outline-0 mb-4 h-12 bg-gray-200 rounded-lg border-2 border-gray-700 dark:bg-[#191919] p-3"
+                                className="dark:text-white text-black w-full outline-0 mb-4 h-12 bg-gray-200 rounded-lg border-2 border-gray-700 dark:bg-[#191919] p-3"
                                 type="text"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
@@ -82,7 +82,7 @@ const ContactForm: React.FC = () => {
                     </div>
                     <div className="flex justify-center">
                         <div className="flex flex-col w-5/6 mt-4">
-                            <label className="font-bold text-white light:text-black text-xl mb-2" htmlFor="email">
+                            <label className="font-bold dark:text-white text-black text-xl mb-2" htmlFor="email">
                                 Email:
                             </label>
                             {emailError && (
@@ -92,7 +92,7 @@ const ContactForm: React.FC = () => {
                             )}
                             <input
                                 id="email"
-                                className="text-white light:text-black w-full outline-0 mb-4 h-12 bg-gray-200 rounded-lg border-2 border-gray-700 dark:bg-[#191919] p-3"
+                                className="dark:text-white text-black w-full outline-0 mb-4 h-12 bg-gray-200 rounded-lg border-2 border-gray-700 dark:bg-[#191919] p-3"
                                 type="email"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
@@ -102,12 +102,12 @@ const ContactForm: React.FC = () => {
                     </div>
                     <div className="flex justify-center">
                         <div className="flex flex-col w-5/6 mt-4">
-                            <label className="font-bold text-white light:text-black text-xl mb-2" htmlFor="subject">
+                            <label className="font-bold dark:text-white text-black text-xl mb-2" htmlFor="subject">
                         Subject:
                             </label>
                             <input
                                 id="subject"
-                                className="text-white light:text-black w-full outline-0 mb-4 h-12 bg-gray-200 rounded-lg border-2 border-gray-700 bg-[#191919] p-3"
+                                className="dark:text-white text-black w-full outline-0 mb-4 h-12 bg-gray-200 rounded-lg border-2 border-gray-700 dark:bg-[#191919] p-3"
                                 type="text"
                                 value={subject}
                                 onChange={(e) => setSubject(e.target.value)}
@@ -117,12 +117,12 @@ const ContactForm: React.FC = () => {
                     </div>
                     <div className="flex justify-center">
                         <div className="flex flex-col w-5/6 mt-4">
-                            <label className="font-bold text-white light:text-black text-xl mb-2" htmlFor="message">
+                            <label className="font-bold dark:text-white text-black text-xl mb-2" htmlFor="message">
                                 Message:
                             </label>
                             <textarea
                                 id="message"
-                                className="text-white light:text-black w-full outline-0 h-32 bg-gray-200 rounded-lg border-2 border-gray-700 dark:bg-[#191919] p-3"
+                                className="dark:text-white text-black w-full outline-0 h-32 bg-gray-200 rounded-lg border-2 border-gray-700 dark:bg-[#191919] p-3"
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
                                 required
