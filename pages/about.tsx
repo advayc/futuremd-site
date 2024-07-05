@@ -14,40 +14,41 @@ export default function About() {
         <p className="text-center mb-4 text-lg md:text-2xl font-semibold dark:text-dark-text text-gray-600">
           Discover The purpose, passion and team behind FutureMD!
         </p>
-      </header>
-      <div className="max-w-5xl mx-auto px-8">
-        <HoverEffect items={person} />
-      </div>
+        </header>
+        <div className="max-w-5xl mx-auto px-8">
+             <HoverEffect items={person} />
+        </div>
     </main>
   );
 }
 
 export const person = [
-  {
-    title: "Stripe",
-    description:
-      "A technology company that builds economic infrastructure for the internet.",
-    link: "https://stripe.com",
-    image: "/public/logo.png",
-    linkedin: "https://www.linkedin.com/company/stripe",
-    instagram: "https://www.instagram.com/stripe",
-  },
-  {
-    title: "Netflix",
-    description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "https://netflix.com",
-    image: "/public/logo.png",
-    linkedin: "https://www.linkedin.com/company/netflix",
-    instagram: "https://www.instagram.com/netflix",
-  },
-  {
-    title: "Google",
-    description:
-      "A multinational technology company that specializes in Internet-related services and products.",
-    link: "https://google.com",
-    image: "/public/logo.png",
-    linkedin: "https://www.linkedin.com/company/google",
-    instagram: "https://www.instagram.com/google",
-  },
-];
+    {
+      title: "Advay Chandorkar",
+      role: "Developer",
+      description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder.",
+      link: "https://advay.com",
+      image: "/path/to/advay.jpg",
+      linkedin: "https://www.linkedin.com/in/advay",
+      instagram: "https://www.instagram.com/advay",
+    },
+    {
+      title: "Jane Doe",
+      role: "Designer",
+      description: "Jane is a creative designer who specializes in user experience and user interface design. Her work is characterized by a user-centric approach and attention to detail.",
+      link: "https://janedoe.com",
+      image: "/path/to/janedoe.jpg",
+      linkedin: "https://www.linkedin.com/in/janedoe",
+      instagram: "https://www.instagram.com/janedoe",
+    },
+    {
+      title: "John Smith",
+      role: "Product Manager",
+      description: "John has extensive experience in product management, focusing on developing innovative solutions that meet user needs and business goals.",
+      link: "https://johnsmith.com",
+      image: "/path/to/johnsmith.jpg",
+      linkedin: "https://www.linkedin.com/in/johnsmith",
+      instagram: "https://www.instagram.com/johnsmith",
+    },
+  ];
+  

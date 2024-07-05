@@ -2,15 +2,15 @@ import { cn } from "@/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
-import { FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaTimes } from 'react-icons/fa';
 
-// HoverEffect Component
 export const HoverEffect = ({
   items,
   className,
 }: {
   items: {
     title: string;
+    role: string;
     description: string;
     link: string;
     image: string;
@@ -20,20 +20,24 @@ export const HoverEffect = ({
   className?: string;
 }) => {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  let [selectedItem, setSelectedItem] = useState<typeof items[0] | null>(null);
+  let [selectedItem, setSelectedItem] = useState<any>(null);
+
+  const closeModal = () => {
+    setSelectedItem(null);
+  };
 
   return (
-    <>
+    <div className="relative">
       <div
         className={cn(
-          "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-10",
+          "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-10",
           className
         )}
       >
         {items.map((item, idx) => (
           <div
             key={item.link}
-            className="relative group block h-full w-full cursor-pointer"
+            className="relative group block p-2 h-full w-full"
             onMouseEnter={() => setHoveredIndex(idx)}
             onMouseLeave={() => setHoveredIndex(null)}
             onClick={() => setSelectedItem(item)}
@@ -56,22 +60,40 @@ export const HoverEffect = ({
               )}
             </AnimatePresence>
             <Card>
-              <CardAvatar src={item.image} alt={item.title} />
+              <CardImage src={item.image} alt={item.title} />
               <CardTitle>{item.title}</CardTitle>
-              <CardDescription>{item.description}</CardDescription>
+              <CardRole>{item.role}</CardRole>
             </Card>
           </div>
         ))}
       </div>
 
       {selectedItem && (
-        <Modal item={selectedItem} onClose={() => setSelectedItem(null)} />
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="relative bg-black p-8 rounded-2xl border border-white/[0.2] max-w-lg mx-auto">
+            <button onClick={closeModal} className="absolute top-4 right-4 text-white hover:text-gray-400 transition">
+              <FaTimes size={24} />
+            </button>
+            <div className="flex flex-col items-center">
+              <img src={selectedItem.image} alt={selectedItem.title} className="w-24 h-24 rounded-full mb-4" />
+              <h2 className="text-2xl font-bold text-white mb-2">{selectedItem.title}</h2>
+              <p className="text-lg text-zinc-400 mb-4">{selectedItem.description}</p>
+              <div className="flex space-x-4">
+                <Link href={selectedItem.linkedin}>
+                  <FaLinkedin className="text-white hover:text-gray-400 transition" size={24} />
+                </Link>
+                <Link href={selectedItem.instagram}>
+                  <FaInstagram className="text-white hover:text-gray-400 transition" size={24} />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
       )}
-    </>
+    </div>
   );
 };
 
-// Card Component
 export const Card = ({
   className,
   children,
@@ -82,37 +104,29 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20 flex flex-col items-center justify-center",
+        "rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
         className
       )}
     >
       <div className="relative z-50">
-        <div className="p-3 flex flex-col items-center">{children}</div>
+        <div className="p-3">{children}</div>
       </div>
     </div>
   );
 };
 
-// CardAvatar Component
-export const CardAvatar = ({
+export const CardImage = ({
   src,
   alt,
-  className,
 }: {
   src: string;
   alt: string;
-  className?: string;
 }) => {
   return (
-    <img
-      src={src}
-      alt={alt}
-      className={cn("w-24 h-24 rounded-full mb-4", className)}
-    />
+    <img src={src} alt={alt} className="w-16 h-16 rounded-full mb-4" />
   );
 };
 
-// CardTitle Component
 export const CardTitle = ({
   className,
   children,
@@ -121,14 +135,13 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-zinc-100 font-bold tracking-wide mt-4", className)}>
+    <h4 className={cn("text-zinc-100 font-bold tracking-wide text-xl", className)}>
       {children}
     </h4>
   );
 };
 
-// CardDescription Component
-export const CardDescription = ({
+export const CardRole = ({
   className,
   children,
 }: {
@@ -136,53 +149,9 @@ export const CardDescription = ({
   children: React.ReactNode;
 }) => {
   return (
-    <p
-      className={cn(
-        "mt-2 text-zinc-400 tracking-wide leading-relaxed text-sm text-center",
-        className
-      )}
-    >
+    <p className={cn("text-zinc-400 tracking-wide text-sm", className)}>
       {children}
     </p>
   );
 };
 
-// Modal Component
-export const Modal = ({
-  item,
-  onClose,
-}: {
-  item: {
-    title: string;
-    description: string;
-    link: string;
-    image: string;
-    linkedin: string;
-    instagram: string;
-  };
-  onClose: () => void;
-}) => {
-  return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-xl relative">
-        <button
-          className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
-          onClick={onClose}
-        >
-          ✕
-        </button>
-        <CardAvatar src={item.image} alt={item.title} className="w-32 h-32 mb-4" />
-        <CardTitle className="text-2xl">{item.title}</CardTitle>
-        <CardDescription>{item.description}</CardDescription>
-        <div className="flex justify-center space-x-4 mt-4">
-          <Link href={item.linkedin} target="_blank">
-            <FaLinkedin className="text-blue-600 w-6 h-6" />
-          </Link>
-          <Link href={item.instagram} target="_blank">
-            <FaInstagram className="text-pink-500 w-6 h-6" />
-          </Link>
-        </div>
-      </div>
-    </div>
-  );
-};
