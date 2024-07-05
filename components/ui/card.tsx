@@ -12,7 +12,6 @@ export const HoverEffect = ({
     title: string;
     role: string;
     description: string;
-    link: string;
     image: string;
     linkedin: string;
     instagram: string;
@@ -36,7 +35,6 @@ export const HoverEffect = ({
       >
         {items.map((item, idx) => (
           <div
-            key={item.link}
             className="relative group block p-2 h-full w-full"
             onMouseEnter={() => setHoveredIndex(idx)}
             onMouseLeave={() => setHoveredIndex(null)}
@@ -70,24 +68,33 @@ export const HoverEffect = ({
 
       {selectedItem && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="relative bg-black p-8 rounded-2xl border border-white/[0.2] max-w-lg mx-auto">
-            <button onClick={closeModal} className="absolute top-4 right-4 text-white hover:text-gray-400 transition">
-              <FaTimes size={24} />
-            </button>
-            <div className="flex flex-col items-center">
-              <img src={selectedItem.image} alt={selectedItem.title} className="w-24 h-24 rounded-full mb-4" />
-              <h2 className="text-2xl font-bold text-white mb-2">{selectedItem.title}</h2>
-              <p className="text-lg text-zinc-400 mb-4">{selectedItem.description}</p>
-              <div className="flex space-x-4">
-                <Link href={selectedItem.linkedin}>
-                  <FaLinkedin className="text-white hover:text-gray-400 transition" size={24} />
-                </Link>
-                <Link href={selectedItem.instagram}>
-                  <FaInstagram className="text-white hover:text-gray-400 transition" size={24} />
-                </Link>
+          <motion.div
+            className="relative bg-black p-8 rounded-2xl border border-white/[0.2] max-w-4xl mx-auto flex"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.3 }}
+          >
+            <div className="flex-none">
+              <img src={selectedItem.image} alt={selectedItem.title} className="w-48 h-48 rounded-full mb-4" />
+            </div>
+            <div className="flex-auto pl-8">
+              <button onClick={closeModal} className="absolute top-4 right-4 text-white hover:text-gray-400 transition">
+                <FaTimes size={24} />
+              </button>
+              <div className="flex flex-col items-start">
+                <h2 className="text-3xl font-bold text-white mb-2">{selectedItem.title}</h2>
+                <p className="text-lg text-zinc-400 mb-4">{selectedItem.description}</p>
+                <div className="flex space-x-4">
+                  <Link href={selectedItem.linkedin}>
+                    <FaLinkedin className="text-white hover:text-gray-400 transition" size={24} />
+                  </Link>
+                  <Link href={selectedItem.instagram}>
+                    <FaInstagram className="text-white hover:text-gray-400 transition" size={24} />
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       )}
     </div>
@@ -123,7 +130,9 @@ export const CardImage = ({
   alt: string;
 }) => {
   return (
-    <img src={src} alt={alt} className="w-16 h-16 rounded-full mb-4" />
+    <div className="flex justify-center">
+      <img src={src} alt={alt} className="w-40 h-40 rounded-full mb-4" />
+    </div>
   );
 };
 
@@ -135,7 +144,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-zinc-100 font-bold tracking-wide text-xl", className)}>
+    <h4 className={cn("text-zinc-100 font-bold tracking-wide text-2xl text-center", className)}>
       {children}
     </h4>
   );
@@ -149,9 +158,8 @@ export const CardRole = ({
   children: React.ReactNode;
 }) => {
   return (
-    <p className={cn("text-zinc-400 tracking-wide text-sm", className)}>
+    <p className={cn("text-zinc-400 tracking-wide text-1xl text-center font-extrabold", className)}>
       {children}
     </p>
   );
 };
-
