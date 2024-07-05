@@ -2,7 +2,7 @@
 ![alt text](/public/logo.png)
 ## Our Background
 
-FutureMD is a student-led nonprofit organization dedicated to inspiring enthusiasm for the medical sector among students. Our council comprises students from 1B and AP programs, with an ongoing invitation for others to join our team.
+FutureMD is a student-led nonprofit organization dedicated to inspiring enthusiasm for the medical sector among students. Our council comprises students from IB and AP programs, with an ongoing invitation for others to join our team.
 
 ## Our Mission
 
