@@ -10,7 +10,7 @@ export const team = [
     {
         title: "Nirupa W.",
         role: "President",
-        description: "Hey there! Welcome to FutureMD’s website! I’m Nirupa, a Founder and President of the organization. As President, I help lead and manage the team, constantly striving to create a safe and collaborative environment. I'm extremely passionate about FutureMD because of my persisting interest in Medicine. This organization not only fuels my enthusiasm for the industry but also serves as a learning opportunity for me to deepen my understanding of medicine! Outside of my professional interests, I enjoy playing volleyball, basketball, and soccer.",
+        description: "Hey there! I’m Nirupa, a Founder and President of the organization. I'm extremely passionate about FutureMD because of my persisting interest in Medicine. This organization not only fuels my enthusiasm for the industry but also serves as a learning opportunity for me to deepen my understanding of medicine! Outside of my professional interests, I enjoy playing volleyball, basketball, and soccer.",
         image: "logo.png",
         linkedin: "https://www.linkedin.com/in/nirupa-wimalawickrama-096734254/",
         instagram: "https://www.instagram.com/nirupa.w08",
