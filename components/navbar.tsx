@@ -25,6 +25,9 @@ const Navbar: React.FC = () => {
         <a href="/about" className={`mr-9 font-bold transition delay-50 ${selected === 'light' ? 'text-light-text' : 'text-white'} hover:text-hov`}>
           About Us
         </a>
+        <a href="/team" className={`mr-9 font-bold transition delay-50 ${selected === 'light' ? 'text-light-text' : 'text-white'} hover:text-hov`}>
+          Our Team
+        </a>
         <a href="#" className={`mr-9 font-bold transition delay-50 ${selected === 'light' ? 'text-light-text' : 'text-white'} hover:text-hov`}>
           Sponsors
         </a>

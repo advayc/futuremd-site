@@ -2,7 +2,7 @@ export const team = [
     {
       title: "Bobby Fang",
       role: "President",
-      description: "Bobby is a creative designer who specializes in user experience and user interface design. His work is characterized by a user-centric approach and attention to detail.",
+      description: "Hey! My name is Bobby, and I serve as the founder and current director of FutureMD. As an IB student, I am very passionate about biology and chemistry, which aligns perfectly with my goal to become a dermatologist! In my spare time, I love playing basketball and volleyball at high levels, and I enjoy coaching & refereeing basketball at my local club..",
       image: "logo.png",
       linkedin: "https://www.linkedin.com/in/bobbyf0814/",
       instagram: "https://www.instagram.com/bobbyf0814",
@@ -23,5 +23,54 @@ export const team = [
       linkedin: "https://www.linkedin.com/in/advay",
       instagram: "https://www.instagram.com/advay.chandorkar_/",
     },
+    {
+      title: "Advay Chandorkar",
+      role: "Developer",
+      description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder.",
+      image: "logo.png",
+      linkedin: "https://www.linkedin.com/in/advay",
+      instagram: "https://www.instagram.com/advay.chandorkar_/",
+    },
+    {
+      title: "Advay Chandorkar",
+      role: "Developer",
+      description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder.",
+      image: "logo.png",
+      linkedin: "https://www.linkedin.com/in/advay",
+      instagram: "https://www.instagram.com/advay.chandorkar_/",
+    },
+    {
+      title: "Advay Chandorkar",
+      role: "Developer",
+      description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder.",
+      image: "logo.png",
+      linkedin: "https://www.linkedin.com/in/advay",
+      instagram: "https://www.instagram.com/advay.chandorkar_/",
+    },
+    {
+      title: "Advay Chandorkar",
+      role: "Developer",
+      description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder.",
+      image: "logo.png",
+      linkedin: "https://www.linkedin.com/in/advay",
+      instagram: "https://www.instagram.com/advay.chandorkar_/",
+    },
+    {
+      title: "Advay Chandorkar",
+      role: "Developer",
+      description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder.",
+      image: "logo.png",
+      linkedin: "https://www.linkedin.com/in/advay",
+      instagram: "https://www.instagram.com/advay.chandorkar_/",
+    },
+    {
+      title: "Advay Chandorkar",
+      role: "Developer",
+      description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder.",
+      image: "logo.png",
+      linkedin: "https://www.linkedin.com/in/advay",
+      instagram: "https://www.instagram.com/advay.chandorkar_/",
+    },
+
 ];
   

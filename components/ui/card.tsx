@@ -69,7 +69,7 @@ export const HoverEffect = ({
       {selectedItem && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
           <motion.div
-            className="relative bg-black p-8 rounded-2xl border border-white/[0.2] max-w-4xl mx-auto flex"
+            className="relative dark:bg-black bg-white p-8 rounded-2xl border border-white/[0.2] max-w-4xl mx-auto flex"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.3 }}
@@ -78,18 +78,18 @@ export const HoverEffect = ({
               <img src={selectedItem.image} alt={selectedItem.title} className="w-48 h-48 rounded-full mb-4" />
             </div>
             <div className="flex-auto pl-8">
-              <button onClick={closeModal} className="absolute top-4 right-4 text-white hover:text-gray-400 transition">
+              <button onClick={closeModal} className="absolute top-4 right-4 text-black hover:zinc-500 dark:text-white dark:hover:text-gray-400 transition">
                 <FaTimes size={24} />
               </button>
               <div className="flex flex-col items-start">
-                <h2 className="text-3xl font-bold text-white mb-2">{selectedItem.title}</h2>
-                <p className="text-lg text-zinc-400 mb-4">{selectedItem.description}</p>
+                <h2 className="font-extrabold text-3xl text-black dark:text-white mb-2">{selectedItem.title}</h2>
+                <p className="text-lg dark:text-zinc-400 font-bold text-zinc-400 mb-4">{selectedItem.description}</p>
                 <div className="flex space-x-4">
                   <Link href={selectedItem.linkedin}>
-                    <FaLinkedin className="text-white hover:text-gray-400 transition" size={24} />
+                    <FaLinkedin className="dark:text-white text-black hover:text-zinc-500 dark:hover:text-gray-400 transition" size={40} />
                   </Link>
                   <Link href={selectedItem.instagram}>
-                    <FaInstagram className="text-white hover:text-gray-400 transition" size={24} />
+                    <FaInstagram className="dark:text-white text-black hover:text-zinc-500 dark:hover:text-gray-400 transition" size={40} />
                   </Link>
                 </div>
               </div>
@@ -111,7 +111,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-white dark:bg-black border border-transparent border-white/ group-hover:border-slate-700 relative z-20",
+        "rounded-2xl h-full w-full p-4 overflow-hidden dark:bg-black border border-zinc-300 dark:border-zinc-800 group-hover:border-slate-400 dark:group-hover:border-slate-600 relative z-20",
         className
       )}
     >
