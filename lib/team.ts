@@ -10,7 +10,7 @@ export const team = [
     {
         title: "Nirupa W.",
         role: "President",
-        description: "John has extensive experience in product management, focusing on developing innovative solutions that meet user needs and business goals.",
+        description: "Hey there! Welcome to FutureMD’s website! I’m Nirupa, a Founder and President of the organization. As President, I help lead and manage the team, constantly striving to create a safe and collaborative environment. I'm extremely passionate about FutureMD because of my persisting interest in Medicine. This organization not only fuels my enthusiasm for the industry but also serves as a learning opportunity for me to deepen my understanding of medicine! Outside of my professional interests, I enjoy playing volleyball, basketball, and soccer.",
         image: "logo.png",
         linkedin: "https://www.linkedin.com/in/nirupa-wimalawickrama-096734254/",
         instagram: "https://www.instagram.com/nirupa.w08",
@@ -48,7 +48,7 @@ export const team = [
     {
       title: "Akalya G.",
       role: "Outreach",
-      description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder.",
+      description: "Hi! My name is Akalya, and I am part of the Outreach team in FutureMD. In the future, I would like to pursue a career as a pediatrician or bioengineer, as I am passionate about mathematics, biology, and chemistry. I am currently studying in the IB program, and I'm excited to help this team out. 🙂",
       image: "logo.png",
       linkedin: "https://www.linkedin.com/in/akalya-g-19763a257/",
       instagram: "https://www.instagram.com/akalyagunen_",
