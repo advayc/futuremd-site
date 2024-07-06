@@ -22,22 +22,22 @@ const Navbar: React.FC = () => {
         <a href="/">
           <img src="logo.png" alt="Logo" className="h-[50px] mr-9 logo" />
         </a>
-        <a href="/about" className={`mr-9 font-bold transition delay-50 ${selected === 'light' ? 'text-light-text' : 'text-white'} hover:text-hov`}>
+        <a href="/about" className={`mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover:text-hov transition delay-50`}>
           About Us
         </a>
-        <a href="/team" className={`mr-9 font-bold transition delay-50 ${selected === 'light' ? 'text-light-text' : 'text-white'} hover:text-hov`}>
+        <a href="/team" className={`mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover:text-hov transition delay-50`}>
           Our Team
         </a>
-        <a href="#" className={`mr-9 font-bold transition delay-50 ${selected === 'light' ? 'text-light-text' : 'text-white'} hover:text-hov`}>
+        <a href="/" className={`mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover:text-hov transition delay-50`}>
           Sponsors
         </a>
-        <a href="#" className={`mr-9 font-bold transition delay-50 ${selected === 'light' ? 'text-light-text' : 'text-white'} hover:text-hov`}>
+        <a href="/" className={`mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover:text-hov transition delay-50`}>
           Schedule
         </a>
-        <a href="#" className={`mr-9 font-bold transition delay-50 ${selected === 'light' ? 'text-light-text' : 'text-white'} hover:text-hov`}>
+        <a href="/" className={`mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover:text-hov transition delay-50`}>
           Media
         </a>
-        <a href="/contact" className={`mr-9 font-bold transition delay-50 ${selected === 'light' ? 'text-light-text' : 'text-white'} hover:text-hov`}>
+        <a href="/contact" className={`mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover:text-hov transition delay-50`}>
           Contact Us
         </a>
         <ToggleButton selected={selected} setSelected={setSelected} />
