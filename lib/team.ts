@@ -34,7 +34,7 @@ export const team = [
     {
       title: "Advay C.",
       role: "Lead-Developer",
-      description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder.",
+      description: "Hey, I'm Advay, and I'm the lead developer at FutureMD. I'm a passionate developer and IB student who loves to build things and solve problems. I'm always looking for new challenges and opportunities to learn and grow. In my free time, I enjoy playing badminton, basketball and building robots!",
       image: "logo.png",
       linkedin: "https://www.linkedin.com/in/advay",
       instagram: "https://www.instagram.com/advay.chandorkar_/",

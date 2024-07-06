@@ -85,10 +85,10 @@ export const HoverEffect = ({
                 <h2 className="font-extrabold text-3xl text-black dark:text-white mb-2">{selectedItem.title}</h2>
                 <p className="text-lg dark:text-zinc-400 font-bold text-zinc-400 mb-4">{selectedItem.description}</p>
                 <div className="flex space-x-4">
-                  <Link href={selectedItem.linkedin}>
+                  <Link href={selectedItem.linkedin} target="_none">
                     <FaLinkedin className="dark:text-white text-black hover:text-zinc-500 dark:hover:text-gray-400 transition" size={40} />
                   </Link>
-                  <Link href={selectedItem.instagram}>
+                  <Link href={selectedItem.instagram} target="_none">
                     <FaInstagram className="dark:text-white text-black hover:text-zinc-500 dark:hover:text-gray-400 transition" size={40} />
                   </Link>
                 </div>
