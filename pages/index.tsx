@@ -11,10 +11,10 @@ export default function Home() {
 
   useEffect(() => {
     const handleRouteChange = (url: string) => {
-      document.documentElement.classList.add('transition-colors', 'duration-500');
+      document.documentElement.classList.add('transition-colors', 'duration-700');
       setTimeout(() => {
-        document.documentElement.classList.remove('transition-colors', 'duration-500');
-      }, 1500);
+        document.documentElement.classList.remove('transition-colors', 'duration-700');
+      }, 1700);
     };
 
     router.events.on('routeChangeStart', handleRouteChange);
@@ -25,7 +25,7 @@ export default function Home() {
   }, [router.events]);
 
   return (
-    <main className={`min-h-screen flex flex-col items-center justify-between p-4 md:p-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-500`}>
+    <main className={`min-h-screen flex flex-col items-center justify-between p-4 md:p-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
       <Navbar />
       <div className="text-center px-4 md:px-8">
         <h1 className="font-black dark:text-hov text-[#3C55B7] text-4xl md:text-8xl">
