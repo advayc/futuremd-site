@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
   }, [selected]);
 
   return (
-    <header className={`${selected === 'light' ? 'bg-light-bg' : 'bg-dark-bg'}`}>
+    <header className="bg-transparent">
       <nav className="flex items-center justify-center">
         <a href="/">
           <img src="logo.png" alt="Logo" className="h-[50px] mr-9 logo" />
