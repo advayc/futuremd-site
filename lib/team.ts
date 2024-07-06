@@ -2,7 +2,7 @@ export const team = [
     {
       title: "Bobby F.",
       role: "President",
-      description: "Hey! My name is Bobby, and I serve as the founder and current director of FutureMD. As an IB student, I am very passionate about biology and chemistry, which aligns perfectly with my goal to become a dermatologist! In my spare time, I love playing basketball and volleyball at high levels, and I enjoy coaching & refereeing basketball at my local club..",
+      description: "Hey! My name is Bobby, and I serve as the founder and current director of FutureMD. As an IB student, I am very passionate about biology and chemistry, which aligns perfectly with my goal to become a dermatologist! In my spare time, I love playing basketball and volleyball at high levels, and I enjoy coaching & refereeing basketball at my local club.",
       image: "logo.png",
       linkedin: "https://www.linkedin.com/in/bobbyf0814/",
       instagram: "https://www.instagram.com/bobbyf0814",
