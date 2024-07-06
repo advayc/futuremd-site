@@ -1,6 +1,6 @@
 export const team = [
     {
-      title: "Bobby Fang",
+      title: "Bobby F.",
       role: "President",
       description: "Hey! My name is Bobby, and I serve as the founder and current director of FutureMD. As an IB student, I am very passionate about biology and chemistry, which aligns perfectly with my goal to become a dermatologist! In my spare time, I love playing basketball and volleyball at high levels, and I enjoy coaching & refereeing basketball at my local club..",
       image: "logo.png",
@@ -8,7 +8,7 @@ export const team = [
       instagram: "https://www.instagram.com/bobbyf0814",
     },
     {
-        title: "Nirupa Wimalawickrama",
+        title: "Nirupa W.",
         role: "President",
         description: "John has extensive experience in product management, focusing on developing innovative solutions that meet user needs and business goals.",
         image: "logo.png",
@@ -16,7 +16,7 @@ export const team = [
         instagram: "https://www.instagram.com/nirupa.w08",
     },
     {
-      title: "Advay Chandorkar",
+      title: "Advay C.",
       role: "Developer",
       description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder.",
       image: "logo.png",
