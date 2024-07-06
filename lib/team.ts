@@ -28,7 +28,6 @@ export const team = [
       role: "Vice-President",
       description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder.",
       image: "logo.png",
-      linkedin: "https://www.linkedin.com/in/advay",
       instagram: "https://www.instagram.com/sxlmx_m",
     },
     {
@@ -44,7 +43,6 @@ export const team = [
       role: "Head of Design",
       description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder.",
       image: "logo.png",
-      linkedin: "https://www.linkedin.com/in/advay",
       instagram: "https://www.instagram.com/jnne_lu",
     },
     {
@@ -68,9 +66,7 @@ export const team = [
       role: "Design",
       description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder.",
       image: "logo.png",
-      linkedin: "https://www.linkedin.com/in/advay",
       instagram: "https://www.instagram.com/_mujtabaawan",
     },
-
 ];
   

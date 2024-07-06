@@ -13,13 +13,13 @@ export const HoverEffect = ({
     role: string;
     description: string;
     image: string;
-    linkedin: string;
+    linkedin?: string;
     instagram: string;
   }[];
   className?: string;
 }) => {
-  let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  let [selectedItem, setSelectedItem] = useState<any>(null);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [selectedItem, setSelectedItem] = useState<any>(null);
 
   const closeModal = () => {
     setSelectedItem(null);
@@ -39,6 +39,7 @@ export const HoverEffect = ({
             onMouseEnter={() => setHoveredIndex(idx)}
             onMouseLeave={() => setHoveredIndex(null)}
             onClick={() => setSelectedItem(item)}
+            key={idx} // Add key prop for React list rendering
           >
             <AnimatePresence>
               {hoveredIndex === idx && (
@@ -85,10 +86,12 @@ export const HoverEffect = ({
                 <h2 className="font-extrabold text-3xl text-black dark:text-white mb-2">{selectedItem.title}</h2>
                 <p className="text-lg dark:text-zinc-400 font-bold text-zinc-600 mb-4">{selectedItem.description}</p>
                 <div className="flex space-x-4">
-                  <Link href={selectedItem.linkedin} target="_none">
-                    <FaLinkedin className="dark:text-white text-black hover:text-zinc-500 dark:hover:text-gray-400 transition" size={40} />
-                  </Link>
-                  <Link href={selectedItem.instagram} target="_none">
+                  {selectedItem.linkedin && (
+                    <Link href={selectedItem.linkedin} target='_none' passHref>
+                      <FaLinkedin className="dark:text-white text-black hover:text-zinc-500 dark:hover:text-gray-400 transition" size={40} />
+                    </Link>
+                  )}
+                  <Link href={selectedItem.instagram} target='_none' passHref>
                     <FaInstagram className="dark:text-white text-black hover:text-zinc-500 dark:hover:text-gray-400 transition" size={40} />
                   </Link>
                 </div>
