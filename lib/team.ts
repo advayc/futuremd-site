@@ -26,7 +26,7 @@ export const team = [
     {
       title: "Salma M.",
       role: "Vice-President",
-      description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder.",
+      description: "Hi! I’m Salma, a vice president of FutureMD. My favourite subjects are math and science, and I enjoy designing in my free time. I also love to paint and play with my two adorable cats!",
       image: "logo.png",
       instagram: "https://www.instagram.com/sxlmx_m",
     },
@@ -41,7 +41,7 @@ export const team = [
     {
       title: "Joanne L.",
       role: "Head of Design",
-      description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder.",
+      description: "Hello! I'm Joanne, an IB student interested in all things STEM! Within FutureMD, I'm apart of the design and marketing/outreach subteams. In my free time, you can catch me designing graphics, dancing or volunteering for organizations like this!",
       image: "logo.png",
       instagram: "https://www.instagram.com/jnne_lu",
     },
