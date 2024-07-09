@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
+import Head from "next/head";
 import { Footer } from "@/components/footer";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
@@ -26,6 +27,7 @@ export default function Home() {
 
   return (
     <main className={`min-h-screen flex flex-col items-center justify-between p-4 md:p-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
+      <Head><title>FutureMD</title></Head>
       <Navbar />
       <div className="text-center px-4 md:px-8">
         <h1 className="font-black dark:text-hov text-[#3C55B7] text-4xl md:text-8xl">

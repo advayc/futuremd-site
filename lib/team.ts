@@ -16,14 +16,6 @@ export const team = [
         instagram: "https://www.instagram.com/nirupa.w08",
     },
     {
-      title: "Yang X.",
-      role: "Vice-President",
-      description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder.",
-      image: "logo.png",
-      linkedin: "https://www.linkedin.com/in/yangxuejfss/",
-      instagram: "https://www.instagram.com/thatonekidcalledyang",
-    },
-    {
       title: "Salma M.",
       role: "Vice-President",
       description: "Hi! I’m Salma, a vice president of FutureMD. My favourite subjects are math and science, and I enjoy designing in my free time. I also love to paint and play with my two adorable cats!",
