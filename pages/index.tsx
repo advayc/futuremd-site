@@ -35,7 +35,7 @@ export default function Home() {
           <span className="dark:text-white text-black">Inc</span>
         </h1>
         <p className="text-lg md:text-3xl font-bold mt-4 md:mt-8 dark:text-dark-text text-zinc-500">
-        A student-led nonprofit organization with the goal to educate <br></br> teens about life during & after medical school!
+        A student-led nonprofit organization with the goal to educate <br></br> teens about life during and after medical school!
         </p>
       </div>
       <Footer />

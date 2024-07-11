@@ -36,7 +36,7 @@ export default function About() {
           Discover The Team Behind FutureMD!
         </p>
         </header>
-        <div className="max-w-5xl mx-auto px-8">
+        <div className="max-w-5xl mx-auto px-8 justify-center items-center">
              <HoverEffect items={team} />
         </div>
     </main>

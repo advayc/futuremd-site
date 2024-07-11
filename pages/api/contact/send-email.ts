@@ -15,10 +15,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         });
 
         await transporter.sendMail({
-            from: process.env.EMAIL,
-            to: process.env.EMAIL,
+            from: 'contact.futuremd@gmail.com',
+            to: 'contact.futuremd@gmail.com',
             subject:subject,
-            text: `${name}\n${message} \nSent By Contact Form`
+            text: `${name}\n${email}\n${message} \nSent By Contact Form `
         });
 
         res.status(200).json({ success: true })
