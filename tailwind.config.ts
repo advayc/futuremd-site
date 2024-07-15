@@ -12,7 +12,7 @@ const config: Config = {
       colors: {
         primary: "#D9E8FF",
         hov: "#5C9CFF",
-        navy: "28387D",
+        navy: "#28387D",
         light: {
           text: "#00000", 
           bg: "#EFF6FF", 

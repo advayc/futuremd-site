@@ -67,40 +67,40 @@ export const HoverEffect = ({
         ))}
       </div>
 
-      {selectedItem && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <motion.div
-            className="relative dark:bg-black bg-white p-6 rounded-2xl border border-white/[0.2] max-w-4xl mx-auto flex"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.3 }}
-          >
-            <div className="flex-none">
-              <img src={selectedItem.image} alt={selectedItem.title} className="w-32 h-32 rounded-full mb-4" />
-            </div>
-            <div className="flex-auto pl-6">
-              <button onClick={closeModal} className="absolute top-4 right-4 text-black hover:zinc-500 dark:text-white dark:hover:text-gray-400 transition">
-                <FaTimes size={20} />
-              </button>
-              <div className="flex flex-col items-start">
-                <h2 className="font-extrabold text-2xl text-black dark:text-white mb-2">{selectedItem.title}</h2>
-                <p className="text-base dark:text-zinc-400 font-bold text-zinc-600 mb-4">{selectedItem.description}</p>
-                <div className="flex space-x-4">
-                  {selectedItem.linkedin && (
-                    <Link href={selectedItem.linkedin} target='_none' passHref>
-                      <FaLinkedin className="dark:text-hov text-hov hover:text-zinc-500 dark:hover:text-gray-400 transition" size={30} />
+        {selectedItem && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+            <motion.div
+              className="relative dark:bg-black bg-white p-4 sm:p-8 rounded-2xl border border-white/[0.2] max-w-4xl mx-auto flex flex-col sm:flex-row"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.3 }}
+            >
+              <div className="flex-none">
+                <img src={selectedItem.image} alt={selectedItem.title} className="w-48 h-48 sm:w-56 sm:h-56 rounded-full mb-4" />
+              </div>
+              <div className="flex-auto pl-4 sm:pl-8">
+                <button onClick={closeModal} className="absolute top-4 right-4 text-black hover:zinc-500 dark:text-white dark:hover:text-gray-400 transition">
+                  <FaTimes size={20} />
+                </button>
+                <div className="flex flex-col items-start">
+                  <h2 className="font-extrabold text-2xl sm:text-3xl text-black dark:text-white mb-2">{selectedItem.title}</h2>
+                  <p className="text-base sm:text-lg dark:text-zinc-400 font-bold text-zinc-600 mb-4">{selectedItem.description}</p>
+                  <div className="flex space-x-3">
+                    {selectedItem.linkedin && (
+                      <Link href={selectedItem.linkedin} target='_none' passHref>
+                        <FaLinkedin className="dark:text-hov text-navy hover:text-hov dark:hover:text-primary transition" size={40} />
+                      </Link>
+                    )}
+                    <Link href={selectedItem.instagram} target='_none' passHref>
+                      <FaInstagram className="dark:text-hov text-navy hover:text-hov dark:hover:text-primary transition" size={40} />
                     </Link>
-                  )}
-                  <Link href={selectedItem.instagram} target='_none' passHref>
-                    <FaInstagram className="dark:text-hov text-hov hover:text-zinc-500 dark:hover:text-gray-400 transition" size={30} />
-                  </Link>
+                  </div>
                 </div>
               </div>
-            </div>
-          </motion.div>
-        </div>
-      )}
-    </div>
+            </motion.div>
+          </div>
+        )}
+      </div>
   );
 };
 
@@ -147,7 +147,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("dark:text-zinc-100 text-black font-bold tracking-wide text-2xl text-center sm:text-lg", className)}>
+    <h4 className={cn("dark:text-zinc-100 text-black font-bold tracking-wide text-2xl text-center", className)}>
       {children}
     </h4>
   );
