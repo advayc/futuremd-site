@@ -1,7 +1,7 @@
 import { AppProps } from 'next/app';
 import React, { useEffect } from 'react';
 import '../styles/globals.css';
-
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -18,6 +18,12 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
+      <Head> 
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no, user-scalable=0"
+        />
+      </Head>
       <Component {...pageProps} />
     </>
   );

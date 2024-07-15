@@ -13,6 +13,7 @@
     "@vercel/speed-insights": "^1.0.12",
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.13",
+    "lucide-react": "^0.408.0",
     "next": "14.2.4",
     "nodemailer": "^6.9.14",
     "react": "^18.3.1",

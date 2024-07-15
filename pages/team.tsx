@@ -27,7 +27,7 @@ export default function About() {
   }, [router.events]);
 
   return (
-    <main className={`min-h-screen items-center justify-between py-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
+    <main className={`min-h-screen flex-col items-center justify-between py-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
       <Head><title>FutureMD - Our Team</title></Head>
       <Navbar />
       <header className="pt-8 pd-3 px-4 w-full max-w-9xl">
@@ -36,7 +36,7 @@ export default function About() {
           Discover The Team Behind FutureMD!
         </p>
         </header>
-        <div className="max-w-5xl mx-auto px-8 justify-center items-center">
+        <div className="max-w-5xl mx-auto px-8  justify-center items-center">
              <HoverEffect items={team} />
         </div>
     </main>
