@@ -25,7 +25,7 @@ export default function About() {
   }, [router.events]);
 
   return (
-    <main className={`min-h-screen flex flex-col items-center justify-between py-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
+    <main className={`min-h-screen items-center justify-between py-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
       <Head><title>FutureMD - About</title></Head>
       <Navbar />
       <header className="pt-8 pd-3 px-4 w-full max-w-9xl">

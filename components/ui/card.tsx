@@ -39,7 +39,7 @@ export const HoverEffect = ({
             onMouseEnter={() => setHoveredIndex(idx)}
             onMouseLeave={() => setHoveredIndex(null)}
             onClick={() => setSelectedItem(item)}
-            key={idx} // Add key prop for React list rendering
+            key={idx}
           >
             <AnimatePresence>
               {hoveredIndex === idx && (
@@ -70,29 +70,29 @@ export const HoverEffect = ({
       {selectedItem && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
           <motion.div
-            className="relative dark:bg-black bg-white p-8 rounded-2xl border border-white/[0.2] max-w-4xl mx-auto flex"
+            className="relative dark:bg-black bg-white p-6 rounded-2xl border border-white/[0.2] max-w-4xl mx-auto flex"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.3 }}
           >
             <div className="flex-none">
-              <img src={selectedItem.image} alt={selectedItem.title} className="w-48 h-48 rounded-full mb-4" />
+              <img src={selectedItem.image} alt={selectedItem.title} className="w-32 h-32 rounded-full mb-4" />
             </div>
-            <div className="flex-auto pl-8">
+            <div className="flex-auto pl-6">
               <button onClick={closeModal} className="absolute top-4 right-4 text-black hover:zinc-500 dark:text-white dark:hover:text-gray-400 transition">
-                <FaTimes size={24} />
+                <FaTimes size={20} />
               </button>
               <div className="flex flex-col items-start">
-                <h2 className="font-extrabold text-3xl text-black dark:text-white mb-2">{selectedItem.title}</h2>
-                <p className="text-lg dark:text-zinc-400 font-bold text-zinc-600 mb-4">{selectedItem.description}</p>
+                <h2 className="font-extrabold text-2xl text-black dark:text-white mb-2">{selectedItem.title}</h2>
+                <p className="text-base dark:text-zinc-400 font-bold text-zinc-600 mb-4">{selectedItem.description}</p>
                 <div className="flex space-x-4">
                   {selectedItem.linkedin && (
                     <Link href={selectedItem.linkedin} target='_none' passHref>
-                      <FaLinkedin className="dark:text-white text-black hover:text-zinc-500 dark:hover:text-gray-400 transition" size={40} />
+                      <FaLinkedin className="dark:text-hov text-hov hover:text-zinc-500 dark:hover:text-gray-400 transition" size={30} />
                     </Link>
                   )}
                   <Link href={selectedItem.instagram} target='_none' passHref>
-                    <FaInstagram className="dark:text-white text-black hover:text-zinc-500 dark:hover:text-gray-400 transition" size={40} />
+                    <FaInstagram className="dark:text-hov text-hov hover:text-zinc-500 dark:hover:text-gray-400 transition" size={30} />
                   </Link>
                 </div>
               </div>
@@ -134,7 +134,7 @@ export const CardImage = ({
 }) => {
   return (
     <div className="flex justify-center">
-      <img src={src} alt={alt} className="w-40 h-40 rounded-full mb-4" />
+      <img src={src} alt={alt} className="w-48 h-48 rounded-full mb-4 sm:w-40 sm:h-40" />
     </div>
   );
 };
@@ -147,7 +147,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("dark:text-zinc-100 text-black font-bold tracking-wide text-2xl text-center", className)}>
+    <h4 className={cn("dark:text-zinc-100 text-black font-bold tracking-wide text-2xl text-center sm:text-lg", className)}>
       {children}
     </h4>
   );
@@ -161,7 +161,7 @@ export const CardRole = ({
   children: React.ReactNode;
 }) => {
   return (
-    <p className={cn("dark:text-zinc-400 text-zinc-600 tracking-wide text-1xl text-center font-extrabold", className)}>
+    <p className={cn("dark:text-zinc-400 text-zinc-600 tracking-wide text-xl text-center font-extrabold sm:text-sm", className)}>
       {children}
     </p>
   );
