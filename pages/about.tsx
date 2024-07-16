@@ -3,7 +3,6 @@ import Navbar from "@/components/navbar";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Head from 'next/head'; 
-import { Footer } from '@/components/footer';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -38,13 +37,13 @@ export default function About() {
       <div className="flex flex-col justify-start items-start border-2 border-hov rounded-lg p-8 shadow hover:shadow-lg mt-8 max-w-4xl">
         
         <div className="mb-4">
-          <h1 className="text-3xl font-bold mb-4 text-li dark:text-hov">Who Are We?</h1>
+          <h1 className="text-3xl font-bold mb-4 text-black dark:text-hov">Who Are We?</h1>
           <p className="text-base md:text-lg text-zinc-600 dark:text-dark-text">
             We are <span className="font-bold">FutureMD</span>, a student-led, registered nonprofit organization dedicated to educating teens about life during and after medical school! 📚🎓
           </p>
         </div>
 
-        <div className="flex items-center justify-center">
+        <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="flex-1">
             <p className="text-base md:text-lg text-zinc-600 dark:text-dark-text">
               Our mission is to provide valuable insights and resources to aspiring medical students, helping them navigate the challenges of medical education and beyond.
@@ -52,11 +51,11 @@ export default function About() {
               Through workshops, mentorship programs, and informative content, we aim to inspire and support the next generation of medical professionals.
             </p>
           </div>
-          <img src="/logo.png" alt="FutureMD Logo" className="w-64 h-64 ml-4 -mt-4" />
+          <img src="/logo.png" alt="FutureMD Logo" className="w-64 h-64 mt-4 md:mt-0 md:ml-4" />
         </div>
 
         <div className="mb-4">
-          <h1 className="text-3xl font-bold mt-4 mb-4 text-li dark:text-hov">Our Mission</h1>
+          <h1 className="text-3xl font-bold mt-4 mb-4 text-black dark:text-hov">Our Mission</h1>
           <p className="text-base md:text-lg text-zinc-600 dark:text-dark-text mb-4">
             At FutureMD, our mission is to bridge the gap between aspiring medical students and the realities of medical education. We strive to provide comprehensive guidance and support to teens interested in pursuing a career in medicine.
           </p>
@@ -73,7 +72,6 @@ export default function About() {
           </p>
         </div>
       </div>
-      <Footer />
     </main>
   );
 }
