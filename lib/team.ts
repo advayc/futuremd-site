@@ -57,7 +57,7 @@ export const team = [
       title: "Mujtaba A",
       role: "Design",
       description: "Hi I’m Mujtaba Awan! Here at FutureMD I’m part of the design team. I’m an IB student and very passionate about engineering. In my spare time I like to sketch, spend time with family, and play sports. In the future, I hope to have a job in engineering or even software development.",
-      image: "logo.png",
+      image: "team/ss3.jpg",
       instagram: "https://www.instagram.com/_mujtabaawan",
     },
 ];
