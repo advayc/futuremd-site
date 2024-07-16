@@ -49,7 +49,7 @@ export const team = [
       title: "Waleed A",
       role: "Marketing",
       description: "Hi! I'm Waleed and I am part of the marketing team at FutureMD. Going to an IB school, I am very passionate about Physics and Math. Outside of school, I enjoy activities such as, building robots, coding, and sports. Moving on, I would like to pursue a career either as a, mechanical engineer or a software developer!",
-      image: "logo.png",
+      image: "team/ss4.jpg",
       linkedin: "https://www.linkedin.com/in/waleed-a-614363299/",
       instagram: "https://www.instagram.com/ohwaleeed",
     },
