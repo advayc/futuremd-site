@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Head from 'next/head';
 import {sponsors} from '@/lib/sponsors';
+import {Footer} from '@/components/footer';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -48,6 +49,7 @@ export default function About() {
           </div>
         ))}
       </section>
+      <Footer />
     </main>
   );
 }

@@ -64,7 +64,7 @@ const ContactForm: React.FC = () => {
     return (
         <div className="w-full">
             <form onSubmit={handleSubmit} className="flex items-center justify-center">
-                <div className="flex-col border-2 border-[#3C55B7] rounded-lg w-3/4 p-8 shadow hover:shadow-lgshadow-md mt-12">
+                <div className="flex-col border-2 border-hov rounded-lg w-3/4 p-8 shadow hover:shadow-lgshadow-md mt-12">
                     <div className="flex justify-center">
                         <div className="flex flex-col w-5/6 mt-4">
                             <label className="font-bold dark:text-white text-black text-xl mb-2" htmlFor="name">

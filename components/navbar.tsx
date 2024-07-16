@@ -54,6 +54,7 @@ const Navbar: React.FC = () => {
           <a href="/contact" className={`mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover:text-hov transition delay-50`}>
             Contact Us
           </a>
+          <ToggleButton selected={selected} setSelected={setSelected} />
         </div>
       </nav>
 
