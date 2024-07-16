@@ -3,19 +3,10 @@ import Navbar from "@/components/navbar";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Head from 'next/head';
-import { HoverEffect } from "@/components/ui/card";
+import {sponsors} from '@/lib/sponsors';
 
 const inter = Inter({ subsets: ["latin"] });
 
-const sponsors = [
-  {
-    name: "Helping Hands",
-    logo: "/sponsors/helping-hands.png",
-    link: "https://www.helpinghandsapp.com/",
-    width: 275,
-    height: 275,
-  },
-];
 
 export default function About() {
   const router = useRouter();

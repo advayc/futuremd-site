@@ -56,7 +56,7 @@ export const team = [
     {
       title: "Mujtaba A",
       role: "Design",
-      description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder.",
+      description: "Hi I’m Mujtaba Awan! Here at FutureMD I’m part of the design team. I’m an IB student and very passionate about engineering. In my spare time I like to sketch, spend time with family, and play sports. In the future, I hope to have a job in engineering or even software development.",
       image: "logo.png",
       instagram: "https://www.instagram.com/_mujtabaawan",
     },
