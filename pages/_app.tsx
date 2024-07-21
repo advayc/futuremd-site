@@ -1,6 +1,7 @@
 import { AppProps } from 'next/app';
 import React, { useEffect } from 'react';
-import '../styles/globals.css';
+import '@/styles/globals.css';
+import '@/styles/zoom.css';
 import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
