@@ -3,6 +3,7 @@ import Navbar from "@/components/navbar";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Head from 'next/head'; 
+import { Footer } from '@/components/footer';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,53 +26,42 @@ export default function About() {
   }, [router.events]);
 
   return (
-    <main className={`min-h-screen flex flex-col items-center py-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
+    <main className={`min-h-screen flex flex-col py-10 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
       <Head><title>FutureMD - About</title></Head>
       <Navbar />
       <header className="pt-4 pd-3 px-4 w-full max-w-9xl">
-        <h1 className="text-7xl font-bold my-8 mb-4 text-center dark:text-white text-black"> About Us</h1>
+        <h1 className="text-7xl font-bold my-8 mb-4 text-center dark:text-white text-black">💬 About Us</h1>
         <p className="text-center text-lg md:text-2xl font-semibold dark:text-dark-text text-[#828282]">
           Discover The Purpose & Passion Behind FutureMD!
         </p>
       </header>
-      <div className="flex flex-col justify-start items-start border-2 border-hov rounded-lg p-8 shadow hover:shadow-lg mt-8 max-w-4xl">
-        
-        <div className="mb-4">
-          <h1 className="text-3xl font-bold mb-4 text-black dark:text-hov">Who Are We?</h1>
-          <p className="text-base md:text-lg text-zinc-600 dark:text-dark-text">
-            We are <span className="font-bold">FutureMD</span>, a student-led, registered nonprofit organization dedicated to educating teens about life during and after medical school! 📚🎓
+      <section className="w-full flex flex-col items-center">
+
+        <div className="w-11/12 md:w-5/6 bg-light-bg dark:bg-dark-bg border-2 border-hov dark:border-li dark:bg-[#010412] bg-primary rounded-lg p-8 shadow hover:shadow-lg mt-12">
+          <h2 className="text-4xl font-bold dark:text-white text-black mb-4">Who We Are</h2>
+          <p className="text-lg dark:text-dark-text text-[#828282] font-bold leading-9">
+            FutureMD is always looking for new sponsors to aid our local cause! There are various ways you can support our non-profit organization to reach its goals and initiatives. Financial sponsorships are always a huge support to us as they help us accomplish our goals, upscale our event equipment, and increase the quality and impact we make on our local community and attendees. In addition to this, we are always open to other forms of sponsorships, which may include providing us with resources, catering, experienced guest speakers, merchandise, and more! — whether you’re a small business owner, or a corporation with a huge team, there are plenty of ways you can help us out. FutureMD has always strived to constantly improve and be the best we possibly can. We run on sponsorships and donations, and as a registered non-profit incorporation under the OBR, we guarantee our sponsors that ALL their resources and funding provided are used SOLELY on FutureMD. Supporting our mission will not only support our team, but it will benefit our local community and increase the impact we can make on the next generation of medical specialists!
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center justify-between">
-          <div className="flex-1">
-            <p className="text-base md:text-lg text-zinc-600 dark:text-dark-text">
-              Our mission is to provide valuable insights and resources to aspiring medical students, helping them navigate the challenges of medical education and beyond.
-              <br /><br />
-              Through workshops, mentorship programs, and informative content, we aim to inspire and support the next generation of medical professionals.
+        <div className="w-11/12 md:w-5/6 bg-light-bg dark:bg-dark-bg border-2 border-hov dark:border-li rounded-lg p-8 shadow hover:shadow-lg mt-12">
+          <h2 className="text-4xl font-bold dark:text-white text-black mb-4">Our Mission</h2>
+          <p className="text-lg dark:text-dark-text text-[#828282] font-bold leading-9">
+            FutureMD aims to provide teenagers across our community with insights into a future in the medical sector. We see ourselves making a difference by pushing the youth to the best of their abilities to prepare them for the long journey ahead of them.
+          </p>
+        </div>
+
+        <div className="w-full text-center py-12">
+          <div className="w-11/12 md:w-5/6 bg-primary dark:bg-dark-bg border-2 border-primary dark:border-li rounded-lg p-8 shadow hover:shadow-lg mx-auto">
+            <h2 className="text-4xl font-bold dark:text-white text-navy mb-4">Meet Our Team!</h2>
+            <p className="text-lg font-bold italic dark:text-dark-text text-[#828282] mb-4">
+              “FutureMD aims to provide teenagers across our community with insights into a future in the medical sector. We see ourselves making a difference by pushing the youth to the best of their abilities to prepare them for the long journey ahead of them.”
             </p>
+            <a href="/team" className="bg-navy text-white py-2 px-4 rounded border-2 border-transparent hover:border-white transition-colors duration-300 hover:bg-navy-dark">Meet Our Team</a>
           </div>
-          <img src="/logo.png" alt="FutureMD Logo" className="w-64 h-64 mt-4 md:mt-0 md:ml-4" />
         </div>
-
-        <div className="mb-4">
-          <h1 className="text-3xl font-bold mt-4 mb-4 text-black dark:text-hov">Our Mission</h1>
-          <p className="text-base md:text-lg text-zinc-600 dark:text-dark-text mb-4">
-            At FutureMD, our mission is to bridge the gap between aspiring medical students and the realities of medical education. We strive to provide comprehensive guidance and support to teens interested in pursuing a career in medicine.
-          </p>
-          <p className="text-base md:text-lg text-zinc-600 dark:text-dark-text mb-4">
-            We believe in empowering students with the knowledge and skills necessary to succeed in their medical journey. <span className="dark:text-primary text-li font-semibold">Our initiatives include:</span>
-          </p>
-          <ul className="list-disc pl-6 text-base md:text-lg text-zinc-600 dark:text-dark-text mb-4">
-            <li>Interactive workshops led by experienced medical professionals.</li>
-            <li>Mentorship programs connecting students with current medical students and doctors.</li>
-            <li>Resources and guides on medical school applications, study tips, and career advice.</li>
-          </ul>
-          <p className="text-base md:text-lg text-zinc-600 dark:text-dark-text">
-            Join us as we pave the way for future doctors and medical leaders!
-          </p>
-        </div>
-      </div>
+      </section>
+      <Footer />
     </main>
   );
 }

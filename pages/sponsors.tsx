@@ -32,8 +32,8 @@ export default function About() {
       <Head><title>FutureMD - Sponsors</title></Head>
       <Navbar />
       <header className="pt-4 pd-3 px-4 w-full max-w-9xl">
-        <h1 className="text-7xl font-bold my-8 mb-4 text-center dark:text-white text-black">Our Sponsors</h1>
-        <p className="text-center mb-7 text-lg md:text-2xl font-semibold dark:text-dark-text text-[#828282]">
+      <h1 className="text-4xl md:text-6xl font-bold my-8 mb-4 text-center dark:text-white text-black"> Our Sponsors</h1>
+      <p className="text-center mb-7 text-lg md:text-2xl font-semibold dark:text-dark-text text-[#828282]">
           Thank You to our AMAZING Sponsors! ❤️
         </p>
       </header>
