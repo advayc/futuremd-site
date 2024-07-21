@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Head from "next/head";
 import {Footer} from '@/components/footer';
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,7 +42,7 @@ export default function About() {
              <HoverEffect items={team} />
         </div>
         <p className="text-center mb-4 text-lg md:text-xl font-semibold dark:text-dark-text text-zinc-700">
-          Interested in joining our team? <a href='/join' target="_blank" className="dark:text-hov dark:hover:text-primary text-li hover:text-black transition delay-75">Click Here!</a> 
+          Interested in joining our team?  <Link href='https://forms.gle/Sa52gmcHybHgnk438' target="_blank" className="dark:text-hov dark:hover:text-primary text-li hover:text-black transition delay-75">Click Here!</Link> 
         </p>
         <Footer />
     </main>

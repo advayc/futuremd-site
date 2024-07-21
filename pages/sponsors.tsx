@@ -5,9 +5,9 @@ import { useEffect } from "react";
 import Head from 'next/head';
 import {sponsors} from '@/lib/sponsors';
 import {Footer} from '@/components/footer';
+import Link from 'next/link';
 
 const inter = Inter({ subsets: ["latin"] });
-
 
 export default function About() {
   const router = useRouter();
@@ -49,6 +49,9 @@ export default function About() {
           </div>
         ))}
       </section>
+      <p className="text-center mt-10 text-lg md:text-xl font-semibold dark:text-dark-text text-zinc-700">
+      Interested in sponsoring us? <Link href='/sponsorship' className="dark:text-hov dark:hover:text-primary text-li hover:text-black transition delay-75">Click Here!</Link> 
+      </p>
       <Footer />
     </main>
   );
