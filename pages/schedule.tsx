@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Head from 'next/head'; 
 import {Footer} from '@/components/footer';
+import Eventx from '@/components/ui/event';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,6 +36,8 @@ export default function About() {
           Join The Passionate Team Behind FutureMD!
         </p>
         </header>
+        
+        <Eventx />
         <Footer />
     </main>
   );

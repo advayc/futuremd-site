@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Head from 'next/head'; 
 import { Footer } from '@/components/footer';
+import Image from 'next/image';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,22 +37,31 @@ export default function About() {
         </p>
       </header>
       <section className="w-full flex flex-col items-center">
-
-        <div className="w-11/12 md:w-5/6 bg-light-bg dark:bg-dark-bg border-2 border-hov dark:border-li dark:bg-[#010412] bg-primary rounded-lg p-8 shadow hover:shadow-lg mt-12">
-          <h2 className="text-4xl font-bold dark:text-white text-black mb-4">Who We Are</h2>
-          <p className="text-lg dark:text-dark-text text-[#828282] font-bold leading-9">
-            FutureMD is always looking for new sponsors to aid our local cause! There are various ways you can support our non-profit organization to reach its goals and initiatives. Financial sponsorships are always a huge support to us as they help us accomplish our goals, upscale our event equipment, and increase the quality and impact we make on our local community and attendees. In addition to this, we are always open to other forms of sponsorships, which may include providing us with resources, catering, experienced guest speakers, merchandise, and more! — whether you’re a small business owner, or a corporation with a huge team, there are plenty of ways you can help us out. FutureMD has always strived to constantly improve and be the best we possibly can. We run on sponsorships and donations, and as a registered non-profit incorporation under the OBR, we guarantee our sponsors that ALL their resources and funding provided are used SOLELY on FutureMD. Supporting our mission will not only support our team, but it will benefit our local community and increase the impact we can make on the next generation of medical specialists!
-          </p>
-        </div>
-
-        <div className="w-11/12 md:w-5/6 bg-light-bg dark:bg-dark-bg border-2 border-hov dark:border-li rounded-lg p-8 shadow hover:shadow-lg mt-12">
-          <h2 className="text-4xl font-bold dark:text-white text-black mb-4">Our Mission</h2>
-          <p className="text-lg dark:text-dark-text text-[#828282] font-bold leading-9">
-            FutureMD aims to provide teenagers across our community with insights into a future in the medical sector. We see ourselves making a difference by pushing the youth to the best of their abilities to prepare them for the long journey ahead of them.
-          </p>
+        <div className="w-11/12 md:w-5/6 p-8 shadow hover:shadow-lg mt-12 rounded-lg bg-primary dark:bg-[#000000] border-2 dark:border-li flex flex-col md:flex-row items-center justify-center ">
+          <div className="md:flex-1 flex flex-col items-center md:items-start justify-center text-center md:text-left">
+            <h2 className="text-7xl font-bold dark:text-white text-black mb-4">Who We Are..</h2>
+            <p className="text-lg dark:text-zinc-400 text-[#828282] font-bold leading-9">
+              FutureMD is a registered non-profit organization under the Ontario
+              Business Registry. Led by a group of ambitious & passionate students
+              located in the Mississauga-GTA area, FutureMD is committed to educating
+              the youth & teens about how life really is during and after medical school!
+            </p>
+          </div>
+          <div className="md:w-[30%] mb-4 md:mb-0">
+            <img src='/logo.png' alt="Meta" />
+          </div>
         </div>
 
         <div className="w-full text-center py-12">
+          <div className="w-11/12 md:w-5/6 bg-primary dark:bg-dark-bg p-8 shadow hover:shadow-lg mx-auto">
+            <h2 className="text-7xl font-bold dark:text-white text-black mb-4">Our Mission...</h2>
+            <p className="text-lg dark:text-dark-text text-[#828282] font-bold leading-9">
+              FutureMD aims to provide teenagers across our community with insights into a future <br />in the medical sector. We see ourselves making a difference by pushing the youth to the best of their <br /> abilities to prepare them for the long journey ahead of them.
+            </p>
+          </div>
+        </div>
+        
+        <div className="w-full text-center">
           <div className="w-11/12 md:w-5/6 bg-primary dark:bg-dark-bg border-2 border-primary dark:border-li rounded-lg p-8 shadow hover:shadow-lg mx-auto">
             <h2 className="text-4xl font-bold dark:text-white text-navy mb-4">Meet Our Team!</h2>
             <p className="text-lg font-bold italic dark:text-dark-text text-[#828282] mb-4">
