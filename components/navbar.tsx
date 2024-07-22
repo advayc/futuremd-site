@@ -71,7 +71,7 @@ const Navbar: React.FC = () => {
             </div>
             <a href="/team" className="py-1 hover:text-hov transition delay-50 font-bold">Our Team</a>
             <a href="/sponsors" className="py-1 hover:text-hov transition delay-50 font-bold">Sponsors</a>
-            <a href="/" className="py-1 hover:text-hov transition delay-50 font-bold">Schedule</a>
+            <a href="/schedule" className="py-1 hover:text-hov transition delay-50 font-bold">Schedule</a>
             <a href="/media" className="py-1 hover:text-hov transition delay-50 font-bold">Media</a>
             <div className="flex justify-between items-center">
               <a href="/contact" className="py-1 hover:text-hov transition delay-50 font-bold">Contact Us</a>
