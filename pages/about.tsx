@@ -53,17 +53,17 @@ export default function About() {
         </div>
 
         <div className="w-full text-center py-12">
-          <div className="w-11/12 md:w-5/6 bg-primary dark:bg-dark-bg p-8 shadow hover:shadow-lg mx-auto">
+          <div className="w-11/12 md:w-5/6 bg-[#b0c4f4] dark:bg-gray-900 border rounded-lg border-none p-8 shadow hover:shadow-lg mx-auto">
             <h2 className="text-7xl font-bold dark:text-white text-black mb-4">Our Mission...</h2>
-            <p className="text-lg dark:text-dark-text text-[#828282] font-bold leading-9">
+            <p className="text-lg dark:text-dark-text text-navy font-bold leading-9">
               FutureMD aims to provide teenagers across our community with insights into a future <br />in the medical sector. We see ourselves making a difference by pushing the youth to the best of their <br /> abilities to prepare them for the long journey ahead of them.
             </p>
           </div>
         </div>
         
         <div className="w-full text-center">
-          <div className="w-11/12 md:w-5/6 bg-primary dark:bg-dark-bg border-2 border-primary dark:border-li rounded-lg p-8 shadow hover:shadow-lg mx-auto">
-            <h2 className="text-4xl font-bold dark:text-white text-navy mb-4">Meet Our Team!</h2>
+          <div className="w-11/12 md:w-5/6 bg-primary dark:bg-[#0c0c0c] border-2 border-primary dark:border-li rounded-lg p-8 shadow hover:shadow-lg mx-auto">
+            <h2 className="text-5xl font-bold dark:text-white text-navy mb-4">Meet Our Team!</h2>
             <p className="text-lg font-bold italic dark:text-dark-text text-[#828282] mb-4">
               “FutureMD aims to provide teenagers across our community with insights into a future in the medical sector. We see ourselves making a difference by pushing the youth to the best of their abilities to prepare them for the long journey ahead of them.”
             </p>
