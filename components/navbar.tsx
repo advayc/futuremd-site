@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
           <a href="/sponsors" className={`mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover:text-hov transition delay-50`}>
             Sponsors
           </a>
-          <a href="/" className={`mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover:text-hov transition delay-50`}>
+          <a href="/schedule" className={`mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover:text-hov transition delay-50`}>
             Schedule
           </a>
           <a href="/media" className={`mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover:text-hov transition delay-50`}>

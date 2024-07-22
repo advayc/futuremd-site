@@ -36,8 +36,9 @@ export default function About() {
           Discover The Purpose & Passion Behind FutureMD!
         </p>
       </header>
+
       <section className="w-full flex flex-col items-center">
-        <div className="w-11/12 md:w-5/6 p-8 shadow hover:shadow-lg mt-12 rounded-lg bg-primary dark:bg-[#000000] border-2 dark:border-li flex flex-col md:flex-row items-center justify-center ">
+        <div className="w-11/12 md:w-5/6 p-8 mt-12 dark:bg-[#000000] flex flex-col md:flex-row items-center justify-center ">
           <div className="md:flex-1 flex flex-col items-center md:items-start justify-center text-center md:text-left">
             <h2 className="text-7xl font-bold dark:text-white text-black mb-4">Who We Are..</h2>
             <p className="text-lg dark:text-zinc-400 text-[#828282] font-bold leading-9">
@@ -52,25 +53,25 @@ export default function About() {
           </div>
         </div>
 
-        <div className="w-full text-center py-12">
-          <div className="w-11/12 md:w-5/6 bg-[#b0c4f4] dark:bg-gray-900 border rounded-lg border-none p-8 shadow hover:shadow-lg mx-auto">
+        <div className="w-full text-center bg-primary dark:bg-[#0c0c0c] shadow hover:shadow-lg">
+          <div className="w-11/12 md:w-5/6 p-8 mx-auto">
             <h2 className="text-7xl font-bold dark:text-white text-black mb-4">Our Mission...</h2>
-            <p className="text-lg dark:text-dark-text text-navy font-bold leading-9">
+            <p className="text-lg dark:text-dark-text text-navy font-bold leading-9 pb-12">
               FutureMD aims to provide teenagers across our community with insights into a future <br />in the medical sector. We see ourselves making a difference by pushing the youth to the best of their <br /> abilities to prepare them for the long journey ahead of them.
             </p>
           </div>
-        </div>
         
         <div className="w-full text-center">
-          <div className="w-11/12 md:w-5/6 bg-primary dark:bg-[#0c0c0c] border-2 border-primary dark:border-li rounded-lg p-8 shadow hover:shadow-lg mx-auto">
-            <h2 className="text-5xl font-bold dark:text-white text-navy mb-4">Meet Our Team!</h2>
+          <div className="w-11/12 md:w-5/6 bg-primary dark:bg-[#0c0c0c] dark:border-li p-8  mx-auto">
+            <h2 className="text-5xl font-bold dark:text-white text-black mb-4">Meet Our Team!</h2>
             <p className="text-lg font-bold italic dark:text-dark-text text-[#828282] mb-4">
               “FutureMD aims to provide teenagers across our community with insights into a future in the medical sector. We see ourselves making a difference by pushing the youth to the best of their abilities to prepare them for the long journey ahead of them.”
             </p>
-            <a href="/team" className="bg-navy text-white py-2 px-4 rounded border-2 border-transparent hover:border-white transition-colors duration-300 hover:bg-navy-dark">Meet Our Team</a>
+            <a href="/team" className="bg-navy text-white py-2 px-4 rounded border-2 border-transparent hover:border-li transition-colors duration-300 hover:bg-navy-dark">Meet Our Team</a>
           </div>
         </div>
-      </section>
+    </div>
+    </section>
       <Footer />
     </main>
   );

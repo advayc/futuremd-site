@@ -1,10 +1,11 @@
+import React from "react";
+import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Head from 'next/head'; 
-import {Footer} from '@/components/footer';
-import Eventx from '@/components/ui/event';
+import { Footer } from '@/components/footer';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,15 +32,36 @@ export default function About() {
       <Head><title>FutureMD - Schedule</title></Head>
       <Navbar />
       <header className="pt-4 pd-3 px-4 w-full max-w-9xl">
-      <h1 className="text-4xl md:text-6xl font-bold my-8 mb-4 text-center dark:text-white text-black"> Our Schedule</h1>
-      <p className="text-center mb-4 text-lg md:text-2xl font-semibold dark:text-dark-text text-[#828282]">
-          Join The Passionate Team Behind FutureMD!
+        <h1 className="text-4xl md:text-6xl font-bold my-8 mb-4 text-center dark:text-white text-black"> Our Schedule</h1>
+        <p className="text-center mb-4 text-lg md:text-2xl font-semibold dark:text-dark-text text-zinc-600">
+          Check out some of our events we're hosting!
         </p>
-        </header>
-        
-        <Eventx />
-        <Footer />
+      </header>
+      
+      <section className="px-4 max-w-9xl mx-auto ml-20 mt-20">
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 dark:text-white text-black">
+          Upcoming Events!
+        </h1>
+        <div className="flex justify-start">
+          <Card className="bg-transparent dark:bg-[#0c0c0c] border border-zinc-300 hover:border-zinc-400 dark:border-transparent dark:hover:border-zinc-300 dark:hover:border-zinc-800 transition-colors duration-300 max-w-md mx-4 rounded-lg p-2 mt-6">
+            <CardHeader className="pb-0 pt-4 px-4 flex-col items-start text-center dark:text-white text-black">
+              <h4 className="font-bold text-2xl dark:text-hov text-li">Our First Event!</h4>
+              <small className="dark:text-zinc-400 text-zinc-600 tracking-wide text-xl text-center font-bold sm:text-sm">November 23rd</small>
+            </CardHeader>
+            <CardBody className="overflow-visible py-4 px-4 pr-2">
+              <Image
+                alt="Event background"
+                className="object-cover rounded-xl"
+                src="/events/first.png"
+                width={300}
+                height={250}
+              />
+            </CardBody>
+          </Card>
+        </div>
+      </section>
+
+      <Footer />
     </main>
   );
 }
-
