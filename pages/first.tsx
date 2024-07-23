@@ -68,11 +68,7 @@ export default function FirstEvent() {
         </Link>
 
         <iframe
-          style={{
-            filter: "invert(100%) hue-rotate(180deg)",
-            borderRadius: "20px",
-          }}
-          className="md:w-[850px] md:h-[450px] h-[300px] border-2 border-gray-300"
+          className="md:w-[850px] md:h-[450px] h-[300px] border-2 border-gray-300 rounded-lg dark:invert dark:hue-rotate-180 "
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1445.904607514726!2d-79.66425558270193!3d43.54801870520988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b43fcc4953039%3A0x62282bdd86ce9b6c!2s3359%20Mississauga%20Rd%2C%20Mississauga%2C%20ON%20L5L%201C6!5e0!3m2!1sen!2sca!4v1721710744397!5m2!1sen!2sca"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
