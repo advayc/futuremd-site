@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Head from 'next/head'; 
 import { Footer } from '@/components/footer';
+import Link from 'next/link';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,10 +30,10 @@ export default function About() {
 
   return (
     <main className={`min-h-screen items-center justify-between py-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
-      <Head><title>FutureMD - Schedule</title></Head>
+      <Head><title>FutureMD - Events</title></Head>
       <Navbar />
       <header className="pt-4 pd-3 px-4 w-full max-w-9xl">
-        <h1 className="text-4xl md:text-6xl font-bold my-8 mb-4 text-center dark:text-white text-black"> Our Schedule</h1>
+        <h1 className="text-4xl md:text-6xl font-bold my-8 mb-4 text-center dark:text-white text-black"> Our Events</h1>
         <p className="text-center mb-4 text-lg md:text-2xl font-semibold dark:text-dark-text text-zinc-600">
           Check out some of our events we're hosting!
         </p>
@@ -42,7 +43,12 @@ export default function About() {
         <h1 className="text-4xl md:text-5xl font-bold mb-6 dark:text-white text-black">
           Upcoming Events!
         </h1>
+        <p className="text-lg md:text-xl font-semibold dark:text-dark-text text-zinc-700">
+          Interested in learning more about our next event?  <Link href='/first' className="dark:text-hov dark:hover:text-primary text-li hover:text-black transition delay-75">Click Here!</Link> 
+        </p>
+
         <div className="flex justify-start">
+          <a href='/first'>
           <Card className="bg-transparent dark:bg-[#0c0c0c] border border-zinc-300 hover:border-zinc-400 dark:border-transparent dark:hover:border-zinc-300 dark:hover:border-zinc-800 transition-colors duration-300 max-w-md mx-4 rounded-lg p-2 mt-6">
             <CardHeader className="pb-0 pt-4 px-4 flex-col items-start text-center dark:text-white text-black">
               <h4 className="font-bold text-2xl dark:text-hov text-li">Our First Event!</h4>
@@ -58,6 +64,7 @@ export default function About() {
               />
             </CardBody>
           </Card>
+          </a>
         </div>
       </section>
 

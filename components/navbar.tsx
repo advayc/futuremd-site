@@ -45,8 +45,8 @@ const Navbar: React.FC = () => {
           <a href="/sponsors" className={`mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover:text-hov transition delay-50`}>
             Sponsors
           </a>
-          <a href="/schedule" className={`mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover:text-hov transition delay-50`}>
-            Schedule
+          <a href="/events" className={`mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover:text-hov transition delay-50`}>
+            Events
           </a>
           <a href="/media" className={`mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover:text-hov transition delay-50`}>
             Media
@@ -71,7 +71,7 @@ const Navbar: React.FC = () => {
             </div>
             <a href="/team" className="py-1 hover:text-hov transition delay-50 font-bold">Our Team</a>
             <a href="/sponsors" className="py-1 hover:text-hov transition delay-50 font-bold">Sponsors</a>
-            <a href="/schedule" className="py-1 hover:text-hov transition delay-50 font-bold">Schedule</a>
+            <a href="/events" className="py-1 hover:text-hov transition delay-50 font-bold">events</a>
             <a href="/media" className="py-1 hover:text-hov transition delay-50 font-bold">Media</a>
             <div className="flex justify-between items-center">
               <a href="/contact" className="py-1 hover:text-hov transition delay-50 font-bold">Contact Us</a>

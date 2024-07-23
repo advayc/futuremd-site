@@ -66,8 +66,8 @@ export default function About() {
   </div>
 </div>
         
-        <div className="w-full text-center mt-20">
-          <div className="w-full bg-primary dark:bg-[#0c0c0c] dark:border-li p-16 mx-auto">
+        <div className="w-full text-center mt-28">
+          <div className="w-full dark:border-li p-16 mx-auto">
             <h2 className="text-7xl font-bold dark:text-white text-black mb-8">Meet Our Team!</h2>
             <p className="text-lg font-bold italic dark:text-dark-text text-[#828282] mb-10">
               “FutureMD aims to provide teenagers across our community with insights into a future in the medical sector. We see ourselves making a difference by pushing the youth to the best of their abilities to prepare them for the long journey ahead of them.”
