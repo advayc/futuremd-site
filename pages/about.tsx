@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Head from 'next/head'; 
 import { Footer } from '@/components/footer';
-import Image from 'next/image';
+import Link from 'next/link';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -67,12 +67,16 @@ export default function About() {
 </div>
         
         <div className="w-full text-center mt-20">
-          <div className="w-full bg-primary dark:bg-[#0c0c0c] dark:border-li p-20 mx-auto">
+          <div className="w-full bg-primary dark:bg-[#0c0c0c] dark:border-li p-16 mx-auto">
             <h2 className="text-7xl font-bold dark:text-white text-black mb-8">Meet Our Team!</h2>
-            <p className="text-lg font-bold italic dark:text-dark-text text-[#828282] mb-8">
+            <p className="text-lg font-bold italic dark:text-dark-text text-[#828282] mb-10">
               “FutureMD aims to provide teenagers across our community with insights into a future in the medical sector. We see ourselves making a difference by pushing the youth to the best of their abilities to prepare them for the long journey ahead of them.”
             </p>
-            <a href="/team" className="bg-navy text-white py-2 px-4 rounded border-2 border-transparent hover:border-li transition-colors duration-300 hover:bg-navy-dark">Meet Our Team</a>
+            <a href="/team" className="bg-navy text-white py-2 px-4 rounded border-2 border-transparent hover:border-li transition-colors duration-300 hover:bg-navy-dark ">Meet Our Team</a>
+        
+        <p className="text-center mt-11 text-lg md:text-xl font-semibold dark:text-dark-text text-zinc-700">
+          Interested in joining our team?  <Link href='https://forms.gle/Sa52gmcHybHgnk438' target="_blank" className="dark:text-hov dark:hover:text-primary text-li hover:text-black transition delay-75">Click Here!</Link> 
+        </p>
           </div>
         </div>
       </section>
