@@ -46,7 +46,7 @@ export default function FirstEvent() {
             University of Toronto Mississauga Library <br></br>3359 Mississauga Rd
           </p>
           <p className="text-base md:text-lg font-bold dark:text-dark-text text-[#828282]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          FutureMD is hosting our event *Name lol* at the University of Toronto! This event will feature various guest speakers with medical backgrounds, workshops, and team challenges! FutureMD is providing all our attendee's complementary catering from Lezzets, one of the highest-rated shawarma stops in Mississauga, along with HUGE prizes and our very own custom merchandise! Make sure to book the date in your calendar, you do not want to miss this event!  
           </p>
         </div>
         <div className="flex justify-end mt-8 md:mt-0">
