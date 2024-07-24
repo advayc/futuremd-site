@@ -46,7 +46,8 @@ export default function FirstEvent() {
             University of Toronto Mississauga Library <br></br>3359 Mississauga Rd
           </p>
           <p className="text-base md:text-lg font-bold dark:text-dark-text text-[#828282]">
-          FutureMD is hosting our event *Name lol* at the University of Toronto! This event will feature various guest speakers with medical backgrounds, workshops, and team challenges! FutureMD is providing all our attendee's complementary catering from Lezzets, one of the highest-rated shawarma stops in Mississauga, along with HUGE prizes and our very own custom merchandise! Make sure to book the date in your calendar, you do not want to miss this event!  
+          FutureMD is excited to announce our upcoming event, Name lol, hosted at the prestigious University of Toronto! This dynamic gathering will showcase a lineup of distinguished guest speakers from the medical field, engaging workshops, and thrilling team challenges designed to inspire and educate. Attendees will enjoy complimentary catering from Lezzets, renowned as one of Mississauga's top shawarma destinations. In addition, we have lined up incredible prizes and exclusive custom merchandise that you won't want to miss! Mark your calendars for this unmissable event—it's an opportunity to connect, learn, and have fun!
+
           </p>
         </div>
         <div className="flex justify-end mt-8 md:mt-0">
