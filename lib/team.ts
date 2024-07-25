@@ -19,7 +19,7 @@ export const team = [
       title: "Salma M",
       role: "Vice-President",
       description: "Hi! I’m Salma, a vice president of FutureMD. My favourite subjects are math and science, and I enjoy designing in my free time. I also love to paint and play with my two adorable cats!",
-      image: "logo.png",
+      image: "ss.jpg",
       instagram: "https://www.instagram.com/sxlmx_m",
     },
     {
