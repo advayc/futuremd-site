@@ -32,7 +32,7 @@ export default function FirstEvent() {
       <Head><title>FutureMD - First Event</title></Head>
       <Navbar />
       <header className="pt-4 px-4 w-full max-w-5xl text-center">
-        <h1 className="text-4xl md:text-6xl font-bold my-8 mb-4 dark:text-white text-black">Our First Event!</h1>
+        <h1 className="text-4xl md:text-6xl font-bold my-8 mb-4 dark:text-white text-black">Path2Med</h1>
         <p className="text-lg md:text-2xl font-semibold dark:text-dark-text text-zinc-600">Join us for an exciting event!</p>
       </header>
       <div>
@@ -46,7 +46,7 @@ export default function FirstEvent() {
             University of Toronto — Mississauga Library <br></br>William G. Davis Building
           </p>
           <p className="text-base md:text-lg font-bold dark:text-dark-text text-[#828282]">
-          FutureMD is excited to announce our upcoming event, Name lol, hosted at the prestigious University of Toronto! This dynamic gathering will showcase a lineup of distinguished guest speakers from the medical field, engaging workshops, and thrilling team challenges designed to inspire and educate. Attendees will enjoy complimentary catering from Lezzets, renowned as one of Mississauga's top shawarma destinations. In addition, we have lined up incredible prizes and exclusive custom merchandise that you won't want to miss! Mark your calendars for this unmissable event—it's an opportunity to connect, learn, and have fun!
+          FutureMD is excited to announce our upcoming event, Path2Med, hosted at the prestigious University of Toronto! This dynamic gathering will showcase a lineup of distinguished guest speakers from the medical field, engaging workshops, and thrilling team challenges designed to inspire and educate. Attendees will enjoy complimentary catering from Lezzets, renowned as one of Mississauga's top shawarma destinations. In addition, we have lined up incredible prizes and exclusive custom merchandise that you won't want to miss! Mark your calendars for this unmissable event—it's an opportunity to connect, learn, and have fun!
 
           </p>
         </div>
