@@ -48,7 +48,7 @@ export default function Home() {
         <p className="mb-12 px-4 text-2xl text-center max-w-2xl text-[#828282] font-bold">
           At FutureMD, we focus on four main aspects to educate students about medlife.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 w-full px-4 md:px-16">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 w-full px-4 md:px-48">
           <div className="flex flex-col items-center mb-4">
             <div className="w-64 h-40 overflow-hidden">
               <img src="/placeholder.png" alt="Workshops" className="object-cover w-full h-full" />
@@ -69,7 +69,9 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center mb-4">
             <div className="w-64 h-40 overflow-hidden">
-              <img src="/placeholder.png" alt="Fairs & Fests" className="object-cover w-full h-full" />
+              <a href="https://www.instagram.com/p/C9YGo8gheCm/?img_index=1" target="_blank">
+              <img src="/instagram/1.jpg" alt="Fairs & Fests" className="object-cover w-full h-full" />
+              </a>
             </div>
             <p className="text-lg font-bold rounded-b-3xl text-white bg-li dark:bg-navy w-64 h-32 px-4 py-2 hover:drop-shadow-2xl">4. Learning Opportunities</p>
           </div>
