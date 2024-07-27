@@ -51,20 +51,20 @@ export default function About() {
         </div>
 
         <div className="w-full flex flex-col md:flex-row items-center justify-center bg-primary dark:bg-[#0c0c0c] shadow hover:shadow-lg p-24">
-  <div className="md:w-1/2 text-center md:text-left">
-    <h2 className="text-7xl font-bold dark:text-white text-black mb-4">Our Mission is to empower youth</h2>
-  </div>
-  <div className="md:w-1/2 text-center md:text-left">
-    <p className="ml-0 md:ml-12 text-lg dark:text-dark-text text-navy font-bold leading-9">
-      We strive to provide the youth with the necessary knowledge for the journey
-      ahead of them, ranging from tuition fees, to challenges & obstacles in and
-      after university. We do so by allowing our community in the Peel Region with
-      the opportunity to connect and meet doctors, practicing physicians, and
-      medical students to listen to their journey and advice throughout their
-      medical career.
-    </p>
-  </div>
-</div>
+          <div className="md:w-1/2 text-center md:text-left">
+            <h2 className="text-7xl font-bold dark:text-white text-black mb-4">Our Mission is to empower youth</h2>
+          </div>
+          <div className="md:w-1/2 text-center md:text-left">
+            <p className="ml-0 md:ml-12 text-lg dark:text-dark-text text-navy font-bold leading-9">
+              We strive to provide the youth with the necessary knowledge for the journey
+              ahead of them, ranging from tuition fees, to challenges & obstacles in and
+              after university. We do so by allowing our community in the Peel Region with
+              the opportunity to connect and meet doctors, practicing physicians, and
+              medical students to listen to their journey and advice throughout their
+              medical career.
+            </p>
+          </div>
+        </div>
         
         <div className="w-full text-center mt-28">
           <div className="w-full dark:border-li p-16 mx-auto">
