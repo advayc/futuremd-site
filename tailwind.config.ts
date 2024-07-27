@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       colors: {
         primary: "#D9E8FF",
+        dprimary: "#0c0c0c",
         hov: "#5C9CFF",
         navy: "#28387D",
         li: "#3C55B7",

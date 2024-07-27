@@ -131,7 +131,7 @@ const ContactForm: React.FC = () => {
                     </div>
                     <div className="flex justify-center">
                         <button
-                            className="mt-6 mb-4 h-14 w-1/3 lg:w-2/3 bg-blue-800 text-white rounded-lg text-lg font-bold hover:bg-blue-900 transition-all duration-300"
+                            className="mt-6 mb-4 h-14 w-2/3 lg:w-2/3 bg-blue-800 text-white rounded-lg text-lg font-bold hover:bg-blue-900 transition-all duration-300"
                             type="submit"
                         >
                             Send

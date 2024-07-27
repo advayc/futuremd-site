@@ -43,7 +43,7 @@ export default function About() {
         <HoverEffect items={team} />
       </div>
 
-      <div className="w-full bg-primary dark:bg-[#0c0c0c] shadow hover:shadow-lg p-14 mb-14">
+      <div className="w-full bg-primary dark:bg-dprimary shadow hover:shadow-lg p-14 mb-14">
         <h1 className="text-4xl md:text-6xl font-bold my-8 mb-4 text-center dark:text-white text-black"> Our Guest Speakers</h1>
         <div className="max-w-5xl mx-auto px-8 justify-center items-center">
           <HoverEffect items={guest_speakers.map(speaker => ({ ...speaker, role: "" }))} />

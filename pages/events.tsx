@@ -48,8 +48,8 @@ export default function About() {
         </p>
 
         <div className="flex justify-start">
-          <a href='/first'>
-          <Card className="bg-transparent dark:bg-[#0c0c0c] border border-zinc-300 hover:border-zinc-400 dark:border-transparent dark:hover:border-zinc-300 dark:hover:border-zinc-800 transition-colors duration-300 max-w-md mx-4 rounded-lg p-2 mt-6">
+          <a href='/path2med'>
+          <Card className="bg-transparent dark:bg-dprimary border border-zinc-300 hover:border-zinc-400 dark:border-transparent dark:hover:border-zinc-300 dark:hover:border-zinc-800 transition-colors duration-300 max-w-md mx-4 rounded-lg p-2 mt-6">
             <CardHeader className="pb-0 pt-4 px-4 flex-col items-start text-center dark:text-white text-black">
               <h4 className="font-bold text-2xl dark:text-hov text-li">Path2Med</h4>
               <small className="dark:text-zinc-400 text-zinc-600 tracking-wide text-xl text-center font-bold sm:text-sm">November 23rd</small>
@@ -58,7 +58,7 @@ export default function About() {
               <Image
                 alt="Event background"
                 className="object-cover rounded-xl"
-                src="/events/first.png"
+                src="/events/path2med.png"
                 width={300}
                 height={250}
               />

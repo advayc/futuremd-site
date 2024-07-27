@@ -38,7 +38,7 @@ export default function About() {
         <div className="w-11/12 md:w-5/6 p-8 mt-4 dark:bg-[#000000] flex flex-col md:flex-row items-center justify-center mb-12">
           <div className="md:flex-1 flex flex-col items-center md:items-start justify-center text-center md:text-left">
             <h2 className="text-7xl font-bold dark:text-white text-black mb-4">Who We Are..</h2>
-            <p className="text-lg dark:text-zinc-400 text-[#828282] font-bold leading-9">
+            <p className="text-xl dark:dark-text text-[#828282] font-bold leading-9">
               FutureMD is a registered non-profit organization under the Ontario
               Business Registry. Led by a group of ambitious & passionate students
               located in the Mississauga-GTA area, FutureMD is committed to educating
@@ -50,12 +50,12 @@ export default function About() {
           </div>
         </div>
 
-        <div className="w-full flex flex-col md:flex-row items-center justify-center bg-primary dark:bg-[#0c0c0c] shadow hover:shadow-lg p-24">
+        <div className="w-full flex flex-col md:flex-row items-center justify-center bg-primary dark:bg-dprimary shadow hover:shadow-lg p-24">
           <div className="md:w-1/2 text-center md:text-left">
             <h2 className="text-7xl font-bold dark:text-white text-black mb-4">Our Mission is to empower youth</h2>
           </div>
           <div className="md:w-1/2 text-center md:text-left">
-            <p className="ml-0 md:ml-12 text-lg dark:text-dark-text text-navy font-bold leading-9">
+            <p className="ml-0 md:ml-12 text-xl dark:text-dark-text text-navy font-bold leading-9">
               We strive to provide the youth with the necessary knowledge for the journey
               ahead of them, ranging from tuition fees, to challenges & obstacles in and
               after university. We do so by allowing our community in the Peel Region with
@@ -69,10 +69,10 @@ export default function About() {
         <div className="w-full text-center mt-28">
           <div className="w-full dark:border-li p-16 mx-auto">
             <h2 className="text-7xl font-bold dark:text-white text-black mb-8">Meet Our Team!</h2>
-            <p className="text-lg font-bold italic dark:text-dark-text text-[#828282] mb-10">
+            <p className="text-2xl font-bold italic dark:text-dark-text text-[#828282] mb-10">
               “FutureMD aims to provide teenagers across our community with insights into a future in the medical sector. We see ourselves making a difference by pushing the youth to the best of their abilities to prepare them for the long journey ahead of them.”
             </p>
-            <a href="/team" className="bg-navy text-white py-2 px-4 rounded border-2 border-transparent hover:border-li transition-colors duration-300 hover:bg-navy-dark ">Meet Our Team</a>
+            <a href="/team" className="px-4 py-2 bg-navy text-primary text-lg rounded transition-transform duration-700 transform hover:scale-105 dark:hover:bg-primary hover:bg-navy hover:text-primary dark:hover:text-navy hover:shadow-lg">Meet Our Team</a>
         
         <p className="text-center mt-11 text-lg md:text-xl font-semibold dark:text-dark-text text-zinc-700">
           Interested in joining our team?  <Link href='https://forms.gle/Sa52gmcHybHgnk438' target="_blank" className="dark:text-hov dark:hover:text-primary text-li hover:text-black transition delay-75">Click Here!</Link> 

@@ -18,7 +18,14 @@
   transform: rotate(360deg);
 }
 
-
 .dark {
   color: #ffffff; 
+}
+
+.vector-image {
+  transition: filter 0.3s ease;
+}
+
+.dark .vector-image {
+  filter: brightness(0) saturate(100%) invert(29%) sepia(90%) saturate(577%) hue-rotate(183deg) brightness(85%) contrast(87%);
 }
