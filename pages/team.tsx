@@ -43,6 +43,10 @@ export default function About() {
         <HoverEffect items={team} />
       </div>
 
+      <p className="text-center mb-12 text-lg md:text-xl font-semibold dark:text-dark-text text-zinc-700">
+        Interested in joining our team?  <Link href='https://forms.gle/Sa52gmcHybHgnk438' target="_blank" className="dark:text-hov dark:hover:text-primary text-li hover:text-black transition delay-75">Click Here!</Link> 
+      </p>
+
       <div className="w-full bg-primary dark:bg-dprimary shadow hover:shadow-lg p-14 mb-14">
         <h1 className="text-4xl md:text-6xl font-bold my-8 mb-4 text-center dark:text-white text-black"> Our Guest Speakers</h1>
         <div className="max-w-5xl mx-auto px-8 justify-center items-center">
@@ -57,10 +61,6 @@ export default function About() {
           </Link>
         </div>
       </div>
-
-      <p className="text-center mb-4 text-lg md:text-xl font-semibold dark:text-dark-text text-zinc-700">
-        Interested in joining our team?  <Link href='https://forms.gle/Sa52gmcHybHgnk438' target="_blank" className="dark:text-hov dark:hover:text-primary text-li hover:text-black transition delay-75">Click Here!</Link> 
-      </p>
       <Footer />
     </main>
   );

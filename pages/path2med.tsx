@@ -65,12 +65,12 @@ export default function FirstEvent() {
 
       <Link href="https://www.google.com/maps/place/3359+Mississauga+Rd,+Mississauga,+ON+L5L+1C6/@43.548151,-79.664585,17z/data=!4m6!3m5!1s0x882b43e2d0378c49:0xa2cefb17886b6fb3!8m2!3d43.5496084!4d-79.6620515!16s%2Fg%2F11gjs7tlhb?hl=en&entry=ttu" target="_blank"
       className="flex flex-col text-center items-center text-m md:text-m font-bold dark:hover:text-primary text-[#828282] hover:text-black dark:transition delay-75 transition delay-75 mb-4">
-            University of Toronto Mississauga Library <br></br>3359 Mississauga Rd
+            University of Toronto Mississauga Library <br></br>1867 Inner Cir Rd, Mississauga, ON L5L 1C6
         </Link>
 
         <iframe
           className="md:w-[850px] md:h-[450px] h-[300px] border-2 border-gray-300 rounded-lg dark:invert dark:hue-rotate-180 "
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1445.904607514726!2d-79.66425558270193!3d43.54801870520988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b43fcc4953039%3A0x62282bdd86ce9b6c!2s3359%20Mississauga%20Rd%2C%20Mississauga%2C%20ON%20L5L%201C6!5e0!3m2!1sen!2sca!4v1721710744397!5m2!1sen!2sca"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.8014767055724!2d-79.66198!3d43.54818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b43e313b969a3%3A0x7b4f16d0f201bdb8!2sWilliam%20G.%20Davis%20Building!5e0!3m2!1sen!2sca!4v1722133988267!5m2!1sen!2sca"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>

@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
 import Head from "next/head";
-import Image from 'next/image';
+import { CiCircleChevDown } from "react-icons/ci";
 import { Footer } from "@/components/footer";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
@@ -38,7 +38,8 @@ export default function Home() {
         <p className="text-lg md:text-3xl font-bold mt-3 md:mt-6 dark:text-dark-text text-zinc-500">
           A student-led nonprofit organization with the goal to educate <br /> teens about life during and after medical school!
         </p>
-      <Footer />
+        <Footer />
+        <CiCircleChevDown className="text-4xl text-zinc-500"/>
       </div>
       
       <div className="w-full flex flex-col items-center dark:bg-dprimary bg-primary pt-16">
@@ -101,9 +102,6 @@ export default function Home() {
           <img src="/logo.png" alt="FutureMD Logo" className="md:w-[35%] mt-8 md:mt-0" />
         </div>
       </div>
-      <svg width="1916" height="230" viewBox="0 0 1916 230" fill="currentColor" className="w-full h-auto text-primary dark:text-dprimary">
-        <path d="M0.134048 0V103.702V130.328C0.135942 134.063 -0.69468 139.065 1.75652 142.355C4.81638 146.461 12.6201 147.963 17.4989 149.663C32.3385 154.836 47.7946 159.023 63.2789 162.378C127.498 176.294 196.238 180.484 262.185 177.921C537.487 167.218 800.338 47.8109 1078.33 71.7084C1230.22 84.7652 1365.15 153.51 1507.72 195.696C1588.92 219.722 1674.62 234.124 1760.3 228.55C1789.34 226.659 1817.69 222.066 1845.54 214.376C1863.71 209.358 1880.7 202.019 1897.64 194.444C1903.97 191.614 1914.13 188.322 1918.11 182.839C1920.97 178.924 1919.74 172.597 1919.74 168.166V133.131V0H0.134048Z"/>
-      </svg>
 
     </main>
   );
