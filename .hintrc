@@ -47,7 +47,8 @@
         "frame-title": "off",
         "image-alt": "off"
       }
-    ]
+    ],
+    "disown-opener": "off"
   },
   "browserslist": [
     "defaults",
