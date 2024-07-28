@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Head from 'next/head';
 import { Footer } from '@/components/footer';
+import { Foot } from '@/components/foot';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,14 +42,15 @@ export default function About() {
           </p>
           <div className="pt-4 pd-3 px-4 max-w-9xl text-center mt-8">
             <h2 className="text-4xl font-bold mb-9 dark:text-white text-black">Discover Our 
-                <a href="/Sponsorship Proposal V3.pdf" target="_blank" className="hover:text-li transition delay-100 dark:hover:text-hov"> Sponsorship Package</a></h2>
+                <a href="/FutureMD Sponsorship Proposal.pdf" target="_blank" className="hover:text-li transition delay-100 dark:hover:text-hov"> Sponsorship Package</a></h2>
             <div className="flex justify-center">
-              <embed src="/Sponsorship Proposal V3.pdf" type="application/pdf" className="w-full md:w-2/3 lg:w-1/2 h-[600px] md:h-[800px]" />
+              <embed src="/FutureMD Sponsorship Proposal.pdf" type="application/pdf" className="w-full md:w-2/3 lg:w-1/2 h-[600px] md:h-[800px]" />
             </div>
           </div>
         </div>
       </section>
       <Footer />
+      <Foot />
     </main>
   );
 }

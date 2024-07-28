@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Head from 'next/head'; 
 import { Footer } from '@/components/footer';
+import { Foot } from '@/components/foot';
 import Link from 'next/link';
 
 const inter = Inter({ subsets: ["latin"] });
@@ -36,7 +37,7 @@ export default function About() {
 
       <section className="w-full flex flex-col items-center">
         <div className="w-11/12 md:w-5/6 p-8 mt-4 dark:bg-[#000000] flex flex-col md:flex-row items-center justify-center mb-12">
-          <div className="md:flex-1 flex flex-col items-center md:items-start justify-center text-center md:text-left">
+          <div id="who-we-are" className="md:flex-1 flex flex-col items-center md:items-start justify-center text-center md:text-left">
             <h2 className="text-7xl font-bold dark:text-white text-black mb-4">Who We Are..</h2>
             <p className="text-xl dark:dark-text text-[#828282] font-bold leading-9">
               FutureMD is a registered non-profit organization under the Ontario
@@ -54,7 +55,7 @@ export default function About() {
           <div className="md:w-1/2 text-center md:text-left">
             <h2 className="text-7xl font-bold dark:text-white text-black mb-4">Our Mission is to empower youth</h2>
           </div>
-          <div className="md:w-1/2 text-center md:text-left">
+          <div id="our-mission" className="md:w-1/2 text-center md:text-left">
             <p className="ml-0 md:ml-12 text-xl dark:text-dark-text text-navy font-bold leading-9">
               We strive to provide the youth with the necessary knowledge for the journey
               ahead of them, ranging from tuition fees, to challenges & obstacles in and
@@ -81,6 +82,7 @@ export default function About() {
         </div>
       </section>
       <Footer />
+      <Foot />
     </main>
   );
 }

@@ -7,6 +7,7 @@ import Image from "next/image";
 import Zoom from 'react-medium-image-zoom';
 import Link from 'next/link';
 import 'react-medium-image-zoom/dist/styles.css';
+import { Foot } from '@/components/foot';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -87,6 +88,7 @@ export default function Media() {
           ))}
         </div>
       </section>
+      <Foot />
     </main>
   );
 }

@@ -6,6 +6,7 @@ import Head from 'next/head';
 import { sponsors } from '@/lib/sponsors';
 import { affiliates } from '@/lib/affiliates';
 import { Footer } from '@/components/footer';
+import { Foot } from '@/components/foot';
 import Link from 'next/link';
 
 const inter = Inter({ subsets: ["latin"] });
@@ -82,6 +83,7 @@ export default function About() {
         ))}
       </section>
       <Footer />
+      <Foot />
     </main>
   );
 }

@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Head from 'next/head'; 
 import {Footer} from '@/components/footer';
+import { Foot } from '@/components/foot';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -51,6 +52,7 @@ export default function Contact() {
         </div>
       </div>
       <Footer />
+      <Foot />
     </main>
   );
 }
