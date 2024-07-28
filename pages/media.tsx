@@ -42,7 +42,7 @@ export default function Media() {
   }, [router.events]);
 
   return (
-    <main className={`min-h-screen flex flex-col items-center py-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
+    <main className={`min-h-screen flex flex-col items-center pt-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
       <Head><title>FutureMD - Media</title></Head>
       <Navbar />
       <header className="pt-4 px-4 w-full max-w-9xl">

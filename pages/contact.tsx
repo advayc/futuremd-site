@@ -30,7 +30,7 @@ export default function Contact() {
   }, [router.events]);
 
   return (
-    <main className={`min-h-screen flex flex-col items-center justify-between py-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
+    <main className={`min-h-screen flex flex-col items-center justify-between pt-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
       <Head><title>FutureMD - Contact</title></Head>
       <Navbar />
       <div className="py-4 px-4 w-full max-w-9xl">

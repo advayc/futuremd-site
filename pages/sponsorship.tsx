@@ -27,7 +27,7 @@ export default function About() {
   }, [router.events]);
 
   return (
-    <main className={`min-h-screen py-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
+    <main className={`min-h-screen pt-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
       <Head><title>FutureMD - Sponsorship</title></Head>
       <Navbar />
       <header className="pt-4 pd-3 px-4 w-full max-w-9xl text-center">

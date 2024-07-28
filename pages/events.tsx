@@ -30,7 +30,7 @@ export default function About() {
   }, [router.events]);
 
   return (
-    <main className={`min-h-screen items-center justify-between py-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
+    <main className={`min-h-screen items-center justify-between pt-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
       <Head><title>FutureMD - Events</title></Head>
       <Navbar />
       <header className="pt-4 pd-3 px-4 w-full max-w-9xl">
@@ -44,8 +44,8 @@ export default function About() {
         <h1 className="text-4xl md:text-5xl font-bold mb-6 dark:text-white text-black">
           Upcoming Events!
         </h1>
-        <p className="text-lg md:text-xl font-semibold dark:text-dark-text text-zinc-700">
-          Interested in learning more about our next event?  <Link href='/first' className="dark:text-hov dark:hover:text-primary text-li hover:text-black transition delay-75">Click Here!</Link> 
+        <p className="text-lg md:text-xl font-semibold dark:text-dark-text text-[#828282]">
+          Interested in learning more about our next event?  <Link href='/first' className="dark:text-hov dark:hover:text-primary text-li hover:text-navy transition delay-75">Click Here!</Link> 
         </p>
 
         <div className="flex justify-start">

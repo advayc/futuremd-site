@@ -26,6 +26,13 @@ export default function Home() {
     };
   }, [router.events]);
 
+  const handleScroll = () => {
+    const element = document.getElementById("what-does");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <main className={`flex flex-col items-center justify-center pt-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
       <Head><title>FutureMD</title></Head>
@@ -38,9 +45,9 @@ export default function Home() {
         <p className="text-lg md:text-3xl font-bold mt-3 md:mt-6 dark:text-dark-text text-zinc-500">
           A student-led nonprofit organization with the goal to educate <br /> teens about life during and after medical school!
         </p>
-        <a href="#what-does">
+        <button onClick={handleScroll}>
           <CiCircleChevDown className="text-5xl text-zinc-500 hover:text-li dark:hover:text-hov mt-40" />
-        </a>
+        </button>
       </div>
       
       <div id="what-does" className="w-full flex flex-col items-center dark:bg-dprimary bg-primary pt-16 pb-12">

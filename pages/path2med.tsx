@@ -29,7 +29,7 @@ export default function FirstEvent() {
   }, [router.events]);
 
   return (
-    <main className={`min-h-screen py-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700 flex flex-col items-center`}>
+    <main className={`min-h-screen pt-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700 flex flex-col items-center`}>
       <Head><title>FutureMD - First Event</title></Head>
       <Navbar />
       <header className="pt-4 px-4 w-full max-w-5xl text-center">
