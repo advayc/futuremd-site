@@ -6,6 +6,8 @@ import Head from 'next/head';
 import { Footer } from '@/components/footer';
 import { Foot } from '@/components/foot';
 import Link from 'next/link';
+import { HoverEffect } from "@/components/ui/card";
+import {executives} from '@/lib/executives';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,7 +30,7 @@ export default function About() {
   }, [router.events]);
 
   return (
-    <main className={`min-h-screen flex flex-col py-10 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
+    <main className={`min-h-screen flex flex-col pt-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
       <Head><title>FutureMD - About</title></Head>
       <Navbar />
       <header className="pt-4 pd-3 px-4 w-full max-w-9xl">
@@ -50,6 +52,7 @@ export default function About() {
             <img src='/logo.png' alt="Meta" />
           </div>
         </div>
+      </section>
 
         <div className="w-full flex flex-col md:flex-row items-center justify-center bg-primary dark:bg-dprimary shadow hover:shadow-lg p-24">
           <div className="md:w-1/2 text-center md:text-left">
@@ -66,21 +69,41 @@ export default function About() {
             </p>
           </div>
         </div>
+        <svg width="1916" height="230" viewBox="0 0 1916 230" fill="currentColor" className="w-full h-auto text-primary dark:text-dprimary">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0C640 0 1280 0 1920 0C1920 27.3333 1920 54.6667 1920 82C1812.72 90.3729 1705.37 97.8729 1597.97 104.5C1461.49 112.233 1324.92 115.233 1188.28 113.5C1069.64 109.91 951.016 105.91 832.405 101.5C740.988 98.9498 649.56 97.9498 558.119 98.5C484.895 100.323 411.694 102.989 338.517 106.5C225.638 113.757 112.799 121.59 0 130C0 86.6667 0 43.3333 0 0Z"/>
+      </svg>
         
-        <div className="w-full text-center mt-28">
+        <div className="w-full text-center mt-14">
           <div className="w-full dark:border-li p-16 mx-auto">
-            <h2 className="text-7xl font-bold dark:text-white text-black mb-8">Meet Our Team!</h2>
-            <p className="text-2xl font-bold italic dark:text-dark-text text-[#828282] mb-10">
-              “FutureMD aims to provide teenagers across our community with insights into a future in the medical sector. We see ourselves making a difference by pushing the youth to the best of their abilities to prepare them for the long journey ahead of them.”
-            </p>
-            <a href="/team" className="px-4 py-2 bg-navy text-primary text-lg rounded transition-transform duration-700 transform hover:scale-105 dark:hover:bg-primary hover:bg-navy hover:text-primary dark:hover:text-navy hover:shadow-lg">Meet Our Team</a>
-        
-        <p className="text-center mt-11 text-lg md:text-xl font-semibold dark:text-dark-text text-zinc-700">
-          Interested in joining our team?  <Link href='https://forms.gle/Sa52gmcHybHgnk438' target="_blank" className="dark:text-hov dark:hover:text-primary text-li hover:text-black transition delay-75">Click Here!</Link> 
-        </p>
+            <h2 className="text-7xl font-bold dark:text-white text-black mb-8">Meet Our Executives!</h2>
+            <div className="max-w-5xl mx-auto px-8 justify-center items-center">
+              <HoverEffect items={executives.map((exec: any) => ({ ...exec, role: "" }))} />
+            </div>
+              <Link href='/team'>
+                <button className="px-8 py-4 bg-navy text-primary text-lg rounded transition-transform duration-700 transform hover:scale-105 dark:hover:bg-primary hover:bg-navy hover:text-primary dark:hover:text-navy hover:shadow-lg">Meet Our Team</button>
+              </Link>
           </div>
         </div>
-      </section>
+
+        <div className="w-full flex flex-col md:flex-row items-center justify-center bg-primary dark:bg-dprimary shadow hover:shadow-lg px-24 pt-20">
+          <div id="who-we-are" className="md:flex-1 flex flex-col items-center md:items-start justify-center text-center md:text-left">
+            <h2 className="text-7xl font-bold dark:text-white text-black mb-4">Participate in our <br></br>Events</h2>
+            <p className="text-2xl dark:dark-text text-[#828282] font-bold leading-9">
+              Click the button below to <br></br>learn more about our events!
+            </p>
+          <Link href='/events'>
+                <button className="mt-6 px-8 py-4 bg-navy text-primary text-lg rounded transition-transform duration-700 transform hover:scale-105 dark:hover:bg-primary hover:bg-navy hover:text-primary dark:hover:text-navy hover:shadow-lg">Get Started</button>
+          </Link>
+          </div>
+          <div className="md:w-[30%] mb-4 md:mb-0">
+            <img src='/events/path2med.png' alt="Meta" />
+          </div>
+        </div>
+      <svg width="1916" height="230" viewBox="0 0 1916 230" fill="currentColor" className="w-full h-auto text-primary dark:text-dprimary">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0C640 0 1280 0 1920 0C1920 27.3333 1920 54.6667 1920 82C1812.72 90.3729 1705.37 97.8729 1597.97 104.5C1461.49 112.233 1324.92 115.233 1188.28 113.5C1069.64 109.91 951.016 105.91 832.405 101.5C740.988 98.9498 649.56 97.9498 558.119 98.5C484.895 100.323 411.694 102.989 338.517 106.5C225.638 113.757 112.799 121.59 0 130C0 86.6667 0 43.3333 0 0Z"/>
+      </svg>
+
+
       <Footer />
       <Foot />
     </main>
