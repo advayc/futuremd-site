@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Head from 'next/head'; 
 import { Footer } from '@/components/footer';
-import { Foot } from '@/components/foot';
 import Link from 'next/link';
 import { HoverEffect } from "@/components/ui/card";
 import {executives} from '@/lib/executives';
@@ -54,11 +53,11 @@ export default function About() {
         </div>
       </section>
 
-        <div className="w-full flex flex-col md:flex-row items-center justify-center bg-primary dark:bg-dprimary shadow hover:shadow-lg p-24">
+        <div id="our-mission" className="w-full flex flex-col md:flex-row items-center justify-center bg-primary dark:bg-dprimary shadow hover:shadow-lg p-24">
           <div className="md:w-1/2 text-center md:text-left">
             <h2 className="text-7xl font-bold dark:text-white text-black mb-4">Our Mission is to empower youth</h2>
           </div>
-          <div id="our-mission" className="md:w-1/2 text-center md:text-left">
+          <div  className="md:w-1/2 text-center md:text-left">
             <p className="ml-0 md:ml-12 text-xl dark:text-dark-text text-navy font-bold leading-9">
               We strive to provide the youth with the necessary knowledge for the journey
               ahead of them, ranging from tuition fees, to challenges & obstacles in and
@@ -73,7 +72,7 @@ export default function About() {
       <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0C640 0 1280 0 1920 0C1920 27.3333 1920 54.6667 1920 82C1812.72 90.3729 1705.37 97.8729 1597.97 104.5C1461.49 112.233 1324.92 115.233 1188.28 113.5C1069.64 109.91 951.016 105.91 832.405 101.5C740.988 98.9498 649.56 97.9498 558.119 98.5C484.895 100.323 411.694 102.989 338.517 106.5C225.638 113.757 112.799 121.59 0 130C0 86.6667 0 43.3333 0 0Z"/>
       </svg>
         
-        <div className="w-full text-center mt-14">
+        <div id="our-executives" className="w-full text-center ">
           <div className="w-full dark:border-li p-16 mx-auto">
             <h2 className="text-7xl font-bold dark:text-white text-black mb-8">Meet Our Executives!</h2>
             <div className="max-w-5xl mx-auto px-8 justify-center items-center">
@@ -85,10 +84,13 @@ export default function About() {
           </div>
         </div>
 
-        <div className="w-full flex flex-col md:flex-row items-center justify-center bg-primary dark:bg-dprimary shadow hover:shadow-lg px-24 pt-20">
+      <svg width="1916" height="230" viewBox="0 0 1916 230" fill="currentColor" className="rotate-180 w-full h-auto text-primary dark:text-dprimary -mt-16">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0C640 0 1280 0 1920 0C1920 27.3333 1920 54.6667 1920 82C1812.72 90.3729 1705.37 97.8729 1597.97 104.5C1461.49 112.233 1324.92 115.233 1188.28 113.5C1069.64 109.91 951.016 105.91 832.405 101.5C740.988 98.9498 649.56 97.9498 558.119 98.5C484.895 100.323 411.694 102.989 338.517 106.5C225.638 113.757 112.799 121.59 0 130C0 86.6667 0 43.3333 0 0Z"/>
+      </svg>
+        <div className="w-full flex flex-col md:flex-row items-center justify-center bg-primary dark:bg-dprimary shadow hover:shadow-lg px-24 pt-10 pb-28">
           <div id="who-we-are" className="md:flex-1 flex flex-col items-center md:items-start justify-center text-center md:text-left">
-            <h2 className="text-7xl font-bold dark:text-white text-black mb-4">Participate in our <br></br>Events</h2>
-            <p className="text-2xl dark:dark-text text-[#828282] font-bold leading-9">
+            <h2 className="text-7xl font-bold dark:text-white text-black ">Participate in our <br></br>Events</h2>
+            <p className="text-2xl dark:dark-text text-[#828282] font-bold leading-9 mt-8">
               Click the button below to <br></br>learn more about our events!
             </p>
           <Link href='/events'>
@@ -97,15 +99,10 @@ export default function About() {
           </div>
           <div className="md:w-[30%] mb-4 md:mb-0">
             <img src='/events/path2med.png' alt="Meta" />
-          </div>
         </div>
-      <svg width="1916" height="230" viewBox="0 0 1916 230" fill="currentColor" className="w-full h-auto text-primary dark:text-dprimary">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0C640 0 1280 0 1920 0C1920 27.3333 1920 54.6667 1920 82C1812.72 90.3729 1705.37 97.8729 1597.97 104.5C1461.49 112.233 1324.92 115.233 1188.28 113.5C1069.64 109.91 951.016 105.91 832.405 101.5C740.988 98.9498 649.56 97.9498 558.119 98.5C484.895 100.323 411.694 102.989 338.517 106.5C225.638 113.757 112.799 121.59 0 130C0 86.6667 0 43.3333 0 0Z"/>
-      </svg>
-
+    </div>
 
       <Footer />
-      <Foot />
     </main>
   );
 }

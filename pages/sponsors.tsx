@@ -6,7 +6,6 @@ import Head from 'next/head';
 import { sponsors } from '@/lib/sponsors';
 import { affiliates } from '@/lib/affiliates';
 import { Footer } from '@/components/footer';
-import { Foot } from '@/components/foot';
 import Link from 'next/link';
 
 const inter = Inter({ subsets: ["latin"] });
@@ -47,8 +46,8 @@ export default function About() {
       <Head><title>FutureMD - Sponsors</title></Head>
       <Navbar />
       <header className="pt-4 pd-3 px-4 w-full max-w-9xl">
-        <h1 className="text-4xl md:text-6xl font-bold my-8 mb-4 text-center dark:text-white text-black"> Our Sponsors</h1>
-        <p className="text-center mb-7 text-lg md:text-2xl font-semibold dark:text-dark-text text-[#828282]">
+        <h1 className="text-4xl md:text-7xl font-bold my-8 mb-4 text-center dark:text-white text-black"> Our Sponsors</h1>
+        <p className="text-center mb-8 text-lg md:text-2xl font-semibold dark:text-dark-text text-[#828282]">
           Thank You to our AMAZING Sponsors! ❤️
         </p>
       </header>
@@ -66,24 +65,24 @@ export default function About() {
           </div>
         ))}
       </section>
-      <p className="text-center mt-10 text-lg md:text-xl font-semibold dark:text-dark-text text-zinc-700">
+      <p className="text-center mt-10 text-lg md:text-xl font-semibold dark:text-dark-text text-zinc-700 mb-36">
         Interested in sponsoring us? <Link href='/sponsorship' className="dark:text-hov dark:hover:text-primary text-li hover:text-black transition delay-75">Click Here!</Link>
       </p>
-      <h1 className="text-4xl md:text-6xl font-bold my-8 mb-4 text-center dark:text-white text-black"> Our Affiliates</h1>
-      <section className="flex flex-wrap justify-center">
+      <h1 className="text-4xl md:text-7xl font-bold my-8 mb-8 text-center dark:text-white text-black"> Our Affiliates</h1>
+      <section className="flex flex-wrap justify-center pb-12">
         {affiliates.map((affiliate, index) => (
           <div key={index} className="rounded-2xl m-4 p-4 overflow-hidden dark:bg-black border border-zinc-300 dark:border-zinc-800 hover:border-slate-400 dark:hover:border-slate-600 relative z-20 flex flex-col items-center justify-center text-center">
             <a href={affiliate.link} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center">
               <img src={affiliate.logo} alt={affiliate.name} width={affiliate.width} height={affiliate.height} className="mx-auto" />
-              <p className="flex items-center justify-center mt-4 text-lg md:text-2xl font-semibold dark:text-white text-black">
+              <p className="flex items-center justify-center mt-4 text-lg md:text-2xl font-semibold dark:text-white text-black text-center">
                 {affiliate.name}
+                {affiliate.subName && <><br />{affiliate.subName}</>}
               </p>
             </a>
           </div>
         ))}
       </section>
       <Footer />
-      <Foot />
     </main>
   );
 }

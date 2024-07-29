@@ -6,9 +6,7 @@ import { Inter } from "next/font/google";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Head from 'next/head'; 
-import {Footer} from '@/components/footer';
-import { Foot } from '@/components/foot';
-
+import { Footer } from '@/components/footer';
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Contact() {
@@ -39,20 +37,19 @@ export default function Contact() {
           If you have a question or business inquiry, <br />feel free to contact us here to get a quick response!
         </p>
         <ContactForm />
-        <div className="flex flex-col items-center mt-6">
+        <div className="flex flex-col items-center mt-8 mb-8">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 dark:text-white text-black">Connect With Us</h2>
           <div className="flex space-x-4">
             <a href="https://www.instagram.com/futuremd_team/" target="_blank" rel="noopener noreferrer">
-              <FaInstagram size={32} className="text-hov hover:text-primary transition-all duration-300" />
+              <FaInstagram size={32} className="dark:text-hov dark:hover:text-primary text-li hover:text-navy transition-all duration-300" />
             </a>
             <a href="https://www.linkedin.com/company/futuremdteam/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin size={32} className="text-hov hover:text-primary transition-all duration-300" />
+              <FaLinkedin size={32} className="dark:text-hov dark:hover:text-primary text-li hover:text-navy transition-all duration-300" />
             </a>
           </div>
         </div>
       </div>
       <Footer />
-      <Foot />
     </main>
   );
 }
