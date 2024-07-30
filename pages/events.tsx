@@ -47,7 +47,7 @@ export default function Events() {
           Interested in learning more about our next event?  <Link href='/first' className="dark:text-hov dark:hover:text-primary text-li hover:text-navy transition delay-75">Click Here!</Link> 
         </p>
 
-        <div className="flex justify-start">
+        <div className="flex justify-start mb-20">
           <a href='/path2med'>
           <Card className="bg-transparent dark:bg-dprimary border border-zinc-300 hover:border-zinc-400 dark:border-transparent dark:hover:border-zinc-300 dark:hover:border-zinc-800 transition-colors duration-300 max-w-md mx-4 rounded-lg p-2 mt-6">
             <CardHeader className="pb-0 pt-4 px-4 flex-col items-start text-center dark:text-white text-black">

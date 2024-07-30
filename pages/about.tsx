@@ -55,7 +55,7 @@ export default function About() {
 
         <div id="our-mission" className="w-full flex flex-col md:flex-row items-center justify-center bg-primary dark:bg-dprimary shadow hover:shadow-lg p-24">
           <div className="md:w-1/2 text-center md:text-left">
-            <h2 className="text-7xl font-bold dark:text-white text-black mb-4">Our Mission is to empower youth</h2>
+            <h2 className="text-7xl font-bold dark:text-white text-black mb-4">Our Mission is to <span className="dark:text-hov text-li">empower</span> youth</h2>
           </div>
           <div  className="md:w-1/2 text-center md:text-left">
             <p className="ml-0 md:ml-12 text-xl dark:text-dark-text text-navy font-bold leading-9">
