@@ -121,8 +121,10 @@ export default function Home() {
           </div>
           <div className="text-lg sm:text-xl md:text-2xl text-center md:text-left max-w-2xl text-[#828282] font-bold md:w-1/2">
             <p>
-              Our vision is to inspire the next generation of medical professionals by providing engaging and educational experiences that demystify the path to a career in medicine. Through workshops, events, and learning opportunities, we aim to empower students with the knowledge and resources they need to succeed in their future medical careers.
+            “FutureMD aims to provide teenagers across our community with insights into a future in the medical sector. We see ourselves making a difference by pushing the youth to the best of their abilities to prepare them for the long journey ahead of them.” <br />
             </p>
+            <p className="font-bold dark:text-hov text-navy mt-2">- Bobby | Founder</p>
+
           </div>
         </div>
       </div>
