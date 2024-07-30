@@ -67,3 +67,14 @@
   animation: fadeInUp 1.0s ease-out forwards; 
 }
 
+.f2 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out; 
+}
+
+.f2.visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeInUp 1.5s ease-out forwards; 
+}
