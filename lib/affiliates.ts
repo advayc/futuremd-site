@@ -12,7 +12,7 @@ export const affiliates = [
     subName: "Shawarma",
     logo: "/affiliates/lezzets.png",
     link: "https://lezzetshawarma.com/",
-    width: 250,
-    height: 250,
+    width: 225,
+    height: 225,
   },
 ];
