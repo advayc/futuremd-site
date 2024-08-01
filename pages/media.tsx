@@ -43,7 +43,7 @@ export default function Media() {
   return (
     <main className={`min-h-screen flex flex-col items-center pt-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
       <Head><title>FutureMD - Media</title></Head>
-      <Navbar />
+      <Navbar showAnimation={false} />
       <header className="pt-4 px-4 w-full max-w-9xl">
         <h1 className="text-4xl md:text-6xl font-bold my-8 mb-4 text-center dark:text-white text-black"> Our Media</h1>
         <p className="text-center text-lg md:text-2xl font-semibold dark:text-dark-text text-[#828282]">

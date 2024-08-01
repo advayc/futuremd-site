@@ -30,7 +30,7 @@ export default function FirstEvent() {
   return (
     <main className={`min-h-screen pt-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700 flex flex-col items-center`}>
       <Head><title>FutureMD - First Event</title></Head>
-      <Navbar />
+      <Navbar showAnimation={false} />
       <header className="pt-4 px-4 w-full max-w-5xl text-center">
         <h1 className="text-4xl md:text-6xl font-bold my-8 mb-4 dark:text-white text-black">Path2Med</h1>
         <p className="text-lg md:text-2xl font-semibold dark:text-dark-text text-zinc-600">Join us for an exciting event!</p>

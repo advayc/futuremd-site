@@ -44,7 +44,7 @@ export default function About() {
   return (
     <main className={`min-h-screen items-center justify-between pt-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
       <Head><title>FutureMD - Sponsors</title></Head>
-      <Navbar />
+      <Navbar showAnimation={false} />
       <header className="pt-4 pd-3 px-4 w-full max-w-9xl">
         <h1 className="text-4xl md:text-7xl font-bold my-8 mb-4 text-center dark:text-white text-black"> Our Sponsors</h1>
         <p className="text-center mb-8 text-lg md:text-2xl font-semibold dark:text-dark-text text-[#828282]">

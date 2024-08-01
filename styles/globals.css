@@ -78,3 +78,23 @@
   transform: translateY(0);
   animation: fadeInUp 1.5s ease-out forwards; 
 }
+
+.hover-border::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #3C55B7;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -31px; 
+  left: 0;
+}
+
+.dark .hover-border::after {
+  background: #5C9CFF;
+}
+
+.hover-border:hover::after {
+  width: 100%;
+}

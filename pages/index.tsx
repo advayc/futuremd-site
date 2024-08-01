@@ -60,7 +60,7 @@ export default function Home() {
   return (
     <main className={`flex flex-col items-center justify-center pt-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
       <Head><title>FutureMD</title></Head>
-      <Navbar />
+      <Navbar showAnimation={true} />
       <div ref={(el) => { if (el) fadeRefs.current[0] = el; }} className="f2 mt-16 flex-grow flex flex-col items-center justify-center text-center px-4 md:px-8 w-full h-[calc(100vh-9rem)]">
         <h1 className="font-black dark:text-hov text-[#3C55B7] text-6xl sm:text-7xl md:text-8xl">
           FutureMD{" "}

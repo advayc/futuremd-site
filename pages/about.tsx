@@ -31,7 +31,7 @@ export default function About() {
   return (
     <main className={`min-h-screen flex flex-col pt-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
       <Head><title>FutureMD - About</title></Head>
-      <Navbar />
+      <Navbar showAnimation={false} />
       <header className="pt-4 pd-3 px-4 w-full max-w-9xl">
         <h1 className="text-7xl font-bold mt-8 text-center dark:text-white text-black">💬 About Us</h1>
       </header>
