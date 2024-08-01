@@ -37,7 +37,7 @@ export default function Contact() {
           If you have a question or business inquiry, <br />feel free to contact us here to get a quick response!
         </p>
         <ContactForm />
-        <div className="flex flex-col items-center mt-8 mb-8">
+        <div className="flex flex-col items-center my-10 mb-18 ">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 dark:text-white text-black">Connect With Us</h2>
           <div className="flex space-x-4">
             <a href="https://www.instagram.com/futuremd_team/" target="_blank" rel="noopener noreferrer">
