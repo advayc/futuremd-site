@@ -89,7 +89,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center mb-4 transition-transform duration-300 transform hover:scale-105">
             <div className="w-64 h-40 overflow-hidden">
-              <img src="public/guest speakers.jpg" alt="Guest Speakers" className="object-cover w-full h-full" />
+              <img src="/guestspeakers.png" alt="Guest Speakers" className="object-cover w-full h-full" />
             </div>
             <p className="text-lg font-bold rounded-b-3xl text-white bg-li dark:bg-navy w-64 h-32 px-4 py-2 hover:drop-shadow-2xl">2. Activities</p>
           </div>
