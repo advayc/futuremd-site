@@ -142,7 +142,7 @@ export default function Home() {
             </p>
             <a href="/about" className="px-4 py-2 bg-navy text-primary text-lg rounded transition-transform duration-700 transform hover:scale-105 dark:hover:bg-primary hover:bg-navy hover:text-primary dark:hover:text-navy hover:shadow-lg">Learn More</a>
           </div>
-          <img src="/logo.png" alt="FutureMD Logo" className="w-[50%] md:w-[35%] mt-8 md:mt-0" />
+          <img src="/logo.png" alt="FutureMD Logo" className="w-[50%] md:w-[30%] mt-8 md:mt-0" />
         </div>
       </div>
 

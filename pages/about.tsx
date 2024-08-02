@@ -76,10 +76,10 @@ export default function About() {
       <div id="our-executives" className="w-full text-center">
         <div className="w-full dark:border-li p-8 sm:p-16 mx-auto">
           <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold dark:text-white text-black mb-8">Meet Our Executives!</h2>
-          <div className="max-w-5xl mx-auto px-4 sm:px-8 justify-center items-center">
+          <div className="max-w-5xl mx-auto px-4 sm:px-8 justify-center text-left">
             <HoverEffect items={executives.map((exec: any) => ({ ...exec, role: "" }))} />
           </div>
-          <Link href='/team'>
+          <Link href='/team' className='justify-center'>
             <button className="mt-6 px-8 py-4 bg-navy text-primary text-lg rounded transition-transform duration-700 transform hover:scale-105 dark:hover:bg-primary hover:bg-navy hover:text-primary dark:hover:text-navy hover:shadow-lg">Meet Our Team</button>
           </Link>
         </div>
@@ -91,7 +91,7 @@ export default function About() {
 
       <div className="w-full flex flex-col md:flex-row items-center justify-center bg-primary dark:bg-dprimary shadow hover:shadow-lg px-8 sm:px-16 md:px-24 pt-10 pb-12 md:pb-28">
         <div id="who-we-are" className="md:flex-1 flex flex-col items-center md:items-start justify-center text-center md:text-left">
-          <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold dark:text-white text-black">Join Us At Our Events</h2>
+          <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold dark:text-white text-black">Join Us At Our <br className="hidden md:block" /> Events</h2>
           <p className="text-lg sm:text-xl md:text-2xl dark:dark-text text-[#828282] font-bold leading-9 mt-8 ">
             Click the button below to <br className="hidden md:block" /> learn more about our events!
           </p>
