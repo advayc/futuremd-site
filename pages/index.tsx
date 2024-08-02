@@ -85,7 +85,7 @@ export default function Home() {
             <div className="w-64 h-40 overflow-hidden">
               <img src="/placeholder.png" alt="Activities" className="object-cover w-full h-full" />
             </div>
-            <p className="text-lg font-bold rounded-b-3xl text-white bg-li dark:bg-navy w-64 h-32 px-4 py-2 hover:drop-shadow-2xl">1. Host workshops</p>
+            <p className="text-lg font-bold rounded-b-3xl text-white bg-li dark:bg-navy w-64 h-32 px-4 py-2 hover:drop-shadow-2xl">1. Activities</p>
           </div>
           <div className="flex flex-col items-center mb-4 transition-transform duration-300 transform hover:scale-105">
             <div className="w-64 h-40 overflow-hidden">
