@@ -88,7 +88,7 @@
   transition: width 0.3s;
   position: absolute;
   bottom: -31px; 
-  left: 0;
+  left: -15%;
 }
 
 .dark .hover-border::after {
@@ -96,7 +96,7 @@
 }
 
 .hover-border:hover::after {
-  width: 100%;
+  width: 130%;
 }
 
 @media (max-width: 747px) {

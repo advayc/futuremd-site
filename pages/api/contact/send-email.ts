@@ -15,8 +15,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         });
 
         await transporter.sendMail({
-            from: 'contact.futuremd@gmail.com',
-            to: 'contact.futuremd@gmail.com',
+            from: process.env.EMAIL,
+            to: process.env.EMAIL,
             subject:subject,
             text: `${name}\n${email}\n${message} \nSent By Contact Form `
         });

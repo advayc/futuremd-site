@@ -74,32 +74,32 @@ export default function Home() {
         </button>
       </div>
 
-    <div ref={(el) => { if (el) fadeRefs.current[1] = el; }} className="fade-in">
-      <div className=" w-full flex flex-col items-center dark:bg-dprimary bg-primary pt-16 pb-12" id="what-does">
+          <div ref={(el) => { if (el) fadeRefs.current[1] = el; }} className="fade-in">
+      <div className="w-full flex flex-col items-center dark:bg-dprimary bg-primary pt-16 pb-12" id="what-does">
         <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 dark:text-white">What FutureMD Does.</h2>
         <p className="mb-12 px-4 text-lg sm:text-xl md:text-2xl text-center max-w-2xl text-[#828282] font-bold">
           At FutureMD, we focus on four main aspects to educate students about medlife.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 w-full px-4 md:px-48">
-          <div className="flex flex-col items-center mb-4">
+          <div className="flex flex-col items-center mb-4 transition-transform duration-300 transform hover:scale-105">
             <div className="w-64 h-40 overflow-hidden">
               <img src="/placeholder.png" alt="Workshops" className="object-cover w-full h-full" />
             </div>
             <p className="text-lg font-bold rounded-b-3xl text-white bg-li dark:bg-navy w-64 h-32 px-4 py-2 hover:drop-shadow-2xl">1. Host workshops</p>
           </div>
-          <div className="flex flex-col items-center mb-4">
+          <div className="flex flex-col items-center mb-4 transition-transform duration-300 transform hover:scale-105">
             <div className="w-64 h-40 overflow-hidden">
               <img src="/placeholder.png" alt="Activities" className="object-cover w-full h-full" />
             </div>
             <p className="text-lg font-bold rounded-b-3xl text-white bg-li dark:bg-navy w-64 h-32 px-4 py-2 hover:drop-shadow-2xl">2. Activities</p>
           </div>
-          <div className="flex flex-col items-center mb-4">
+          <div className="flex flex-col items-center mb-4 transition-transform duration-300 transform hover:scale-105">
             <div className="w-64 h-40 overflow-hidden">
               <img src="/events/path2med.png" alt="Events & Conferences" className="object-cover w-full h-full" />
             </div>
             <a className="text-lg font-bold rounded-b-3xl text-white bg-li dark:bg-navy w-64 h-32 px-4 py-2 hover:drop-shadow-2xl" href="/events">3. Events & Conferences</a>
           </div>
-          <div className="flex flex-col items-center mb-4">
+          <div className="flex flex-col items-center mb-4 transition-transform duration-300 transform hover:scale-105">
             <div className="w-64 h-40 overflow-hidden">
               <a href="https://www.instagram.com/p/C9YGo8gheCm/?img_index=1" target="_blank">
                 <img src="/instagram/1.jpg" alt="Fairs & Fests" className="object-cover w-full h-full" />
