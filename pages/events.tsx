@@ -39,11 +39,11 @@ export default function Events() {
         </p>
       </header>
       
-      <section className="px-4 max-w-9xl mx-auto ml-20 mt-20">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 dark:text-white text-black">
+      <section className="px-4 max-w-9xl mx-auto md:ml-20 md:mt-20 mt-10">
+        <h1 className="text-center md:text-left text-3xl md:text-5xl font-bold mb-6 dark:text-white text-black">
           Upcoming Events!
         </h1>
-        <p className="text-lg md:text-xl font-semibold dark:text-dark-text text-[#828282]">
+        <p className="md:text-left text-center text-lg md:text-xl font-semibold dark:text-dark-text text-[#828282]">
           Interested in learning more about our next event?  <Link href='/first' className="dark:text-hov dark:hover:text-primary text-li hover:text-navy transition delay-75">Click Here!</Link> 
         </p>
 

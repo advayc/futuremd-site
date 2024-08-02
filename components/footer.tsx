@@ -3,10 +3,10 @@ export const Footer = () => {
     <footer className="bg-black text-white py-8 w-full">
       <div className="container mx-auto flex flex-col md:flex-row md:justify-between justify-center items-center md:items-start">
         <div className="flex-1 flex items-center justify-center mb-8 md:mb-0">
-          <img src="/logo.png" alt="Logo" className="w-22 md:w-40 h-auto logo pointer mt-10" />
+          <img src="/logo.png" alt="Logo" className="w-20 md:w-40 h-auto logo pointer mt-4 md:mt-10" />
         </div>
         <div className="flex-1 md:ml-20 flex flex-col items-center md:items-start mb-8 md:mb-0 mt-4">
-          <h4 className="font-bold mb-4 text-lg md:text-xl">About</h4>
+          <h4 className="font-bold mb-4 text-lg md:text-xl text-center md:text-left">About</h4>
           <ul className="flex flex-col items-center md:items-start">
             <li className="mb-3 md:mb-4">
               <a href="/about" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Who We Are</a>
@@ -23,7 +23,7 @@ export const Footer = () => {
           </ul>
         </div>
         <div className="flex-1 flex flex-col items-center md:items-start mb-8 md:mb-0 mt-4">
-          <h4 className="font-bold mb-4 text-lg md:text-xl">Staff</h4>
+          <h4 className="font-bold mb-4 text-lg md:text-xl text-center md:text-left">Staff</h4>
           <ul className="flex flex-col items-center md:items-start">
             <li className="mb-3 md:mb-4">
               <a href="/team#guests" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Guest Speakers</a>
@@ -40,7 +40,7 @@ export const Footer = () => {
           </ul>
         </div>
         <div className="flex-1 flex flex-col items-center md:items-start mb-8 md:mb-0 mt-4">
-          <h4 className="font-bold mb-4 text-lg md:text-xl">Sponsorships</h4>
+          <h4 className="font-bold mb-4 text-lg md:text-xl text-center md:text-left">Sponsorships</h4>
           <ul className="flex flex-col items-center md:items-start">
             <li className="mb-3 md:mb-4">
               <a href="/sponsors" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Our Sponsors</a>
@@ -54,7 +54,7 @@ export const Footer = () => {
           </ul>
         </div>
         <div className="flex-1 flex flex-col items-center md:items-start mb-8 md:mb-0 mt-4">
-          <h4 className="font-bold mb-4 text-lg md:text-xl">Events</h4>
+          <h4 className="font-bold mb-4 text-lg md:text-xl text-center md:text-left">Events</h4>
           <ul className="flex flex-col items-center md:items-start">
             <li className="mb-3 md:mb-4">
               <a href="/path2med" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Upcoming Event</a>
@@ -68,7 +68,7 @@ export const Footer = () => {
           </ul>
         </div>
         <div className="flex-1 flex flex-col items-center md:items-start mb-8 md:mb-0 mt-4">
-          <h4 className="font-bold mb-4 text-lg md:text-xl">Social Media</h4>
+          <h4 className="font-bold mb-4 text-lg md:text-xl text-center md:text-left">Social Media</h4>
           <ul className="flex flex-col items-center md:items-start">
             <li className="mb-3 md:mb-4">
               <a href="https://www.instagram.com/futuremd_team/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-zinc-300 text-gray-400 font-bold flex items-center">

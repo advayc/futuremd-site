@@ -133,16 +133,16 @@ export default function Home() {
         <path fillRule="evenodd" clipRule="evenodd" d="M0 0C640 0 1280 0 1920 0C1920 27.3333 1920 54.6667 1920 82C1812.72 90.3729 1705.37 97.8729 1597.97 104.5C1461.49 112.233 1324.92 115.233 1188.28 113.5C1069.64 109.91 951.016 105.91 832.405 101.5C740.988 98.9498 649.56 97.9498 558.119 98.5C484.895 100.323 411.694 102.989 338.517 106.5C225.638 113.757 112.799 121.59 0 130C0 86.6667 0 43.3333 0 0Z"/>
       </svg>
       <div className="w-full flex flex-col items-center dark:bg-dprimary bg-primary pt-6 pb-12" id="abt">
-        <div ref={(el) => { if (el) fadeRefs.current[3] = el; }} className="fade-in flex flex-col md:flex-row items-center justify-between">
-          <div className="flex flex-col items-start ">
+        <div ref={(el) => { if (el) fadeRefs.current[3] = el; }} className="fade-in flex flex-col md:flex-row items-center md:justify-between justify-center text-center md:text-left">
+          <div className="flex flex-col items-center md:items-start mb-8 md:mb-0">
             <h2 className="dark:text-white text-4xl sm:text-5xl md:text-7xl font-bold mb-2">About Us</h2>
-            <h3 className="text-lg sm:text-xl md:text-2xl text-navy dark:text-hov mb-4 font-semibold">Learn More About Us...</h3>
-            <p className="text-lg sm:text-xl md:text-2xl mb-8 text-[#6F7782] font-bold leading-9">
+            <h3 className="text-lg md:text-2xl text-navy dark:text-hov mb-4 font-semibold">Learn More About Us...</h3>
+            <p className="text-lg md:text-2xl mb-8 text-[#6F7782] font-bold leading-9">
               "FutureMD aims to provide teenagers across our <br className="hidden md:block" /> community with insights into a future in <br className="hidden md:block" /> the medical sector."
             </p>
             <a href="/about" className="px-4 py-2 bg-navy text-primary text-lg rounded transition-transform duration-700 transform hover:scale-105 dark:hover:bg-primary hover:bg-navy hover:text-primary dark:hover:text-navy hover:shadow-lg">Learn More</a>
           </div>
-          <img src="/logo.png" alt="FutureMD Logo" className="md:w-[35%] mt-8 md:mt-0" />
+          <img src="/logo.png" alt="FutureMD Logo" className="w-[50%] md:w-[35%] mt-8 md:mt-0" />
         </div>
       </div>
 

@@ -98,3 +98,9 @@
 .hover-border:hover::after {
   width: 100%;
 }
+
+@media (max-width: 747px) {
+  .hover-border::after {
+    bottom: -1px;
+  }
+}
