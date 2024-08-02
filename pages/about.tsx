@@ -91,12 +91,12 @@ export default function About() {
 
       <div className="w-full flex flex-col md:flex-row items-center justify-center bg-primary dark:bg-dprimary shadow hover:shadow-lg px-8 sm:px-16 md:px-24 pt-10 pb-12 md:pb-28">
         <div id="who-we-are" className="md:flex-1 flex flex-col items-center md:items-start justify-center text-center md:text-left">
-          <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold dark:text-white text-black">Participate in our <br className="hidden md:block" /> Events</h2>
+          <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold dark:text-white text-black">Join Us At Our <br className="hidden md:block" /> Events</h2>
           <p className="text-lg sm:text-xl md:text-2xl dark:dark-text text-[#828282] font-bold leading-9 mt-8">
             Click the button below to <br className="hidden md:block" /> learn more about our events!
           </p>
           <Link href='/events'>
-            <button className="mt-6 px-8 py-4 bg-navy text-primary text-lg rounded transition-transform duration-700 transform hover:scale-105 dark:hover:bg-primary hover:bg-navy hover:text-primary dark:hover:text-navy hover:shadow-lg">Get Started</button>
+            <button className="mt-6 px-8 py-4 bg-navy text-primary text-lg rounded transition-transform duration-700 transform hover:scale-105 dark:hover:bg-primary hover:bg-navy hover:text-primary dark:hover:text-navy hover:shadow-lg">Learn More</button>
           </Link>
         </div>
         <div className="md:w-[30%] w-2/3 sm:w-1/2 md:w-1/3 mt-8 md:mt-0">
