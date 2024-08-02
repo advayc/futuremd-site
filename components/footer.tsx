@@ -87,7 +87,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="container mx-auto mt-8 border-t-2 border-gray-700 pt-4 text-center">
-        <p className="text-gray-400 font-bold">© 2024 FutureMD Inc. All Rights Reserved</p>
+        <p className="text-gray-400 font-bold">© 2024 <span className="text-hov">FutureMD Inc.</span> All Rights Reserved</p>
       </div>
     </footer>
   );

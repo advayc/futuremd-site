@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
+import Countdown from '@/components/countdown';
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Head from 'next/head';
@@ -42,7 +43,7 @@ export default function FirstEvent() {
         </Link>
       </div>
 
-      <section className="px-4 max-w-5xl mx-auto mt-12 flex flex-col md:flex-row items-center justify-center gap-8">
+      <section className="px-4 max-w-5xl mx-auto mt-12 mb-4 flex flex-col md:flex-row items-center justify-center gap-8">
         <div className="flex flex-col md:w-2/3">
           <p className="flex flex-col text-center items-center text-xl md:text-2xl font-semibold dark:text-white text-black mb-4">
             University of Toronto — Mississauga Library <br></br>William G. Davis Building
@@ -61,8 +62,9 @@ export default function FirstEvent() {
           />
         </div>
       </section>
+      <Countdown />
 
-      <div className="flex flex-col items-center justify-center border-2 border-hov rounded-lg w-3/4 p-8 mt-12">
+      <div className="flex flex-col items-center justify-center border-2 border-hov rounded-lg w-3/4 p-8 mt-12 mb-12">
         <Link href="https://www.google.com/maps/place/3359+Mississauga+Rd,+Mississauga,+ON+L5L+1C6/@43.548151,-79.664585,17z/data=!4m6!3m5!1s0x882b43e2d0378c49:0xa2cefb17886b6fb3!8m2!3d43.5496084!4d-79.6620515!16s%2Fg%2F11gjs7tlhb?hl=en&entry=ttu" target="_blank"
         className="flex flex-col text-center items-center text-m md:text-m font-bold dark:hover:text-primary text-[#828282] hover:text-black dark:transition delay-75 transition delay-75 mb-4">
           University of Toronto Mississauga Library <br></br>1867 Inner Cir Rd, Mississauga, ON L5L 1C6
