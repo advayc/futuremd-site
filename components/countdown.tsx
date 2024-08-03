@@ -7,24 +7,28 @@ const SECOND = 1000;
 const MINUTE = SECOND * 60;
 const HOUR = MINUTE * 60;
 const DAY = HOUR * 24;
+const MONTH = DAY * 30; // Approximation, can vary based on the actual month
 
-type Units = "Day" | "Hour" | "Minute" | "Second";
+type Units = "Month" | "Day" | "Hour" | "Minute" | "Second";
 
 const Countdown = () => {
+  const { month, day, hour, minute, second } = useTimeLeft();
+
   return (
     <div className="p-4">
-      <div className="mx-auto flex w-full max-w-5xl items-center">
-        <CountdownItem unit="Day" text="days" />
-        <CountdownItem unit="Hour" text="hours" />
-        <CountdownItem unit="Minute" text="minutes" />
-        <CountdownItem unit="Second" text="seconds" />
+      <div className="mx-auto flex w-full max-w-5xl items-center justify-center">
+        {month > 0 && <CountdownItem unit="Month" text="months" time={month} />}
+        {day > 0 && <CountdownItem unit="Day" text="days" time={day} />}
+        {hour > 0 && <CountdownItem unit="Hour" text="hours" time={hour} />}
+        {minute > 0 && <CountdownItem unit="Minute" text="minutes" time={minute} />}
+        {second > 0 && <CountdownItem unit="Second" text="seconds" time={second} />}
       </div>
     </div>
   );
 };
 
-const CountdownItem = ({ unit, text }: { unit: Units; text: string }) => {
-  const { ref, time } = useTimer(unit);
+const CountdownItem = ({ unit, text, time }: { unit: Units; text: string; time: number }) => {
+  const ref = useRef<HTMLSpanElement | null>(null);
 
   return (
     <div className="mt-10 flex h-24 w-screen flex-col items-center justify-center gap-1 font-mono md:h-36 md:gap-2">
@@ -45,56 +49,31 @@ const CountdownItem = ({ unit, text }: { unit: Units; text: string }) => {
 
 export default Countdown;
 
-const useTimer = (unit: Units) => {
-  const [ref, animate] = useAnimate();
-
-  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
-  const timeRef = useRef(0);
-
-  const [time, setTime] = useState(0);
+const useTimeLeft = () => {
+  const [month, setMonth] = useState(0);
+  const [day, setDay] = useState(0);
+  const [hour, setHour] = useState(0);
+  const [minute, setMinute] = useState(0);
+  const [second, setSecond] = useState(0);
 
   useEffect(() => {
-    intervalRef.current = setInterval(handleCountdown, 1000);
+    const interval = setInterval(updateTimeLeft, 1000);
+    updateTimeLeft(); // Initial call to set the state immediately
 
-    return () => clearInterval(intervalRef.current || undefined);
+    return () => clearInterval(interval);
   }, []);
 
-  const handleCountdown = async () => {
+  const updateTimeLeft = () => {
     const end = new Date(COUNTDOWN_FROM);
     const now = new Date();
     const distance = +end - +now;
 
-    let newTime = 0;
-
-    if (unit === "Day") {
-      newTime = Math.floor(distance / DAY);
-    } else if (unit === "Hour") {
-      newTime = Math.floor((distance % DAY) / HOUR);
-    } else if (unit === "Minute") {
-      newTime = Math.floor((distance % HOUR) / MINUTE);
-    } else {
-      newTime = Math.floor((distance % MINUTE) / SECOND);
-    }
-
-    if (newTime !== timeRef.current) {
-      // Exit animation
-      await animate(
-        ref.current,
-        { y: ["0%", "-50%"], opacity: [1, 0] },
-        { duration: 0.35 }
-      );
-
-      timeRef.current = newTime;
-      setTime(newTime);
-
-      // Enter animation
-      await animate(
-        ref.current,
-        { y: ["50%", "0%"], opacity: [0, 1] },
-        { duration: 0.35 }
-      );
-    }
+    setMonth(Math.floor(distance / MONTH));
+    setDay(Math.floor((distance % MONTH) / DAY));
+    setHour(Math.floor((distance % DAY) / HOUR));
+    setMinute(Math.floor((distance % HOUR) / MINUTE));
+    setSecond(Math.floor((distance % MINUTE) / SECOND));
   };
 
-  return { ref, time };
+  return { month, day, hour, minute, second };
 };
