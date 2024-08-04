@@ -81,7 +81,7 @@ export const Footer = () => {
               </a>
             </li>
             <li className="mb-3 md:mb-4">
-              <a href="https://drive.google.com/file/d/1QUwNXL1F7SsAGPjEYMj1CDAMI8GCwY2C/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-zinc-300 text-gray-400 font-bold flex items-center">
+              <a href="https://drive.google.com/file/d/1r1MTa6lIJULSTH3Olx_KWIpPMYKJ_qU5/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-zinc-300 text-gray-400 font-bold flex items-center">
                 Privacy Policy
               </a>
             </li>
