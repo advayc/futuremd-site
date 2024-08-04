@@ -68,7 +68,7 @@ export const Footer = () => {
           </ul>
         </div>
         <div className="flex-1 flex flex-col items-center md:items-start mb-8 md:mb-0 mt-4">
-          <h4 className="font-bold mb-4 text-lg md:text-xl text-center md:text-left">Social Media</h4>
+          <h4 className="font-bold mb-4 text-lg md:text-xl text-center md:text-left">Miscellaneous</h4>
           <ul className="flex flex-col items-center md:items-start">
             <li className="mb-3 md:mb-4">
               <a href="https://www.instagram.com/futuremd_team/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-zinc-300 text-gray-400 font-bold flex items-center">
@@ -80,6 +80,16 @@ export const Footer = () => {
                 Linkedin
               </a>
             </li>
+            <li className="mb-3 md:mb-4">
+              <a href="https://drive.google.com/file/d/1QUwNXL1F7SsAGPjEYMj1CDAMI8GCwY2C/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-zinc-300 text-gray-400 font-bold flex items-center">
+                Privacy Policy
+              </a>
+            </li>
+            <li className="mb-3 md:mb-4">
+              <a href="https://drive.google.com/file/d/1iD6CSOjYTxRTaWGE1H1ceT7LEJVX5cHz/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-zinc-300 text-gray-400 font-bold flex items-center">
+                Event TOS
+              </a>
+            </li>            
             <li className="mb-3 md:mb-4">
               <p className="text-transparent text-[1px]">.</p>
             </li>
