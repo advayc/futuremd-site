@@ -40,7 +40,7 @@ const Privacy: React.FC = () => {
           </p>
           <div className="pt-4 pd-3 px-4 max-w-9xl text-center mt-8">
             <h2 className="text-4xl font-bold mb-9 dark:text-white text-black">Read Our 
-                <a href="/FutureMD Privacy Policy.pdf" target="_blank" className="hover:text-li transition delay-100 dark:hover:text-hov"> Privacy Policy Document</a></h2>
+                <a href="https://drive.google.com/file/d/1r1MTa6lIJULSTH3Olx_KWIpPMYKJ_qU5/view?usp=drive_link" target="_blank" className="hover:text-li transition delay-100 dark:hover:text-hov"> Privacy Policy Document</a></h2>
             <div className="flex justify-center">
               <embed src="/FINAL Privacy Policy.pdf" type="application/pdf" className="w-full md:w-2/3 lg:w-1/2 h-[600px] md:h-[800px]" />
             </div>
