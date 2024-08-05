@@ -10,6 +10,7 @@ export const roles = [
         - Identifying solutions to aid in the growth of the organization
       `,
       status: "available",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdo8eoo_NioyPQz51PywcgUrQ4fCO9LBHWzUVbU-lHeGrfAvw/viewform"
     },
     {
       title: "Outreach",
@@ -21,6 +22,7 @@ export const roles = [
         - Board certified specialists
       `,
       status: "available",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdo8eoo_NioyPQz51PywcgUrQ4fCO9LBHWzUVbU-lHeGrfAvw/viewform"
     },
     {
       title: "Event Logistics",
@@ -32,6 +34,7 @@ export const roles = [
         - Securing Merchandise for Staff & Attendees
       `,
       status: "available",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdo8eoo_NioyPQz51PywcgUrQ4fCO9LBHWzUVbU-lHeGrfAvw/viewform"
     },
     {
       title: "Design",
@@ -43,6 +46,7 @@ export const roles = [
         - Work alongside Event Coordinators to design activities if required
       `,
       status: "unavailable",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdo8eoo_NioyPQz51PywcgUrQ4fCO9LBHWzUVbU-lHeGrfAvw/viewform"
     },
     {
       title: "Finance",
@@ -54,6 +58,7 @@ export const roles = [
         - Tracking all our purchases
       `,
       status: "available",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdo8eoo_NioyPQz51PywcgUrQ4fCO9LBHWzUVbU-lHeGrfAvw/viewform"
     },
     {
       title: "Event Volunteer",
@@ -64,6 +69,6 @@ export const roles = [
         - Taking professional photos for our gallery and social media
       `,
       status: "available",
+      link: "https://prettyform.addxt.com/a/form/?vf=1FAIpQLScBhRPUTpRtPBeFItiRRHsP_-kUZbKmkppOw3JtZ3WjD1CeTQ"
     }
   ];
-  
