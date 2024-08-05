@@ -72,27 +72,23 @@ export const Footer = () => {
           </ul>
         </div>
         <div className="flex-1 flex flex-col items-center md:items-start mb-8 md:mb-0 mt-4">
-
           <h4 className="font-bold mb-4 text-lg md:text-xl text-center md:text-left">Miscellaneous</h4>
           <ul className="flex flex-col items-center md:items-start">
             <li className="mb-3 md:mb-4">
-              <a href="https://www.instagram.com/futuremd_team/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-zinc-300 text-gray-400 font-bold flex items-center">
-                Instagram
-              </a>
+              <a href="/https://www.instagram.com/futuremd_team/" target="_blank" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Instagram</a>
             </li>
             <li className="mb-3 md:mb-4">
-              <a href="https://www.linkedin.com/company/futuremdteam/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-zinc-300 text-gray-400 font-bold flex items-center">
-                Linkedin
-              </a>
+              <a href="/https://www.linkedin.com/company/futuremdteam/" target="_blank" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Linkedin</a>
             </li>
             <li className="mb-3 md:mb-4">
               <a href="/privacy-policy" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Privacy Policy</a>
             </li>
             <li className="mb-3 md:mb-4">
-              <a href="/terms-and-conditions" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Event TOS</a>
-            </li>           
+              <a href="/terms-and-conditions" target="_blank" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Event TOS</a>
+            </li>
           </ul>
         </div>
+
       </div>
       <div className="container mx-auto mt-8 border-t-2 border-gray-700 pt-4 text-center">
         <p className="text-gray-400 font-bold">© 2024 <span className="text-hov">FutureMD Inc.</span> All Rights Reserved</p>
