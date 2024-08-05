@@ -1,4 +1,3 @@
-import { useAnimate } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
 const COUNTDOWN_FROM = "2024-11-23";
@@ -16,7 +15,7 @@ const Countdown = () => {
 
   return (
     <div className="p-4">
-      <div className="mx-auto flex w-full max-w-5xl items-center justify-center">
+      <div className="mx-auto flex flex-wrap w-full max-w-5xl items-center justify-center">
         {month > 0 && <CountdownItem unit="Month" text="months" time={month} />}
         {day > 0 && <CountdownItem unit="Day" text="days" time={day} />}
         {hour > 0 && <CountdownItem unit="Hour" text="hours" time={hour} />}
@@ -31,7 +30,7 @@ const CountdownItem = ({ unit, text, time }: { unit: Units; text: string; time: 
   const ref = useRef<HTMLSpanElement | null>(null);
 
   return (
-    <div className="mt-10 flex h-24 w-screen flex-col items-center justify-center gap-1 font-mono md:h-36 md:gap-2">
+    <div className="mt-10 flex flex-col items-center justify-center gap-1 w-1/2 md:w-1/4 lg:w-1/6 font-mono md:h-36 md:gap-2">
       <div className="relative w-full overflow-hidden text-center">
         <span
           ref={ref}
