@@ -42,7 +42,12 @@ const Terms: React.FC = () => {
             <h2 className="text-4xl font-bold mb-9 dark:text-white text-black">Read Our 
                 <a href="https://drive.google.com/file/d/1iD6CSOjYTxRTaWGE1H1ceT7LEJVX5cHz/view?usp=sharing" target="_blank" className="hover:text-li transition delay-100 dark:hover:text-hov"> Terms & Conditions</a></h2>
             <div className="flex justify-center">
-              <embed src="/FINAL Terms & Conditions.pdf" type="application/pdf" className="w-full md:w-2/3 lg:w-1/2 h-[600px] md:h-[800px]" />
+            <iframe
+              width="640"
+              height="480"
+              src="https://drive.google.com/file/d/1iD6CSOjYTxRTaWGE1H1ceT7LEJVX5cHz/preview"
+            >
+            </iframe>
             </div>
           </div>
         </div>

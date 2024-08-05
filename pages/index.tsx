@@ -141,7 +141,7 @@ export default function Home() {
             <p className="text-lg md:text-2xl mb-8 text-[#6F7782] font-bold leading-9">
               "FutureMD aims to provide teenagers across our <br className="hidden md:block" /> community with insights into a future in <br className="hidden md:block" /> the medical sector."
             </p>
-            <a href="/about" className="px-4 py-2 bg-navy text-primary text-lg rounded transition-transform duration-700 transform hover:scale-105 dark:hover:bg-primary hover:bg-navy hover:text-primary dark:hover:text-navy hover:shadow-lg">Learn More</a>
+            <a href="/about" className="font-semibold px-4 py-2 bg-navy text-primary text-lg rounded transition-transform duration-700 transform hover:scale-105 dark:hover:bg-primary hover:bg-navy hover:text-primary dark:hover:text-navy hover:shadow-lg">Learn More</a>
           </div>
           <img src="/logo.png" alt="FutureMD Logo" className="w-[50%] md:w-[30%] mt-8 md:mt-0" />
         </div>

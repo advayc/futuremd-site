@@ -33,14 +33,11 @@ const RolePopup = ({ role, onClose }: { role: typeof roles[0], onClose: () => vo
           </a>
         )}
         {role.status === "unavailable" && (
-          <a 
-            href={role.link} 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <button 
             className="block w-full text-center bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300"
           >
             Unavailable
-          </a>
+          </button>
         )}
       </div>
     </div>
@@ -71,9 +68,9 @@ export default function Apply() {
       <Navbar showAnimation={false} />
 
       <section className="w-full flex flex-col items-center">
-        <div className="w-full p-8 mt-4 dark:bg-[#000000] flex flex-col md:flex-row items-center justify-center mb-4 md:mb-8">
-          <div id="who-we-are" className="flex flex-col items-center md:items-start justify-center text-center md:text-left mr-32">
-            <h2 className="text-6xl sm:text-6xl md:text-8xl font-bold dark:text-white text-black mb-4">Join Our <br/><span className="text-li dark:text-hov">Team</span></h2>
+        <div className="w-full p-8 mt-4 dark:bg-[#000000] flex flex-col md:flex-row items-center justify-center mb-12 md:mb-8">
+          <div id="who-we-are" className="flex flex-col items-center md:items-start justify-center text-center md:text-left md:mr-32">
+            <h2 className=" text-6xl sm:text-6xl md:text-8xl font-bold dark:text-white text-black md:mb-4 mb-[-50px]">Join Our <br/><span className="text-li dark:text-hov">Team</span></h2>
           </div>
           <div className="mt-12 md:mt-2">
             <img src='/guestspeakers.png' alt="Meta" className="w-[670px]"/>
@@ -86,7 +83,7 @@ export default function Apply() {
       </svg>
 
       <div className="w-full flex flex-col items-center justify-center bg-primary dark:bg-dprimary shadow hover:shadow-lg px-4 sm:px-8 md:px-16 pb-12 md:pb-28">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 dark:text-white text-center">Why Join Us?</h2>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-[-10px] md:mb-4 dark:text-white text-center">Why Join Us?</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 text-center">
           {[

@@ -60,7 +60,7 @@ export default function Team() {
         </p>
         <div className="flex justify-center">
           <Link href='/contact'>
-            <button className="mt-8 px-4 py-2 bg-navy text-primary text-lg rounded transition-transform duration-700 transform hover:scale-105 dark:hover:bg-primary hover:bg-navy hover:text-primary dark:hover:text-navy hover:shadow-lg">Contact Us</button>
+            <button className="font-semibold mt-8 px-4 py-2 bg-navy text-primary text-lg rounded transition-transform duration-700 transform hover:scale-105 dark:hover:bg-primary hover:bg-navy hover:text-primary dark:hover:text-navy hover:shadow-lg">Contact Us</button>
           </Link>
         </div>
       </div>

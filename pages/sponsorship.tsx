@@ -42,7 +42,12 @@ export default function Sponsorships() {
             <h2 className="text-4xl font-bold mb-9 dark:text-white text-black">Discover Our 
                 <a href="/FutureMD Sponsorship Proposal.pdf" target="_blank" className="hover:text-li transition delay-100 dark:hover:text-hov"> Sponsorship Package</a></h2>
             <div className="flex justify-center">
-              <embed src="/FutureMD Sponsorship Proposal.pdf" type="application/pdf" className="w-full md:w-2/3 lg:w-1/2 h-[600px] md:h-[800px]" />
+            <iframe
+              width="640"
+              height="480"
+              src="https://drive.google.com/file/d/11sHytfF_72H8hNBTVmRe0oaIxof_4AF7/preview"
+            >
+            </iframe>
             </div>
           </div>
         </div>

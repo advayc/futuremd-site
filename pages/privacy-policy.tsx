@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Head from 'next/head';
 import { Footer } from '@/components/footer';
+
 const inter = Inter({ subsets: ["latin"] });
 
 const Privacy: React.FC = () => {
@@ -42,7 +43,12 @@ const Privacy: React.FC = () => {
             <h2 className="text-4xl font-bold mb-9 dark:text-white text-black">Read Our 
                 <a href="https://drive.google.com/file/d/1r1MTa6lIJULSTH3Olx_KWIpPMYKJ_qU5/view?usp=drive_link" target="_blank" className="hover:text-li transition delay-100 dark:hover:text-hov"> Privacy Policy Document</a></h2>
             <div className="flex justify-center">
-              <embed src="/FINAL Privacy Policy.pdf" type="application/pdf" className="w-full md:w-2/3 lg:w-1/2 h-[600px] md:h-[800px]" />
+            <iframe
+              width="640"
+              height="480"
+              src="https://drive.google.com/file/d/1r1MTa6lIJULSTH3Olx_KWIpPMYKJ_qU5/preview"
+            >
+            </iframe>
             </div>
           </div>
         </div>
@@ -53,4 +59,3 @@ const Privacy: React.FC = () => {
 }
 
 export default Privacy;
-

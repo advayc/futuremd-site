@@ -80,7 +80,7 @@ export default function About() {
             <HoverEffect items={executives.map((exec: any) => ({ ...exec, role: "" }))} />
           </div>
           <Link href='/team' className='justify-center'>
-            <button className="mt-6 px-8 py-4 bg-navy text-primary text-lg rounded transition-transform duration-700 transform hover:scale-105 dark:hover:bg-primary hover:bg-navy hover:text-primary dark:hover:text-navy hover:shadow-lg">Meet Our Team</button>
+            <button className="font-semibold mt-6 px-8 py-4 bg-navy text-primary text-lg rounded transition-transform duration-700 transform hover:scale-105 dark:hover:bg-primary hover:bg-navy hover:text-primary dark:hover:text-navy hover:shadow-lg">Meet Our Team</button>
           </Link>
         </div>
       </div>
@@ -96,7 +96,7 @@ export default function About() {
             Click the button below to <br className="hidden md:block" /> learn more about our events!
           </p>
           <Link href='/events'>
-            <button className="mt-6 px-8 py-4 bg-navy text-primary text-lg rounded transition-transform duration-700 transform hover:scale-105 dark:hover:bg-primary hover:bg-navy hover:text-primary dark:hover:text-navy hover:shadow-lg">Learn More</button>
+            <button className="font-semibold mt-6 px-8 py-4 bg-navy text-primary text-lg rounded transition-transform duration-700 transform hover:scale-105 dark:hover:bg-primary hover:bg-navy hover:text-primary dark:hover:text-navy hover:shadow-lg">Learn More</button>
           </Link>
         </div>
         <div className=" md:w-[35%] w-2/3 sm:w-1/2 md:w-1/3 mt-8 md:mt-0 ">
