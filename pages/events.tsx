@@ -44,7 +44,7 @@ export default function Events() {
           Upcoming Events!
         </h1>
         <p className="md:text-left text-center text-lg md:text-xl font-semibold dark:text-dark-text text-[#828282]">
-          Interested in learning more about our next event?  <Link href='/first' className="dark:text-hov dark:hover:text-primary text-li hover:text-navy transition delay-75">Click Here!</Link> 
+          Interested in learning more about our next event?  <Link href='/path2med' className="dark:text-hov dark:hover:text-primary text-li hover:text-navy transition delay-75">Click Here!</Link> 
         </p>
 
         <div className="flex justify-start mb-20">

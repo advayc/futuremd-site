@@ -35,7 +35,7 @@ export const Footer = () => {
               <a href="/team" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Our Team</a>
             </li>
             <li className="mb-3 md:mb-4">
-              <a href='https://forms.gle/Sa52gmcHybHgnk438' target="_blank" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Join Our Team</a>
+              <a href='/apply' target="_blank" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Join Our Team</a>
             </li>
           </ul>
         </div>
@@ -81,12 +81,12 @@ export const Footer = () => {
               </a>
             </li>
             <li className="mb-3 md:mb-4">
-              <a href="https://drive.google.com/file/d/1r1MTa6lIJULSTH3Olx_KWIpPMYKJ_qU5/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-zinc-300 text-gray-400 font-bold flex items-center">
+              <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-zinc-300 text-gray-400 font-bold flex items-center">
                 Privacy Policy
               </a>
             </li>
             <li className="mb-3 md:mb-4">
-              <a href="https://drive.google.com/file/d/1iD6CSOjYTxRTaWGE1H1ceT7LEJVX5cHz/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-zinc-300 text-gray-400 font-bold flex items-center">
+              <a href="/terms-and-services" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-zinc-300 text-gray-400 font-bold flex items-center">
                 Event TOS
               </a>
             </li>            

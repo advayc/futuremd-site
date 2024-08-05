@@ -69,7 +69,7 @@ export default function Media() {
         ))}
       </section>
 
-      <section className="max-w-9xl py-8">
+      <section id="gal" className="max-w-9xl py-8">
         <h1 className="text-2xl md:text-4xl font-bold mb-8 text-center dark:text-white text-black">Gallery Showcase!</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {galleryImages.map((image, index) => (
