@@ -67,7 +67,7 @@ export const Footer = () => {
             </li>
           </ul>
         </div>
-    <div className="flex-1 flex flex-col items-center md:items-start mb-8 md:mb-0 mt-4">
+      <div className="flex-1 flex flex-col items-center md:items-start mb-8 md:mb-0 mt-4">
           <h4 className="font-bold mb-4 text-lg md:text-xl text-center md:text-left">Miscellaneous</h4>
           <ul className="flex flex-col items-center md:items-start">
             <li className="mb-3 md:mb-4">
