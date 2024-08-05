@@ -29,7 +29,7 @@ const Terms: React.FC = () => {
       <Head><title>FutureMD - Terms & Conditions</title></Head>
       <Navbar showAnimation={false} />
       <header className="pt-4 pd-3 px-4 w-full max-w-9xl text-center">
-        <h1 className="text-4xl md:text-6xl font-bold my-8 mb-4 text-center dark:text-white text-black">Terms and Conditions</h1>
+        <h1 className="text-4xl md:text-6xl font-bold my-8 mb-4 text-center dark:text-white text-black">Terms & Conditions</h1>
       </header>
 
       <section className="flex flex-col items-center">
@@ -40,9 +40,9 @@ const Terms: React.FC = () => {
           </p>
           <div className="pt-4 pd-3 px-4 max-w-9xl text-center mt-8">
             <h2 className="text-4xl font-bold mb-9 dark:text-white text-black">Read Our 
-                <a href="https://drive.google.com/file/d/1iD6CSOjYTxRTaWGE1H1ceT7LEJVX5cHz/view?usp=sharing" target="_blank" className="hover:text-li transition delay-100 dark:hover:text-hov"> Terms and Conditions Document</a></h2>
+                <a href="https://drive.google.com/file/d/1iD6CSOjYTxRTaWGE1H1ceT7LEJVX5cHz/view?usp=sharing" target="_blank" className="hover:text-li transition delay-100 dark:hover:text-hov"> Terms & Conditions</a></h2>
             <div className="flex justify-center">
-              <embed src="/FINAL Terms & Conditions" type="application/pdf" className="w-full md:w-2/3 lg:w-1/2 h-[600px] md:h-[800px]" />
+              <embed src="/FINAL Terms & Conditions.pdf" type="application/pdf" className="w-full md:w-2/3 lg:w-1/2 h-[600px] md:h-[800px]" />
             </div>
           </div>
         </div>
