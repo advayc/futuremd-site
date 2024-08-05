@@ -62,6 +62,8 @@ export default function FirstEvent() {
           />
         </div>
       </section>
+      <a href="/register" target="_blank" rel="noopener noreferrer" 
+      className=" mt-10 block w-2/4 text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">Claim your FREE shawarma and book your spot now!</a>
       <Countdown />
 
       <div className="flex flex-col items-center justify-center border-2 border-hov rounded-lg w-3/4 p-8 mt-12 mb-12">

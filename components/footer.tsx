@@ -40,20 +40,6 @@ export const Footer = () => {
           </ul>
         </div>
         <div className="flex-1 flex flex-col items-center md:items-start mb-8 md:mb-0 mt-4">
-          <h4 className="font-bold mb-4 text-lg md:text-xl text-center md:text-left">Sponsorships</h4>
-          <ul className="flex flex-col items-center md:items-start">
-            <li className="mb-3 md:mb-4">
-              <a href="/sponsors" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Our Sponsors</a>
-            </li>
-            <li className="mb-3 md:mb-4">
-              <a href="/sponsorship" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Sponsor Us</a>
-            </li>
-            <li className="mb-3 md:mb-4">
-              <a href="/contact" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-        <div className="flex-1 flex flex-col items-center md:items-start mb-8 md:mb-0 mt-4">
           <h4 className="font-bold mb-4 text-lg md:text-xl text-center md:text-left">Events</h4>
           <ul className="flex flex-col items-center md:items-start">
             <li className="mb-3 md:mb-4">
@@ -64,6 +50,24 @@ export const Footer = () => {
             </li>
             <li className="mb-3 md:mb-4">
               <a href="/media" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Gallery</a>
+            </li>
+            <li className="mb-3 md:mb-4">
+              <a href="/register" target="_blank" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Register</a>
+            </li>
+          </ul>
+        </div>
+
+        <div className="flex-1 flex flex-col items-center md:items-start mb-8 md:mb-0 mt-4">
+          <h4 className="font-bold mb-4 text-lg md:text-xl text-center md:text-left">Sponsorships</h4>
+          <ul className="flex flex-col items-center md:items-start">
+            <li className="mb-3 md:mb-4">
+              <a href="/sponsors" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Our Sponsors</a>
+            </li>
+            <li className="mb-3 md:mb-4">
+              <a href="/sponsorship" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Sponsor Us</a>
+            </li>
+            <li className="mb-3 md:mb-4">
+              <a href="/contact" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Contact Us</a>
             </li>
           </ul>
         </div>
