@@ -81,15 +81,11 @@ export const Footer = () => {
               </a>
             </li>
             <li className="mb-3 md:mb-4">
-              <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-zinc-300 text-gray-400 font-bold flex items-center">
-                Privacy Policy
-              </a>
+              <a href="/privacy-policy" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Privacy Policy</a>
             </li>
             <li className="mb-3 md:mb-4">
-              <a href="/terms-and-services" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-zinc-300 text-gray-400 font-bold flex items-center">
-                Event TOS
-              </a>
-            </li>            
+              <a href="/terms-and-conditions" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Event TOS</a>
+            </li>           
             <li className="mb-3 md:mb-4">
               <p className="text-transparent text-[1px]">.</p>
             </li>
