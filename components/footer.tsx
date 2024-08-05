@@ -35,7 +35,7 @@ export const Footer = () => {
               <a href="/team" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Our Team</a>
             </li>
             <li className="mb-3 md:mb-4">
-              <a href='/apply' target="_blank" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Join Our Team</a>
+              <a href='/apply' className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Join Our Team</a>
             </li>
           </ul>
         </div>
