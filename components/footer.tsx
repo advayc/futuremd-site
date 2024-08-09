@@ -84,7 +84,7 @@ export const Footer = () => {
               <a href="/privacy-policy" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Privacy Policy</a>
             </li>
             <li className="mb-3 md:mb-4">
-              <a href="/terms-and-conditions" target="_blank" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Event TOS</a>
+              <a href="/terms-and-conditions" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Event TOS</a>
             </li>
           </ul>
         </div>
