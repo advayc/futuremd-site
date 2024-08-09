@@ -49,7 +49,7 @@ export default function Events() {
 
         <div className="flex justify-start mb-20">
           <a href='/path2med'>
-          <Card className="bg-transparent dark:bg-dprimary border border-zinc-300 hover:border-zinc-400 dark:border-transparent dark:hover:border-zinc-300 dark:hover:border-zinc-800 transition-colors duration-300 max-w-md mx-4 rounded-lg p-2 mt-6">
+          <Card className="transition-transform duration-300 transform hover:scale-105 bg-transparent dark:bg-dprimary border border-zinc-300 hover:border-zinc-400 dark:border-transparent dark:hover:border-zinc-300 dark:hover:border-zinc-800  max-w-md mx-4 rounded-lg p-2 mt-6">
             <CardHeader className="pb-0 pt-4 px-4 flex-col items-start text-center dark:text-white text-black">
               <h4 className="font-bold text-2xl dark:text-hov text-li">Path2Med</h4>
               <small className="dark:text-zinc-400 text-zinc-600 tracking-wide text-xl text-center font-bold sm:text-sm">November 23rd</small>

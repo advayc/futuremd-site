@@ -55,7 +55,7 @@ export default function FirstEvent() {
         <div className="flex justify-end mt-8 md:mt-0">
           <Image
             alt="Event background"
-            className="object-cover rounded-lg shadow-lg"
+            className="transition-transform duration-300 transform hover:scale-105 object-cover rounded-lg shadow-lg"
             src="/events/path2med.png"
             width={350} 
             height={350} 
