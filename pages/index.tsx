@@ -77,7 +77,7 @@ export default function Home() {
           <div ref={(el) => { if (el) fadeRefs.current[1] = el; }} className="fade-in">
 
       <div className="w-full flex flex-col items-center dark:bg-dprimary bg-primary pt-16 pb-12" id="what-does">
-        <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 dark:text-white">What FutureMD Does.</h2>
+        <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 dark:text-white">What <span className="dark:text-hov text-li">FutureMD</span> Does.</h2>
         <p className="mb-12 px-4 text-lg sm:text-xl md:text-2xl text-center max-w-2xl text-[#828282] font-bold">
           At FutureMD, we focus on four main aspects to educate students about medlife.
         </p>
