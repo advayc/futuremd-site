@@ -127,7 +127,7 @@ export default function Home() {
           </div>
           <div className="text-lg sm:text-xl md:text-2xl text-center md:text-left max-w-2xl text-[#828282] font-bold md:w-1/2">
             <p>
-            “FutureMD aims to provide teenagers across our community with insights into a future in the medical sector. We see ourselves making a difference by pushing the youth to the best of their abilities to prepare them for the long journey ahead of them.” <br />
+            “FutureMD aims to provide teenagers across the Peel-Mississauga community with insights into a future in the medical sector. We strive to inspire and prepare the youth to reach their fullest potential, preparing them for the long journey ahead of them.” <br />
             </p>
             <p className="font-bold dark:text-hov text-navy mt-2">- Bobby F. | Founder</p>
 
