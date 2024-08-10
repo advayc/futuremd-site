@@ -1,7 +1,7 @@
 import { cn } from "@/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaInstagram, FaLinkedin, FaTimes } from 'react-icons/fa';
 
 export const HoverEffect = ({
@@ -24,6 +24,20 @@ export const HoverEffect = ({
   const closeModal = () => {
     setSelectedItem(null);
   };
+
+  useEffect(() => {
+    const handleEsc = (event: KeyboardEvent) => {
+      if (event.key === 'Escape' && selectedItem) {
+        closeModal();
+      }
+    };
+
+    document.addEventListener('keydown', handleEsc);
+
+    return () => {
+      document.removeEventListener('keydown', handleEsc);
+    };
+  }, [selectedItem]);
 
   return (
     <div className="relative">
@@ -104,6 +118,7 @@ export const HoverEffect = ({
   );
 };
 
+// Card components remain unchanged
 export const Card = ({
   className,
   children,
@@ -165,4 +180,4 @@ export const CardRole = ({
       {children}
     </p>
   );
-};
+}
