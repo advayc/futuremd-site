@@ -64,7 +64,7 @@ export default function Home() {
       <div ref={(el) => { if (el) fadeRefs.current[0] = el; }} className="f2 mt-16 flex-grow flex flex-col items-center justify-center text-center px-4 md:px-8 w-full h-[calc(100vh-9rem)]">
         <h1 className="font-black dark:text-hov text-[#3C55B7] text-6xl sm:text-7xl md:text-8xl">
           FutureMD{" "}
-          <span className="dark:text-white text-black">Inc</span>
+          <span className="dark:text-white text-black">Inc.</span>
         </h1>
         <p className="text-lg sm:text-xl md:text-3xl font-bold mt-3 md:mt-6 dark:text-dark-text text-zinc-500">
           A student-led nonprofit organization with the goal to educate <br className="hidden md:block" /> teens about life during and after medical school!
