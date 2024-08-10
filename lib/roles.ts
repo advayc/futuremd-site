@@ -17,9 +17,9 @@ export const roles = [
       description: `
         As outreach members, your objective is to recruit guest speakers with the help of Co-President(s) and President(s). You are solely responsible for reaching out to:<br><br>
         - Medical school students<br>
-        - Specialists in Medicine (College/university professors, retired professionals, etc)<br>
         - Individuals currently practicing medicine<br>
-        - Board certified specialists
+        - Board certified specialists<br>
+        - Specialists in Medicine (professors, retired professionals, etc)<br>
       `,
       status: "available",
       link: "https://prettyform.addxt.com/a/form/?vf=1FAIpQLScBhRPUTpRtPBeFItiRRHsP_-kUZbKmkppOw3JtZ3WjD1CeTQ"
@@ -27,10 +27,10 @@ export const roles = [
     {
       title: "Event Logistics",
       description: `
-        These members are the primary directors of our events. You are responsible for the majority of the planning and behind-the-scenes at our events. Responsibilities include:<br><br>
+        These members are the primary directors of our events. You are responsible for the majority of the planning and behind-the-scenes at our events. <br><br><strong>Responsibilities:</strong><br>
         - Securing Venue<br>
         - Managing Catering & Activities<br>
-        - Managing Event Staff, Volunteer Team, and overall setup of the event<br>
+        - Managing Event Staff, Volunteers, & overall setup of the event<br>
         - Securing Merchandise for Staff & Attendees
       `,
       status: "available",
@@ -51,7 +51,7 @@ export const roles = [
     {
       title: "Finance",
       description: `
-        As the Head of Finance, you are responsible for managing the funding for FutureMD. You can recruit up to 2 other members to aid you if necessary. Responsibilities include:<br><br>
+        As the Head of Finance, you are responsible for managing the funding for FutureMD. You can recruit up to 2 other members to aid you if necessary. <br><br><strong>Responsibilities:</strong><br>
         - Applying for new grants and/or sponsorships<br>
         - Managing our current grants & funding<br>
         - Approving funding for our different divisions & teams<br>
@@ -63,7 +63,7 @@ export const roles = [
     {
       title: "Event Volunteer",
       description: `
-        As an Event Volunteer, you may be in charge of:<br><br>
+        As an Event Volunteer, you are expected to aid our team at our events. <br><br><strong>Responsibilities:</strong><br>
         - Guiding attendees where to go<br>
         - Handing out catering, drinks, and/or snacks<br>
         - Taking professional photos for our gallery and social media

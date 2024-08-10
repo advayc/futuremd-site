@@ -62,6 +62,20 @@ export default function Apply() {
     };
   }, [router.events]);
 
+  useEffect(() => {
+    const handleEsc = (event: KeyboardEvent) => {
+      if (event.key === 'Escape' && selectedRole) {
+        setSelectedRole(null);
+      }
+    };
+
+    document.addEventListener('keydown', handleEsc);
+
+    return () => {
+      document.removeEventListener('keydown', handleEsc);
+    };
+  }, [selectedRole]);
+
   return (
     <main className={`min-h-screen flex flex-col pt-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
       <Head><title>FutureMD - Apply</title></Head>
@@ -73,7 +87,7 @@ export default function Apply() {
             <h2 className=" text-6xl sm:text-6xl md:text-8xl font-bold dark:text-white text-black md:mb-4 mb-[-50px]">Join Our <br/><span className="text-li dark:text-hov">Team</span></h2>
           </div>
           <div className="mt-12 md:mt-2">
-            <img src='/guestspeakers.png' alt="Meta" className="w-[670px]"/>
+            <img src='/guestspeakers.png' alt="Meta" className="transition-transform duration-300 transform hover:scale-105 object-cover w-[670px]"/>
           </div>
         </div>
       </section>
@@ -101,7 +115,6 @@ export default function Apply() {
           ))}
         </div>
       </div>
-
       <svg width="100%" height="auto" viewBox="0 0 1916 230" fill="currentColor" className="w-full text-primary dark:text-dprimary -mt-4 md:-mt-20 relative top-[5px]">
         <path fillRule="evenodd" clipRule="evenodd" d="M0 0C640 0 1280 0 1920 0C1920 27.3333 1920 54.6667 1920 82C1812.72 90.3729 1705.37 97.8729 1597.97 104.5C1461.49 112.233 1324.92 115.233 1188.28 113.5C1069.64 109.91 951.016 105.91 832.405 101.5C740.988 98.9498 649.56 97.9498 558.119 98.5C484.895 100.323 411.694 102.989 338.517 106.5C225.638 113.757 112.799 121.59 0 130C0 86.6667 0 43.3333 0 0Z" />
       </svg>
