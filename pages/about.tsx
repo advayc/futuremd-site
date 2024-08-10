@@ -43,9 +43,9 @@ export default function About() {
             <p className="text-lg sm:text-xl md:text-2xl dark:dark-text text-[#828282] font-bold leading-9">
               FutureMD is a registered non-profit organization under the Canadian
               Revenue Agency (CRA) and Ontario Business Registry (OBR). Led by a group
-              of <span className="dark:text-hov text-li">ambitious & passionate</span> students located in the Mississauga 
-              and Peel area, FutureMD is committed to educating the youth & teens about how
-              life really is during and after medical school!
+              of <span className="dark:text-hov text-li">ambitious & passionate</span> students 
+              in the Mississauga and Peel area, FutureMD is committed to educating the youth
+              & teens about how life really is during and after medical school!
             </p>
           </div>
           <div className="md:w-[30%] w-2/3 sm:w-1/2 md:w-1/3 mt-8 md:mt-0">
