@@ -39,12 +39,13 @@ export default function About() {
       <section className="w-full flex flex-col items-center">
         <div className="w-11/12 md:w-5/6 p-8 mt-4 dark:bg-[#000000] flex flex-col md:flex-row items-center justify-center mb-12">
           <div id="who-we-are" className="md:flex-1 flex flex-col items-center md:items-start justify-center text-center md:text-left">
-            <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold dark:text-white text-black mb-4">Who <span className="dark:text-hov text-li">We</span> Are..</h2>
+            <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold dark:text-white text-black mb-4">Who We Are..</h2>
             <p className="text-lg sm:text-xl md:text-2xl dark:dark-text text-[#828282] font-bold leading-9">
-              FutureMD is a registered non-profit organization under the Ontario
-              Business Registry. Led by a group of ambitious & passionate students
-              located in the Mississauga-GTA area, FutureMD is committed to educating
-              the youth & teens about how life really is during and after medical school!
+              FutureMD is a registered non-profit organization under the Canadian
+              Revenue Agency (CRA) and Ontario Business Registry (OBR). Led by a group
+              of <span className="dark:text-hov text-li">ambitious & passionate</span> students located in the Mississauga-GTA area, 
+              FutureMD is committed to educating the youth & teens about how life really
+              is during and after medical school!
             </p>
           </div>
           <div className="md:w-[30%] w-2/3 sm:w-1/2 md:w-1/3 mt-8 md:mt-0">
