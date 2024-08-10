@@ -75,10 +75,10 @@ export const Footer = () => {
           <h4 className="font-bold mb-4 text-lg md:text-xl text-center md:text-left">Miscellaneous</h4>
           <ul className="flex flex-col items-center md:items-start">
             <li className="mb-3 md:mb-4">
-              <a href="/https://www.instagram.com/futuremd_team/" target="_blank" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Instagram</a>
+              <a href="https://www.instagram.com/futuremd_team/" target="_blank" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Instagram</a>
             </li>
             <li className="mb-3 md:mb-4">
-              <a href="/https://www.linkedin.com/company/futuremdteam/" target="_blank" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Linkedin</a>
+              <a href="https://www.linkedin.com/company/futuremdteam/" target="_blank" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Linkedin</a>
             </li>
             <li className="mb-3 md:mb-4">
               <a href="/privacy-policy" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Privacy Policy</a>

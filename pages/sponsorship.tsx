@@ -40,7 +40,7 @@ export default function Sponsorships() {
           </p>
           <div className="pt-4 pd-3 px-4 max-w-9xl text-center mt-8">
             <h2 className="text-4xl font-bold mb-9 dark:text-white text-black">Discover Our 
-                <a href="/FutureMD Sponsorship Proposal.pdf" target="_blank" className="hover:text-li transition delay-100 dark:hover:text-hov"> Sponsorship Package</a></h2>
+                <a href="/FutureMD Sponsorship Proposal.pdf" target="_blank" className="text-li transition delay-100 dark:text-hov"> Sponsorship Package</a></h2>
             <div className="flex justify-center">
             <iframe
               width="640"

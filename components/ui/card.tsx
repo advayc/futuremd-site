@@ -35,7 +35,7 @@ export const HoverEffect = ({
       >
         {items.map((item, idx) => (
           <div
-            className="relative group block p-2 h-full w-full"
+            className="transition-transform duration-300 transform hover:scale-105 object-cover relative group block p-2 h-full w-full"
             onMouseEnter={() => setHoveredIndex(idx)}
             onMouseLeave={() => setHoveredIndex(null)}
             onClick={() => setSelectedItem(item)}
