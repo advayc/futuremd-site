@@ -41,11 +41,11 @@ export default function About() {
           <div id="who-we-are" className="md:flex-1 flex flex-col items-center md:items-start justify-center text-center md:text-left">
             <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold dark:text-white text-black mb-4">Who We Are..</h2>
             <p className="text-lg sm:text-xl md:text-2xl dark:dark-text text-[#828282] font-bold leading-9">
-              FutureMD is a registered non-profit organization under the Canadian
+              FutureMD is a registered <span className="dark:text-hov text-li">non-profit organization</span> under the Canadian
               Revenue Agency (CRA) and Ontario Business Registry (OBR). Led by a group
-              of <span className="dark:text-hov text-li">ambitious & passionate</span> students located in the Mississauga-GTA area, 
-              FutureMD is committed to educating the youth & teens about how life really
-              is during and after medical school!
+              of <span className="dark:text-hov text-li">ambitious & passionate</span> students located in the Mississauga 
+              and Peel area, FutureMD is committed to <span className="dark:text-hov text-li">educating</span> the youth & teens about how
+              life <span className="dark:text-hov text-li">really</span> is during and after medical school!
             </p>
           </div>
           <div className="md:w-[30%] w-2/3 sm:w-1/2 md:w-1/3 mt-8 md:mt-0">
@@ -61,8 +61,8 @@ export default function About() {
         <div className="md:w-1/2 text-center md:text-left">
           <p className="ml-0 md:ml-12 text-lg sm:text-xl md:text-2xl dark:text-dark-text text-navy font-bold leading-9">
             We strive to provide the youth with the necessary knowledge for the journey
-            ahead of them, ranging from tuition fees, to challenges & obstacles in and
-            after university. We do so by allowing our community in the Peel Region with
+            ahead of them. Ranging from tuition fees to challenges & obstacles in and
+            after university, FutureMD allows our community in the Peel Region with
             the opportunity to connect and meet doctors, practicing physicians, and
             medical students to listen to their journey and advice throughout their
             medical career.
@@ -92,7 +92,7 @@ export default function About() {
 
       <div className="w-full flex flex-col md:flex-row items-center justify-center bg-primary dark:bg-dprimary shadow hover:shadow-lg px-8 sm:px-16 md:px-24 pt-10 pb-12 md:pb-28">
         <div id="who-we-are" className="md:flex-1 flex flex-col items-center md:items-start justify-center text-center md:text-left md:ml-10">
-          <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold dark:text-white text-black">Join Us At Our <br className="hidden md:block" /> Events</h2>
+          <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold dark:text-white text-black">Join Us At Our <br className="hidden md:block" /> <span className="dark:text-hov text-li">Events</span></h2>
           <p className="text-lg sm:text-xl md:text-2xl dark:dark-text text-[#828282] font-bold leading-9 mt-8 ">
             Click the button below to <br className="hidden md:block" /> learn more about our events!
           </p>
