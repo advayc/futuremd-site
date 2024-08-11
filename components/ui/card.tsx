@@ -85,8 +85,9 @@ export const HoverEffect = ({
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
           <motion.div
             className="relative dark:bg-black bg-white p-4 sm:p-8 rounded-2xl border border-white/[0.2] max-w-4xl mx-auto flex flex-col sm:flex-row"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.8 }}
             transition={{ duration: 0.3 }}
           >
             <div className="flex-none">

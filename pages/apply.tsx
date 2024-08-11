@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Head from 'next/head'; 
 import { Footer } from '@/components/footer';
 import { roles } from '@/lib/roles';
+import { AnimatePresence, motion } from "framer-motion";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,8 +14,21 @@ const Highlight = ({ text }: { text: string }) => (
 );
 
 const RolePopup = ({ role, onClose }: { role: typeof roles[0], onClose: () => void }) => (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div className="bg-white dark:bg-[#0c0c0c] p-8 rounded-lg max-w-2xl mx-4 relative shadow-2xl">
+  <AnimatePresence>
+    <motion.div
+      className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3 }}
+    >
+      <motion.div
+        className="bg-white dark:bg-[#0c0c0c] p-8 rounded-lg max-w-2xl mx-4 relative shadow-2xl"
+        initial={{ scale: 0.8 }}
+        animate={{ scale: 1 }}
+        exit={{ scale: 0.8 }}
+        transition={{ duration: 0.3 }}
+      >
         <button onClick={onClose} className="absolute top-4 right-4 text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-100">
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -39,10 +53,11 @@ const RolePopup = ({ role, onClose }: { role: typeof roles[0], onClose: () => vo
             Unavailable
           </button>
         )}
-      </div>
-    </div>
-  );
-  
+      </motion.div>
+    </motion.div>
+  </AnimatePresence>
+);
+
 export default function Apply() {
   const router = useRouter();
   const [selectedRole, setSelectedRole] = useState<typeof roles[0] | null>(null);

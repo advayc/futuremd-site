@@ -39,7 +39,7 @@ export const roles = [
     {
       title: "Design",
       description: `
-        As members of our design team, you will work alongside our other departments including Marketing and logistics, and aiding our president(s) & vice-president(s) when required. Your main objectives are:<br><br>
+        As members of our design team, you will work alongside our other departments including Marketing and logistics, and aiding our president(s) & vice-president(s) when required. <br><br><strong>Responsibilities:</strong><br>
         - Design social media posts with our marketing team<br>
         - Design our merchandise (t-shirts, hoodies, pens, stickers, etc)<br>
         - Design our Banners<br>

@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaTiktok } from 'react-icons/fa';
+import { MdEmail } from "react-icons/md";
 import Navbar from "@/components/navbar";
 import ContactForm from "@/components/ContactForm";
 import { Inter } from "next/font/google";
@@ -13,7 +14,7 @@ export default function Contact() {
   const router = useRouter();
 
   useEffect(() => {
-    const handleRouteChange = (url: string) => {
+    const handleRouteChange = () => {
       document.documentElement.classList.add('transition-colors', 'duration-700');
       setTimeout(() => {
         document.documentElement.classList.remove('transition-colors', 'duration-700');
@@ -45,6 +46,12 @@ export default function Contact() {
             </a>
             <a href="https://www.linkedin.com/company/futuremdteam/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin size={32} className="dark:text-hov dark:hover:text-primary text-li hover:text-navy transition-all duration-300" />
+            </a>
+            <a href="https://www.tiktok.com/@futuremd_team" target="_blank" rel="noopener noreferrer">
+              <FaTiktok size={32} className="dark:text-hov dark:hover:text-primary text-li hover:text-navy transition-all duration-300" />
+            </a>
+            <a href="mailto:contact.futuremd@gmail.com" >
+              <MdEmail size={36} className="dark:text-hov dark:hover:text-primary text-li hover:text-navy transition-all duration-300" />
             </a>
           </div>
         </div>
