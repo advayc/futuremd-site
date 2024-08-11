@@ -44,7 +44,7 @@ export default function Team() {
       </div>
 
       <p className="text-center mb-12 text-lg md:text-xl font-semibold dark:text-dark-text text-zinc-700 mb-10">
-        Interested in joining our team?  <Link href='/apply' target="_blank" className="dark:text-hov dark:hover:text-primary text-li hover:text-black transition delay-75">Click Here!</Link> 
+        Interested in joining our team?  <Link href='/apply' className="dark:text-hov dark:hover:text-primary text-li hover:text-black transition delay-75">Click Here!</Link> 
       </p>
 
       <svg width="1916" height="230" viewBox="0 0 1916 230" fill="currentColor" className="rotate-180 w-full h-auto text-primary dark:text-dprimary">

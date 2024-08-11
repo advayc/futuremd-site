@@ -40,7 +40,7 @@ export default function About() {
         <div className="w-11/12 md:w-5/6 p-8 mt-4 dark:bg-[#000000] flex flex-col md:flex-row items-center justify-center mb-12">
           <div id="who-we-are" className="md:flex-1 flex flex-col items-center md:items-start justify-center text-center md:text-left">
             <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold dark:text-white text-black mb-4">Who We Are..</h2>
-            <p className="text-lg sm:text-xl md:text-2xl dark:dark-text text-[#828282] font-bold leading-9">
+            <p className="text-lg sm:text-xl md:text-2xl dark:dark-text text-[#828282] font-bold leading-9" style={{ maxWidth: '750px'}}>
               FutureMD is a registered non-profit organization under the Canadian
               Revenue Agency (CRA) and Ontario Business Registry (OBR). Led by a group
               of <span className="dark:text-hov text-li">ambitious & passionate</span> students 
@@ -59,7 +59,7 @@ export default function About() {
           <h2 className="text-4xl sm:text-6xl md:text-7xl font-bold dark:text-white text-black mb-4">Our Mission is to <span className="dark:text-hov text-li">empower</span> youth</h2>
         </div>
         <div className="md:w-1/2 text-center md:text-left">
-          <p className="ml-0 md:ml-12 text-lg sm:text-xl md:text-2xl dark:text-dark-text text-navy font-bold leading-9">
+          <p className="ml-0 md:ml-12 text-lg sm:text-xl md:text-2xl dark:text-dark-text text-navy font-bold leading-loose" style={{ maxWidth: '600px', textAlign: 'center' }}>
             We strive to provide the youth with the necessary knowledge for the journey
             ahead of them. Ranging from tuition fees to challenges & obstacles in and
             after university, FutureMD allows our community in the Peel Region with
@@ -70,7 +70,7 @@ export default function About() {
         </div>
       </div>
 
-      <svg width="1916" height="230" viewBox="0 0 1916 230" fill="currentColor" className="w-full h-auto text-primary dark:text-dprimary">
+      <svg width="1916" height="230" viewBox="0 0 1916 230" fill="currentColor" className="w-full h-auto text-primary dark:text-dprimary mt-[-80px]">
         <path fillRule="evenodd" clipRule="evenodd" d="M0 0C640 0 1280 0 1920 0C1920 27.3333 1920 54.6667 1920 82C1812.72 90.3729 1705.37 97.8729 1597.97 104.5C1461.49 112.233 1324.92 115.233 1188.28 113.5C1069.64 109.91 951.016 105.91 832.405 101.5C740.988 98.9498 649.56 97.9498 558.119 98.5C484.895 100.323 411.694 102.989 338.517 106.5C225.638 113.757 112.799 121.59 0 130C0 86.6667 0 43.3333 0 0Z" />
       </svg>
 
