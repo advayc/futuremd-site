@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import '@/styles/globals.css';
 import '@/styles/zoom.css';
 import Head from "next/head";
+import { Analytics } from "@vercel/analytics/react";
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -26,6 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
       </Head>
       <Component {...pageProps} />
+      <Analytics />
     </>
   );
 }

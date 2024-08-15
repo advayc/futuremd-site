@@ -34,7 +34,7 @@ export const executives = [
       title: "Joanne L.",
       role: "Head of Design",
       description: "Hello! I'm Joanne, an IB student interested in all things STEM! Within FutureMD, I'm apart of the design and marketing/outreach subteams. In my free time, you can catch me designing graphics, dancing or volunteering for organizations like this!",
-      image: "logo.png",
+      image: "team/joanne.jpg",
       instagram: "https://www.instagram.com/jnne_lu",
     },
 ]
