@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FaInstagram, FaLinkedin, FaTimes } from 'react-icons/fa';
+import { MdEmail } from "react-icons/md";
 
 export const HoverEffect = ({
   items,
@@ -108,6 +109,9 @@ export const HoverEffect = ({
                   )}
                   <Link href={selectedItem.instagram} target='_none' passHref>
                     <FaInstagram className="dark:text-hov text-navy hover:text-hov dark:hover:text-primary transition" size={40} />
+                  </Link>
+                  <Link href={`mailto:${selectedItem.email}`}>
+                    <MdEmail size={36} className="dark:text-hov dark:hover:text-primary text-li hover:text-navy transition-all duration-300" />
                   </Link>
                 </div>
               </div>

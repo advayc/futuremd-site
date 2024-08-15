@@ -6,14 +6,16 @@ export const team = [
       image: "team/bobby.jpg",
       linkedin: "https://www.linkedin.com/in/bobbyf0814/",
       instagram: "https://www.instagram.com/bobbyf0814",
+      email: "fangbobby146@gmail.com",
     },
     {
-        title: "Nirupa W.",
-        role: "President",
-        description: "Hey there! I’m Nirupa, a Founder and President of the organization. I'm extremely passionate about FutureMD because of my persisting interest in Medicine. This organization not only fuels my enthusiasm for the industry but also serves as a learning opportunity for me to deepen my understanding of medicine! Outside of my professional interests, I enjoy playing volleyball, basketball, and soccer.",
-        image: "team/nirupa.jpg",
-        linkedin: "https://www.linkedin.com/in/nirupa-wimalawickrama-096734254/",
-        instagram: "https://www.instagram.com/nirupa.w08",
+      title: "Nirupa W.",
+      role: "President",
+      description: "Hey there! I’m Nirupa, a Founder and President of the organization. I'm extremely passionate about FutureMD because of my persisting interest in Medicine. This organization not only fuels my enthusiasm for the industry but also serves as a learning opportunity for me to deepen my understanding of medicine! Outside of my professional interests, I enjoy playing volleyball, basketball, and soccer.",
+      image: "team/nirupa.jpg",
+      linkedin: "https://www.linkedin.com/in/nirupa-wimalawickrama-096734254/",
+      instagram: "https://www.instagram.com/nirupa.w08",
+      email: "nw2008sci@gmail.com",
     },
     {
       title: "Salma M.",
@@ -21,6 +23,7 @@ export const team = [
       description: "Hi! I’m Salma, a vice president of FutureMD. My favourite subjects are math and science, and I enjoy designing in my free time. I also love to paint and play with my two adorable cats!",
       image: "team/salma.jpg",
       instagram: "https://www.instagram.com/sxlmx_m",
+      email: "salmakahlawy40@gmail.com",
     },
     {
       title: "Advay C.",
@@ -29,6 +32,7 @@ export const team = [
       image: "team/advay.jpg",
       linkedin: "https://www.linkedin.com/in/advay",
       instagram: "https://www.instagram.com/advay.chandorkar_/",
+      email: "advay.chandorkar@gmail.com",
     },
     {
       title: "Joanne L.",
@@ -36,6 +40,7 @@ export const team = [
       description: "Hello! I'm Joanne, an IB student interested in all things STEM! Within FutureMD, I'm apart of the design and marketing/outreach subteams. In my free time, you can catch me designing graphics, dancing or volunteering for organizations like this!",
       image: "team/joanne.jpg",
       instagram: "https://www.instagram.com/jnne_lu",
+      email: "joannelu0830@gmail.com",
     },
     {
       title: "Akalya G.",
@@ -44,6 +49,7 @@ export const team = [
       image: "team/akalya.jpg",
       linkedin: "https://www.linkedin.com/in/akalya-g-19763a257/",
       instagram: "https://www.instagram.com/akalyagunen_",
+      email: "akalyagunen@gmail.com",
     },
     {
       title: "Mujtaba A.",
@@ -51,6 +57,7 @@ export const team = [
       description: "Hi I’m Mujtaba Awan! Here at FutureMD I’m part of the design team. I’m an IB student and very passionate about engineering. In my spare time I like to sketch, spend time with family, and play sports. In the future, I hope to have a job in engineering or even software development.",
       image: "team/mujtaba.jpg",
       instagram: "https://www.instagram.com/_mujtabaawan",
+      email: "mrmellow888@gmail.com",
     },
     {
       title: "Arghya V.",
@@ -59,6 +66,7 @@ export const team = [
       image: "team/arghya.jpg",
       linkedin: "https://www.linkedin.com/in/arghya-vyas-2a40a72b1/",
       instagram: "https://www.instagram.com/arghyavarfet/",
+      email: "contact.futuremd@gmail.com",
     },
     {
       title: "Sameer F.",
@@ -66,6 +74,7 @@ export const team = [
       description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.",
       image: "logo.png",
       instagram: "https://www.instagram.com/fijibutter",
+      email: "contact.futuremd@gmail.com",
     },    
 ];
   
