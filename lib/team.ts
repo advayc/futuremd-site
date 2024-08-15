@@ -57,7 +57,15 @@ export const team = [
       role: "Design",
       description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.",
       image: "team/arghya.jpg",
-      instagram: "https://www.linkedin.com/in/arghya-vyas-2a40a72b1/",
+      linkedin: "https://www.linkedin.com/in/arghya-vyas-2a40a72b1/",
+      instagram: "https://www.instagram.com/arghyavarfet/",
     },
+    {
+      title: "Sameer F.",
+      role: "Design",
+      description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.",
+      image: "logo.jpg",
+      instagram: "https://www.instagram.com/fijibutter",
+    },    
 ];
   
