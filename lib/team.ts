@@ -62,11 +62,11 @@ export const team = [
     {
       title: "Arghya V.",
       role: "Design",
-      description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.",
+      description: "Hello! My name is Arghya, and I am a passionate designer as part of FutureMD. As a kid, I have always had a sincere passion about organic chemistry, and I wish to pursue my learning in the International Baccalaureate (IB) program. I aspire to be a biomedical engineer someday. In my spare time, I enjoy playing basketball, play video games, and learn!",
       image: "team/arghya.jpg",
       linkedin: "https://www.linkedin.com/in/arghya-vyas-2a40a72b1/",
       instagram: "https://www.instagram.com/arghyavarfet/",
-      email: "contact.futuremd@gmail.com",
+      email: "arghyavyas775@gmail.com",
     },
     {
       title: "Sameer F.",
