@@ -82,7 +82,9 @@ export default function Media({ instagramImages }: { instagramImages: any[] }) {
       </section>
 
       <section id="gal" className="max-w-9xl py-8">
-        <h1 className="text-2xl md:text-4xl font-bold mb-8 text-center dark:text-white text-black">Gallery Showcase!</h1>
+        <h1 className="text-2xl md:text-5xl font-bold mb-8 text-center dark:text-white text-black">
+          Gallery Showcase!
+        </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {galleryImages.map((image, index) => (
             <div key={index} className="relative group rounded-lg overflow-hidden">
@@ -90,9 +92,9 @@ export default function Media({ instagramImages }: { instagramImages: any[] }) {
                 <Image
                   src={image.src}
                   alt={`Gallery image ${index + 1}`}
-                  width={400} 
+                  width={400}
                   height={250}
-                  className="h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="md:w-[400px] md:h-[400px] object-cover transition-transform duration-500 group-hover:scale-105 w-[300px] h-[200px]"
                 />
               </Zoom>
             </div>
