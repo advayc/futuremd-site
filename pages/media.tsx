@@ -20,8 +20,8 @@ const galleryImages = [
 
 // Fetch Instagram images in getServerSideProps
 export async function getServerSideProps() {
-  const accessToken = process.env.INSTAGRAM_ACCESS_TOKEN; 
-  const userId = process.env.INSTAGRAM_USER_ID; 
+  const accessToken = 'IGQWRPZA0dCNU9Mc1dFak5xTldnYndmdHdPRkJyZAmYtSmd0NUlQSEIyZAHJlc0VKZAUJKWW9JQmI0MnNmazNVQVVjWW5DaUpBQmV2RXIwOFhfLVg0YS1LbVhyOEJVREc0enNVeEJvazhmRThmX21uRFFvZAUxhWkRzeVkZD'; 
+  const userId = '17841467125092972'; 
 
   const res = await fetch(`https://graph.instagram.com/${userId}/media?fields=id,caption,media_type,media_url,permalink&access_token=${accessToken}`);
   const data = await res.json();
