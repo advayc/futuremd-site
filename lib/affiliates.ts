@@ -15,4 +15,12 @@ export const affiliates = [
     width: 225,
     height: 225,
   },
+  {
+    name: "Microsoft",
+    subName: "Azure",
+    logo: "/affiliates/azure.png",
+    link: "https://azure.microsoft.com/en-ca",
+    width: 225,
+    height: 225,
+  },
 ];

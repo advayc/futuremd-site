@@ -11,9 +11,9 @@ import { Footer } from '@/components/footer';
 const inter = Inter({ subsets: ["latin"] });
 
 const images = [
-  { src: '/instagram/1.jpg', link: 'https://www.instagram.com/p/C9YGo8gheCm/?img_index=1' },
-  { src: '/instagram/2.jpg', link: 'https://www.instagram.com/p/C9YGo8gheCm/?img_index=1' },
-  { src: '/instagram/3.jpg', link: 'https://www.instagram.com/p/C9YGo8gheCm/?img_index=1' },
+  { src: '/instagram/1.jpg', link: 'https://www.instagram.com/p/C-tGRwDylz4/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA%3D%3D' },
+  { src: '/instagram/2.jpg', link: 'https://www.instagram.com/p/C93KMmCS5gz/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==' },
+  { src: '/instagram/3.jpg', link: 'https://www.instagram.com/p/C9YGo8gheCm/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==' },
 ];
 
 const galleryImages = [
