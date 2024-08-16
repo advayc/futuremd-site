@@ -72,8 +72,8 @@ export default function Media({ instagramImages }: { instagramImages: any[] }) {
             <Image
               src={image.media_url}
               alt={`Instagram post ${(index as number) + 1}`}
-              width={400}
-              height={400}
+              width={425}
+              height={425}
               className="h-auto object-cover rounded-lg"
               unoptimized
             />
