@@ -33,7 +33,7 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({ selected, setSelected }) =>
   return (
     <button
       onClick={toggleTheme}
-      className={`flex items-center p-2.5 rounded-md border-none transition-colors duration-1500 ${
+      className={`flex items-center p-[10px] rounded-md border-none transition-colors duration-1500 ${
         selected === 'light'
           ? 'text-black hover:bg-gray-300'
           : 'text-white hover:bg-[#191919]'

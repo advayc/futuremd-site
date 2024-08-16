@@ -28,7 +28,7 @@ const Navbar: React.FC<NavbarProps> = ({ showAnimation }) => {
     <header className={`bg-transparent flex justify-center w-full border-b-2 border-gray-300 dark:border-zinc-900 ${showAnimation ? 'animate-fade-in-down' : ''}`}>
       <nav className="flex items-center p-4 w-screen max-w-screen-xl">
         <div className="md:hidden flex items-center justify-between w-full">
-          <button onClick={toggleMenu} className="text-xl">
+          <button onClick={toggleMenu} className="text-xl p-[7px]">
             <Menu />
           </button>
           <a href="/" className="flex-grow-0 mx-auto">
