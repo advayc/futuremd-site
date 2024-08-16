@@ -1,20 +1,16 @@
 import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
+import { Key, useEffect } from "react";
 import Head from 'next/head'; 
 import Image from "next/image";
 import Zoom from 'react-medium-image-zoom';
 import Link from 'next/link';
 import 'react-medium-image-zoom/dist/styles.css';
 import { Footer } from '@/components/footer';
-const inter = Inter({ subsets: ["latin"] });
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
-const images = [
-  { src: '/instagram/1.jpg', link: 'https://www.instagram.com/p/C-tGRwDylz4/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA%3D%3D' },
-  { src: '/instagram/2.jpg', link: 'https://www.instagram.com/p/C93KMmCS5gz/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==' },
-  { src: '/instagram/3.jpg', link: 'https://www.instagram.com/p/C9YGo8gheCm/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==' },
-];
+const inter = Inter({ subsets: ["latin"] });
 
 const galleryImages = [
   { src: '/gallary/first.jpg' },
@@ -22,7 +18,22 @@ const galleryImages = [
   { src: '/gallary/third.jpg' },
 ];
 
-export default function Media() {
+// Fetch Instagram images in getServerSideProps
+export async function getServerSideProps() {
+  const accessToken = process.env.INSTAGRAM_ACCESS_TOKEN; 
+  const userId = process.env.INSTAGRAM_USER_ID; 
+
+  const res = await fetch(`https://graph.instagram.com/${userId}/media?fields=id,caption,media_type,media_url,permalink&access_token=${accessToken}`);
+  const data = await res.json();
+
+  return {
+    props: {
+      instagramImages: data.data || [],
+    },
+  };
+}
+
+export default function Media({ instagramImages }: { instagramImages: any[] }) {
   const router = useRouter();
 
   useEffect(() => {
@@ -56,11 +67,11 @@ export default function Media() {
         </Link></h1> 
 
       <section className="flex justify-around py-5 space-x-5">
-        {images.map((image, index) => (
-          <a key={index} href={image.link} target="_blank" rel="noopener noreferrer" className="block w-1/3 hover:scale-105 transition-transform duration-500">
+        {instagramImages.slice(0,3).map((image: { permalink: string | undefined; media_url: string | StaticImport; }, index: Key | null | undefined) => (
+          <a key={index} href={image.permalink} target="_blank" rel="noopener noreferrer" className="block w-1/3 hover:scale-105 transition-transform duration-500">
             <Image
-              src={image.src}
-              alt={`Instagram post ${index + 1}`}
+              src={image.media_url}
+              alt={`Instagram post ${(index as number) + 1}`}
               width={450}
               height={450}
               className="h-auto object-cover rounded-lg"
