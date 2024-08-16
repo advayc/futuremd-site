@@ -71,10 +71,11 @@ export default function Media({ instagramImages }: { instagramImages: any[] }) {
           <a key={index} href={image.permalink} target="_blank" rel="noopener noreferrer" className="block w-1/3 hover:scale-105 transition-transform duration-500">
             <Image
               src={image.media_url}
-              alt={`Instagram post ${(index as number) + 1}`}
+              alt={`Instagram post ${index + 1}`}
               width={450}
               height={450}
               className="h-auto object-cover rounded-lg"
+              unoptimized // Disable optimization
             />
           </a>
         ))}
