@@ -72,7 +72,7 @@ export const team = [
       title: "Sameer F.",
       role: "Finance",
       description: "Hello, my name is Sameer, I serve as part of the futuremd design team. I am passionate about economics/finance and hope to one day break into investment banking. When I have free time I enjoy reading, building computers and volunteering.",
-      image: "sameer.jpg",
+      image: "team/sameer.jpg",
       linkedin: "https://www.linkedin.com/in/sameer-f-4050a329b/",
       instagram: "https://www.instagram.com/fijibutter",
       email: "sameersferdousi@gmail.com",
