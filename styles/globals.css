@@ -105,3 +105,9 @@
   }
 }
 
+.smallersect {
+  zoom: 0.96; /* Old IE only */
+  -moz-transform: scale(0.96);
+  -webkit-transform: scale(0.96);
+  transform: scale(0.96);
+}

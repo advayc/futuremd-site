@@ -66,14 +66,14 @@ export default function Media({ instagramImages }: { instagramImages: any[] }) {
       <Link href='https://www.instagram.com/futuremd_team' target="_blank" className="dark:text-white dark:hover:text-hov text-black hover:text-li transition delay-75"> Instagram Page!
         </Link></h1> 
 
-      <section className="flex justify-around py-5 space-x-5">
+      <section className="flex justify-around py-5 space-x-10">
         {instagramImages.slice(0,3).map((image: { permalink: string | undefined; media_url: string | StaticImport; }, index: Key | null | undefined) => (
           <a key={index} href={image.permalink} target="_blank" rel="noopener noreferrer" className="block w-1/3 hover:scale-105 transition-transform duration-500">
             <Image
               src={image.media_url}
               alt={`Instagram post ${(index as number) + 1}`}
-              width={450}
-              height={450}
+              width={400}
+              height={400}
               className="h-auto object-cover rounded-lg"
               unoptimized
             />
