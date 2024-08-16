@@ -101,7 +101,7 @@ export default function Home() {
 
           <a href="https://www.instagram.com/p/C9YGo8gheCm/?img_index=1" target="_blank" className="flex flex-col items-center mb-4 transition-transform duration-300 transform hover:scale-105">
             <div className="w-64 h-40 overflow-hidden">
-              <img src="/instagram/1.jpg" alt="Fairs & Fests" className="object-cover w-full h-full" />
+              <img src="/instagram/3.jpg" alt="Fairs & Fests" className="object-cover w-full h-full" />
             </div>
             <p className="text-lg font-bold rounded-b-3xl text-white bg-li dark:bg-navy w-64 h-32 px-4 py-2 hover:drop-shadow-2xl">3. Learning Opportunities</p>
           </a>
