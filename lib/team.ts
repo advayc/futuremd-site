@@ -71,10 +71,11 @@ export const team = [
     {
       title: "Sameer F.",
       role: "Finance",
-      description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.",
-      image: "logo.png",
+      description: "Hello, my name is Sameer, I serve as part of the futuremd design team. I am passionate about economics/finance and hope to one day break into investment banking. When I have free time I enjoy reading, building computers and volunteering.",
+      image: "sameer.jpg",
+      linkedin: "https://www.linkedin.com/in/sameer-f-4050a329b/",
       instagram: "https://www.instagram.com/fijibutter",
-      email: "contact.futuremd@gmail.com",
+      email: "sameersferdousi@gmail.com",
     },    
 ];
   
