@@ -94,7 +94,7 @@ export default function Media({ instagramImages }: { instagramImages: any[] }) {
                   alt={`Gallery image ${index + 1}`}
                   width={400}
                   height={250}
-                  className="md:w-[400px] md:h-[400px] object-cover transition-transform duration-500 group-hover:scale-105 w-[300px] h-[200px]"
+                  className="md:w-[350px] md:h-[350px] object-cover transition-transform duration-500 group-hover:scale-105 w-[300px] h-[200px]"
                 />
               </Zoom>
             </div>
