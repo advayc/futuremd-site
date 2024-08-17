@@ -20,12 +20,17 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({ selected, setSelected }) =>
     }
 
     const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'm' || event.key === 'M') {
-        toggleTheme();
-      } else if (event.key === 'l' || event.key === 'L') {
-        changeTheme('light');
-      } else if (event.key === 'd' || event.key === 'D') {
-        changeTheme('dark');
+      const target = event.target as HTMLElement;
+      const isInputFocused = target.tagName === 'INPUT' || target.tagName === 'TEXTAREA';
+
+      if (!isInputFocused) {
+        if (event.key === 'm' || event.key === 'M') {
+          toggleTheme();
+        } else if (event.key === 'l' || event.key === 'L') {
+          changeTheme('light');
+        } else if (event.key === 'd' || event.key === 'D') {
+          changeTheme('dark');
+        }
       }
     };
 
