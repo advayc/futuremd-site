@@ -37,7 +37,7 @@ export default function About() {
       </header>
 
       <section className="smallersect w-full flex flex-col items-center">
-        <div className="mt-4 dark:bg-[#000000] flex flex-col md:flex-row items-center justify-center mb-12">
+        <div className="mt-4 dark:bg-[#000000] flex flex-col md:flex-row items-center justify-center mb-12 w-full px-20">
           <div id="who-we-are" className="md:flex-1 flex flex-col items-center md:items-start justify-center text-center md:text-left">
             <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold dark:text-white text-black mb-4">Who We Are..</h2>
             <p className="text-lg sm:text-xl md:text-2xl dark:text-[#828282] text-[#828282] font-bold leading-9" style={{ maxWidth: '800px' }}>
