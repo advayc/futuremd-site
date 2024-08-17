@@ -18,10 +18,30 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({ selected, setSelected }) =>
       setSelected('dark'); 
       localStorage.setItem('theme', 'dark');
     }
-  }, []); // Run once on component mount
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'm' || event.key === 'M') {
+        toggleTheme();
+      } else if (event.key === 'l' || event.key === 'L') {
+        changeTheme('light');
+      } else if (event.key === 'd' || event.key === 'D') {
+        changeTheme('dark');
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [selected]); // Add selected to the dependency array
 
   const toggleTheme = () => {
     const newTheme = selected === 'dark' ? 'light' : 'dark';
+    changeTheme(newTheme);
+  };
+
+  const changeTheme = (newTheme: ToggleOptionsType) => {
     document.documentElement.classList.add('transition-colors');
     setSelected(newTheme);
     localStorage.setItem('theme', newTheme);
