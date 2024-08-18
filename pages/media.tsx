@@ -13,9 +13,9 @@ import { StaticImport } from "next/dist/shared/lib/get-img-props";
 const inter = Inter({ subsets: ["latin"] });
 
 const galleryImages = [
-  { src: '/gallary/first.jpg' },
-  { src: '/gallary/second.jpg' },
-  { src: '/gallary/third.jpg' },
+  { src: '/gallery/first.jpg' },
+  { src: '/gallery/second.jpg' },
+  { src: '/gallery/third.jpg' },
 ];
 
 // Fetch Instagram images in getServerSideProps
@@ -87,7 +87,7 @@ export default function Media({ instagramImages }: { instagramImages: any[] }) {
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {galleryImages.map((image, index) => (
-            <div key={index} className="relative group rounded-lg overflow-hidden">
+            <div key={index} className="relative group rounded-lg overflow-hidden hover:scale-105 transition-transform duration-500">
               <Zoom>
                 <Image
                   src={image.src}
