@@ -333,8 +333,6 @@ const ContactForm: React.FC = () => {
                 >
                     <FaCheck className="mr-2" size={20} />
                     <span>Message sent successfully!</span>
-                    <button onClick={closeMessage} className="text-white">
-                    </button>
                 </div>
             )}
             {errorMessage && (
