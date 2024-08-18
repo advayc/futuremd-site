@@ -157,15 +157,7 @@ const ContactForm: React.FC = () => {
 
     return (
         <div className="w-full">
-            <form 
-                onSubmit={handleSubmit} 
-                onKeyDown={(e) => {
-                    if (e.key === 'Enter') {
-                        handleSubmit(e);
-                    }
-                }}
-                className="flex items-center justify-center"
-            >
+            <form onSubmit={handleSubmit} className="flex items-center justify-center">
                 <div className="flex-col md:w-1/2 sm:w-5/6 p-8 mt-10 transition-shadow duration-300 dark:shadow-[0_0_100px_rgba(255,255,255,0.1)] dark:hover:shadow-[0_0_100px_rgba(255,255,255,0.2)] shadow-[0_0_250px_rgba(0,0,0,0.2)] hover:shadow-[0_0_550px_rgba(0,0,0,0.3)]">
                     <div className="flex justify-center mt-2">
                         <div className="flex flex-row w-5/6 mt-4 space-x-10">
