@@ -119,7 +119,7 @@ const ContactForm: React.FC = () => {
 
     const textareaClasses = (hasError: boolean, isTouched: boolean) => {
         if (!isTouched) return 'border-gray-700'; // Default border color
-        return hasError 
+        return hasError || (!message && isTouched)
             ? 'border-red-500 shadow-[0_0_10px_0_rgba(239,68,68,0.5)]' // Red border with centered glow
             : 'border-green-500 shadow-[0_0_10px_0_rgba(34,197,94,0.5)]'; // Green border with centered glow
     };
@@ -232,13 +232,14 @@ const ContactForm: React.FC = () => {
                                 onChange={(e) => {
                                     setEmail(e.target.value);
                                     setEmailTouched(true);
+                                    setEmailError(validateEmail(e.target.value) ? '' : 'Invalid email address.');
                                 }}
                                 onBlur={() => setEmailTouched(true)}
                                 onKeyDown={(e) => handleKeyDown(e, 2)}
                                 ref={(el) => { inputs.current[2] = el; }}
                                 required
                             />
-                            {emailError && (
+                            {emailError && isEmailTouched && (
                                 <div className="text-red-500 mb-2 flex items-center">
                                     <IoMdAlert className="mr-1" /> {emailError}
                                 </div>
@@ -313,6 +314,11 @@ const ContactForm: React.FC = () => {
                                 <IoMdAlert className="mr-1" /> {messageError}
                             </div>
                             )}
+                            {!message && isMessageTouched && (
+                                <div className="text-red-500 mb-2 flex items-center">
+                                    <IoMdAlert className="mr-1" /> This field is required.
+                                </div>
+                            )}
                         </div>
                     </div>
                     <div className="flex justify-center">
@@ -333,6 +339,9 @@ const ContactForm: React.FC = () => {
                 >
                     <FaCheck className="mr-2" size={20} />
                     <span>Message sent successfully!</span>
+                    <button onClick={closeMessage} className="text-white">
+                        <IoMdClose size={24} />
+                    </button>
                 </div>
             )}
             {errorMessage && (
