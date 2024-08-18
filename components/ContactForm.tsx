@@ -11,12 +11,15 @@ const ContactForm: React.FC = () => {
     const [isMessageSent, setMessageSent] = useState(false);
     const [errorMessage, setErrorMessage] = useState('');
     const [emailError, setEmailError] = useState('');
+    const [messageError, setMessageError] = useState('');
 
     const [isFirstNameTouched, setFirstNameTouched] = useState(false);
     const [isLastNameTouched, setLastNameTouched] = useState(false);
     const [isEmailTouched, setEmailTouched] = useState(false);
     const [isSubjectTouched, setSubjectTouched] = useState(false);
     const [isMessageTouched, setMessageTouched] = useState(false);
+
+    const [wordCount, setWordCount] = useState(500);
 
     const inputs = useRef<(HTMLInputElement | HTMLTextAreaElement | null)[]>([]);
 
@@ -52,6 +55,14 @@ const ContactForm: React.FC = () => {
             setEmailError('');
         }
 
+        // Validate message length
+        if (wordCount < 0) {
+            setMessageError('Message exceeds the maximum word limit of 500.');
+            return;
+        } else {
+            setMessageError('');
+        }
+
         // Send email using Nodemailer
         const response = await fetch('/api/contact/send-email', {
             method: 'POST',
@@ -70,6 +81,7 @@ const ContactForm: React.FC = () => {
             setEmail('');
             setSubject('');
             setMessage('');
+            setWordCount(500);
             resetTouchedStates();
         } else {
             console.log('ERROR OCCURRED');
@@ -111,12 +123,22 @@ const ContactForm: React.FC = () => {
             : 'border-green-500 shadow-[0_0_10px_0_rgba(34,197,94,0.5)]'; // Green border with centered glow
     };
 
+    const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+        const value = e.target.value;
+        setMessage(value);
+        setMessageTouched(true);
+
+        // Count words and update wordCount
+        const words = value.trim().split(/\s+/).length;
+        setWordCount(500 - words);
+    };
+
     return (
         <div className="w-full">
             <form onSubmit={handleSubmit} className="flex items-center justify-center">
                 <div className="flex-col md:w-1/2 sm:w-5/6 p-8 mt-10 transition-shadow duration-300 dark:shadow-[0_0_100px_rgba(255,255,255,0.1)] dark:hover:shadow-[0_0_100px_rgba(255,255,255,0.2)] shadow-[0_0_250px_rgba(0,0,0,0.2)] hover:shadow-[0_0_550px_rgba(0,0,0,0.3)]">
-                    <div className="flex justify-center">
-                        <div className="flex flex-row w-5/6 mt-4 space-x-20">
+                    <div className="flex justify-center mt-2">
+                        <div className="flex flex-row w-5/6 mt-4 space-x-10">
                             <div className="flex flex-col w-1/2">
                                 <label className="font-bold dark:text-white text-black sm:text-lg md:text-xl mb-2" htmlFor="firstName">
                                     First Name:
@@ -174,26 +196,21 @@ const ContactForm: React.FC = () => {
                             </label>
                             <input
                                 id="email"
-                                className={`dark:text-white text-black w-full outline-0 mb-1 h-12 bg-gray-200 rounded-md p-3 dark:bg-[#191919] border-2 ${inputClasses(!!emailError || !email, isEmailTouched)}`}
+                                className={`dark:text-white text-black w-full outline-0 mb-1 h-12 bg-gray-200 rounded-md p-3 dark:bg-[#191919] border-2 ${inputClasses(!validateEmail(email), isEmailTouched)}`}
                                 type="email"
                                 value={email}
                                 onChange={(e) => {
                                     setEmail(e.target.value);
                                     setEmailTouched(true);
-                                    if (validateEmail(e.target.value)) {
-                                        setEmailError('');
-                                    } else {
-                                        setEmailError('Invalid email address.');
-                                    }
                                 }}
                                 onBlur={() => setEmailTouched(true)}
                                 onKeyDown={(e) => handleKeyDown(e, 2)}
                                 ref={(el) => { inputs.current[2] = el; }}
                                 required
                             />
-                            {(emailError || (!email && isEmailTouched)) && (
+                            {emailError && (
                                 <div className="text-red-500 mb-2 flex items-center">
-                                    <IoMdAlert className="mr-1" /> {email ? emailError : 'This field is required.'}
+                                    <IoMdAlert className="mr-1" /> {emailError}
                                 </div>
                             )}
                         </div>
@@ -226,26 +243,45 @@ const ContactForm: React.FC = () => {
                     </div>
                     <div className="flex justify-center">
                         <div className="flex flex-col w-5/6 mt-4">
-                            <label className="font-bold dark:text-white text-black sm:text-lg md:text-xl mb-2" htmlFor="message">
+                            <div className="flex justify-between items-center mb-2">
+                            <label
+                                className="font-bold dark:text-white text-black sm:text-lg md:text-xl"
+                                htmlFor="message"
+                            >
                                 Message:
                             </label>
+                            <div className="flex items-center text-gray-500 ml-2">
+                                {wordCount < 0 ? (
+                                <span className="text-red-500">
+                                    {wordCount}
+                                </span>
+                                ) : (
+                                `${wordCount}`
+                                )}
+                            </div>
+                            </div>
+                            <div className="flex items-start">
                             <textarea
                                 id="message"
-                                className={`dark:text-white text-black w-full outline-0 h-32 bg-gray-200 rounded-md p-3 dark:bg-[#191919] border-2 ${textareaClasses(!message, isMessageTouched)}`}
+                                className={`dark:text-white text-black w-full outline-0 mb-1 p-3 bg-gray-200 rounded-md dark:bg-[#191919] border-2 ${textareaClasses(
+                                wordCount < 0,
+                                isMessageTouched
+                                )}`}
+                                rows={8}
                                 value={message}
-                                onChange={(e) => {
-                                    setMessage(e.target.value);
-                                    setMessageTouched(true);
-                                }}
+                                onChange={handleMessageChange}
                                 onBlur={() => setMessageTouched(true)}
                                 onKeyDown={(e) => handleKeyDown(e, 4)}
-                                ref={(el) => { inputs.current[4] = el; }}
+                                ref={(el) => {
+                                inputs.current[4] = el;
+                                }}
                                 required
-                            ></textarea>
-                            {!message && isMessageTouched && (
-                                <div className="text-red-500 mb-2 flex items-center">
-                                    <IoMdAlert className="mr-1" /> This field is required.
-                                </div>
+                            />
+                            </div>
+                            {messageError && (
+                            <div className="text-red-500 mb-2 flex items-center">
+                                <IoMdAlert className="mr-1" /> {messageError}
+                            </div>
                             )}
                         </div>
                     </div>
