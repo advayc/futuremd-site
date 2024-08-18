@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
 import { useRouter } from "next/router";
-import { Key, useEffect, useState } from "react";
+import { Key, useEffect } from "react";
 import Head from 'next/head'; 
 import Image from "next/image";
 import Zoom from 'react-medium-image-zoom';
@@ -13,9 +13,9 @@ import { StaticImport } from "next/dist/shared/lib/get-img-props";
 const inter = Inter({ subsets: ["latin"] });
 
 const galleryImages = [
-  { src: '/gallery/first.jpg' },
-  { src: '/gallery/second.jpg' },
-  { src: '/gallery/third.jpg' },
+  { src: '/gallary/first.jpg' },
+  { src: '/gallary/second.jpg' },
+  { src: '/gallary/third.jpg' },
 ];
 
 // Fetch Instagram images in getServerSideProps
@@ -35,7 +35,6 @@ export async function getServerSideProps() {
 
 export default function Media({ instagramImages }: { instagramImages: any[] }) {
   const router = useRouter();
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
     const handleRouteChange = (url: string) => {
@@ -51,22 +50,6 @@ export default function Media({ instagramImages }: { instagramImages: any[] }) {
       router.events.off('routeChangeStart', handleRouteChange);
     };
   }, [router.events]);
-
-  // Handle keyboard navigation for gallery images
-  useEffect(() => {
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'ArrowLeft') {
-        setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? galleryImages.length - 1 : prevIndex - 1));
-      } else if (event.key === 'ArrowRight') {
-        setCurrentImageIndex((prevIndex) => (prevIndex === galleryImages.length - 1 ? 0 : prevIndex + 1));
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-    return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-    };
-  }, []);
 
   return (
     <main className={`min-h-screen flex flex-col items-center pt-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
@@ -104,14 +87,14 @@ export default function Media({ instagramImages }: { instagramImages: any[] }) {
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {galleryImages.map((image, index) => (
-            <div key={index} className={`relative group rounded-lg overflow-hidden ${index === currentImageIndex ? 'block' : 'hidden'}`}>
+            <div key={index} className="relative group rounded-lg overflow-hidden hover:scale-105 transition-transform duration-500">
               <Zoom>
                 <Image
                   src={image.src}
                   alt={`Gallery image ${index + 1}`}
                   width={400}
                   height={250}
-                  className="md:w-[350px] md:h-[350px] object-cover transition-transform duration-500 group-hover:scale-105 w-[300px] h-[200px]"
+                  className="md:w-[350px] md:h-[350px] object-cover w-[300px] h-[200px]"
                 />
               </Zoom>
             </div>
