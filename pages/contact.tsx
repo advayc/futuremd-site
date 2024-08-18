@@ -39,7 +39,7 @@ export default function Contact() {
         </p>
         <ContactForm />
         <div className="flex flex-col items-center my-10 mb-18 ">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 dark:text-white text-black">Connect With Us</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 dark:text-white text-black">Connect With Us!</h2>
           <div className="flex space-x-4">
             <a href="https://www.instagram.com/futuremd_team/" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={32} className="dark:text-hov dark:hover:text-primary text-li hover:text-navy transition-all duration-300" />

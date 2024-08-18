@@ -1,4 +1,4 @@
-import React, { useState, FormEvent, useRef } from 'react';
+import React, { useState, useEffect, FormEvent, useRef } from 'react';
 import { IoMdClose, IoMdAlert } from 'react-icons/io';
 import { FaCheck } from 'react-icons/fa';
 
@@ -134,9 +134,38 @@ const ContactForm: React.FC = () => {
         setWordCount(500 - words);
     };
 
+    // Automatically close the success message after 3 seconds with a fade-out effect
+    useEffect(() => {
+        if (isMessageSent) {
+            const timer = setTimeout(() => {
+                setMessageSent(false);
+            }, 4000); // Total duration for message visibility
+
+            const fadeOutTimer = setTimeout(() => {
+                const messageElement = document.getElementById('success-message');
+                if (messageElement) {
+                    messageElement.style.opacity = '0';
+                }
+            }, 3000); // Start fading out after 3 seconds
+
+            return () => {
+                clearTimeout(timer);
+                clearTimeout(fadeOutTimer);
+            };
+        }
+    }, [isMessageSent]);
+
     return (
         <div className="w-full">
-            <form onSubmit={handleSubmit} className="flex items-center justify-center">
+            <form 
+                onSubmit={handleSubmit} 
+                onKeyDown={(e) => {
+                    if (e.key === 'Enter') {
+                        handleSubmit(e);
+                    }
+                }}
+                className="flex items-center justify-center"
+            >
                 <div className="flex-col md:w-1/2 sm:w-5/6 p-8 mt-10 transition-shadow duration-300 dark:shadow-[0_0_100px_rgba(255,255,255,0.1)] dark:hover:shadow-[0_0_100px_rgba(255,255,255,0.2)] shadow-[0_0_250px_rgba(0,0,0,0.2)] hover:shadow-[0_0_550px_rgba(0,0,0,0.3)]">
                     <div className="flex justify-center mt-2">
                         <div className="flex flex-row w-5/6 mt-4 space-x-10">
@@ -297,7 +326,11 @@ const ContactForm: React.FC = () => {
                 </div>
             </form>
             {isMessageSent && (
-                <div className="fixed bottom-4 left-4 w-full max-w-md p-4 bg-green-500 text-white rounded-md shadow-lg flex items-center justify-between">
+                <div 
+                    id="success-message"
+                    className="fixed bottom-4 left-4 w-full max-w-md p-4 bg-green-500 text-white rounded-md shadow-lg flex items-center justify-between transition-opacity duration-1000"
+                    style={{ opacity: 1 }}
+                >
                     <FaCheck className="mr-2" size={20} />
                     <span>Message sent successfully!</span>
                     <button onClick={closeMessage} className="text-white">
