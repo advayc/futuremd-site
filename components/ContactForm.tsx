@@ -1,5 +1,6 @@
 import React, { useState, FormEvent, useRef } from 'react';
 import { IoMdClose, IoMdAlert } from 'react-icons/io';
+import { FaCheck } from 'react-icons/fa';
 
 const ContactForm: React.FC = () => {
     const [firstName, setFirstName] = useState('');
@@ -297,6 +298,7 @@ const ContactForm: React.FC = () => {
             </form>
             {isMessageSent && (
                 <div className="fixed bottom-4 left-4 w-full max-w-md p-4 bg-green-500 text-white rounded-md shadow-lg flex items-center justify-between">
+                    <FaCheck className="mr-2" size={20} />
                     <span>Message sent successfully!</span>
                     <button onClick={closeMessage} className="text-white">
                         <IoMdClose size={24} />
