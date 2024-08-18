@@ -1,4 +1,4 @@
-import React, { useState, FormEvent } from 'react';
+import React, { useState, FormEvent, useRef } from 'react';
 import { IoMdClose, IoMdAlert } from 'react-icons/io';
 
 const ContactForm: React.FC = () => {
@@ -17,6 +17,16 @@ const ContactForm: React.FC = () => {
     const [isEmailTouched, setEmailTouched] = useState(false);
     const [isSubjectTouched, setSubjectTouched] = useState(false);
     const [isMessageTouched, setMessageTouched] = useState(false);
+
+    const inputs = useRef<(HTMLInputElement | HTMLTextAreaElement | null)[]>([]);
+
+    const handleKeyDown = (event: React.KeyboardEvent, index: number) => {
+        if (event.key === 'Tab') {
+            event.preventDefault();
+            const nextIndex = (index + 1) % inputs.current.length;
+            inputs.current[nextIndex]?.focus();
+        }
+    };
 
     const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
@@ -106,7 +116,7 @@ const ContactForm: React.FC = () => {
             <form onSubmit={handleSubmit} className="flex items-center justify-center">
                 <div className="flex-col md:w-1/2 sm:w-5/6 p-8 mt-10 transition-shadow duration-300 dark:shadow-[0_0_100px_rgba(255,255,255,0.1)] dark:hover:shadow-[0_0_100px_rgba(255,255,255,0.2)] shadow-[0_0_250px_rgba(0,0,0,0.2)] hover:shadow-[0_0_550px_rgba(0,0,0,0.3)]">
                     <div className="flex justify-center">
-                        <div className="flex flex-row w-5/6 mt-4 space-x-4">
+                        <div className="flex flex-row w-5/6 mt-4 space-x-20">
                             <div className="flex flex-col w-1/2">
                                 <label className="font-bold dark:text-white text-black sm:text-lg md:text-xl mb-2" htmlFor="firstName">
                                     First Name:
@@ -121,6 +131,8 @@ const ContactForm: React.FC = () => {
                                         setFirstNameTouched(true);
                                     }}
                                     onBlur={() => setFirstNameTouched(true)}
+                                    onKeyDown={(e) => handleKeyDown(e, 0)}
+                                    ref={(el) => { inputs.current[0] = el; }}
                                     required
                                 />
                                 {!firstName && isFirstNameTouched && (
@@ -143,6 +155,8 @@ const ContactForm: React.FC = () => {
                                         setLastNameTouched(true);
                                     }}
                                     onBlur={() => setLastNameTouched(true)}
+                                    onKeyDown={(e) => handleKeyDown(e, 1)}
+                                    ref={(el) => { inputs.current[1] = el; }}
                                     required
                                 />
                                 {!lastName && isLastNameTouched && (
@@ -173,6 +187,8 @@ const ContactForm: React.FC = () => {
                                     }
                                 }}
                                 onBlur={() => setEmailTouched(true)}
+                                onKeyDown={(e) => handleKeyDown(e, 2)}
+                                ref={(el) => { inputs.current[2] = el; }}
                                 required
                             />
                             {(emailError || (!email && isEmailTouched)) && (
@@ -197,6 +213,8 @@ const ContactForm: React.FC = () => {
                                     setSubjectTouched(true);
                                 }}
                                 onBlur={() => setSubjectTouched(true)}
+                                onKeyDown={(e) => handleKeyDown(e, 3)}
+                                ref={(el) => { inputs.current[3] = el; }}
                                 required
                             />
                             {!subject && isSubjectTouched && (
@@ -220,6 +238,8 @@ const ContactForm: React.FC = () => {
                                     setMessageTouched(true);
                                 }}
                                 onBlur={() => setMessageTouched(true)}
+                                onKeyDown={(e) => handleKeyDown(e, 4)}
+                                ref={(el) => { inputs.current[4] = el; }}
                                 required
                             ></textarea>
                             {!message && isMessageTouched && (
