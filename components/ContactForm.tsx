@@ -21,8 +21,12 @@ const ContactForm: React.FC = () => {
     const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
 
-        // Concatenate first name and last name
-        const name = `${firstName} ${lastName}`;
+        // Mark all fields as touched
+        setFirstNameTouched(true);
+        setLastNameTouched(true);
+        setEmailTouched(true);
+        setSubjectTouched(true);
+        setMessageTouched(true);
 
         // Validate inputs
         if (!firstName || !lastName || !email || !subject || !message) {
@@ -44,11 +48,11 @@ const ContactForm: React.FC = () => {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ name, email, subject, message }),
+            body: JSON.stringify({ name: `${firstName} ${lastName}`, email, subject, message }),
         });
 
         if (response.ok) {
-            console.log(`SUCCESS.\nNAME: ${name}\nEMAIL: ${email}\nSUBJECT: ${subject}\nMESSAGE: ${message}`);
+            console.log(`SUCCESS.\nNAME: ${firstName} ${lastName}\nEMAIL: ${email}\nSUBJECT: ${subject}\nMESSAGE: ${message}`);
             setMessageSent(true);
             // Clear user inputs
             setFirstName('');
@@ -120,7 +124,7 @@ const ContactForm: React.FC = () => {
                                     required
                                 />
                                 {!firstName && isFirstNameTouched && (
-                                    <div className="text-red-500 mb-2 flex items-center">
+                                    <div className="text-red-500 mb-2 font-bold flex items-center">
                                         <IoMdAlert className="mr-1" /> This field is required.
                                     </div>
                                 )}
