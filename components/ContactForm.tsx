@@ -180,7 +180,7 @@ const ContactForm: React.FC = () => {
                                     required
                                 />
                                 {!firstName && isFirstNameTouched && (
-                                    <div className="text-red-500 mb-2 font-bold flex items-center">
+                                    <div className="text-red-500 mb-2 flex items-center">
                                         <IoMdAlert className="mr-1" /> This field is required.
                                     </div>
                                 )}
