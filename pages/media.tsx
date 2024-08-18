@@ -87,7 +87,7 @@ export default function Media({ instagramImages }: { instagramImages: any[] }) {
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {galleryImages.map((image, index) => (
-            <div key={index} className="relative group rounded-lg overflow-hidden hover:scale-105 transition-transform duration-500">
+            <div key={index} className="relative group rounded-lg overflow-hidden">
               <Zoom>
                 <Image
                   src={image.src}
