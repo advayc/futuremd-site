@@ -67,7 +67,7 @@ export default function Home() {
           <span className="dark:text-white text-black">Inc.</span>
         </h1>
         <p className="text-lg sm:text-xl md:text-3xl font-bold mt-3 md:mt-6 dark:text-dark-text text-zinc-500">
-          A student-led nonprofit organization with the goal to educate <br className="hidden md:block" /> teens about life during and after medical school!
+          A youth-led nonprofit organization with the goal to educate <br className="hidden md:block" /> teens about life during and after medical school!
         </p>
         <button onClick={handleScroll}>
           <CiCircleChevDown className="text-5xl text-zinc-500 hover:text-li dark:hover:text-hov mt-20 sm:mt-40" />
