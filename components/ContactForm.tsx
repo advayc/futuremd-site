@@ -104,16 +104,16 @@ const ContactForm: React.FC = () => {
     return (
         <div className="w-full">
             <form onSubmit={handleSubmit} className="flex items-center justify-center">
-                <div className="flex-col md:w-1/2 sm:w-5/6 p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300 dark:shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+                <div className="flex-col md:w-1/2 sm:w-5/6 p-8 mt-10 transition-shadow duration-300 dark:shadow-[0_0_100px_rgba(255,255,255,0.1)] dark:hover:shadow-[0_0_100px_rgba(255,255,255,0.2)] shadow-[0_0_250px_rgba(0,0,0,0.2)] hover:shadow-[0_0_550px_rgba(0,0,0,0.3)]">
                     <div className="flex justify-center">
                         <div className="flex flex-row w-5/6 mt-4 space-x-4">
                             <div className="flex flex-col w-1/2">
-                                <label className="font-bold dark:text-white text-black text-xl mb-2" htmlFor="firstName">
+                                <label className="font-bold dark:text-white text-black sm:text-lg md:text-xl mb-2" htmlFor="firstName">
                                     First Name:
                                 </label>
                                 <input
                                     id="firstName"
-                                    className={`dark:text-white text-black w-full outline-0 mb-1 h-12 bg-gray-200 rounded-lg p-3 dark:bg-[#191919] border-2 ${inputClasses(!firstName, isFirstNameTouched)}`}
+                                    className={`dark:text-white text-black w-full outline-0 mb-1 h-12 bg-gray-200 rounded-md p-3 dark:bg-[#191919] border-2 ${inputClasses(!firstName, isFirstNameTouched)}`}
                                     type="text"
                                     value={firstName}
                                     onChange={(e) => {
@@ -130,12 +130,12 @@ const ContactForm: React.FC = () => {
                                 )}
                             </div>
                             <div className="flex flex-col w-1/2">
-                                <label className="font-bold dark:text-white text-black text-xl mb-2" htmlFor="lastName">
+                                <label className="font-bold dark:text-white text-black sm:text-lg md:text-xl mb-2" htmlFor="lastName">
                                     Last Name:
                                 </label>
                                 <input
                                     id="lastName"
-                                    className={`dark:text-white text-black w-full outline-0 mb-1 h-12 bg-gray-200 rounded-lg p-3 dark:bg-[#191919] border-2 ${inputClasses(!lastName, isLastNameTouched)}`}
+                                    className={`dark:text-white text-black w-full outline-0 mb-1 h-12 bg-gray-200 rounded-md p-3 dark:bg-[#191919] border-2 ${inputClasses(!lastName, isLastNameTouched)}`}
                                     type="text"
                                     value={lastName}
                                     onChange={(e) => {
@@ -155,12 +155,12 @@ const ContactForm: React.FC = () => {
                     </div>
                     <div className="flex justify-center">
                         <div className="flex flex-col w-5/6 mt-4">
-                            <label className="font-bold dark:text-white text-black text-xl mb-2" htmlFor="email">
+                            <label className="font-bold dark:text-white text-black sm:text-lg md:text-xl mb-2" htmlFor="email">
                                 Email:
                             </label>
                             <input
                                 id="email"
-                                className={`dark:text-white text-black w-full outline-0 mb-1 h-12 bg-gray-200 rounded-lg p-3 dark:bg-[#191919] border-2 ${inputClasses(!!emailError || !email, isEmailTouched)}`}
+                                className={`dark:text-white text-black w-full outline-0 mb-1 h-12 bg-gray-200 rounded-md p-3 dark:bg-[#191919] border-2 ${inputClasses(!!emailError || !email, isEmailTouched)}`}
                                 type="email"
                                 value={email}
                                 onChange={(e) => {
@@ -184,12 +184,12 @@ const ContactForm: React.FC = () => {
                     </div>
                     <div className="flex justify-center">
                         <div className="flex flex-col w-5/6 mt-4">
-                            <label className="font-bold dark:text-white text-black text-xl mb-2" htmlFor="subject">
+                            <label className="font-bold dark:text-white text-black sm:text-lg md:text-xl mb-2" htmlFor="subject">
                                 Subject:
                             </label>
                             <input
                                 id="subject"
-                                className={`dark:text-white text-black w-full outline-0 mb-1 h-12 bg-gray-200 rounded-lg p-3 dark:bg-[#191919] border-2 ${inputClasses(!subject, isSubjectTouched)}`}
+                                className={`dark:text-white text-black w-full outline-0 mb-1 h-12 bg-gray-200 rounded-md p-3 dark:bg-[#191919] border-2 ${inputClasses(!subject, isSubjectTouched)}`}
                                 type="text"
                                 value={subject}
                                 onChange={(e) => {
@@ -208,12 +208,12 @@ const ContactForm: React.FC = () => {
                     </div>
                     <div className="flex justify-center">
                         <div className="flex flex-col w-5/6 mt-4">
-                            <label className="font-bold dark:text-white text-black text-xl mb-2" htmlFor="message">
+                            <label className="font-bold dark:text-white text-black sm:text-lg md:text-xl mb-2" htmlFor="message">
                                 Message:
                             </label>
                             <textarea
                                 id="message"
-                                className={`dark:text-white text-black w-full outline-0 h-32 bg-gray-200 rounded-lg p-3 dark:bg-[#191919] border-2 ${textareaClasses(!message, isMessageTouched)}`}
+                                className={`dark:text-white text-black w-full outline-0 h-32 bg-gray-200 rounded-md p-3 dark:bg-[#191919] border-2 ${textareaClasses(!message, isMessageTouched)}`}
                                 value={message}
                                 onChange={(e) => {
                                     setMessage(e.target.value);
@@ -231,7 +231,7 @@ const ContactForm: React.FC = () => {
                     </div>
                     <div className="flex justify-center">
                         <button
-                            className="mt-6 mb-4 h-14 w-2/3 lg:w-2/3 bg-blue-800 text-white rounded-lg text-lg font-bold hover:bg-blue-900 transition-all duration-300"
+                            className="mt-10 mb-4 h-14 w-2/3 lg:w-2/3 relative rounded-md px-4 py-2 sm:text-lg md:text-xl font-medium text-white transition-all bg-blue-500 hover:bg-blue-800"
                             type="submit"
                         >
                             Submit
@@ -240,7 +240,7 @@ const ContactForm: React.FC = () => {
                 </div>
             </form>
             {isMessageSent && (
-                <div className="fixed bottom-4 left-4 w-full max-w-md p-4 bg-green-500 text-white rounded-lg shadow-lg flex items-center justify-between">
+                <div className="fixed bottom-4 left-4 w-full max-w-md p-4 bg-green-500 text-white rounded-md shadow-lg flex items-center justify-between">
                     <span>Message sent successfully!</span>
                     <button onClick={closeMessage} className="text-white">
                         <IoMdClose size={24} />
@@ -248,7 +248,7 @@ const ContactForm: React.FC = () => {
                 </div>
             )}
             {errorMessage && (
-                <div className="fixed bottom-4 left-4 w-full max-w-md p-4 bg-red-500 text-white rounded-lg shadow-lg flex items-center justify-between">
+                <div className="fixed bottom-4 left-4 w-full max-w-md p-4 bg-red-500 text-white rounded-md shadow-lg flex items-center justify-between">
                     <span>{errorMessage}</span>
                     <button onClick={() => setErrorMessage('')} className="text-white">
                         <IoMdClose size={24} />
