@@ -6,9 +6,15 @@ const ContactForm: React.FC = () => {
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
+
     const [isMessageSent, setMessageSent] = useState(false);
     const [errorMessage, setErrorMessage] = useState('');
     const [emailError, setEmailError] = useState('');
+
+    const [isNameTouched, setNameTouched] = useState(false);
+    const [isEmailTouched, setEmailTouched] = useState(false);
+    const [isSubjectTouched, setSubjectTouched] = useState(false);
+    const [isMessageTouched, setMessageTouched] = useState(false);
 
     const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
@@ -44,6 +50,7 @@ const ContactForm: React.FC = () => {
             setEmail('');
             setSubject('');
             setMessage('');
+            resetTouchedStates();
         } else {
             console.log('ERROR OCCURRED');
             setErrorMessage('Error sending message. Please try again.');
@@ -56,15 +63,33 @@ const ContactForm: React.FC = () => {
         return emailRegex.test(email);
     }
 
+    const resetTouchedStates = () => {
+        setNameTouched(false);
+        setEmailTouched(false);
+        setSubjectTouched(false);
+        setMessageTouched(false);
+    }
+
     const closeMessage = () => {
         setMessageSent(false);
         setErrorMessage('');
     }
 
+    // Determine input classes based on error and touched states
+    const inputClasses = (hasError: boolean, isTouched: boolean) => {
+        if (!isTouched) return 'border-gray-700'; // Default border color
+        return hasError ? 'border-red-500' : 'border-green-500';
+    };
+
+    const textareaClasses = (hasError: boolean, isTouched: boolean) => {
+        if (!isTouched) return 'border-gray-700'; // Default border color
+        return hasError ? 'border-red-500' : 'border-green-500';
+    };
+
     return (
         <div className="w-full">
             <form onSubmit={handleSubmit} className="flex items-center justify-center">
-                <div className="flex-col border-2 border-hov rounded-lg w-3/4 p-8 shadow hover:shadow-lgshadow-md mt-12">
+                <div className="flex-col border-2 border-hov rounded-lg w-3/4 p-8 shadow hover:shadow-lg mt-12">
                     <div className="flex justify-center">
                         <div className="flex flex-col w-5/6 mt-4">
                             <label className="font-bold dark:text-white text-black text-xl mb-2" htmlFor="name">
@@ -72,10 +97,14 @@ const ContactForm: React.FC = () => {
                             </label>
                             <input
                                 id="name"
-                                className="dark:text-white text-black w-full outline-0 mb-4 h-12 bg-gray-200 rounded-lg border-2 border-gray-700 dark:bg-[#191919] p-3"
+                                className={`dark:text-white text-black w-full outline-0 mb-4 h-12 bg-gray-200 rounded-lg p-3 dark:bg-[#191919] border-2 ${inputClasses(!name, isNameTouched)}`}
                                 type="text"
                                 value={name}
-                                onChange={(e) => setName(e.target.value)}
+                                onChange={(e) => {
+                                    setName(e.target.value);
+                                    setNameTouched(true);
+                                }}
+                                onBlur={() => setNameTouched(true)}
                                 required
                             />
                         </div>
@@ -85,32 +114,45 @@ const ContactForm: React.FC = () => {
                             <label className="font-bold dark:text-white text-black text-xl mb-2" htmlFor="email">
                                 Email:
                             </label>
+                            <input
+                                id="email"
+                                className={`dark:text-white text-black w-full outline-0 mb-4 h-12 bg-gray-200 rounded-lg p-3 dark:bg-[#191919] border-2 ${inputClasses(!!emailError, isEmailTouched)}`}
+                                type="email"
+                                value={email}
+                                onChange={(e) => {
+                                    setEmail(e.target.value);
+                                    setEmailTouched(true);
+                                    if (validateEmail(e.target.value)) {
+                                        setEmailError('');
+                                    } else {
+                                        setEmailError('Invalid email address.');
+                                    }
+                                }}
+                                onBlur={() => setEmailTouched(true)}
+                                required
+                            />
                             {emailError && (
                                 <div className="text-red-500 mb-2">
                                     {emailError}
                                 </div>
                             )}
-                            <input
-                                id="email"
-                                className="dark:text-white text-black w-full outline-0 mb-4 h-12 bg-gray-200 rounded-lg border-2 border-gray-700 dark:bg-[#191919] p-3"
-                                type="email"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                                required
-                            />
                         </div>
                     </div>
                     <div className="flex justify-center">
                         <div className="flex flex-col w-5/6 mt-4">
                             <label className="font-bold dark:text-white text-black text-xl mb-2" htmlFor="subject">
-                        Subject:
+                                Subject:
                             </label>
                             <input
                                 id="subject"
-                                className="dark:text-white text-black w-full outline-0 mb-4 h-12 bg-gray-200 rounded-lg border-2 border-gray-700 dark:bg-[#191919] p-3"
+                                className={`dark:text-white text-black w-full outline-0 mb-4 h-12 bg-gray-200 rounded-lg p-3 dark:bg-[#191919] border-2 ${inputClasses(!subject, isSubjectTouched)}`}
                                 type="text"
                                 value={subject}
-                                onChange={(e) => setSubject(e.target.value)}
+                                onChange={(e) => {
+                                    setSubject(e.target.value);
+                                    setSubjectTouched(true);
+                                }}
+                                onBlur={() => setSubjectTouched(true)}
                                 required
                             />
                         </div>
@@ -122,9 +164,13 @@ const ContactForm: React.FC = () => {
                             </label>
                             <textarea
                                 id="message"
-                                className="dark:text-white text-black w-full outline-0 h-32 bg-gray-200 rounded-lg border-2 border-gray-700 dark:bg-[#191919] p-3"
+                                className={`dark:text-white text-black w-full outline-0 h-32 bg-gray-200 rounded-lg p-3 dark:bg-[#191919] border-2 ${textareaClasses(!message, isMessageTouched)}`}
                                 value={message}
-                                onChange={(e) => setMessage(e.target.value)}
+                                onChange={(e) => {
+                                    setMessage(e.target.value);
+                                    setMessageTouched(true);
+                                }}
+                                onBlur={() => setMessageTouched(true)}
                                 required
                             ></textarea>
                         </div>
