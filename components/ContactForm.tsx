@@ -1,5 +1,5 @@
 import React, { useState, FormEvent } from 'react';
-import { IoMdClose } from 'react-icons/io';
+import { IoMdClose, IoMdAlert } from 'react-icons/io';
 
 const ContactForm: React.FC = () => {
     const [firstName, setFirstName] = useState('');
@@ -120,7 +120,9 @@ const ContactForm: React.FC = () => {
                                     required
                                 />
                                 {!firstName && isFirstNameTouched && (
-                                    <div className="text-red-500 mb-2">This field is required.</div>
+                                    <div className="text-red-500 mb-2 flex items-center">
+                                        <IoMdAlert className="mr-1" /> This field is required.
+                                    </div>
                                 )}
                             </div>
                             <div className="flex flex-col w-1/2">
@@ -140,7 +142,9 @@ const ContactForm: React.FC = () => {
                                     required
                                 />
                                 {!lastName && isLastNameTouched && (
-                                    <div className="text-red-500 mb-2">This field is required.</div>
+                                    <div className="text-red-500 mb-2 flex items-center">
+                                        <IoMdAlert className="mr-1" /> This field is required.
+                                    </div>
                                 )}
                             </div>
                         </div>
@@ -152,7 +156,7 @@ const ContactForm: React.FC = () => {
                             </label>
                             <input
                                 id="email"
-                                className={`dark:text-white text-black w-full outline-0 mb-1 h-12 bg-gray-200 rounded-lg p-3 dark:bg-[#191919] border-2 ${inputClasses(!!emailError, isEmailTouched)}`}
+                                className={`dark:text-white text-black w-full outline-0 mb-1 h-12 bg-gray-200 rounded-lg p-3 dark:bg-[#191919] border-2 ${inputClasses(!!emailError || !email, isEmailTouched)}`}
                                 type="email"
                                 value={email}
                                 onChange={(e) => {
@@ -167,11 +171,10 @@ const ContactForm: React.FC = () => {
                                 onBlur={() => setEmailTouched(true)}
                                 required
                             />
-                            {emailError && (
-                                <div className="text-red-500 mb-2">{emailError}</div>
-                            )}
-                            {!email && isEmailTouched && (
-                                <div className="text-red-500 mb-2">This field is required.</div>
+                            {(emailError || (!email && isEmailTouched)) && (
+                                <div className="text-red-500 mb-2 flex items-center">
+                                    <IoMdAlert className="mr-1" /> {email ? emailError : 'This field is required.'}
+                                </div>
                             )}
                         </div>
                     </div>
@@ -193,7 +196,9 @@ const ContactForm: React.FC = () => {
                                 required
                             />
                             {!subject && isSubjectTouched && (
-                                <div className="text-red-500 mb-2">This field is required.</div>
+                                <div className="text-red-500 mb-2 flex items-center">
+                                    <IoMdAlert className="mr-1" /> This field is required.
+                                </div>
                             )}
                         </div>
                     </div>
@@ -214,7 +219,9 @@ const ContactForm: React.FC = () => {
                                 required
                             ></textarea>
                             {!message && isMessageTouched && (
-                                <div className="text-red-500 mb-2">This field is required.</div>
+                                <div className="text-red-500 mb-2 flex items-center">
+                                    <IoMdAlert className="mr-1" /> This field is required.
+                                </div>
                             )}
                         </div>
                     </div>
