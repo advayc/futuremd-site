@@ -5,6 +5,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <title>FutureMD</title>
           <meta
             name="description"
             content="FutureMD: A student-led nonprofit organization with the goal to educate teens about life during and after medical school!"
