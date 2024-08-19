@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 
 const Register = () => {
   const router = useRouter();
+  <h1 className="text-transparent">Register For Our Event!</h1>
 
   useEffect(() => {
     // Redirect to the external URL

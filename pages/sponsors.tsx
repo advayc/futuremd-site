@@ -73,7 +73,7 @@ export default function About() {
         <path fillRule="evenodd" clipRule="evenodd" d="M0 0C640 0 1280 0 1920 0C1920 27.3333 1920 54.6667 1920 82C1812.72 90.3729 1705.37 97.8729 1597.97 104.5C1461.49 112.233 1324.92 115.233 1188.28 113.5C1069.64 109.91 951.016 105.91 832.405 101.5C740.988 98.9498 649.56 97.9498 558.119 98.5C484.895 100.323 411.694 102.989 338.517 106.5C225.638 113.757 112.799 121.59 0 130C0 86.6667 0 43.3333 0 0Z"/>
       </svg>
       <div className="bg-primary dark:bg-dprimary pt-4 pb-5">
-      <h1 className="text-4xl md:text-7xl font-bold my-8 mb-8 text-center dark:text-white text-black"> Our Affiliates</h1>
+      <h2 className="text-4xl md:text-7xl font-bold my-8 mb-8 text-center dark:text-white text-black"> Our Affiliates</h2>
       <section className="flex flex-wrap justify-center pb-12">
         {affiliates.map((affiliate, index) => (
           <div key={index} className="transition-transform duration-300 transform hover:scale-105 rounded-2xl m-4 p-4 overflow-hidden dark:bg-black border border-zinc-300 dark:border-zinc-800 hover:border-slate-400 dark:hover:border-slate-600 relative z-20 flex flex-col items-center justify-center text-center">

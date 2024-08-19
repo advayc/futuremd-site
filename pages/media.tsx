@@ -62,9 +62,9 @@ export default function Media({ instagramImages }: { instagramImages: any[] }) {
         </p>
       </header>
 
-      <h1 className="text-1xl md:text-3xl font-bold my-8 mb-4 text-center dark:text-white text-black"> Check out our 
+      <h2 className="text-1xl md:text-3xl font-bold my-8 mb-4 text-center dark:text-white text-black"> Check out our 
       <Link href='https://www.instagram.com/futuremd_team' target="_blank" className="dark:text-white dark:hover:text-hov text-black hover:text-li transition delay-75"> Instagram Page!
-        </Link></h1> 
+        </Link></h2> 
 
       <section className="flex justify-around py-5 space-x-10">
         {instagramImages.slice(0,3).map((image: { permalink: string | undefined; media_url: string | StaticImport; }, index: Key | null | undefined) => (
@@ -82,9 +82,9 @@ export default function Media({ instagramImages }: { instagramImages: any[] }) {
       </section>
 
       <section id="gal" className="max-w-9xl py-8">
-        <h1 className="text-2xl md:text-5xl font-bold mb-8 text-center dark:text-white text-black">
+        <h3 className="text-2xl md:text-5xl font-bold mb-8 text-center dark:text-white text-black">
           Gallery Showcase!
-        </h1>
+        </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {galleryImages.map((image, index) => (
             <div key={index} className="relative group rounded-lg overflow-hidden hover:scale-105 transition-transform duration-500">
