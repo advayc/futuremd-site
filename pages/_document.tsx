@@ -8,22 +8,22 @@ class MyDocument extends Document {
           <title>FutureMD</title>
           <meta
             name="description"
-            content="FutureMD: A student-led nonprofit organization with the goal to educate teens about life during and after medical school!"
+            content="A youth-led nonprofit organization with the goal to educate teens about life during and after medical school!"
           />
           <meta
             name="keywords"
-            content="FutureMD, doctor, medicine, MD, nonprofit, medical education"
+            content="FutureMD, futuremd, Futuremd inc, Futuremd, nonprofit, medical education"
           />
           <meta name="og:title" content="FutureMD" />
           <meta
             name="og:description"
-            content="FutureMD: A student-led nonprofit organization with the goal to educate teens about life during and after medical school!"
+            content="A youth-led nonprofit organization with the goal to educate teens about life during and after medical school!"
           />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="FutureMD" />
           <meta
             name="twitter:description"
-            content="FutureMD: A student-led nonprofit organization with the goal to educate teens about life during and after medical school!"
+            content="A youth-led nonprofit organization with the goal to educate teens about life during and after medical school!"
           />
           <meta name="twitter:image" content="/meta.png" />
           <meta name="theme-color" content="#5C9CFF" />
