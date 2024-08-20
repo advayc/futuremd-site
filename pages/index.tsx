@@ -66,7 +66,7 @@ export default function Home() {
           FutureMD{" "}
           <span className="dark:text-white text-black">Inc.</span>
         </h1>
-        <p className="text-lg sm:text-xl md:text-3xl font-bold mt-3 md:mt-6 dark:text-dark-text text-zinc-500">
+        <p className="text-lg sm:text-xl md:text-3xl font-semibold mt-3 md:mt-6 dark:text-dark-text text-zinc-500">
           A youth-led nonprofit organization with the goal to educate <br className="hidden md:block" /> teens about life during and after medical school!
         </p>
         <button onClick={handleScroll}>
@@ -78,7 +78,7 @@ export default function Home() {
 
       <div className="w-full flex flex-col items-center dark:bg-dprimary bg-primary pt-16 pb-12" id="what-does">
         <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 dark:text-white">What <span className="dark:text-hov text-li">FutureMD</span> Does.</h2>
-        <p className="mb-12 px-4 text-lg sm:text-xl md:text-2xl text-center max-w-2xl text-[#828282] font-bold">
+        <p className="mb-12 px-4 text-lg sm:text-xl md:text-2xl text-center max-w-2xl text-[#828282] font-semibold">
           At FutureMD, we focus on four main aspects to educate students about medlife.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 w-full px-4 md:px-48">
@@ -125,7 +125,7 @@ export default function Home() {
         <div className="md:w-1/2 text-center md:text-left">
             <h2 className="text-7xl font-bold dark:text-white text-black mb-4">Our <span className="dark:text-hov text-li">Vision</span></h2>
           </div>
-          <div className="text-lg sm:text-xl md:text-2xl text-center md:text-left max-w-2xl text-[#828282] font-bold md:w-1/2">
+          <div className="text-lg sm:text-xl md:text-2xl text-center md:text-left max-w-2xl text-[#828282] font-semibold md:w-1/2">
             <p>
             “FutureMD aims to provide teenagers across the Peel-Mississauga community with insights into a future in the medical sector. We strive to inspire and prepare the youth to reach their fullest potential, preparing them for the long journey ahead of them.” <br />
             </p>
@@ -143,7 +143,7 @@ export default function Home() {
           <div className="flex flex-col items-center md:items-start mb-8 md:mb-0">
             <h2 className="dark:text-white text-4xl sm:text-5xl md:text-7xl font-bold mb-2">About Us</h2>
             <h3 className="text-lg md:text-2xl text-navy dark:text-hov mb-4 font-semibold">Learn More About Us...</h3>
-            <p className="text-lg md:text-2xl mb-8 text-[#6F7782] font-bold leading-9">
+            <p className="text-lg md:text-2xl mb-8 text-[#6F7782] font-semibold leading-9">
               "FutureMD aims to provide teenagers across our <br className="hidden md:block" /> community with insights into a future in <br className="hidden md:block" /> the medical sector."
             </p>
             <a href="/about" className="font-semibold px-4 py-2 bg-navy text-primary text-lg rounded transition-transform duration-700 transform hover:scale-105 dark:hover:bg-primary hover:bg-navy hover:text-primary dark:hover:text-navy hover:shadow-lg">Learn More</a>
