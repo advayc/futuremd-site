@@ -77,11 +77,11 @@ export default function Home() {
           <div ref={(el) => { if (el) fadeRefs.current[1] = el; }} className="fade-in">
 
       <div className="w-full flex flex-col items-center dark:bg-dprimary bg-primary pt-16 pb-12" id="what-does">
-        <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 dark:text-white">What <span className="dark:text-hov text-li">FutureMD</span> Does.</h2>
+        <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 dark:text-white text-center">What <span className="dark:text-hov text-li">FutureMD</span> Does.</h2>
         <p className="mb-12 px-4 text-lg sm:text-xl md:text-2xl text-center max-w-2xl text-[#828282] font-semibold">
           At FutureMD, we focus on four main aspects to educate students about medlife.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 w-full px-4 md:px-48">
+        <div className="grid grid-cols-1 md:grid-cols-4 sm:grid-cols-1 lg:grid-cols-4 gap-4 w-full px-4 md:px-48">
 
           <a href="/events" className="flex flex-col items-center mb-4 transition-transform duration-300 transform hover:scale-105">
             <div className="w-64 h-40 overflow-hidden">
@@ -90,14 +90,12 @@ export default function Home() {
             <p className="text-lg font-bold rounded-b-3xl text-white bg-li dark:bg-navy w-64 h-32 px-4 py-2 hover:drop-shadow-2xl">1. Events & Conferences</p>
           </a>
 
-
           <a href="/team#guests" className="flex flex-col items-center mb-4 transition-transform duration-300 transform hover:scale-105">
             <div className="w-64 h-40 overflow-hidden">
               <img src="/guestspeakers.png" alt="Guest Speakers" className="object-cover w-full h-full" />
             </div>
             <p className="text-lg font-bold rounded-b-3xl text-white bg-li dark:bg-navy w-64 h-32 px-4 py-2 hover:drop-shadow-2xl">2. Guest Speakers</p>
           </a>
-
 
           <a href="https://www.instagram.com/p/C9YGo8gheCm/?img_index=1" target="_blank" className="flex flex-col items-center mb-4 transition-transform duration-300 transform hover:scale-105">
             <div className="w-64 h-40 overflow-hidden">
