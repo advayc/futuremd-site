@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ToggleButton from "../components/ToggleButton"; // Import the ToggleButton component
+import ToggleButton from "./ToggleButton"; // Import the ToggleButton component
 
 const FutureMDForm: React.FC = () => {
   const [formData, setFormData] = useState({

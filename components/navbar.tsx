@@ -37,29 +37,32 @@ const Navbar: React.FC<NavbarProps> = ({ showAnimation }) => {
           <ToggleButton selected={selected} setSelected={setSelected} />
         </div>
         <div className="hidden md:flex items-center flex-grow justify-center">
-          <a href="/" className="hidden md:flex-shrink-0 md:block md:mr-9">
+        <a href="/" className="hidden md:flex-shrink-0 md:block md:mr-9">
             <img src="logo.png" alt="Logo" className="h-[50px] logo" />
-          </a>
-          <a href="/about" className={`relative mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover-border transition hover:text-li dark:hover:text-hov transition delay-50 delay-50`}>
-            About Us
-          </a>
-          <a href="/team" className={`relative mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover-border transition hover:text-li dark:hover:text-hov transition delay-50 delay-50`}>
-            Our Team
-          </a>
-          <a href="/sponsors" className={`relative mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover-border transition hover:text-li dark:hover:text-hov transition delay-50 delay-50`}>
-            Sponsors
-          </a>
-          <a href="/events" className={`relative mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover-border transition hover:text-li dark:hover:text-hov transition delay-50 delay-50`}>
-            Events
-          </a>
-          <a href="/media" className={`relative mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover-border transition hover:text-li dark:hover:text-hov transition delay-50 delay-50`}>
-            Media
-          </a>
-          <a href="/contact" className={`relative mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover-border transition hover:text-li dark:hover:text-hov transition delay-50 delay-50`}>
-            Contact Us
-          </a>
-          <ToggleButton selected={selected} setSelected={setSelected} />
-        </div>
+        </a>
+        <a href="/about" className={`relative mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover-border transition hover:text-li dark:hover:text-hov transition delay-50 delay-50`}>
+          About Us
+        </a>
+        <a href="/team" className={`relative mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover-border transition hover:text-li dark:hover:text-hov transition delay-50 delay-50`}>
+          Our Team
+        </a>
+        <a href="/sponsors" className={`relative mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover-border transition hover:text-li dark:hover:text-hov transition delay-50 delay-50`}>
+          Sponsors
+        </a>
+        <a href="/events" className={`relative mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover-border transition hover:text-li dark:hover:text-hov transition delay-50 delay-50`}>
+          Events
+        </a>
+        <a href="/media" className={`relative mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover-border transition hover:text-li dark:hover:text-hov transition delay-50 delay-50`}>
+          Media
+        </a>
+        <a href="/contact" className={`relative mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover-border transition hover:text-li dark:hover:text-hov transition delay-50 delay-50`}>
+          Contact Us
+        </a>
+        <a href="/visit-path2med" className={`relative mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover-border transition hover:text-li dark:hover:text-hov transition delay-50 delay-50`}>
+          Visit Path2Med
+        </a>
+        <ToggleButton selected={selected} setSelected={setSelected} />
+      </div>
       </nav>
 
       {isMenuOpen && (
