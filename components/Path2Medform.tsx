@@ -113,22 +113,6 @@ const FutureMDForm: React.FC = () => {
         Path2Med
       </div>
 
-      {/* Sub-text */}
-      <p
-        style={{
-          textAlign: "center",
-          width: 377,
-          height: 46,
-          fontWeight: "600",
-          position: "absolute",
-          top: "75px",
-          zIndex: 2,
-          fontSize: 32,
-        }}
-      >
-        Event Registration
-      </p>
-
       {/* Form */}
       <div
         style={{

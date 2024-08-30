@@ -58,9 +58,6 @@ const Navbar: React.FC<NavbarProps> = ({ showAnimation }) => {
         <a href="/contact" className={`relative mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover-border transition hover:text-li dark:hover:text-hov transition delay-50 delay-50`}>
           Contact Us
         </a>
-        <a href="/visit-path2med" className={`relative mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover-border transition hover:text-li dark:hover:text-hov transition delay-50 delay-50`}>
-          Visit Path2Med
-        </a>
         <ToggleButton selected={selected} setSelected={setSelected} />
       </div>
       </nav>

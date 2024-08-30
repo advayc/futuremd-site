@@ -1,13 +1,16 @@
-import React from "react";
-import Path2Medform from '../components/Path2Medform';
-import Navbar from "@/components/navbar";
-const VisitPath2Med = () => {
-    return (
-      <div>
-        <Navbar showAnimation={false} />
-        <Path2Medform />
-      </div>
-    );
+import { GetServerSideProps } from 'next';
+
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  return {
+    redirect: {
+      destination: '/register',
+      permanent: false,
+    },
   };
-  
-  export default VisitPath2Med;
+};
+
+const VisitPath2Med = () => {
+  return null;
+};
+
+export default VisitPath2Med;
