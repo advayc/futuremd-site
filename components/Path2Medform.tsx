@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
-import ToggleButton from "./ToggleButton"; // Import the ToggleButton component
+import ToggleButton from "./ToggleButton";
+import { Inter } from "next/font/google";
+
+// Import the Inter font
+const inter = Inter({ subsets: ['latin'] });
 
 const FutureMDForm: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -36,14 +40,13 @@ const FutureMDForm: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await fetch("../form-api/submitForm", {
+      const response = await fetch("/api/submitForm", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
-
       if (response.ok) {
         const result = await response.json();
         console.log(result.message); // Handle the response as needed
@@ -62,6 +65,7 @@ const FutureMDForm: React.FC = () => {
 
   return (
     <div
+      className={inter.className} // Apply Inter font to everything inside this div
       style={{
         margin: 0,
         padding: 0,
@@ -218,7 +222,7 @@ const FutureMDForm: React.FC = () => {
                 appearance: "none",
                 WebkitAppearance: "none",
                 MozAppearance: "none",
-                fontFamily: "'Inter', 'Sans-Serif",
+                fontFamily: "'Inter', sans-serif", // Apply Inter font here
               }}
             />
           </label>
@@ -284,9 +288,9 @@ const FutureMDForm: React.FC = () => {
               }}
             >
               <option value="">Select an option</option>
-              <option value="friend">A friend</option>
-              <option value="socialMedia">Social media</option>
-              <option value="advertisement">Advertisement</option>
+              <option value="social_media">Social Media</option>
+              <option value="friend">Friend</option>
+              <option value="ad">Ad</option>
               <option value="other">Other</option>
             </select>
           </label>
@@ -299,7 +303,7 @@ const FutureMDForm: React.FC = () => {
               fontWeight: "600",
             }}
           >
-            If you were referred, who referred you?
+            Referred By (optional):
             <input
               type="text"
               name="referredBy"
@@ -307,7 +311,7 @@ const FutureMDForm: React.FC = () => {
               onChange={handleChange}
               style={{
                 width: "100%",
-                padding: "13px",
+                padding: "12px",
                 marginTop: "4px",
                 fontSize: "16px",
                 backgroundColor: isDark ? "#1F1F1F" : "#FFFFFF",
@@ -318,25 +322,30 @@ const FutureMDForm: React.FC = () => {
             />
           </label>
 
-          <button
-            type="submit"
-            style={{
-              gridColumn: "span 2",
-              padding: "15px",
-              fontSize: "20px",
-              fontWeight: "600",
-              borderRadius: "4px",
-              cursor: "pointer",
-              backgroundColor: isDark ? "#3B82F6" : "#1E40AF",
-              color: "#FFFFFF",
-              border: "none",
-              transition: "background-color 0.3s ease",
-            }}
-            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#2563EB")}
-            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = isDark ? "#3B82F6" : "#1E40AF")}
-          >
-            Submit
-          </button>
+          <div style={{ gridColumn: "span 2", textAlign: "center" }}>
+            <button
+              type="submit"
+              style={{
+                backgroundColor: isDark ? "#3B82F6" : "#1E40AF",
+                color: "#FFFFFF",
+                fontSize: "18px",
+                fontWeight: "600",
+                padding: "14px 28px",
+                border: "none",
+                borderRadius: "4px",
+                cursor: "pointer",
+                transition: "background-color 0.3s ease",
+              }}
+              onMouseEnter={(e) =>
+                (e.currentTarget.style.backgroundColor = isDark ? "#60A5FA" : "#1D4ED8")
+              }
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.backgroundColor = isDark ? "#3B82F6" : "#1E40AF")
+              }
+            >
+              Register
+            </button>
+          </div>
         </form>
       </div>
     </div>
