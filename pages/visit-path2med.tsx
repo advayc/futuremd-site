@@ -1,9 +1,10 @@
 import React from "react";
 import Path2Medform from '../components/Path2Medform';
+import Navbar from "@/components/navbar";
 const VisitPath2Med = () => {
     return (
       <div>
-        <h1>Visit Path2Med Page</h1>
+        <Navbar showAnimation={false} />
         <Path2Medform />
       </div>
     );
