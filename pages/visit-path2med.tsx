@@ -14,3 +14,4 @@ const VisitPath2Med = () => {
 };
 
 export default VisitPath2Med;
+// this page can be temporary then removed later

@@ -7,7 +7,7 @@ import Path2Medform from '../components/Path2Medform';
 import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ["latin"] });
-
+//redirect from header
 const Register = () => {
   const router = useRouter();
 
