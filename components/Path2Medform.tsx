@@ -18,7 +18,12 @@ const FutureMDForm: React.FC = () => {
   const [selectedTheme, setSelectedTheme] = useState<"dark" | "light">("dark");
 
   useEffect(() => {
-    document.body.className = selectedTheme === "dark" ? "dark-mode" : "light-mode";
+    const root = document.documentElement;
+    root.classList.add("transition-colors", "duration-700");
+    root.className = selectedTheme === "dark" ? "dark" : "";
+    setTimeout(() => {
+      root.classList.remove("transition-colors", "duration-700");
+    }, 1700);
   }, [selectedTheme]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
@@ -61,215 +66,70 @@ const FutureMDForm: React.FC = () => {
     }
   };
 
-  const isDark = selectedTheme === "dark";
-
   return (
-    <div
-      className={inter.className} // Apply Inter font to everything inside this div
-      style={{
-        margin: 0,
-        padding: 0,
-        boxSizing: "border-box",
-        minHeight: "100vh",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: isDark ? "#000000" : "#FFFFFF",
-        color: isDark ? "#FFFFFF" : "#000000",
-        transition: "all 0.5s ease",
-      }}
-    >
-      <div style={{ position: "absolute", top: "20px", right: "20px" }}>
+    <div className={`${inter.className} min-h-screen flex items-center justify-center py-12`}>
+      <div className="absolute top-4 right-4">
         <ToggleButton selected={selectedTheme} setSelected={setSelectedTheme} />
       </div>
 
-      {/* Background */}
-      <div
-        style={{
-          backgroundColor: isDark ? "#000000" : "#FFFFFF",
-          position: "fixed",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          zIndex: -1,
-        }}
-      />
-
-      {/* Title text */}
-      <div
-        style={{
-          width: 843,
-          height: 155,
-          textAlign: "center",
-          fontSize: 80,
-          fontWeight: "700",
-          position: "absolute",
-          top: "20px",
-          zIndex: 2,
-        }}
-      >
-        Path2Med
-      </div>
-
-      {/* Form */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          width: "100%",
-          zIndex: 3,
-          marginTop: "80px",
-        }}
-      >
-        <form
-          onSubmit={handleSubmit}
-          style={{
-            maxWidth: "800px",
-            width: "100%",
-            padding: "40px",
-            background: isDark ? "#1F1F1F" : "#F3F4F6",
-            borderRadius: "8px",
-            boxShadow: isDark
-              ? "0px 4px 15px rgba(255, 255, 255, 0.2)"
-              : "0px 4px 15px rgba(0, 0, 0, 0.2)",
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            columnGap: "35px",
-            rowGap: "30px",
-            transition: "box-shadow 0.3s ease-in-out",
-          }}
-          onMouseEnter={(e) =>
-            (e.currentTarget.style.boxShadow = isDark
-              ? "0px 10px 30px rgba(255, 255, 255, 0.3)"
-              : "0px 10px 30px rgba(0, 0, 0, 0.3)")
-          }
-          onMouseLeave={(e) =>
-            (e.currentTarget.style.boxShadow = isDark
-              ? "0px 4px 15px rgba(255, 255, 255, 0.2)"
-              : "0px 4px 15px rgba(0, 0, 0, 0.2)")
-          }
-        >
-          <label
-            style={{
-              display: "block",
-              fontSize: "24px",
-              fontWeight: "600",
-            }}
-          >
-            Full Name:
+      <div className="w-full max-w-lg p-8 bg-white dark:bg-[#000000] shadow-lg rounded-lg">
+        <h2 className="text-2xl font-bold text-center mb-8 dark:text-white">Path2Med</h2>
+        <form onSubmit={handleSubmit} className="space-y-6">
+          <div>
+            <label className="block text-lg font-medium dark:text-gray-100">Full Name:</label>
             <input
               type="text"
               name="name"
               value={formData.name}
               onChange={handleChange}
               required
-              style={{
-                width: "100%",
-                padding: "13px",
-                marginTop: "4px",
-                fontSize: "16px",
-                backgroundColor: isDark ? "#1F1F1F" : "#FFFFFF",
-                color: isDark ? "#FFFFFF" : "#000000",
-                border: `2px solid ${isDark ? "#374151" : "#E5E7EB"}`,
-                borderRadius: "4px",
-              }}
+              className="mt-2 w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none dark:bg-[#191919] dark:text-gray-100 dark:border-[#374151]"
             />
-          </label>
+          </div>
 
-          <label
-            style={{
-              display: "block",
-              fontSize: "24px",
-              fontWeight: "600",
-            }}
-          >
-            Birthdate:
+          <div>
+            <label className="block text-lg font-medium dark:text-gray-100">Birthdate:</label>
             <input
               type="date"
               name="birthdate"
               value={formData.birthdate}
               onChange={handleChange}
               required
-              className={isDark ? "dark-theme-date-picker" : "light-theme-date-picker"}
-              style={{
-                width: "100%",
-                padding: "12px",
-                marginTop: "4px",
-                fontSize: "16px",
-                backgroundColor: isDark ? "#1F1F1F" : "#FFFFFF",
-                color: isDark ? "#FFFFFF" : "#000000",
-                border: `2px solid ${isDark ? "#374151" : "#E5E7EB"}`,
-                borderRadius: "4px",
-                appearance: "none",
-                WebkitAppearance: "none",
-                MozAppearance: "none",
-                fontFamily: "'Inter', sans-serif", // Apply Inter font here
-              }}
+              className="mt-2 w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none dark:bg-[#191919] dark:text-gray-100 dark:border-[#374151]"
             />
-          </label>
+          </div>
 
-          <label
-            style={{
-              display: "block",
-              fontSize: "24px",
-              fontWeight: "600",
-            }}
-          >
-            Do you agree to our Terms & Conditions?:
+          <div className="flex items-center">
             <input
               type="checkbox"
               name="termsAccepted"
               checked={formData.termsAccepted}
               onChange={handleChange}
               required
-              style={{ marginLeft: "8px", accentColor: isDark ? "#3B82F6" : "#1E40AF" }}
+              className="h-4 w-4 text-blue-600 focus:ring-0 dark:bg-[#191919] dark:border-[#374151]"
             />
-          </label>
+            <label className="ml-2 text-lg font-medium dark:text-gray-100">I agree to the Terms & Conditions</label>
+          </div>
 
-          <label
-            style={{
-              display: "block",
-              fontSize: "24px",
-              fontWeight: "600",
-            }}
-          >
-            Would you like complementary shawarma?
+          <div className="flex items-center">
             <input
               type="checkbox"
               name="wantsShawarma"
               checked={formData.wantsShawarma}
               onChange={handleChange}
-              style={{ marginLeft: "8px", accentColor: isDark ? "#3B82F6" : "#1E40AF" }}
+              className="h-4 w-4 text-blue-600 focus:ring-0 dark:bg-[#191919] dark:border-[#374151]"
             />
-          </label>
+            <label className="ml-2 text-lg font-medium dark:text-gray-100">Would you like complementary shawarma?</label>
+          </div>
 
-          <label
-            style={{
-              display: "block",
-              fontSize: "24px",
-              gridColumn: "span 2",
-              fontWeight: "600",
-            }}
-          >
-            How did you hear about us?
+          <div>
+            <label className="block text-lg font-medium dark:text-gray-100">How did you hear about us?</label>
             <select
               name="heardAboutUs"
               value={formData.heardAboutUs}
               onChange={handleChange}
               required
-              style={{
-                width: "100%",
-                padding: "12px",
-                marginTop: "4px",
-                fontSize: "16px",
-                backgroundColor: isDark ? "#1F1F1F" : "#FFFFFF",
-                color: isDark ? "#FFFFFF" : "#000000",
-                border: `2px solid ${isDark ? "#374151" : "#E5E7EB"}`,
-                borderRadius: "4px",
-              }}
+              className="mt-2 w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none dark:bg-[#191919] dark:text-gray-100 dark:border-[#374151]"
             >
               <option value="">Select an option</option>
               <option value="social_media">Social Media</option>
@@ -277,55 +137,23 @@ const FutureMDForm: React.FC = () => {
               <option value="ad">Ad</option>
               <option value="other">Other</option>
             </select>
-          </label>
+          </div>
 
-          <label
-            style={{
-              display: "block",
-              fontSize: "24px",
-              gridColumn: "span 2",
-              fontWeight: "600",
-            }}
-          >
-            Referred By (optional):
+          <div>
+            <label className="block text-lg font-medium dark:text-gray-100">Referred By (optional):</label>
             <input
               type="text"
               name="referredBy"
               value={formData.referredBy}
               onChange={handleChange}
-              style={{
-                width: "100%",
-                padding: "12px",
-                marginTop: "4px",
-                fontSize: "16px",
-                backgroundColor: isDark ? "#1F1F1F" : "#FFFFFF",
-                color: isDark ? "#FFFFFF" : "#000000",
-                border: `2px solid ${isDark ? "#374151" : "#E5E7EB"}`,
-                borderRadius: "4px",
-              }}
+              className="mt-2 w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none dark:bg-[#191919] dark:text-gray-100 dark:border-[#374151]"
             />
-          </label>
+          </div>
 
-          <div style={{ gridColumn: "span 2", textAlign: "center" }}>
+          <div className="text-center">
             <button
               type="submit"
-              style={{
-                backgroundColor: isDark ? "#3B82F6" : "#1E40AF",
-                color: "#FFFFFF",
-                fontSize: "18px",
-                fontWeight: "600",
-                padding: "14px 28px",
-                border: "none",
-                borderRadius: "4px",
-                cursor: "pointer",
-                transition: "background-color 0.3s ease",
-              }}
-              onMouseEnter={(e) =>
-                (e.currentTarget.style.backgroundColor = isDark ? "#60A5FA" : "#1D4ED8")
-              }
-              onMouseLeave={(e) =>
-                (e.currentTarget.style.backgroundColor = isDark ? "#3B82F6" : "#1E40AF")
-              }
+              className="w-full px-6 py-3 text-lg font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700"
             >
               Register
             </button>
