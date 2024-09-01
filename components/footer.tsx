@@ -1,10 +1,10 @@
+import { FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+
 export const Footer = () => {
   return (
     <footer className="bg-black text-white py-8 w-full">
       <div className="container mx-auto flex flex-col md:flex-row md:justify-between justify-center items-center md:items-start">
-        <div className="flex-1 flex items-center justify-center mb-8 md:mb-0">
-          <img src="/logo.png" alt="Logo" className="w-20 md:w-40 h-auto logo pointer mt-4 md:mt-10" />
-        </div>
         <div className="flex-1 md:ml-20 flex flex-col items-center md:items-start mb-8 md:mb-0 mt-4">
           <h4 className="font-bold mb-4 text-lg md:text-xl text-center md:text-left">About</h4>
           <ul className="flex flex-col items-center md:items-start">
@@ -75,24 +75,49 @@ export const Footer = () => {
           <h4 className="font-bold mb-4 text-lg md:text-xl text-center md:text-left">Miscellaneous</h4>
           <ul className="flex flex-col items-center md:items-start">
             <li className="mb-3 md:mb-4">
-              <a href="https://www.instagram.com/futuremd_team/" target="_blank" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Instagram</a>
+              <a href="/newsletter" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Newsletter</a>
             </li>
             <li className="mb-3 md:mb-4">
-              <a href="https://www.linkedin.com/company/futuremdteam/" target="_blank" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Linkedin</a>
-            </li>
-            <li className="mb-3 md:mb-4">
-              <a href="/privacy-policy" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Privacy Policy</a>
-            </li>
-            <li className="mb-3 md:mb-4">
-              <a href="/terms-and-conditions" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Event TOS</a>
+              <a href="/blog" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Blog</a>
             </li>
           </ul>
         </div>
+      </div>
 
-      </div>
-      <div className="container mx-auto mt-8 border-t-2 border-gray-700 pt-4 text-center">
+        <div className="flex justify-between items-center w-full">
+          <img src="/logo.png" alt="Logo" className="ml-16 w-20 h-auto logo pointer mt-4"/>
+          <div className="flex justify-center items-center mr-16">
+            <div className="flex gap-10">
+              <a href="https://www.instagram.com/futuremd_team/" target="_blank" rel="noopener noreferrer">
+                <FaInstagram size={32} className="text-hov hover:text-primary transition-all duration-300" />
+              </a>
+              <a href="https://www.linkedin.com/company/futuremdteam/" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin size={32} className="text-hov hover:text-primary transition-all duration-300" />
+              </a>
+              <a href="https://www.tiktok.com/@futuremd_team" target="_blank" rel="noopener noreferrer">
+                <FaTiktok size={32} className="text-hov hover:text-primary transition-all duration-300" />
+              </a>
+              <a href="mailto:contact.futuremd@gmail.com" >
+                <MdEmail size={36} className="text-hov hover:text-primary transition-all duration-300" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+      <div className="mt-8 border-t-2 border-gray-700 pt-4 dark:border-gray-800 px-10">
+        <div className="sm:flex sm:justify-between ">
         <p className="text-gray-400 font-bold">© 2024 <span className="text-hov">FutureMD Inc.</span> All Rights Reserved</p>
+          <ul className="mt-8 flex flex-wrap justify-start gap-4 text-xs sm:mt-0 lg:justify-end">
+            <li>
+            <a href="/terms-and-conditions" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Event TOS</a>
+            </li>
+            <li>
+            <a href="/privacy-policy" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
       </div>
+
     </footer>
   );
 };
