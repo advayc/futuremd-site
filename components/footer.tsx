@@ -85,7 +85,7 @@ export const Footer = () => {
       </div>
 
       <div className="flex flex-col sm:flex-row justify-between items-center w-full px-4 mt-4">
-        <img src="/logo.png" alt="Logo" className="w-20 h-auto mt-4 sm:ml-16" />
+        <img src="/logo.png" alt="Logo" className="logo w-20 h-auto mt-4 sm:ml-16" />
         <div className="flex justify-center items-center mt-4 sm:mt-0 sm:mr-16">
           <div className="flex gap-6 sm:gap-10">
             <a href="https://www.instagram.com/futuremd_team/" target="_blank" rel="noopener noreferrer">
