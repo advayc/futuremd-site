@@ -59,7 +59,7 @@ export default function About() {
           <h2 className="text-4xl sm:text-6xl md:text-7xl font-bold dark:text-white text-black mb-4">Our Mission is to <span className="dark:text-hov text-li">empower</span> youth</h2>
         </div>
         <div className="smallersect md:w-1/2 text-center md:text-left">
-          <p className="ml-0 md:ml-12 text-lg sm:text-xl md:text-2xl dark:text-dark-text text-zinc-600 font-semibold leading-loose" style={{ maxWidth: '600px', textAlign: 'center' }}>
+          <p className="ml-0 md:ml-12 text-lg sm:text-xl md:text-2xl dark:text-dark-text text-zinc-600 font-semibold leading-relaxed md:leading-normal" style={{ maxWidth: '600px', textAlign: 'center' }}>
             We strive to provide the youth with the necessary knowledge for the journey
             ahead of them. Ranging from tuition fees to challenges & obstacles in and
             after university, FutureMD allows our community in the Peel Region with

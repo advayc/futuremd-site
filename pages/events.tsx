@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
+import { Card, CardHeader, CardBody } from "@nextui-org/react";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
 import { useRouter } from "next/router";
@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import Head from 'next/head'; 
 import { Footer } from '@/components/footer';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -43,7 +44,7 @@ export default function Events() {
         <h2 className="text-center md:text-left text-3xl md:text-5xl font-bold mb-6 dark:text-white text-black">
           Upcoming Events!
         </h2>
-        <p className="md:text-left text-center text-lg md:text-xl font-semibold dark:text-dark-text text-dark-text">
+        <p className="md:text-left text-center text-lg md:text-xl font-semibold dark:text-dark-text text-[#828282]">
           Interested in learning more about our next event?  <Link href='/path2med' className="dark:text-hov dark:hover:text-primary text-li hover:text-navy transition delay-75">Click Here!</Link> 
         </p>
 
