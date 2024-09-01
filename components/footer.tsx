@@ -84,7 +84,7 @@ export const Footer = () => {
         </div>
       </div>
 
-        <div className="flex justify-between items-center w-full">
+        <div className="flex justify-between items-center w-full px-2 mt-4">
           <img src="/logo.png" alt="Logo" className="ml-16 w-20 h-auto logo pointer mt-4"/>
           <div className="flex justify-center items-center mr-16">
             <div className="flex gap-10">
@@ -104,12 +104,12 @@ export const Footer = () => {
           </div>
         </div>
 
-      <div className="mt-8 border-t-2 border-gray-700 pt-4 dark:border-gray-800 px-10">
+      <div className="mt-8 border-t-2 border-gray-700 pt-4 dark:border-gray-800 px-12">
         <div className="sm:flex sm:justify-between ">
         <p className="text-gray-400 font-bold">© 2024 <span className="text-hov">FutureMD Inc.</span> All Rights Reserved</p>
           <ul className="mt-8 flex flex-wrap justify-start gap-4 text-xs sm:mt-0 lg:justify-end">
             <li>
-            <a href="/terms-and-conditions" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Event TOS</a>
+            <a href="/terms-and-conditions" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Terms & Services</a>
             </li>
             <li>
             <a href="/privacy-policy" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Privacy Policy</a>
