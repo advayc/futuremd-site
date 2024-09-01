@@ -84,35 +84,35 @@ export const Footer = () => {
         </div>
       </div>
 
-        <div className="flex justify-between items-center w-full px-2 mt-4">
-          <img src="/logo.png" alt="Logo" className="ml-16 w-20 h-auto logo pointer mt-4"/>
-          <div className="flex justify-center items-center mr-16">
-            <div className="flex gap-10">
-              <a href="https://www.instagram.com/futuremd_team/" target="_blank" rel="noopener noreferrer">
-                <FaInstagram size={32} className="text-hov hover:text-primary transition-all duration-300" />
-              </a>
-              <a href="https://www.linkedin.com/company/futuremdteam/" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin size={32} className="text-hov hover:text-primary transition-all duration-300" />
-              </a>
-              <a href="https://www.tiktok.com/@futuremd_team" target="_blank" rel="noopener noreferrer">
-                <FaTiktok size={32} className="text-hov hover:text-primary transition-all duration-300" />
-              </a>
-              <a href="mailto:contact.futuremd@gmail.com" >
-                <MdEmail size={36} className="text-hov hover:text-primary transition-all duration-300" />
-              </a>
-            </div>
+      <div className="flex flex-col sm:flex-row justify-between items-center w-full px-4 mt-4">
+        <img src="/logo.png" alt="Logo" className="w-20 h-auto mt-4 sm:ml-16" />
+        <div className="flex justify-center items-center mt-4 sm:mt-0 sm:mr-16">
+          <div className="flex gap-6 sm:gap-10">
+            <a href="https://www.instagram.com/futuremd_team/" target="_blank" rel="noopener noreferrer">
+              <FaInstagram size={32} className="text-hov hover:text-primary transition-all duration-300" />
+            </a>
+            <a href="https://www.linkedin.com/company/futuremdteam/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin size={32} className="text-hov hover:text-primary transition-all duration-300" />
+            </a>
+            <a href="https://www.tiktok.com/@futuremd_team" target="_blank" rel="noopener noreferrer">
+              <FaTiktok size={32} className="text-hov hover:text-primary transition-all duration-300" />
+            </a>
+            <a href="mailto:contact.futuremd@gmail.com">
+              <MdEmail size={36} className="text-hov hover:text-primary transition-all duration-300" />
+            </a>
           </div>
         </div>
-
-      <div className="mt-8 border-t-2 border-gray-700 pt-4 dark:border-gray-800 px-12">
-        <div className="sm:flex sm:justify-between ">
-        <p className="text-gray-400 font-bold">© 2024 <span className="text-hov">FutureMD Inc.</span> All Rights Reserved</p>
-          <ul className="mt-8 flex flex-wrap justify-start gap-4 text-xs sm:mt-0 lg:justify-end">
+      </div>
+      
+      <div className="mt-8 border-t-2 border-gray-700 pt-4 dark:border-gray-800 px-4 sm:px-12">
+        <div className="flex flex-col sm:flex-row sm:justify-between text-center sm:text-left">
+          <p className="text-gray-400 font-bold">© 2024 <span className="text-hov">FutureMD Inc.</span> All Rights Reserved</p>
+          <ul className="mt-4 sm:mt-0 flex flex-col sm:flex-row justify-center gap-4 text-xs lg:justify-end">
             <li>
-            <a href="/terms-and-conditions" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Terms & Services</a>
+              <a href="/terms-and-conditions" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Terms & Services</a>
             </li>
             <li>
-            <a href="/privacy-policy" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Privacy Policy</a>
+              <a href="/privacy-policy" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Privacy Policy</a>
             </li>
           </ul>
         </div>
