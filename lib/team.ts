@@ -76,6 +76,15 @@ export const team = [
       linkedin: "https://www.linkedin.com/in/sameer-f-4050a329b/",
       instagram: "https://www.instagram.com/fijibutter",
       email: "sameersferdousi@gmail.com",
-    },    
+    },
+    {
+      title: "Aarush R.",
+      role: "Outreach",
+      description: "Hi! I’m Aarush Rao, currently enrolled in the Glenforest IB program and serving as an outreach member of FutureMD. I’m deeply committed to helping others and saving people through medicine, driven by a passion for science and math. In my free time, I enjoy expanding my knowledge or engaging in physical activities like badminton, swimming, football, and Karate. I also enjoy researching and studying about diseases which perfectly aligns with my future which is becoming a doctor.",
+      image: "team/aarush.jpg",
+      linkedin: "https://www.linkedin.com/in/aarush-rao-827820312/",
+      instagram: "https://www.instagram.com/mob_rulex",
+      email: "aarush.vinayrao@gmail.com",
+    },
 ];
   
