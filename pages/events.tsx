@@ -43,7 +43,7 @@ export default function Events() {
         <h2 className="text-center md:text-left text-3xl md:text-5xl font-bold mb-6 dark:text-white text-black">
           Upcoming Events!
         </h2>
-        <p className="md:text-left text-center text-lg md:text-xl font-semibold dark:text-dark-text text-[#828282]">
+        <p className="md:text-left text-center text-lg md:text-xl font-semibold dark:text-dark-text text-dark-text">
           Interested in learning more about our next event?  <Link href='/path2med' className="dark:text-hov dark:hover:text-primary text-li hover:text-navy transition delay-75">Click Here!</Link> 
         </p>
 

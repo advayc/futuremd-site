@@ -33,7 +33,7 @@ export const roles = [
         - Managing Event Staff, Volunteers, & overall setup of the event<br>
         - Securing Merchandise for Staff & Attendees
       `,
-      status: "available",
+      status: "unavailable",
       link: "https://prettyform.addxt.com/a/form/?vf=1FAIpQLScBhRPUTpRtPBeFItiRRHsP_-kUZbKmkppOw3JtZ3WjD1CeTQ"
     },
     {

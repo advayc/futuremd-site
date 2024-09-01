@@ -36,7 +36,7 @@ const Privacy: React.FC = () => {
       <section className="flex flex-col items-center">
         <div className="w-11/12 md:w-5/6 border-2 border-hov rounded-lg p-8 shadow hover:shadow-lg mt-12">
           <h2 className="text-4xl font-bold dark:text-white text-black mb-4">Our <span className="text-li dark:text-hov">Privacy Policy</span></h2>
-          <p className="text-lg dark:text-dark-text text-[#828282] font-bold leading-9">
+          <p className="text-lg dark:text-dark-text text-dark-text font-bold leading-9">
             At FutureMD, we take your privacy seriously. This policy outlines how we handle your personal information and data. We ensure that all data provided to us is used responsibly and securely. We do not share your personal information with third parties without your consent, except as required by law. Your trust is important to us, and we are committed to maintaining the confidentiality and security of your information.
           </p>
           <div className="pt-4 pd-3 px-4 max-w-9xl text-center mt-8">

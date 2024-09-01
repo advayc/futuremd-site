@@ -35,7 +35,7 @@ export default function Sponsorships() {
       <section className="flex flex-col items-center">
         <div className="w-11/12 md:w-5/6 border-2 border-hov rounded-lg p-8 shadow hover:shadow-lg mt-12">
           <h2 className="text-4xl font-bold dark:text-white text-black mb-4">Why Should You <span className="text-li dark:text-hov">Sponsor Us?</span></h2>
-          <p className="text-lg dark:text-dark-text text-[#828282] font-bold leading-9">
+          <p className="text-lg dark:text-dark-text text-dark-text font-bold leading-9">
             FutureMD is always looking for new sponsors to aid our local cause! There are various ways you can support our non-profit organization to reach its goals and initiatives. Financial sponsorships are always a huge support to us as they help us accomplish our goals, upscale our event equipment, and increase the quality and impact we make on our local community and attendees. In addition to this, we are always open to other forms of sponsorships, which may include providing us with resources, catering, experienced guest speakers, merchandise, and more! — whether you’re a small business owner, or a corporation with a huge team, there are plenty of ways you can help us out. FutureMD has always strived to constantly improve and be the best we possibly can. We run on sponsorships and donations, and as a registered non-profit incorporation under the OBR, we guarantee our sponsors that ALL their resources and funding provided are used SOLELY on FutureMD. Supporting our mission will not only support our team, but it will benefit our local community and increase the impact we can make on the next generation of medical specialists!
           </p>
           <div className="pt-4 pd-3 px-4 max-w-9xl text-center mt-8">

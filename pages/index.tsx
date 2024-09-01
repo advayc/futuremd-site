@@ -79,7 +79,7 @@ export default function Home() {
           <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 dark:text-white text-center">
             What <span className="dark:text-hov text-li">FutureMD</span> Does.
           </h2>
-          <p className="mb-12 px-4 text-lg sm:text-xl md:text-2xl text-center max-w-2xl text-[#828282] font-semibold">
+          <p className="mb-12 px-4 text-lg sm:text-xl md:text-2xl text-center max-w-2xl text-dark-text font-semibold">
             At FutureMD, we focus on four main aspects to educate students about medlife.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8  px-4 md:px-16 lg:px-24 xl:px-32">
@@ -124,12 +124,11 @@ export default function Home() {
         <div className="md:w-1/2 text-center md:text-left">
             <h2 className="text-7xl font-bold dark:text-white text-black mb-4">Our <span className="dark:text-hov text-li">Vision</span></h2>
           </div>
-          <div className="text-lg sm:text-xl md:text-2xl text-center md:text-left max-w-2xl text-[#828282] font-semibold md:w-1/2">
+          <div className="text-lg sm:text-xl md:text-2xl text-center md:text-left max-w-2xl text-dark-text font-semibold md:w-1/2">
             <p>
             “FutureMD aims to provide teenagers across the Peel-Mississauga community with insights into a future in the medical sector. We strive to inspire and prepare the youth to reach their fullest potential, preparing them for the long journey ahead of them.” <br />
             </p>
             <p className="font-bold dark:text-hov text-navy mt-2">- Bobby F. | Founder</p>
-
           </div>
         </div>
       </div>

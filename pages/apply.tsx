@@ -136,7 +136,7 @@ export default function Apply() {
 
       <div className="px-4 sm:px-8 mb-16">
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-2 dark:text-white text-center">Roles & Responsibilities</h2>
-        <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-8 dark:dark-text text-[#828282] text-center">Click on a card to reveal the responsibilities <br/> for each position and application</h3>
+        <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-8 dark:dark-text text-dark-text text-center">Click on a card to reveal the responsibilities <br/> for each position and application</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
           {roles.map((role, index) => (
             <div 

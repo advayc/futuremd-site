@@ -20,7 +20,7 @@ const config: Config = {
           bg: "#EFF6FF", 
         },
         dark: {
-          text: "#000000",
+          text: "#828282",
           bg: "#000000", 
         },
       },

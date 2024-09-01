@@ -40,7 +40,7 @@ export default function About() {
         <div className="mt-4 dark:bg-[#000000] flex flex-col md:flex-row items-center justify-center mb-12 w-full px-[77px]">
           <div id="who-we-are" className="md:flex-1 flex flex-col items-center md:items-start justify-center text-center md:text-left">
             <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold dark:text-white text-black mb-4">Who We Are..</h2>
-            <p className="text-lg sm:text-xl md:text-2xl dark:text-[#828282] text-[#828282] font-semibold leading-9" style={{ maxWidth: '800px' }}>
+            <p className="text-lg sm:text-xl md:text-2xl dark:text-dark-text text-dark-text font-semibold leading-relaxed md:leading-normal" style={{ maxWidth: '800px' }}>
             FutureMD is a registered non-profit organization under the Canadian
               Revenue Agency (CRA) and Ontario Business Registry (OBR). Led by a group
               of <span className="dark:text-hov text-li">ambitious & passionate</span> students 
@@ -93,7 +93,7 @@ export default function About() {
       <div className="w-full flex flex-col md:flex-row items-center justify-center bg-primary dark:bg-dprimary shadow hover:shadow-lg px-8 sm:px-16 md:px-24 pt-10 pb-12 md:pb-28">
         <div id="who-we-are" className="md:flex-1 flex flex-col items-center md:items-start justify-center text-center md:text-left md:ml-10">
           <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold dark:text-white text-black">Join Us At Our <br className="hidden md:block" /> <span className="dark:text-hov text-li">Events</span></h2>
-          <p className="text-lg sm:text-xl md:text-2xl dark:dark-text text-[#828282] font-bold leading-9 mt-8 ">
+          <p className="text-lg sm:text-xl md:text-2xl dark:dark-text text-dark-text font-bold leading-9 mt-8 ">
             Click the button below to <br className="hidden md:block" /> learn more about our events!
           </p>
           <Link href='/events'>
