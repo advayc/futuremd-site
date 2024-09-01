@@ -141,10 +141,10 @@ export default function Home() {
           <div className="flex flex-col items-center md:items-start mb-8 md:mb-0">
             <h2 className="dark:text-white text-4xl sm:text-5xl md:text-7xl font-bold mb-2">About Us</h2>
             <h3 className="text-lg md:text-2xl text-navy dark:text-hov mb-4 font-semibold">Learn More About Us...</h3>
-            <p className="text-lg md:text-2xl mb-8 text-[#6F7782] font-semibold leading-9">
+            <p className="text-lg md:text-2xl mb-4 text-[#6F7782] font-semibold leading-9">
               "FutureMD aims to provide teenagers across our <br className="hidden md:block" /> community with insights into a future in <br className="hidden md:block" /> the medical sector."
             </p>
-            <a href="/about" className="font-semibold px-4 py-2 bg-navy text-primary text-lg rounded transition-transform duration-700 transform hover:scale-105 dark:hover:bg-primary hover:bg-navy hover:text-primary dark:hover:text-navy hover:shadow-lg">Learn More</a>
+            <a href="/about" className="font-semibold px-8 py-4 bg-navy text-primary text-lg rounded transition-transform duration-700 transform hover:scale-105 dark:hover:bg-primary hover:bg-navy hover:text-primary dark:hover:text-navy hover:shadow-lg">Learn More</a>
           </div>
           <img src="/logo.png" alt="FutureMD Logo" className="w-[50%] md:w-[30%] mt-8 md:mt-0" />
         </div>
