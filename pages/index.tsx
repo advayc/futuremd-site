@@ -82,35 +82,36 @@ export default function Home() {
           <p className="mb-12 px-4 text-lg sm:text-xl md:text-2xl text-center max-w-2xl text-dark-text font-semibold">
             At FutureMD, we focus on four main aspects to educate students about medlife.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8  px-4 md:px-16 lg:px-24 xl:px-32">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-20">
 
             <a href="/events" className="flex flex-col items-center mb-8 transition-transform duration-300 transform hover:scale-105">
-              <div className="w-64 h-40 overflow-hidden">
+              <div className="w-full max-w-xs h-40 overflow-hidden">
                 <img src="/events/path2med.png" alt="Events & Conferences" className="object-cover w-full h-full" />
               </div>
-              <p className="text-lg font-bold rounded-b-3xl text-white bg-li dark:bg-navy w-64 h-32 px-4 py-2 hover:drop-shadow-2xl">1. Events & Conferences</p>
+              <p className="text-lg font-bold rounded-b-3xl text-white bg-li dark:bg-navy w-full max-w-xs h-32 px-4 py-2 hover:drop-shadow-2xl">1. Events & Conferences</p>
             </a>
 
             <a href="/team#guests" className="flex flex-col items-center mb-8 transition-transform duration-300 transform hover:scale-105">
-              <div className="w-64 h-40 overflow-hidden">
+              <div className="w-full max-w-xs h-40 overflow-hidden">
                 <img src="/guestspeakers.png" alt="Guest Speakers" className="object-cover w-full h-full" />
               </div>
-              <p className="text-lg font-bold rounded-b-3xl text-white bg-li dark:bg-navy w-64 h-32 px-4 py-2 hover:drop-shadow-2xl">2. Guest Speakers</p>
+              <p className="text-lg font-bold rounded-b-3xl text-white bg-li dark:bg-navy w-full max-w-xs h-32 px-4 py-2 hover:drop-shadow-2xl">2. Guest Speakers</p>
             </a>
 
             <a href="https://www.instagram.com/p/C9YGo8gheCm/?img_index=1" target="_blank" className="flex flex-col items-center mb-8 transition-transform duration-300 transform hover:scale-105">
-              <div className="w-64 h-40 overflow-hidden">
+              <div className="w-full max-w-xs h-40 overflow-hidden">
                 <img src="/instagram/3.jpg" alt="Fairs & Fests" className="object-cover w-full h-full" />
               </div>
-              <p className="text-lg font-bold rounded-b-3xl text-white bg-li dark:bg-navy w-64 h-32 px-4 py-2 hover:drop-shadow-2xl">3. Learning Opportunities</p>
+              <p className="text-lg font-bold rounded-b-3xl text-white bg-li dark:bg-navy w-full max-w-xs h-32 px-4 py-2 hover:drop-shadow-2xl">3. Learning Opportunities</p>
             </a>
 
             <a href="/media#gal" className="flex flex-col items-center mb-8 transition-transform duration-300 transform hover:scale-105">
-              <div className="w-64 h-40 overflow-hidden">
+              <div className="w-full max-w-xs h-40 overflow-hidden">
                 <img src="/activitiesv2.png" alt="Activities" className="object-cover w-full h-full" />
               </div>
-              <p className="text-lg font-bold rounded-b-3xl text-white bg-li dark:bg-navy w-64 h-32 px-4 py-2 hover:drop-shadow-2xl">4. Activities</p>
+              <p className="text-lg font-bold rounded-b-3xl text-white bg-li dark:bg-navy w-full max-w-xs h-32 px-4 py-2 hover:drop-shadow-2xl">4. Activities</p>
             </a>
+            
           </div>
         </div>
       

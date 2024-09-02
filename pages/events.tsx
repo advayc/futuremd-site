@@ -59,7 +59,7 @@ export default function Events() {
               <Image
                 alt="Event background"
                 className="object-cover rounded-xl"
-                src="/events/path2med.png"
+                src="/events/path2medc.png"
                 width={300}
                 height={250}
               />
