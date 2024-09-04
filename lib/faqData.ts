@@ -28,7 +28,7 @@ export const faqData = {
     {
       question: "How can I stay updated on upcoming FutureMD events and news?",
       answer:
-        "You can check us out on any of our social media platforms! You can find us on TikTok, Instagram, LinkedIn, and more! Additionally, you can also subscribe to our monthly newsletter featuring sneak peeks, exclusive information, and much more <a class='hyperlink' href='/newsletter' target='_blank' >here</a>!",
+        "You can check us out on any of our social media platforms! You can find us on <a class='hyperlink' href='https://tiktok.com/@futuremd_team' target='_blank' >TikTok</a>, <a class='hyperlink' href='https://instagram.com/futuremd_team' target='_blank' >Instagram</a>, <a class='hyperlink' href='https://www.linkedin.com/company/futuremdteam/' target='_blank' >LinkedIn</a>, and more! Additionally, you can also subscribe to our monthly <a class='hyperlink' href='/newsletter' target='_blank' >newsletter</a> featuring sneak peeks, exclusive information, and much more!",
     },
   ],
 };
