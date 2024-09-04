@@ -31,10 +31,10 @@ const BlogPostPage = ({ post, mdxSource }: BlogPostPageProps) => {
         <title>{post.title} - FutureMD</title>
       </Head>
       <Navbar showAnimation={false} />
-      <header className="pt-4 px-36 w-full max-w-7xl mx-auto text-center relative">
+      <header className="pt-4 px-4 md:px-36 w-full max-w-7xl mx-auto text-center relative">
         <button
           onClick={() => router.push('/blog')}
-          className="absolute top-4 left-20 text-dark-text hover:text-default-900 transition-colors"
+          className="absolute top-4 left-4 md:left-20 text-dark-text hover:text-default-900 transition-colors"
         >
           &#60; Back to Blog
         </button>
@@ -58,9 +58,9 @@ const BlogPostPage = ({ post, mdxSource }: BlogPostPageProps) => {
           </div>
         </div>
       </header>
-      <div className="px-36 max-w-7xl mx-auto">
+      <div className="px-4 md:px-36 max-w-7xl mx-auto">
         <img className="mb-4 w-full h-70 object-cover rounded-md" src={post.image} alt={post.title} />
-        <div className="prose dark:prose-dark">
+        <div className="markdown-content dark:text-white text-black">
           <MDXRemote {...mdxSource} />
         </div>
       </div>
@@ -87,11 +87,9 @@ export const getStaticProps: GetStaticProps = async (context) => {
     };
   }
 
-  // Read the MDX file based on the provided path
   const mdxFilePath = path.join(process.cwd(), post.mdxFilePath);
   const mdxContent = fs.readFileSync(mdxFilePath, 'utf-8');
 
-  // Serialize the MDX content
   const mdxSource = await serialize(mdxContent);
 
   return {
