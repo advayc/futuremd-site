@@ -10,6 +10,7 @@ import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote';
 import { serialize } from 'next-mdx-remote/serialize';
 import fs from 'fs';
 import path from 'path';
+import Zoom from 'react-medium-image-zoom';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -59,8 +60,10 @@ const BlogPostPage = ({ post, mdxSource }: BlogPostPageProps) => {
         </div>
       </header>
       <div className="px-4 md:px-36 max-w-7xl mx-auto">
-        <img className="mb-4 w-full h-70 object-cover rounded-md" src={post.image} alt={post.title} />
-        <div className="markdown-content dark:text-white text-black">
+      <Zoom>
+        <img className="mb-4 w-full h-80 object-cover rounded-md" src={post.image} alt={post.title} />
+      </Zoom>
+        <div className="markdown-content dark:text-white text-black mb-12">
           <MDXRemote {...mdxSource} />
         </div>
       </div>
