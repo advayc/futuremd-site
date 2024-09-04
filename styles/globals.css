@@ -113,10 +113,11 @@
 }
 
 .hyperlink {
-  color: inherit;
+  color: #5C9CFF;
   transition: color 0.2s ease-in-out; 
 }
 
 .hyperlink:hover {
-  color: #5C9CFF;
+  transition: color 0.2s ease-in-out; 
+  text-decoration: dotted;
 }

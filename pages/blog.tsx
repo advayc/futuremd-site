@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import Head from 'next/head';
 import { Footer } from '@/components/footer';
 import { motion, AnimatePresence } from "framer-motion";
+import { MDXRemoteSerializeResult } from "next-mdx-remote";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,21 +23,21 @@ const BlogPostCard = ({ title, url, image, description, date, author }: BlogPost
         whileTap={{ scale: 0.95 }}
       >
         <a href={url}>
-        <div className="justify-center items-center p-4 h-full border-transparent text-start dark:bg-default-400/10 rounded-lg shadow-lg cursor-pointer">
+          <div className="justify-center items-center p-4 h-full border-transparent text-start dark:bg-default-400/10 rounded-lg shadow-lg cursor-pointer">
             <p className="ml-2 text-xl text-li dark:text-hov font-bold hover:underline">
               {title}
-          </p>
-          <div className="p-2 mt-1">
-            <img className="mb-4 w-full h-40 object-cover rounded-md" src={image} alt={title} />
-            <p className="font-bold w-full text-dark-text">{description}</p>
+            </p>
+            <div className="p-2 mt-1">
+              <img className="mb-4 w-full h-40 object-cover rounded-md" src={image} alt={title} />
+              <p className="font-bold w-full text-dark-text">{description}</p>
+            </div>
+            <footer className="flex justify-between items-center mt-2">
+              <time className="ml-2 block text-small text-dark-text" dateTime={date}>
+                {new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+              </time>
+              <img className="w-10 h-10 rounded-full" src={author.avatar} alt="Author" />
+            </footer>
           </div>
-          <footer className="flex justify-between items-center mt-2">
-            <time className="ml-2 block text-small text-dark-text" dateTime={date}>
-              {new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-            </time>
-            <img className="w-10 h-10 rounded-full" src={author.avatar} alt="Author" />
-          </footer>
-        </div>
         </a>
       </motion.article>
     </AnimatePresence>
@@ -52,16 +53,17 @@ export type BlogPost = {
   author: {
     avatar: string;
     name: string;
-    user: string
-    link: string
+    user: string;
+    link: string;
   };
+  mdxFilePath: string; // New property to specify the MDX file path
 };
 
 export const blogPosts: BlogPost[] = [
   {
     title: "Welcome to FutureMD!",
     url: "/blogs/welcome",
-    image: "/events/path2medc.png",
+    image: "/meta.png",
     description: "We are excited to launch FutureMD! Stay tuned for more updates.",
     date: "2024-05-24T00:00:00Z",
     author: {
@@ -69,12 +71,13 @@ export const blogPosts: BlogPost[] = [
       name: "Bobby Fang",
       user: 'bobbyf0814',
       link: "https://www.linkedin.com/in/bobbyf0814/",
-    }
+    },
+    mdxFilePath: "public/blogposts/welcome.mdx",
   },
   {
     title: "Join us to Path2Med",
     url: "/blogs/join-us-to-path2med",
-    image: "/events/path2med.png",
+    image: "/gallery/first.jpg",
     description: "Discover Path2Med and how you can be a part of it.",
     date: "2024-07-28T00:00:00Z",
     author: {
@@ -82,7 +85,8 @@ export const blogPosts: BlogPost[] = [
       name: "Bobby Fang",
       user: 'bobbyf0814',
       link: "https://www.linkedin.com/in/bobbyf0814/",
-    }
+    },
+    mdxFilePath: "public/blogposts/welcome.mdx",
   }
 ];
 

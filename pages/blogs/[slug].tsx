@@ -6,10 +6,19 @@ import { Footer } from '@/components/footer';
 import Navbar from '@/components/navbar';
 import { blogPosts, BlogPost } from '@/pages/blog';
 import { format, parseISO } from 'date-fns';
+import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote';
+import { serialize } from 'next-mdx-remote/serialize';
+import fs from 'fs';
+import path from 'path';
 
 const inter = Inter({ subsets: ["latin"] });
 
-const BlogPostPage = ({ post }: { post: BlogPost }) => {
+type BlogPostPageProps = {
+  post: BlogPost;
+  mdxSource: MDXRemoteSerializeResult;
+};
+
+const BlogPostPage = ({ post, mdxSource }: BlogPostPageProps) => {
   const router = useRouter();
 
   if (router.isFallback) {
@@ -18,7 +27,9 @@ const BlogPostPage = ({ post }: { post: BlogPost }) => {
 
   return (
     <main className={`${inter.className} min-h-screen pt-8 dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
-      <Head><title>{post.title} - FutureMD</title></Head>
+      <Head>
+        <title>{post.title} - FutureMD</title>
+      </Head>
       <Navbar showAnimation={false} />
       <header className="pt-4 px-36 w-full max-w-7xl mx-auto text-center relative">
         <button
@@ -33,10 +44,10 @@ const BlogPostPage = ({ post }: { post: BlogPost }) => {
           {post.description}
         </h2>
         <time className="block text-left mb-3 font-semibold text-dark-text" dateTime={post.date}>
-          {format(parseISO(post.date), "LLLL d, yyyy")}
+          {format(parseISO(post.date), 'LLLL d, yyyy')}
         </time>
         <div className="mb-8 flex w-full flex-col items-start">
-          <div className="flex items-center space-x-3 rounded rounded-lg cursor-pointer transition-colors px-4 py-1.5 hover:bg-zinc-300 dark:hover:bg-default-50 transition-colors -ml-4">
+          <div className="flex items-center space-x-3 rounded-lg cursor-pointer transition-colors px-4 py-1.5 hover:bg-zinc-300 dark:hover:bg-default-50 transition-colors -ml-4">
             <img className="w-11 h-11 rounded-full" src={post.author.avatar} alt={post.author.name} />
             <div>
               <p className="dark:text-gray-200 text-gray-900 font-semibold">{post.author.name}</p>
@@ -48,10 +59,12 @@ const BlogPostPage = ({ post }: { post: BlogPost }) => {
         </div>
       </header>
       <div className="px-36 max-w-7xl mx-auto">
-        <img className="mb-4 w-full h-80 object-cover rounded-md" src={post.image} alt={post.title} />
-        <p className="text-dark-text">{post.description}</p>
+        <img className="mb-4 w-full h-70 object-cover rounded-md" src={post.image} alt={post.title} />
+        <div className="prose dark:prose-dark">
+          <MDXRemote {...mdxSource} />
+        </div>
       </div>
-    <Footer />
+      <Footer />
     </main>
   );
 };
@@ -68,11 +81,25 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const slug = context.params?.slug as string;
   const post = blogPosts.find(p => p.url.split('/').pop() === slug);
 
+  if (!post) {
+    return {
+      notFound: true,
+    };
+  }
+
+  // Read the MDX file based on the provided path
+  const mdxFilePath = path.join(process.cwd(), post.mdxFilePath);
+  const mdxContent = fs.readFileSync(mdxFilePath, 'utf-8');
+
+  // Serialize the MDX content
+  const mdxSource = await serialize(mdxContent);
+
   return {
     props: {
-      post: post || null
+      post,
+      mdxSource,
     },
-    revalidate: 10 
+    revalidate: 10,
   };
 };
 
