@@ -111,3 +111,12 @@
   -webkit-transform: scale(0.96);
   transform: scale(0.96);
 }
+
+.hyperlink {
+  color: inherit;
+  transition: color 0.2s ease-in-out; 
+}
+
+.hyperlink:hover {
+  color: #5C9CFF;
+}

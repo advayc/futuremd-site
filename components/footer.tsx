@@ -80,6 +80,9 @@ export const Footer = () => {
             <li className="mb-3 md:mb-4">
               <a href="/blog" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Blog</a>
             </li>
+            <li className="mb-3 md:mb-4">
+              <a href="/faq" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">FAQ</a>
+            </li>
           </ul>
         </div>
       </div>
