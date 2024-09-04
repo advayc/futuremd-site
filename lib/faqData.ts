@@ -9,7 +9,7 @@ export const faqData = {
       question:
         "What topics are covered during your events, and who are the typical guest speakers?",
       answer:
-        "FutureMD covers topics ranging from dorm life during medical school to the workspace in a hospital! The guest speakers we invite have diverse backgrounds in the medical field, including but not limited to doctors, medical students, & scientists! If we do not cover your specific question, we always leave time for a Q&A session! You may find our guest speakers <a class='hyperlink' href='/guest-speakers' target='_blank' >here</a>.",
+        "FutureMD covers topics ranging from dorm life during medical school to the workspace in a hospital! The guest speakers we invite have diverse backgrounds in the medical field, including but not limited to doctors, medical students, & scientists! If we do not cover your specific question, we always leave time for a Q&A session! You may find our guest speakers <a class='hyperlink' href='/team#guests' target='_blank' >here</a>.",
     },
     {
       question: "How can I get involved with FutureMD as a volunteer or guest speaker?",
