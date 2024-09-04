@@ -145,7 +145,7 @@ export default function Home() {
           <h2 className="dark:text-white text-4xl sm:text-5xl md:text-7xl font-bold mb-2">About Us</h2>
               <h3 className="text-lg md:text-2xl text-navy dark:text-hov mb-4 font-semibold">Learn More About Us...</h3>
               <p className="text-lg md:text-2xl mb-4 text-[#6F7782] font-semibold leading-9">
-                "FutureMD aims to provide teenagers across our <br className="hidden md:block" /> community with insights into a future in <br className="hidden md:block" /> the medical sector."
+                "FutureMD aims to provide teenagers across <br className="hidden md:block" /> our community with insights into a future in <br className="hidden md:block" /> the medical sector."
               </p>
               <a href="/about" className="font-semibold px-8 py-4 bg-navy text-primary text-lg rounded transition-transform duration-700 transform hover:scale-105 dark:hover:bg-primary hover:bg-navy hover:text-primary dark:hover:text-navy hover:shadow-lg">Learn More</a>
           </div>
