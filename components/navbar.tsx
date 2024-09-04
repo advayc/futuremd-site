@@ -32,13 +32,13 @@ const Navbar: React.FC<NavbarProps> = ({ showAnimation }) => {
             <Menu />
           </button>
           <a href="/" className="flex-grow-0 mx-auto">
-            <img src="logo.png" alt="Logo" className="h-[50px] logo" />
+            <img src="/logo.png" alt="Logo" className="h-[50px] logo" />
           </a>
           <ToggleButton selected={selected} setSelected={setSelected} />
         </div>
         <div className="hidden md:flex items-center flex-grow justify-center">
           <a href="/" className="hidden md:flex-shrink-0 md:block md:mr-9">
-            <img src="logo.png" alt="Logo" className="h-[50px] logo" />
+            <img src="/logo.png" alt="Logo" className="h-[50px] logo" />
           </a>
           <a href="/about" className={`relative mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover-border transition hover:text-li dark:hover:text-hov transition delay-50 delay-50`}>
             About Us
