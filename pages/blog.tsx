@@ -11,10 +11,6 @@ const inter = Inter({ subsets: ["latin"] });
 const BlogPostCard = ({ title, url, image, description, date, author }: BlogPost) => {
   const router = useRouter();
 
-  const handlePress = () => {
-    router.push(url);
-  };
-
   return (
     <AnimatePresence>
       <motion.article
@@ -25,17 +21,11 @@ const BlogPostCard = ({ title, url, image, description, date, author }: BlogPost
         whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
         whileTap={{ scale: 0.95 }}
       >
-        <div
-          className="justify-center items-center p-4 h-full border-transparent text-start dark:bg-default-400/10 rounded-lg shadow-lg cursor-pointer"
-          onClick={handlePress}
-        >
-            <a
-              href={url}
-              className="ml-2 text-xl text-li dark:text-hov font-bold hover:underline"
-              onClick={(e) => e.preventDefault()}
-            >
+        <a href={url}>
+        <div className="justify-center items-center p-4 h-full border-transparent text-start dark:bg-default-400/10 rounded-lg shadow-lg cursor-pointer">
+            <p className="ml-2 text-xl text-li dark:text-hov font-bold hover:underline">
               {title}
-          </a>
+          </p>
           <div className="p-2 mt-1">
             <img className="mb-4 w-full h-40 object-cover rounded-md" src={image} alt={title} />
             <p className="font-bold w-full text-dark-text">{description}</p>
@@ -47,6 +37,7 @@ const BlogPostCard = ({ title, url, image, description, date, author }: BlogPost
             <img className="w-10 h-10 rounded-full" src={author.avatar} alt="Author" />
           </footer>
         </div>
+        </a>
       </motion.article>
     </AnimatePresence>
   );
@@ -63,10 +54,10 @@ type BlogPost = {
   };
 };
 
-const blogPosts: BlogPost[] = [
+export const blogPosts: BlogPost[] = [
   {
     title: "Welcome to FutureMD!",
-    url: "/blog/welcome",
+    url: "/blogs/welcome",
     image: "/events/path2medc.png",
     description: "We are excited to launch FutureMD! Stay tuned for more updates.",
     date: "2024-05-24T00:00:00Z",
@@ -76,7 +67,7 @@ const blogPosts: BlogPost[] = [
   },
   {
     title: "Join us to Path2Med",
-    url: "/blog/join-us-to-path2med",
+    url: "/blogs/join-us-to-path2med",
     image: "/events/path2med.png",
     description: "Discover Path2Med and how you can be a part of it.",
     date: "2024-07-28T00:00:00Z",
@@ -89,7 +80,7 @@ const blogPosts: BlogPost[] = [
 export const BlogPostList = ({ posts }: { posts: BlogPost[] }) => {
   return (
     <div className=" flex justify-center">
-      <div className="mb-20 mt-2 grid gap-4 grid-cols-[repeat(auto-fit,minmax(300px,1fr))] max-w-3xl">
+      <div className="mb-10 mt-2 grid gap-4 grid-cols-[repeat(auto-fit,minmax(300px,1fr))] max-w-3xl">
         {posts.map((post, idx) => (
           <BlogPostCard key={idx} {...post} />
         ))}
