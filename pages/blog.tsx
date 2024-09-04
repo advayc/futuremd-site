@@ -21,18 +21,17 @@ const BlogPostCard = ({ title, url, image, description, date, author }: BlogPost
         transition={{ duration: 0.3 }}
         whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
         whileTap={{ scale: 0.95 }}
+        className="flex flex-col justify-center items-start p-4 border-transparent rounded-lg shadow-lg cursor-pointer dark:bg-default-400/10"
       >
-        <a href={url}>
-          <div className="justify-center items-center p-4 h-full border-transparent text-start dark:bg-default-400/10 rounded-lg shadow-lg cursor-pointer">
-            <p className="ml-2 text-xl text-li dark:text-hov font-bold hover:underline">
-              {title}
-            </p>
-            <div className="p-2 mt-1">
-              <img className="mb-4 w-full h-40 object-cover rounded-md" src={image} alt={title} />
-              <p className="font-bold w-full text-dark-text">{description}</p>
+        <a href={url} className="w-full">
+          <div className="flex flex-col h-full">
+            <p className="text-xl font-bold text-li dark:text-hov hover:underline">{title}</p>
+            <div className="flex flex-col mt-2">
+              <img className="w-full h-40 object-cover rounded-md mb-4" src={image} alt={title} />
+              <p className="font-bold text-dark-text">{description}</p>
             </div>
             <footer className="flex justify-between items-center mt-2">
-              <time className="ml-2 block text-small text-dark-text" dateTime={date}>
+              <time className="text-small text-dark-text" dateTime={date}>
                 {new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
               </time>
               <img className="w-10 h-10 rounded-full" src={author.avatar} alt="Author" />
@@ -56,7 +55,7 @@ export type BlogPost = {
     user: string;
     link: string;
   };
-  mdxFilePath: string; // New property to specify the MDX file path
+  mdxFilePath: string;
 };
 
 export const blogPosts: BlogPost[] = [
@@ -92,8 +91,8 @@ export const blogPosts: BlogPost[] = [
 
 export const BlogPostList = ({ posts }: { posts: BlogPost[] }) => {
   return (
-    <div className=" flex justify-center">
-      <div className="mb-10 mt-2 grid gap-4 grid-cols-[repeat(auto-fit,minmax(300px,1fr))] max-w-3xl">
+    <div className="flex justify-center">
+      <div className="grid gap-4 grid-cols-[repeat(auto-fit,minmax(300px,1fr))] md:max-w-3xl sm:max-2-xl px-4">
         {posts.map((post, idx) => (
           <BlogPostCard key={idx} {...post} />
         ))}
@@ -127,14 +126,14 @@ const Blog: React.FC = () => {
     <main className={`min-h-screen pt-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
       <Head><title>FutureMD - Blog</title></Head>
       <Navbar showAnimation={false} />
-      <header className="pt-4 pd-3 px-4 w-full max-w-7xl mx-auto text-center">
-        <h1 className="text-4xl md:text-6xl font-bold my-8 mb-4 text-center dark:text-white text-black">Blog</h1>
-        <h2 className="text-center text-lg md:text-xl font-semibold dark:text-dark-text text-dark-text mb-8">
+      <header className="pt-4 px-4 w-full max-w-7xl mx-auto text-center">
+        <h1 className="text-4xl md:text-6xl font-bold my-8 mb-4 dark:text-white text-black">Blog</h1>
+        <h2 className="text-lg md:text-xl font-semibold dark:text-dark-text text-dark-text mb-8">
           All the latest news about FutureMD!
         </h2>
       </header>
 
-      <section className="px-4">
+      <section className="px-4 mb-20">
         <BlogPostList posts={sortedBlogPosts} />
       </section>
 
