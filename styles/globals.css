@@ -114,12 +114,15 @@
 
 .hyperlink {
   color: #5C9CFF;
-  transition: color 0.2s ease-in-out; 
 }
 
 .hyperlink:hover {
-  transition: color 0.2s ease-in-out; 
-  text-decoration: dotted;
+  transition: color 0.3s ease; 
+  text-decoration-line: underline;
+  text-decoration-style: dashed; 
+  text-decoration-thickness: 1px; 
+  text-underline-offset: 2px;
+  color: #a0c6ff;
 }
 
 .markdown-content h1 {
@@ -161,11 +164,15 @@
 
 .markdown-content a {
   color: #5C9CFF;
-  text-decoration: underline;
 }
 
 .markdown-content a:hover {
   color: #3C55B7;
+  transition: color 0.3s ease; 
+  text-decoration-line: underline;
+  text-decoration-style: dashed; 
+  text-decoration-thickness: 1px; 
+  text-underline-offset: 2px;
 }
 
 .markdown-content blockquote {
