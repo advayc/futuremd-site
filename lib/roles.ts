@@ -21,7 +21,7 @@ export const roles = [
         - Board certified specialists<br>
         - Specialists in Medicine (professors, retired professionals, etc)<br>
       `,
-      status: "available",
+      status: "unavailable",
       link: "https://prettyform.addxt.com/a/form/?vf=1FAIpQLScBhRPUTpRtPBeFItiRRHsP_-kUZbKmkppOw3JtZ3WjD1CeTQ"
     },
     {
@@ -45,7 +45,7 @@ export const roles = [
         - Design our Banners<br>
         - Work alongside Event Coordinators to design activities if required
       `,
-      status: "unavailable",
+      status: "available",
       link: "https://prettyform.addxt.com/a/form/?vf=1FAIpQLScBhRPUTpRtPBeFItiRRHsP_-kUZbKmkppOw3JtZ3WjD1CeTQ"
     },
     {
@@ -57,7 +57,7 @@ export const roles = [
         - Approving funding for our different divisions & teams<br>
         - Tracking all our purchases
       `,
-      status: "available",
+      status: "unavailable",
       link: "https://prettyform.addxt.com/a/form/?vf=1FAIpQLScBhRPUTpRtPBeFItiRRHsP_-kUZbKmkppOw3JtZ3WjD1CeTQ"
     },
     {
