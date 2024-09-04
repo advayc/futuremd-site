@@ -101,7 +101,7 @@ export default function About() {
           </Link>
         </div>
         <div className=" md:w-[35%] w-2/3 sm:w-1/2 md:w-1/3 mt-8 md:mt-0 ">
-          <img src='/events/path2medc.png' alt="Meta" className=" transition-transform duration-300 transform hover:scale-105" />
+          <img src='/events/path2medc.png' alt="Meta" className=" imghov" />
         </div>
       </div>
 

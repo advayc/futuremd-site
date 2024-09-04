@@ -160,12 +160,12 @@
 }
 
 .markdown-content a {
-  color: #3C55B7;
+  color: #5C9CFF;
   text-decoration: underline;
 }
 
 .markdown-content a:hover {
-  color: #5C9CFF;
+  color: #3C55B7;
 }
 
 .markdown-content blockquote {
@@ -193,4 +193,13 @@
 .dark .markdown-content pre {
   background-color: #2d2d2d;
   color: #f8f8f2;
+}
+
+.imghov {
+  transition: transform 0.3s;
+  transform: scale(1);
+}
+
+.imghov:hover {
+  transform: scale(1.05);
 }

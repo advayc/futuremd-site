@@ -77,7 +77,7 @@ export const blogPosts: BlogPost[] = [
   {
     title: "Join us to Path2Med",
     url: "/blogs/join-us-to-path2med",
-    image: "/gallery/first.jpg",
+    image: "/events/path2med.png",
     description: "Discover Path2Med and how you can be a part of it.",
     date: "2024-07-28T00:00:00Z",
     author: {
@@ -86,7 +86,7 @@ export const blogPosts: BlogPost[] = [
       user: 'bobbyf0814',
       link: "https://www.linkedin.com/in/bobbyf0814/",
     },
-    mdxFilePath: "public/blogposts/welcome.mdx",
+    mdxFilePath: "public/blogposts/path2med.mdx",
   }
 ];
 
@@ -120,19 +120,22 @@ const Blog: React.FC = () => {
     };
   }, [router.events]);
 
+  // Sort blogPosts by date in descending order (most recent first)
+  const sortedBlogPosts = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
   return (
     <main className={`min-h-screen pt-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
       <Head><title>FutureMD - Blog</title></Head>
       <Navbar showAnimation={false} />
       <header className="pt-4 pd-3 px-4 w-full max-w-7xl mx-auto text-center">
         <h1 className="text-4xl md:text-6xl font-bold my-8 mb-4 text-center dark:text-white text-black">Blog</h1>
-        <h2 className="text-center text-lg md:text-xl font-semibold dark:text-dark-text text-dark-text mb-8 ">
+        <h2 className="text-center text-lg md:text-xl font-semibold dark:text-dark-text text-dark-text mb-8">
           All the latest news about FutureMD!
         </h2>
       </header>
 
       <section className="px-4">
-        <BlogPostList posts={blogPosts} />
+        <BlogPostList posts={sortedBlogPosts} />
       </section>
 
       <Footer />

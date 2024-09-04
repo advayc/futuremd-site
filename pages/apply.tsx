@@ -102,7 +102,7 @@ export default function Apply() {
             <h1 className=" text-6xl sm:text-6xl md:text-8xl font-bold dark:text-white text-black md:mb-4 mb-[-50px]">Join Our <br/><span className="text-li dark:text-hov">Team</span></h1>
           </div>
           <div className="mt-12 md:mt-2">
-            <img src='/guestspeakers.png' alt="Meta" className="transition-transform duration-300 transform hover:scale-105 object-cover w-[670px]"/>
+            <img src='/guestspeakers.png' alt="Meta" className="imghov object-cover w-[670px]"/>
           </div>
         </div>
       </section>
