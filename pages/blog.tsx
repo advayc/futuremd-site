@@ -43,7 +43,7 @@ const BlogPostCard = ({ title, url, image, description, date, author }: BlogPost
   );
 };
 
-type BlogPost = {
+export type BlogPost = {
   title: string;
   url: string;
   image: string;
@@ -51,6 +51,9 @@ type BlogPost = {
   date: string;
   author: {
     avatar: string;
+    name: string;
+    user: string
+    link: string
   };
 };
 
@@ -62,7 +65,10 @@ export const blogPosts: BlogPost[] = [
     description: "We are excited to launch FutureMD! Stay tuned for more updates.",
     date: "2024-05-24T00:00:00Z",
     author: {
-      avatar: "/team/bobby.jpg"
+      avatar: "/team/bobby.jpg",
+      name: "Bobby Fang",
+      user: 'bobbyf814',
+      link: "https://www.linkedin.com/in/bobbyf0814/",
     }
   },
   {
@@ -72,7 +78,10 @@ export const blogPosts: BlogPost[] = [
     description: "Discover Path2Med and how you can be a part of it.",
     date: "2024-07-28T00:00:00Z",
     author: {
-      avatar: "/team/bobby.jpg"
+      avatar: "/team/bobby.jpg",
+      name: "Bobby Fang",
+      user: 'bobbyf814',
+      link: "https://www.linkedin.com/in/bobbyf0814/",
     }
   }
 ];
