@@ -3,7 +3,7 @@ export const faqData = {
     {
       question: "Where are FutureMD events located, and how can I attend?",
       answer:
-        "FutureMD events are primarily located at <a class='hyperlink' href='https://www.utm.utoronto.ca/facilities/buildings/william-g-davis-building' target='_blank' >UTM's William G. Davis Facility</a> (1867 Inner Cir Rd, Mississauga, ON L5L 1C6). However, sometimes we may change our venue. To verify our location for the next event, please click on the inquired event <a class='hyperlink' href='/events' target='_blank' >here</a>.",
+        "FutureMD events are primarily located at <a class='hyperlink' href='https://www.utm.utoronto.ca/facilities/buildings/william-g-davis-building' target='_blank' >UTM's William G. Davis Facility</a> (1867 Inner Cir Rd, Mississauga, ON L5L 1C6). However, sometimes we may change our venue. To verify our location for the next event, please click on the inquired event <a class='hyperlink' href='/events' target='_blank' >here</a>. To attend our events, all individuals <strong>must</strong> register <a class='hyperlink' href='/register' target='_blank' >here</a>.",
     },
     {
       question:
