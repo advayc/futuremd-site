@@ -4,6 +4,13 @@ import '@/styles/globals.css';
 import '@/styles/zoom.css';
 import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react";
+import { Inter } from 'next/font/google';
+
+// Import the Inter font with specific weights
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['800', '500', '600']
+});
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -27,7 +34,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="width=device-width, initial-scale=1, user-scalable=no, user-scalable=0"
         />
       </Head>
-      <Component {...pageProps} />
+      <main className={inter.className}>
+        <Component {...pageProps} />
+      </main>
       <Analytics />
     </>
   );
