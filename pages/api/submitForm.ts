@@ -27,8 +27,20 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
       res.status(200).json({ message: 'Form data submitted successfully', response });
     } catch (error) {
-      console.error('Error submitting form data:', error);
-      res.status(500).json({ message: 'Error submitting form data', error });
+      console.error('Error submitting form data:');
+      if (error instanceof Error) {
+        console.error('Error message:', error.message);
+        console.error('Error stack:', error.stack);
+      } else {
+        console.error('Unknown error:', error);
+      }
+      res.status(500).json({ 
+        message: 'Error submitting form data', 
+        error: {
+          message: error instanceof Error ? error.message : 'Unknown error',
+          stack: error instanceof Error ? error.stack : 'No stack trace available'
+        } 
+      });
     }
   } else {
     res.status(405).json({ message: 'Method not allowed' });
