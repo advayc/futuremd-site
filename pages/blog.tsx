@@ -76,7 +76,7 @@ export const blogPosts: BlogPost[] = [
   {
     title: "Thank you to our Sponsor!",
     url: "/blogs/our-sponsor",
-    image: "/public/hha_upscaled.png",
+    image: "/hha_upscaled.png",
     description: "Thank you to the HelpingHands organization for sponsoring us! ❤️",
     date: "2024-08-14T00:00:00Z",
     author: {
@@ -106,7 +106,7 @@ export const blogPosts: BlogPost[] = [
 export const BlogPostList = ({ posts }: { posts: BlogPost[] }) => {
   return (
     <div className="flex justify-center">
-      <div className="grid gap-4 grid-cols-[repeat(auto-fit,minmax(300px,1fr))] md:max-w-3xl sm:max-2-xl px-4">
+      <div className="grid gap-4 grid-cols-[repeat(auto-fit,minmax(300px,1fr))] md:max-w-6xl md:grid-cols-3 sm:max-2-xl px-4">
         {posts.map((post, idx) => (
           <BlogPostCard key={idx} {...post} />
         ))}
@@ -114,6 +114,7 @@ export const BlogPostList = ({ posts }: { posts: BlogPost[] }) => {
     </div>
   );
 };
+
 
 const Blog: React.FC = () => {
   const router = useRouter();
