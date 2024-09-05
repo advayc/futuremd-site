@@ -140,7 +140,7 @@ export default function Home() {
       <svg width="1916" height="230" viewBox="0 0 1916 230" fill="currentColor" className="rotate-180 w-full h-auto text-primary dark:text-dprimary ">
         <path fillRule="evenodd" clipRule="evenodd" d="M0 0C640 0 1280 0 1920 0C1920 27.3333 1920 54.6667 1920 82C1812.72 90.3729 1705.37 97.8729 1597.97 104.5C1461.49 112.233 1324.92 115.233 1188.28 113.5C1069.64 109.91 951.016 105.91 832.405 101.5C740.988 98.9498 649.56 97.9498 558.119 98.5C484.895 100.323 411.694 102.989 338.517 106.5C225.638 113.757 112.799 121.59 0 130C0 86.6667 0 43.3333 0 0Z"/>
       </svg>
-        <div className="w-full flex flex-col md:flex-row items-center justify-center bg-primary dark:bg-dprimary px-8 sm:px-16 md:px-36">
+        <div className="w-full flex flex-col md:flex-row items-center justify-center bg-primary dark:bg-dprimary px-8 sm:px-16 md:px-36 pb-14">
           <div ref={(el) => { if (el) fadeRefs.current[3] = el; }}  className="md:flex-1 flex flex-col items-center md:items-start justify-center text-center md:text-left md:ml-10">
           <h2 className="dark:text-white text-4xl sm:text-5xl md:text-7xl font-bold mb-2">About Us</h2>
               <h3 className="text-lg md:text-2xl text-navy dark:text-hov mb-4 font-semibold">Learn More About Us...</h3>

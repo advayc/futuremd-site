@@ -101,7 +101,7 @@ export default function Apply() {
           <div id="who-we-are" className="flex flex-col items-center md:items-start justify-center text-center md:text-left md:mr-32">
             <h1 className=" text-6xl sm:text-6xl md:text-8xl font-bold dark:text-white text-black md:mb-4 mb-[-50px]">Join Our <br/><span className="text-li dark:text-hov">Team</span></h1>
           </div>
-          <div className="mt-12 md:mt-2">
+          <div className="">
             <img src='/guestspeakers.png' alt="Meta" className="imghov object-cover w-[550px]"/>
           </div>
         </div>
