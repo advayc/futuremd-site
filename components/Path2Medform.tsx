@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import ToggleButton from "./ToggleButton";
 import { Inter } from "next/font/google";
 
 // Import the Inter font
@@ -67,13 +66,16 @@ const FutureMDForm: React.FC = () => {
   };
 
   return (
-    <div className={`${inter.className} min-h-screen flex items-center justify-center py-12`}>
-      <div className="absolute top-4 right-4">
-        <ToggleButton selected={selectedTheme} setSelected={setSelectedTheme} />
-      </div>
-
-      <div className="w-full max-w-lg p-8 bg-white dark:bg-[#000000] shadow-lg rounded-lg">
-        <h2 className="text-2xl font-bold text-center mb-8 dark:text-white">Path2Med</h2>
+    <div className={`${inter.className} min-h-screen flex items-start justify-center py-8`}> {/* Adjusted vertical alignment */}
+      {/* The theme bug here has been removed */}
+      <div
+        className={`w-full max-w-4xl p-8 bg-white dark:bg-[#000000] rounded-lg ${
+          selectedTheme === "dark"
+            ? "shadow-[0_4px_15px_rgba(255,255,255,0.2)]"
+            : "shadow-[0_4px_15px_rgba(0,0,0,0.1)]"
+        }`
+       }
+      >
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <label className="block text-lg font-medium dark:text-gray-100">Full Name:</label>
@@ -119,7 +121,7 @@ const FutureMDForm: React.FC = () => {
               onChange={handleChange}
               className="h-4 w-4 text-blue-600 focus:ring-0 dark:bg-[#191919] dark:border-[#374151]"
             />
-            <label className="ml-2 text-lg font-medium dark:text-gray-100">Would you like complementary shawarma?</label>
+            <label className="ml-2 text-lg font-medium dark:text-gray-100">I would like complementary and FREE shawarma during the event (courtesy of Lezetts)</label>
           </div>
 
           <div>

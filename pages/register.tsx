@@ -32,9 +32,16 @@ const Register = () => {
         <title>FutureMD - Register</title>
       </Head>
       <Navbar showAnimation={false} />
-      <div className="py-4 px-4 w-full max-w-9xl">
-        <h1 className="text-4xl md:text-6xl font-bold my-8 mb-4 text-center dark:text-white text-black">Register For Our Event!</h1>
-        <Path2Medform />
+      <div className="py-4 px-4 w-full max-w-6xl"> {/* Increased width to max-w-6xl */}
+        <h1 className="text-4xl md:text-6xl font-bold my-4 text-center dark:text-white text-black">Register For Our Event!</h1>
+        
+        {/* Path2Med text */}
+        <p className="text-center mb-6 text-lg md:text-2xl font-bold dark:text-dark-text text-dark-text">Path2Med</p>
+        
+        {/* Adjust form alignment and padding */}
+        <div className="mt-[-20px] mb-12"> {/* Move form up by reducing margin */}
+          <Path2Medform />
+        </div>
       </div>
       <Footer />
     </main>
