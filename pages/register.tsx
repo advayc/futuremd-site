@@ -12,7 +12,7 @@ const Register = () => {
 
   useEffect(() => {
     // Redirect to the external URL
-    window.location.href = 'https://prettyform.addxt.com/a/form/?vf=1FAIpQLScWwzzH1xTNbF7eFDxpH_eq7AD1pt23aHhIHvaAmBLXMjvG_g';
+    window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLScWwzzH1xTNbF7eFDxpH_eq7AD1pt23aHhIHvaAmBLXMjvG_g/viewform';
   }, []);
 
   return null; 
