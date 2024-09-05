@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
+import { Card, CardHeader, CardBody } from "@nextui-org/react";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
 import { useRouter } from "next/router";
@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import Head from 'next/head'; 
 import { Footer } from '@/components/footer';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -49,7 +50,7 @@ export default function Events() {
 
         <div className="flex justify-start mb-20">
           <a href='/path2med'>
-          <Card className="transition-transform duration-300 transform hover:scale-105 bg-transparent dark:bg-dprimary border border-zinc-300 hover:border-zinc-400 dark:border-transparent dark:hover:border-zinc-300 dark:hover:border-zinc-800  max-w-md mx-4 rounded-lg p-2 mt-6">
+          <Card className="imghov bg-transparent dark:bg-dprimary border border-zinc-300 hover:border-zinc-400 dark:border-transparent dark:hover:border-zinc-300 dark:hover:border-zinc-800 max-w-md rounded-lg p-2 mt-6">
             <CardHeader className="pb-0 pt-4 px-4 flex-col items-start text-center dark:text-white text-black">
               <h4 className="font-bold text-2xl dark:text-hov text-li">Path2Med</h4>
               <small className="dark:text-zinc-400 text-zinc-600 tracking-wide text-xl text-center font-bold sm:text-sm">November 23rd</small>
@@ -58,7 +59,7 @@ export default function Events() {
               <Image
                 alt="Event background"
                 className="object-cover rounded-xl"
-                src="/events/path2med.png"
+                src="/events/path2medc.png"
                 width={300}
                 height={250}
               />

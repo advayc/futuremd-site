@@ -35,7 +35,7 @@ const Terms: React.FC = () => {
       <section className="flex flex-col items-center">
         <div className="w-11/12 md:w-5/6 border-2 border-hov rounded-lg p-8 shadow hover:shadow-lg mt-12">
           <h2 className="text-4xl font-bold dark:text-white text-black mb-4">Our <span className="text-li dark:text-hov">Terms and Conditions</span></h2>
-          <p className="text-lg dark:text-dark-text text-[#828282] font-bold leading-9">
+          <p className="text-lg dark:text-dark-text text-dark-text font-bold leading-9">
             At FutureMD, we are committed to providing a transparent and secure experience for our users. These terms and conditions outline the rules and regulations for the use of our website and services. By accessing our website, you agree to comply with these terms. We reserve the right to update or modify these terms at any time without prior notice. It is your responsibility to review the terms periodically for any changes.
           </p>
           <div className="pt-4 pd-3 px-4 max-w-9xl text-center mt-8">

@@ -34,7 +34,7 @@ export default function Contact() {
       <Navbar showAnimation={false} />
       <div className="py-4 px-4 w-full max-w-9xl">
         <h1 className="text-4xl md:text-6xl font-bold my-8 mb-4 text-center dark:text-white text-black">📩 Contact Us</h1>
-        <p className="text-center mb-4 text-lg md:text-2xl font-bold dark:text-dark-text text-[#828282]">
+        <p className="text-center mb-4 text-lg md:text-2xl font-bold dark:text-dark-text text-dark-text">
           If you have a question or business inquiry, <br />feel free to contact us here to get a quick response!
         </p>
         <ContactForm />

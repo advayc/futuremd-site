@@ -48,7 +48,13 @@
         "image-alt": "off"
       }
     ],
-    "disown-opener": "off"
+    "disown-opener": "off",
+    "axe/structure": [
+      "default",
+      {
+        "listitem": "off"
+      }
+    ]
   },
   "browserslist": [
     "defaults",

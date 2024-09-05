@@ -35,7 +35,7 @@ export default function Team() {
       <Navbar showAnimation={false} />
       <header className="pt-4 pd-3 px-4 w-full max-w-9xl">
         <h1 className="text-4xl md:text-6xl font-bold my-8 mb-4 text-center dark:text-white text-black"> Our Team</h1>
-        <p className="text-center mb-1 text-lg md:text-2xl font-semibold dark:text-dark-text text-[#828282]">
+        <p className="text-center mb-1 text-lg md:text-2xl font-semibold dark:text-dark-text text-dark-text">
           Discover The Team Behind FutureMD!  
         </p>
       </header>

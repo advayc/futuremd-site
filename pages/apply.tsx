@@ -96,13 +96,13 @@ export default function Apply() {
       <Head><title>FutureMD - Apply</title></Head>
       <Navbar showAnimation={false} />
 
-      <section className="w-full flex flex-col items-center">
+      <section className="w-full flex flex-col items-center mt-20">
         <div className="w-full p-8 mt-4 dark:bg-[#000000] flex flex-col md:flex-row items-center justify-center mb-12 md:mb-8">
           <div id="who-we-are" className="flex flex-col items-center md:items-start justify-center text-center md:text-left md:mr-32">
             <h1 className=" text-6xl sm:text-6xl md:text-8xl font-bold dark:text-white text-black md:mb-4 mb-[-50px]">Join Our <br/><span className="text-li dark:text-hov">Team</span></h1>
           </div>
-          <div className="mt-12 md:mt-2">
-            <img src='/guestspeakers.png' alt="Meta" className="transition-transform duration-300 transform hover:scale-105 object-cover w-[670px]"/>
+          <div className="">
+            <img src='/guestspeakers.png' alt="Meta" className="imghov object-cover w-[550px]"/>
           </div>
         </div>
       </section>
@@ -136,7 +136,7 @@ export default function Apply() {
 
       <div className="px-4 sm:px-8 mb-16">
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-2 dark:text-white text-center">Roles & Responsibilities</h2>
-        <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-8 dark:dark-text text-[#828282] text-center">Click on a card to reveal the responsibilities <br/> for each position and application</h3>
+        <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-8 dark:dark-text text-dark-text text-center">Click on a card to reveal the responsibilities <br/> for each position and application</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
           {roles.map((role, index) => (
             <div 

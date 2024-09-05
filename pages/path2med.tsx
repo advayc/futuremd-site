@@ -48,14 +48,14 @@ export default function FirstEvent() {
           <p className="flex flex-col text-center items-center text-xl md:text-2xl font-semibold dark:text-white text-black mb-4">
             University of Toronto — Mississauga Library <br></br>William G. Davis Building
           </p>
-          <p className="text-base md:text-lg font-semibold dark:text-dark-text text-[#828282]">
+          <p className="text-base md:text-lg font-semibold dark:text-dark-text text-dark-text ">
           FutureMD is excited to announce our upcoming event, Path2Med, hosted at the prestigious University of Toronto! This dynamic gathering will showcase a lineup of distinguished guest speakers from the medical field, engaging workshops, and thrilling team challenges designed to inspire and educate. Attendees will enjoy complimentary catering from Lezzets, renowned as one of Mississauga's top shawarma destinations. In addition, we have lined up incredible prizes and exclusive custom merchandise that you won't want to miss! Mark your calendars for this unmissable event—it's an opportunity to connect, learn, and have fun!
           </p>
         </div>
         <div className="flex justify-end mt-8 md:mt-0">
           <Image
             alt="Event background"
-            className="transition-transform duration-300 transform hover:scale-105 object-cover rounded-lg shadow-lg"
+            className="imghov object-cover rounded-lg shadow-lg"
             src="/events/path2med.png"
             width={350} 
             height={350} 
@@ -68,7 +68,7 @@ export default function FirstEvent() {
 
       <div className="flex flex-col items-center justify-center border-2 border-hov rounded-lg w-3/4 p-8 mt-12 mb-12">
         <Link href="https://www.google.com/maps/place/3359+Mississauga+Rd,+Mississauga,+ON+L5L+1C6/@43.548151,-79.664585,17z/data=!4m6!3m5!1s0x882b43e2d0378c49:0xa2cefb17886b6fb3!8m2!3d43.5496084!4d-79.6620515!16s%2Fg%2F11gjs7tlhb?hl=en&entry=ttu" target="_blank"
-        className="flex flex-col text-center items-center text-m md:text-m font-bold dark:hover:text-primary text-[#828282] hover:text-black dark:transition delay-75 transition delay-75 mb-4">
+        className="flex flex-col text-center items-center text-m md:text-m font-bold dark:hover:text-primary text-dark-text hover:text-black dark:transition delay-75 transition delay-75 mb-4">
           University of Toronto Mississauga Library <br></br>1867 Inner Cir Rd, Mississauga, ON L5L 1C6
         </Link>
 

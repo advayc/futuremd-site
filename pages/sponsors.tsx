@@ -47,13 +47,13 @@ export default function About() {
       <Navbar showAnimation={false} />
       <header className="pt-4 pd-3 px-4 w-full max-w-9xl">
         <h1 className="text-4xl md:text-7xl font-bold my-8 mb-4 text-center dark:text-white text-black"> Our Sponsors</h1>
-        <p className="text-center mb-8 text-lg md:text-2xl font-semibold dark:text-dark-text text-[#828282]">
+        <p className="text-center mb-8 text-lg md:text-2xl font-semibold dark:text-dark-text text-dark-text">
           Thank You to our AMAZING Sponsors! ❤️
         </p>
       </header>
       <section className="flex flex-wrap justify-center">
         {sponsors.map((sponsor, index) => (
-          <div key={index} className="transition-transform duration-300 transform hover:scale-105 rounded-2xl m-4 p-4 overflow-hidden dark:bg-black border border-zinc-300 dark:border-zinc-800 hover:border-slate-400 dark:hover:border-slate-600 relative z-20 flex flex-col items-center justify-center text-center">
+          <div key={index} className="imghov rounded-2xl m-4 p-4 overflow-hidden dark:bg-black border border-zinc-300 dark:border-zinc-800 hover:border-slate-400 dark:hover:border-slate-600 relative z-20 flex flex-col items-center justify-center text-center">
             <a href={sponsor.link} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center">
               <img src={sponsor.logo} alt={sponsor.name} width={sponsor.width} height={sponsor.height} className="mx-auto" />
               <p
@@ -76,7 +76,7 @@ export default function About() {
       <h2 className="text-4xl md:text-7xl font-bold my-8 mb-8 text-center dark:text-white text-black"> Our Affiliates</h2>
       <section className="flex flex-wrap justify-center pb-12">
         {affiliates.map((affiliate, index) => (
-          <div key={index} className="transition-transform duration-300 transform hover:scale-105 rounded-2xl m-4 p-4 overflow-hidden dark:bg-black border border-zinc-300 dark:border-zinc-800 hover:border-slate-400 dark:hover:border-slate-600 relative z-20 flex flex-col items-center justify-center text-center">
+          <div key={index} className="imghov rounded-2xl m-4 p-4 overflow-hidden dark:bg-black border border-zinc-300 dark:border-zinc-800 hover:border-slate-400 dark:hover:border-slate-600 relative z-20 flex flex-col items-center justify-center text-center">
             <a href={affiliate.link} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center">
               <img src={affiliate.logo} alt={affiliate.name} width={affiliate.width} height={affiliate.height} className="mx-auto" />
               <p className="flex items-center justify-center mt-4 text-lg md:text-2xl font-semibold dark:text-white text-black text-center">
