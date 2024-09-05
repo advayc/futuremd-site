@@ -74,6 +74,20 @@ export const blogPosts: BlogPost[] = [
     mdxFilePath: "public/blogposts/welcome.mdx",
   },
   {
+    title: "Thank you to our Sponsor!",
+    url: "/blogs/our-sponsor",
+    image: "/public/hha_upscaled.png",
+    description: "Thank you to the HelpingHands organization for sponsoring us! ❤️",
+    date: "2024-08-14T00:00:00Z",
+    author: {
+      avatar: "/team/bobby.jpg",
+      name: "Bobby Fang",
+      user: 'bobbyf0814',
+      link: "https://www.linkedin.com/in/bobbyf0814/",
+    },
+    mdxFilePath: "public/blogposts/hha.mdx",
+  },
+  {
     title: "Join us to Path2Med",
     url: "/blogs/join-us-to-path2med",
     image: "/events/path2med.png",
