@@ -118,7 +118,7 @@ export default function About() {
             <button className="font-semibold mt-6 px-8 py-4 bg-navy text-primary text-lg rounded transition-transform duration-700 transform hover:scale-105 dark:hover:bg-primary hover:bg-navy hover:text-primary dark:hover:text-navy hover:shadow-lg">Learn More</button>
           </Link>
         </div>
-        <div className="md:w-[50%] w-2/3 sm:w-1/2 md:w-1/3 mt-8 md:mt-0 ">
+        <div className="md:w-[53%] w-2/3 scale-110 sm:w-1/2 md:w-1/3 mt-8 md:mt-0 ">
           <img src='/faq.png' alt="Meta" className="imghov" />
         </div>
       </div>
