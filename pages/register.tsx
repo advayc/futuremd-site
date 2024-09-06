@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Navbar from '@/components/navbar';
@@ -10,9 +10,21 @@ const inter = Inter({ subsets: ["latin"] });
 
 const Register = () => {
   const router = useRouter();
+  const [selectedTheme, setSelectedTheme] = useState<'light' | 'dark'>('light');
 
+  // Retrieve theme from localStorage and apply on page load
   useEffect(() => {
-    const handleRouteChange = () => {
+    const storedTheme = localStorage.getItem('theme') as 'light' | 'dark';
+    if (storedTheme) {
+      setSelectedTheme(storedTheme);
+      document.documentElement.classList.remove('light', 'dark');
+      document.documentElement.classList.add(storedTheme);
+    }
+  }, []);
+
+  // Apply smooth transition on route change
+  useEffect(() => {
+    const handleRouteChange = (url: string) => {
       document.documentElement.classList.add('transition-colors', 'duration-700');
       setTimeout(() => {
         document.documentElement.classList.remove('transition-colors', 'duration-700');
@@ -32,14 +44,10 @@ const Register = () => {
         <title>FutureMD - Register</title>
       </Head>
       <Navbar showAnimation={false} />
-      <div className="py-4 px-4 w-full max-w-6xl"> {/* Increased width to max-w-6xl */}
+      <div className="py-4 px-4 w-full max-w-6xl">
         <h1 className="text-4xl md:text-6xl font-bold my-4 text-center dark:text-white text-black">Register For Our Event!</h1>
-        
-        {/* Path2Med text */}
         <p className="text-center mb-6 text-lg md:text-2xl font-bold dark:text-dark-text text-dark-text">Path2Med</p>
-        
-        {/* Adjust form alignment and padding */}
-        <div className="mt-[-20px] mb-12"> {/* Move form up by reducing margin */}
+        <div className="mt-[-20px] mb-12">
           <Path2Medform />
         </div>
       </div>
