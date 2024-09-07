@@ -3,7 +3,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === "POST") {
-    const { name, birthdate, termsAccepted, wantsShawarma, heardAboutUs, referredBy } = req.body;
+    const { name, birthdate, termsAccepted, wantsShawarma, heardAboutUs, referredBy, email } = req.body;
 
     try {
       const auth = new google.auth.GoogleAuth({
@@ -20,7 +20,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         range,
         valueInputOption: "USER_ENTERED",
         requestBody: {
-          values: [[name, birthdate, termsAccepted, wantsShawarma, heardAboutUs, referredBy]],
+          values: [[name, birthdate, termsAccepted, wantsShawarma, heardAboutUs, referredBy, email]],
         },
       });
 

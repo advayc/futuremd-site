@@ -4,7 +4,7 @@ import { NextApiRequest, NextApiResponse } from 'next';
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === 'POST') {
     try {
-      const { name, birthdate, termsAccepted, wantsShawarma, heardAboutUs, referredBy } = req.body;
+      const { name, birthdate, termsAccepted, wantsShawarma, heardAboutUs, referredBy, email } = req.body;
 
       const auth = new google.auth.GoogleAuth({
         credentials: {
@@ -21,7 +21,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         range: 'Sheet1!A2:F2',
         valueInputOption: 'USER_ENTERED',
         requestBody: {
-          values: [[name, birthdate, termsAccepted, wantsShawarma, heardAboutUs, referredBy]],
+          values: [[name, birthdate, termsAccepted, wantsShawarma, heardAboutUs, referredBy, email]],
         },
       });
 
