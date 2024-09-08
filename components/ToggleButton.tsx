@@ -15,8 +15,8 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({ selected, setSelected }) =>
     if (savedTheme) {
       setSelected(savedTheme);
     } else {
-      setSelected('dark'); 
-      localStorage.setItem('theme', 'dark');
+      setSelected('light'); 
+      localStorage.setItem('theme', 'light');
     }
 
     const handleKeyDown = (event: KeyboardEvent) => {
