@@ -86,5 +86,14 @@ export const team = [
       instagram: "https://www.instagram.com/mob_rulex",
       email: "aarush.vinayrao@gmail.com",
     },
+    {
+      title: "Sohun J.",
+      role: "Marketing",
+      description: "Hey! My name is Sohun, and my duty here at FutureMD revolves around the marketing landscape. I attend Glenforest Secondary School as part of the IB program. My passion for health sciences and becoming a medical doctor is very profound, and aligns with my love for biology.  Whenever, I am not busy with school, you can catch me playing sports, reading or swim instructing with the City of Mississauga!",
+      image: "team/sohun.jpg",
+      linkedin: "https://www.linkedin.com/in/sohun-jhaveri-46448331a/",
+      instagram: "https://www.instagram.com/08_sohun",
+      email: "aarush.vinayrao@gmail.com",
+    },
 ];
   
