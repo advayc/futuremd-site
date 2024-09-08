@@ -61,7 +61,7 @@ export const team = [
     },
     {
       title: "Arghya V.",
-      role: "Design",
+      role: "Design and Development",
       description: "Hello! My name is Arghya, and I am a passionate designer as part of FutureMD. As a kid, I have always had a sincere passion about organic chemistry, and I wish to pursue my learning in the International Baccalaureate (IB) program. I aspire to be a biomedical engineer someday. In my spare time, I enjoy playing basketball, play video games, and learn!",
       image: "team/arghya.jpg",
       linkedin: "https://www.linkedin.com/in/arghya-vyas-2a40a72b1/",
