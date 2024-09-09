@@ -78,7 +78,7 @@ export const Footer = () => {
               <a href="/newsletter" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Newsletter</a>
             </li>
             <li className="mb-3 md:mb-4">
-              <a href="/blog" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Blog</a>
+              <a href="/blogs" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Blogs</a>
             </li>
             <li className="mb-3 md:mb-4">
               <a href="/faq" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">FAQ</a>
