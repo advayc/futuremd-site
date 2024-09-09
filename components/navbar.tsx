@@ -55,15 +55,13 @@ const Navbar: React.FC<NavbarProps> = ({ showAnimation }) => {
           <a href="/media" className={`relative mr-10 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover-border transition hover:text-li dark:hover:text-hov transition delay-50 delay-50`}>
             Media
           </a>
-          <a href="/blog" className={`relative mr-10 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover-border transition hover:text-li dark:hover:text-hov transition delay-50 delay-50`}>
-            Blog
+          <a href="/blogs" className={`relative mr-10 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover-border transition hover:text-li dark:hover:text-hov transition delay-50 delay-50`}>
+            Blogs
           </a>
           <a href="/contact" className={`relative mr-10 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover-border transition hover:text-li dark:hover:text-hov transition delay-50 delay-50`}>
             Contact Us
           </a>
-          <a href="/visit-path2med" className={`relative mr-9 font-bold ${selected === 'light' ? 'text-light-text' : 'text-white'} hover-border transition hover:text-li dark:hover:text-hov transition delay-50 delay-50`}>
-          Visit Path2Med
-        </a>
+          
           <ToggleButton selected={selected} setSelected={setSelected} />
         </div>
       </nav>

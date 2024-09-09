@@ -139,10 +139,10 @@ const Blog: React.FC = () => {
 
   return (
     <main className={`min-h-screen pt-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
-      <Head><title>FutureMD - Blog</title></Head>
+      <Head><title>FutureMD - Blogs</title></Head>
       <Navbar showAnimation={false} />
       <header className="pt-4 px-4 w-full max-w-7xl mx-auto text-center">
-        <h1 className="text-4xl md:text-6xl font-bold my-8 mb-4 dark:text-white text-black">Blog</h1>
+        <h1 className="text-4xl md:text-6xl font-bold my-8 mb-4 dark:text-white text-black">Blogs</h1>
         <h2 className="text-lg md:text-xl font-semibold dark:text-dark-text text-dark-text mb-8">
           All the latest news about FutureMD!
         </h2>

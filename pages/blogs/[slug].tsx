@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import { Footer } from '@/components/footer';
 import Navbar from '@/components/navbar';
-import { blogPosts, BlogPost } from '@/pages/blog';
+import { blogPosts, BlogPost } from '@/pages/blogs';
 import { format, parseISO } from 'date-fns';
 import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote';
 import { serialize } from 'next-mdx-remote/serialize';

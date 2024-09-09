@@ -52,7 +52,7 @@ export const Footer = () => {
               <a href="/media" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Gallery</a>
             </li>
             <li className="mb-3 md:mb-4">
-              <a href="/register" target="_blank" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Register</a>
+              <a href="/register" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Register</a>
             </li>
           </ul>
         </div>
