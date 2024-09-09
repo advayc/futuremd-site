@@ -55,7 +55,7 @@ export default function About() {
       </section>
 
       <div id="our-mission" className="w-full flex flex-col md:flex-row items-center justify-center bg-primary dark:bg-dprimary p-8 sm:p-16 md:p-24">
-        <div className="smallersect md:w-1/2 text-center md:text-left">
+        <div className="smallersect md:w-1/2 text-center md:text-left transform transition-transform duration-300 hover:scale-105">
           <h2 className="text-4xl sm:text-6xl md:text-7xl font-bold dark:text-white text-black mb-4">Our Mission is to <span className="dark:text-hov text-li">empower</span> youth</h2>
         </div>
         <div className="smallersect md:w-1/2 text-center md:text-left">
