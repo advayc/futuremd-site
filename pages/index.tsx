@@ -123,9 +123,11 @@ export default function Home() {
 
       <div ref={(el) => { if (el) fadeRefs.current[2] = el; }} className="fade-in w-[75%] flex flex-col items-center py-20" id="vision">
         <div className="flex flex-col md:flex-row items-center justify-center w-full">
-          <div className="md:w-1/2 text-center md:text-left flex justify-center md:justify-start">
-            <h2 className="text-7xl font-bold dark:text-white text-black mb-4">Our <span className="dark:text-hov text-li">Vision</span></h2>
-          </div>
+        <div className="md:w-1/2 text-center md:text-left flex justify-center md:justify-start">
+          <h2 className="text-7xl font-bold dark:text-white text-black mb-4 transform transition-transform duration-300 hover:scale-105">
+            Our <span className="dark:text-hov text-li">Vision</span>
+          </h2>
+        </div>
           <div className="text-lg sm:text-xl md:text-2xl text-center md:text-left max-w-2xl text-dark-text font-semibold md:w-1/2 mt-4 md:mt-0 flex justify-center md:justify-start">
             <div className="text-center leading-relaxed md:leading-normal">
               <p>
