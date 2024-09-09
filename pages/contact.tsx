@@ -42,16 +42,16 @@ export default function Contact() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 dark:text-white text-black transform transition-transform duration-300 hover:scale-105">Connect With Us!</h2>
           <div className="flex space-x-4">
             <a href="https://www.instagram.com/futuremd_team/" target="_blank" rel="noopener noreferrer">
-              <FaInstagram size={32} className="dark:text-hov dark:hover:text-primary text-li hover:text-navy transition-all duration-300" />
+              <FaInstagram size={32} className="dark:text-hov dark:hover:text-primary text-li hover:text-navy transition-transform transform hover:scale-110 duration-300" />
             </a>
             <a href="https://www.linkedin.com/company/futuremdteam/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin size={32} className="dark:text-hov dark:hover:text-primary text-li hover:text-navy transition-all duration-300" />
+              <FaLinkedin size={32} className="dark:text-hov dark:hover:text-primary text-li hover:text-navy transition-transform transform hover:scale-110 duration-300" />
             </a>
             <a href="https://www.tiktok.com/@futuremd_team" target="_blank" rel="noopener noreferrer">
-              <FaTiktok size={32} className="dark:text-hov dark:hover:text-primary text-li hover:text-navy transition-all duration-300" />
+              <FaTiktok size={32} className="dark:text-hov dark:hover:text-primary text-li hover:text-navy transition-transform transform hover:scale-110 duration-300" />
             </a>
-            <a href="mailto:contact.futuremd@gmail.com" >
-              <MdEmail size={36} className="dark:text-hov dark:hover:text-primary text-li hover:text-navy transition-all duration-300" />
+            <a href="mailto:contact.futuremd@gmail.com">
+              <MdEmail size={36} className="dark:text-hov dark:hover:text-primary text-li hover:text-navy transition-transform transform hover:scale-110 duration-300" />
             </a>
           </div>
         </div>
