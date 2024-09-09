@@ -93,7 +93,7 @@ export const team = [
       image: "team/sohun.jpg",
       linkedin: "https://www.linkedin.com/in/sohun-jhaveri-46448331a/",
       instagram: "https://www.instagram.com/08_sohun",
-      email: "aarush.vinayrao@gmail.com",
+      email: "sohun8j@gmail.com",
     },
 ];
   
