@@ -92,20 +92,21 @@ export const Footer = () => {
         <div className="flex justify-center items-center mt-4 sm:mt-6 sm:mr-12">
           <div className="flex gap-6 sm:gap-10">
             <a href="https://www.instagram.com/futuremd_team/" target="_blank" rel="noopener noreferrer">
-              <FaInstagram size={32} className="text-hov hover:text-primary transition-all duration-300" />
+              <FaInstagram size={32} className="text-hov hover:text-primary transition-transform transform hover:scale-110 duration-300" />
             </a>
             <a href="https://www.linkedin.com/company/futuremdteam/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin size={32} className="text-hov hover:text-primary transition-all duration-300" />
+              <FaLinkedin size={32} className="text-hov hover:text-primary transition-transform transform hover:scale-110 duration-300" />
             </a>
             <a href="https://www.tiktok.com/@futuremd_team" target="_blank" rel="noopener noreferrer">
-              <FaTiktok size={32} className="text-hov hover:text-primary transition-all duration-300" />
+              <FaTiktok size={32} className="text-hov hover:text-primary transition-transform transform hover:scale-110 duration-300" />
             </a>
             <a href="mailto:contact.futuremd@gmail.com">
-              <MdEmail size={36} className="text-hov hover:text-primary transition-all duration-300" />
+              <MdEmail size={36} className="text-hov hover:text-primary transition-transform transform hover:scale-110 duration-300" />
             </a>
           </div>
         </div>
       </div>
+
       
       <div className="mt-8 border-t-2 border-gray-700 pt-4 dark:border-gray-800 px-4 sm:px-12">
         <div className="flex flex-col sm:flex-row sm:justify-between text-center sm:text-left">
