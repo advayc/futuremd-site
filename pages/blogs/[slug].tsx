@@ -34,7 +34,7 @@ const BlogPostPage = ({ post, mdxSource }: BlogPostPageProps) => {
       <Navbar showAnimation={false} />
       <header className="pt-4 px-4 md:px-8 lg:px-24 xl:px-36 w-full max-w-7xl mx-auto text-center relative">
         <button
-          onClick={() => router.push('/blog')}
+          onClick={() => router.push('/blogs')}
           className="absolute top-4 left-4 md:left-8 lg:left-12 text-dark-text hover:text-default-900 transition-colors"
         >
           &#60; Back to Blog
