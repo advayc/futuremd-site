@@ -1,12 +1,12 @@
-import React from 'react';
-import {FaTiktok } from 'react-icons/fa';
+import React, { useEffect } from 'react';
+import { FaTiktok, FaGlobe } from 'react-icons/fa';
 import Navbar from "@/components/navbar";
 import ContactForm from "@/components/ContactForm";
 import { Inter } from "next/font/google";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
 import Head from 'next/head'; 
 import { Footer } from '@/components/footer';
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Contact() {
@@ -39,18 +39,21 @@ export default function Contact() {
         <ContactForm />
         <div className="flex flex-col items-center mt-20 mb-20">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 dark:text-white text-black transform transition-transform duration-300 hover:scale-105">Our Social Media!</h2>
-          <div className="flex space-x-60">
+          <div className="flex space-x-40">
+            <a href="mailto:contact.futuremd@gmail.com">
+              <img src="/icons/gmail.png" alt="Email" className="w-24 dark:text-hov transition-transform transform hover:scale-110 duration-300" />
+            </a>
             <a href="https://www.instagram.com/futuremd_team/" target="_blank" rel="noopener noreferrer">
               <img src="/icons/instagram.png" alt="Instagram" className="w-20 dark:text-hov transition-transform transform hover:scale-110 duration-300" />
-            </a>
-            <a href="https://www.linkedin.com/company/futuremdteam/" target="_blank" rel="noopener noreferrer">
-              <img src="/icons/linkedin.png" alt="LinkedIn" className="w-20 dark:text-hov transition-transform transform hover:scale-110 duration-300" />
             </a>
             <a href="https://www.tiktok.com/@futuremd_team" target="_blank" rel="noopener noreferrer">
               <FaTiktok size={78} className="dark:text-hov text-li transition-transform transform hover:scale-110 duration-300" />
             </a>
-            <a href="mailto:contact.futuremd@gmail.com">
-              <img src="/icons/gmail.png" alt="Email" className="w-24 dark:text-hov transition-transform transform hover:scale-110 duration-300" />
+            <a href="https://www.linkedin.com/company/futuremdteam/" target="_blank" rel="noopener noreferrer">
+              <img src="/icons/linkedin.png" alt="LinkedIn" className="w-20 dark:text-hov transition-transform transform hover:scale-110 duration-300" />
+            </a>
+            <a href="/"  rel="noopener noreferrer">
+              <FaGlobe size={78} className="dark:text-blue-500 text-blue-600 transition-transform transform hover:scale-110 duration-300" />
             </a>
           </div>
         </div>
