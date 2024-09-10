@@ -37,7 +37,7 @@ export default function Contact() {
           If you have a question or business inquiry, <br />feel free to contact us here to get a quick response!
         </p>
         <ContactForm />
-        <div className="flex flex-col items-center my-10 mb-18">
+        <div className="flex flex-col items-center mt-20 mb-20">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 dark:text-white text-black transform transition-transform duration-300 hover:scale-105">Our Social Media!</h2>
           <div className="flex space-x-60">
             <a href="https://www.instagram.com/futuremd_team/" target="_blank" rel="noopener noreferrer">
@@ -47,7 +47,7 @@ export default function Contact() {
               <img src="/icons/linkedin.png" alt="LinkedIn" className="w-20 dark:text-hov transition-transform transform hover:scale-110 duration-300" />
             </a>
             <a href="https://www.tiktok.com/@futuremd_team" target="_blank" rel="noopener noreferrer">
-              <FaTiktok size={78} className="dark:hover:text-nav text-li transition-transform transform hover:scale-110 duration-300" />
+              <FaTiktok size={78} className="dark:text-hov text-li transition-transform transform hover:scale-110 duration-300" />
             </a>
             <a href="mailto:contact.futuremd@gmail.com">
               <img src="/icons/gmail.png" alt="Email" className="w-24 dark:text-hov transition-transform transform hover:scale-110 duration-300" />
