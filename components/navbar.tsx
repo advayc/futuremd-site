@@ -81,7 +81,7 @@ const Navbar: React.FC<NavbarProps> = ({ showAnimation }) => {
             <a href="/sponsors" className="relative py-1 hover-border transition hover:text-li dark:hover:text-hov transition delay-50 delay-50 font-bold">Sponsors</a>
             <a href="/events" className="relative py-1 hover-border transition hover:text-li dark:hover:text-hov transition delay-50 delay-50 font-bold">Events</a>
             <a href="/media" className="relative py-1 hover-border transition hover:text-li dark:hover:text-hov transition delay-50 delay-50 font-bold">Media</a>
-            <a href="/blog" className="relative py-1 hover-border transition hover:text-li dark:hover:text-hov transition delay-50 delay-50 font-bold">Blog</a>
+            <a href="/blogs" className="relative py-1 hover-border transition hover:text-li dark:hover:text-hov transition delay-50 delay-50 font-bold">Blog</a>
             <div className="relative flex justify-between items-center">
               <a href="/contact" className="relative py-1 hover-border transition hover:text-li dark:hover:text-hov transition delay-50 delay-50 font-bold">Contact Us</a>
             </div>
