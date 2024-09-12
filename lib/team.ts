@@ -52,14 +52,6 @@ export const team = [
       email: "akalyagunen@gmail.com",
     },
     {
-      title: "Mujtaba A.",
-      role: "Design",
-      description: "Hi I’m Mujtaba Awan! Here at FutureMD I’m part of the design team. I’m an IB student and very passionate about engineering. In my spare time I like to sketch, spend time with family, and play sports. In the future, I hope to have a job in engineering or even software development.",
-      image: "team/mujtaba.jpg",
-      instagram: "https://www.instagram.com/_mujtabaawan",
-      email: "mrmellow888@gmail.com",
-    },
-    {
       title: "Arghya V.",
       role: "Design & Developer",
       description: "Hello! My name is Arghya, and I am a passionate designer as part of FutureMD. As a kid, I have always had a sincere passion about organic chemistry, and I wish to pursue my learning in the International Baccalaureate (IB) program. I aspire to be a biomedical engineer someday. In my spare time, I enjoy playing basketball, play video games, and learn!",
