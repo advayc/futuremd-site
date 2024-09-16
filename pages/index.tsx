@@ -165,7 +165,7 @@ export default function Home() {
           <p className="text-lg sm:text-xl md:text-2xl dark:dark-text text-dark-text font-bold leading-9 mt-8 ">
           Click the button below to take you <br className="hidden md:block" /> to our blogs & updates!
           </p>
-          <Link href='/blog'>
+          <Link href='/blogs'>
             <button className="font-semibold mt-6 px-8 py-4 bg-navy text-primary text-lg rounded transition-transform duration-700 transform hover:scale-105 dark:hover:bg-primary hover:bg-navy hover:text-primary dark:hover:text-navy hover:shadow-lg">Learn More</button>
           </Link>
         </div>
