@@ -26,7 +26,7 @@ export const affiliates = [
   {
     name: "Vista",
     subName: "Print",
-    logo: "/affiliates/vistaprint.png",
+    logo: "/affiliates/vistaprint1.png",
     link: "https://www.vistaprint.ca/",
     width: 225,
     height: 225,
