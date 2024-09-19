@@ -78,7 +78,7 @@ export default function About() {
         <div className="w-full dark:border-li p-8 sm:p-16 mx-auto">
           <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold dark:text-white text-black mb-8">Meet Our Executives!</h2>
           <div className="max-w-5xl mx-auto px-4 sm:px-8 justify-center text-left">
-            <HoverEffect items={executives.map((exec: any) => ({ ...exec, role: "" }))} />
+            <HoverEffect items={executives}/>
           </div>
           <Link href='/team' className='justify-center'>
             <button className="font-semibold mt-6 px-8 py-4 bg-navy text-primary text-lg rounded transition-transform duration-700 transform hover:scale-105 dark:hover:bg-primary hover:bg-navy hover:text-primary dark:hover:text-navy hover:shadow-lg">Meet Our Team</button>
