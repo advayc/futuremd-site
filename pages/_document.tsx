@@ -42,7 +42,7 @@ class MyDocument extends Document {
           <meta name="twitter:creator" content="@your_twitter_handle" />
 
           {/* Favicon and Theme */}
-          <link rel="shortcut icon" href="/logo.png" />
+          <link rel="shortcut icon" href="/favicon.ico" />
           <meta name="theme-color" content="#5C9CFF" />
           
           {/* Additional Meta Tags */}

@@ -48,8 +48,8 @@ export default function About() {
               the youth & teens about how life really is during and after medical school!
             </p>
           </div>
-          <div className="logo md:w-[30%] w-2/3 sm:w-1/2 md:w-1/3 mt-8 md:mt-0">
-            <img src='/logo.png' alt="Meta" />
+          <div className=" md:w-[30%] w-2/3 sm:w-1/2 md:w-1/3 mt-8 md:mt-0">
+            <img src='/logo.png' alt="Meta" className="logo" />
           </div>
         </div>
       </section>
