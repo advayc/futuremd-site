@@ -11,7 +11,7 @@ import { IoMdClose } from "react-icons/io";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Events() {
+export default function Newsletter() {
   const router = useRouter();
 
   const [mail, setMail] = useState<any | null>(null);
@@ -72,20 +72,20 @@ export default function Events() {
         <title>FutureMD - Newsletter</title>
       </Head>
       <Navbar showAnimation={false} />
-      <header className="pt-4 px-2 w-full max-w-5xl mx-auto">
-        <div className="md:flex items-start justify-between mb-20">
-          <div className="md:w-3/5 mt-16">
-            <h1 className="text-2xl md:text-4xl font-bold mt-16 mb-5 dark:text-white text-black whitespace-nowrap text-left">
+      <header className="w-full mx-auto">
+        <div className="md:flex items-start justify-between mb-20 overflow-hidden">
+          <div className="md:w-3/5 mt-16 ml-40">
+            <h1 className="text-3xl md:text-5xl font-bold mt-16 mb-5 dark:text-white text-black whitespace-nowrap text-left">
               Subscribe To The <span className="dark:text-hov text-blue-600">Newsletter</span>
             </h1>
-            <p className="text-left text-md md:text-lg font-semibold dark:text-dark-text text-[#828282] mb-8">
+            <p className="text-left text-lg md:text-xl font-semibold dark:text-dark-text text-[#828282] mb-8">
               Receive monthly updates on <span className="dark:text-hov text-blue-600">FutureMD</span> & our events!
             </p>
             <form onSubmit={Subscribe} className="flex justify-start mb-16">
               <input
                 type="email"
                 placeholder="Email Address"
-                className="p-2 pr-4 pl-2 border border-gray-300 rounded-lg w-full md:w-auto"
+                className="p-3 pr-2 pl-4 border border-gray-300 rounded-lg w-full md:w-80"
                 required
                 onChange={(e) => setMail(e.target.value)}
               />
@@ -104,7 +104,7 @@ export default function Events() {
               </button>
             </form>
           </div>
-          <img src="/newsletter.png" alt="Newsletter" className="imghov w-80 md:w-3/4  h-auto" />
+          <img src="/newsletter.png" alt="Newsletter" className="imghov w-80 md:w-2/4 h-auto" />
         </div>
       </header>
 
