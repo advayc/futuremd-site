@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Newsletter() {
   const router = useRouter();
 
-  const [mail, setMail] = useState<any | null>(null);
+  const [mail, setMail] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState<boolean>(false);
   const [errorMessage, setErrorMessage] = useState<string>("");
@@ -40,27 +40,26 @@ export default function Newsletter() {
     setLoading(true);
     setSuccess(false);
     setErrorMessage("");
-
-    axios
-      .put("/api/newsletter/mailingList", {
-        mail: mail,
-      })
-      .then((res) => {
-        if (res.status === 200) {
-          setLoading(false);
-          setSuccess(true);
-          setMessageState(res.data.message);
-        } else {
-          setLoading(false);
-          setErrorMessage(res.data.message);
-        }
-      })
-      .catch((err) => {
+  
+    try {
+      const res = await axios.put("/api/newsletter/mailingList", { mail });
+      if (res.status === 200) {
+        // Call the API to send the email
+        await axios.post('/api/newsletter/sendEmail', { email: mail });
+  
         setLoading(false);
-        setErrorMessage(String(err.message));
-      });
+        setSuccess(true);
+        setMessageState(res.data.message);
+      } else {
+        setLoading(false);
+        setErrorMessage(res.data.message);
+      }
+    } catch (err) {
+      setLoading(false);
+      setErrorMessage(err instanceof Error ? err.message : "An unknown error occurred");
+    }
   };
-
+  
   const closeMessage = () => {
     setSuccess(false);
     setMessageState("");
