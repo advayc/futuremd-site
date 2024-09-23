@@ -15,12 +15,38 @@ export default async function handler(req, res) {
 
   const msg = {
     to: email,
-    from: 'contact.futuremd@gmail.com', 
+    from: 'contact.futuremd@gmail.com',
     subject: 'Welcome to FutureMD Newsletter!',
-    text: 'Thank you for subscribing to our newsletter!',
-    html: '<strong>Thank you for subscribing to our newsletter!</strong>',
+    text: 'Thank you for subscribing to our newsletter! You will receive updates on our latest news and events.',
+    html: `
+      <section style="max-width: 600px; margin: auto; padding: 16px; background-color: white; color: black;">
+          <header>
+              <a href="#">
+                  <img style="width: auto; height: 28px;" src="https://futuremd.net/logo.png" alt="FutureMD Logo">
+              </a>
+          </header>
+  
+          <main style="margin-top: 16px;">
+              <h2 style="color: #4A4A4A;">Hi there,</h2>
+  
+              <p style="margin-top: 8px; line-height: 1.6; color: #6B6B6B;">
+                  Thank you for subscribing to the <strong>FutureMD Newsletter</strong>! 
+                  You will receive updates on our latest news and events.
+              </p>
+              
+              <button style="padding: 8px 16px; margin-top: 16px; background-color: #2563EB; color: white; border: none; border-radius: 8px; cursor: pointer;">
+                  <a href="https://futuremd.net" style="text-decoration: none; color: white;">Explore FutureMD</a>
+              </button>
+              
+              <p style="margin-top: 16px; color: #6B6B6B;">
+                  Best regards,<br>
+                  The FutureMD Team
+              </p>
+          </main>
+     </section>
+    `,
   };
-
+  
   try {
     await sgMail.send(msg);
     return res.status(200).json({ message: 'Email sent successfully' });

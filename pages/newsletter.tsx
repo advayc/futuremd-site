@@ -6,7 +6,6 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import { Footer } from "@/components/footer";
 import { RiLoader5Fill } from "react-icons/ri";
-import { FaCheck } from "react-icons/fa"; 
 import { IoMdClose } from "react-icons/io";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -44,7 +43,6 @@ export default function Newsletter() {
     try {
       const res = await axios.put("/api/newsletter/mailingList", { mail });
       if (res.status === 200) {
-        // Call the API to send the email
         await axios.post('/api/newsletter/sendEmail', { email: mail });
   
         setLoading(false);
@@ -62,6 +60,7 @@ export default function Newsletter() {
   
   const closeMessage = () => {
     setSuccess(false);
+    setErrorMessage("");
     setMessageState("");
   };
 
@@ -108,27 +107,46 @@ export default function Newsletter() {
       </header>
 
       {success && (
-        <div
-          id="success-message"
-          className="fixed bottom-4 left-4 w-full max-w-md p-4 bg-green-500 text-white rounded-md shadow-lg flex items-center justify-between transition-opacity duration-1000"
-          style={{ opacity: 1 }}
-        >
-          <FaCheck className="mr-2" size={20} />
-          <span>{messageState}</span>
-          <button onClick={closeMessage} className="text-white">
+        <div className="flex w-full max-w-md overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800 fixed bottom-4 left-4 pr-2">
+          <div className="flex items-center justify-center bg-emerald-500 px-4">
+            <svg className="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM16.6667 28.3333L8.33337 20L10.6834 17.65L16.6667 23.6166L29.3167 10.9666L31.6667 13.3333L16.6667 28.3333Z" />
+            </svg>
+          </div>
+          <div className="px-4 py-2 -mx-3 flex-1">
+            <div className="mx-3">
+              <span className="font-semibold text-emerald-500 dark:text-emerald-400">Success</span>
+              <p className="text-sm text-gray-600 dark:text-gray-200">
+                Thank you for subscribing to our newsletter! Your email has been added to our mailing list! ❤️
+              </p>
+            </div>
+          </div>
+          <button onClick={closeMessage} className="text-black">
             <IoMdClose size={24} />
           </button>
         </div>
       )}
 
       {errorMessage && (
-        <div className="fixed bottom-4 left-4 w-full max-w-md p-4 bg-red-500 text-white rounded-md shadow-lg flex items-center justify-between">
-          <span>{errorMessage}</span>
-          <button onClick={() => setErrorMessage("")} className="text-white">
+        <div className="flex w-full max-w-sm overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800 fixed bottom-4 left-4 pr-4">
+          <div className="flex items-center justify-center bg-red-500 px-4">
+            <svg className="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 3.36667C10.8167 3.36667 3.3667 10.8167 3.3667 20C3.3667 29.1833 10.8167 36.6333 20 36.6333C29.1834 36.6333 36.6334 29.1833 36.6334 20C36.6334 10.8167 29.1834 3.36667 20 3.36667ZM19.1334 33.3333V22.9H13.3334L21.6667 6.66667V17.1H27.25L19.1334 33.3333Z" />
+            </svg>
+          </div>
+          <div className="px-4 py-2 -mx-3">
+            <div className="mx-3">
+              <span className="font-semibold text-red-500 dark:text-red-400">Error</span>
+              <p className="text-sm text-gray-600 dark:text-gray-200"><span>Request failed. Please <a href="/contact" className="text-li">contact us</a> or try again later!</span>
+              </p>
+            </div>
+          </div>
+          <button onClick={() => setErrorMessage("")} className="text-black">
             <IoMdClose size={24} />
           </button>
         </div>
       )}
+      
       <Footer />
     </main>
   );
