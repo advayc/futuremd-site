@@ -87,5 +87,14 @@ export const team = [
       instagram: "https://www.instagram.com/08_sohun",
       email: "sohun8j@gmail.com",
     },
+    {
+      title: "Kashmir P.",
+      role: "Marketing",
+      description: "Hello! My name is Kashmir, and my job at FutureMD is to help market the organization. I am currently attending Glenforest Secondary School where I am part of the International Baccalaureate (IB) program. I am passionate about mathematics and biology, which has led me to want to become a Medical Doctor. In my spare time, I like to play Hockey, Baseball, Chess and Video Games. I also enjoy reading and learning about the world around us.",
+      image: "logo.png",
+      linkedin: "https://www.linkedin.com/in/kashmir-parmar-9a346331a/",
+      instagram: "https://www.instagram.com/futuremd_team",
+      email: "ksp3141@gmail.com",
+    },
 ];
   
