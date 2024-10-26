@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-const COUNTDOWN_FROM = "2024-11-23";
+const COUNTDOWN_FROM = "2024-11-24";
 
 const SECOND = 1000;
 const MINUTE = SECOND * 60;

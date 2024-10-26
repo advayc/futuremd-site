@@ -37,7 +37,7 @@ export default function FirstEvent() {
         <p className="text-lg md:text-2xl font-semibold dark:text-dark-text text-zinc-600">Join us for an exciting event!</p>
       </header>
       <div>
-        <button className="mt-8 dark:bg-navy dark:text-primary bg-primary text-navy py-2 px-4 rounded border-2 border-transparent hover:border-li transition-colors duration-300 hover:bg-navy-dark ">2024-11-23</button>
+        <button className="mt-8 dark:bg-navy dark:text-primary bg-primary text-navy py-2 px-4 rounded border-2 border-transparent hover:border-li transition-colors duration-300 hover:bg-navy-dark ">2024-11-24</button>
         <Link href="/events">
             <button className="ml-8 mt-8 dark:bg-navy dark:text-primary bg-primary text-navy py-2 px-4 rounded border-2 border-transparent hover:border-li transition-colors duration-300 hover:bg-navy-dark">Upcoming</button>
         </Link>
