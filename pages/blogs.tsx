@@ -100,7 +100,7 @@ export const blogPosts: BlogPost[] = [
       link: "https://www.linkedin.com/in/bobbyf0814/",
     },
     mdxFilePath: "public/blogposts/path2med.mdx",
-  }
+  },
   {
     title: "Path2Med Event Rescheduled",
     url: "/blogs/Path2Med-Event-Reschedule",
