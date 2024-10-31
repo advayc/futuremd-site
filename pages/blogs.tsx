@@ -101,6 +101,20 @@ export const blogPosts: BlogPost[] = [
     },
     mdxFilePath: "public/blogposts/path2med.mdx",
   }
+  {
+    title: "Path2Med Event Rescheduled",
+    url: "/blogs/Path2Med-Event-Reschedule",
+    image: "/events/path2med.png",
+    description: "NEW DATE: November 24th, 2024",
+    date: "2024-10-30T00:00:00Z",
+    author: {
+      avatar: "/team/bobby.jpg",
+      name: "Bobby Fang",
+      user: 'bobbyf0814',
+      link: "https://www.linkedin.com/in/bobbyf0814/",
+    },
+    mdxFilePath: "public/blogposts/Path2Med_Event_Update.mdx",
+  }
 ];
 
 export const BlogPostList = ({ posts }: { posts: BlogPost[] }) => {
