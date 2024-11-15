@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-// Import the Inter font
-const inter = Inter({ subsets: ['latin'] });
 
 const FutureMDForm: React.FC = () => {
   const [formData, setFormData] = useState({
