@@ -1,11 +1,9 @@
-import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Head from 'next/head';
 import { Footer } from '@/components/footer';
 
-const inter = Inter({ subsets: ["latin"] });
 
 const Privacy: React.FC = () => {
   const router = useRouter();
@@ -26,7 +24,7 @@ const Privacy: React.FC = () => {
   }, [router.events]);
 
   return (
-    <main className={`min-h-screen pt-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
+    <main className={`min-h-screen pt-8  dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
       <Head><title>FutureMD - Privacy</title></Head>
       <Navbar showAnimation={false} />
       <header className="pt-4 pd-3 px-4 w-full max-w-9xl text-center">

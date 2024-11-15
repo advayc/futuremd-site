@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
@@ -7,7 +6,6 @@ import { Footer } from '@/components/footer';
 import { roles } from '@/lib/roles';
 import { AnimatePresence, motion } from "framer-motion";
 
-const inter = Inter({ subsets: ["latin"] });
 
 const Highlight = ({ text }: { text: string }) => (
   <span className="dark:text-white text-black font-bold">{text}</span>
@@ -92,7 +90,7 @@ export default function Apply() {
   }, [selectedRole]);
 
   return (
-    <main className={`min-h-screen flex flex-col pt-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
+    <main className={`min-h-screen flex flex-col pt-8  dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
       <Head><title>FutureMD - Apply</title></Head>
       <Navbar showAnimation={false} />
 

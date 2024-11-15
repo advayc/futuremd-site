@@ -1,5 +1,4 @@
 import React from "react";
-import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
@@ -7,7 +6,6 @@ import Head from 'next/head';
 import { Footer } from '@/components/footer';
 import Tabs from '@/components/ui/accordian';
 
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Events() {
   const router = useRouter();
@@ -28,7 +26,7 @@ export default function Events() {
   }, [router.events]);
 
   return (
-    <main className={`min-h-screen items-center justify-between pt-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
+    <main className={`min-h-screen items-center justify-between pt-8  dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
       <Head><title>FutureMD - FAQ</title></Head>
       <Navbar showAnimation={false} />
       <header className="pt-4 px-4 w-full max-w-4xl mx-auto">

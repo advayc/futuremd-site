@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
 import Countdown from '@/components/countdown';
 import { useRouter } from "next/router";
@@ -8,7 +7,6 @@ import { Footer } from '@/components/footer';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const inter = Inter({ subsets: ["latin"] });
 
 export default function FirstEvent() {
   const router = useRouter();
@@ -29,7 +27,7 @@ export default function FirstEvent() {
   }, [router.events]);
 
   return (
-    <main className={`min-h-screen pt-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700 flex flex-col items-center`}>
+    <main className={`min-h-screen pt-8  dark:bg-dark-bg bg-light-bg transition-colors duration-700 flex flex-col items-center`}>
       <Head><title>FutureMD - First Event</title></Head>
       <Navbar showAnimation={false} />
       <header className="pt-4 px-4 w-full max-w-5xl text-center">

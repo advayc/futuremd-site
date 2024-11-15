@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Inter } from "next/font/google";
 
 // Import the Inter font
 const inter = Inter({ subsets: ['latin'] });
@@ -66,7 +65,7 @@ const FutureMDForm: React.FC = () => {
   };
 
   return (
-    <div className={`${inter.className} min-h-screen flex items-start justify-center py-8`}> {/* Adjusted vertical alignment */}
+    <div className={` min-h-screen flex items-start justify-center py-8`}> {/* Adjusted vertical alignment */}
       {/* The theme bug here has been removed */}
       <div
         className={`w-full max-w-4xl p-8 bg-white dark:bg-[#000000] rounded-lg ${

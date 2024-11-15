@@ -1,8 +1,8 @@
-import {nextui} from '@nextui-org/theme';
+import { nextui } from '@nextui-org/theme';
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  darkMode: 'class', // Add this line to enable dark mode
+  darkMode: 'class',
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -11,6 +11,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],  // set Inter as the default font
+      },
       colors: {
         primary: "#D9E8FF",
         dprimary: "#171616",
@@ -30,4 +33,5 @@ const config: Config = {
   },
   plugins: [nextui()],
 };
+
 export default config;

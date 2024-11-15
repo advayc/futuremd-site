@@ -6,25 +6,19 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <title>FutureMD</title>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" />
           <meta
             name="description"
             content="A youth-led nonprofit organization with the goal to educate teens about life during and after medical school!"
           />
-          <meta
-            name="keywords"
-            content="FutureMD, futuremd, Futuremd inc, Futuremd, nonprofit, medical education"
-          />
+          <meta name="keywords" content="FutureMD, futuremd, Futuremd inc, nonprofit, medical education" />
           <meta name="author" content="FutureMD Inc." />
           <meta name="robots" content="index, follow" />
           <meta name="revisit-after" content="7 days" />
-          
           {/* Open Graph / Facebook */}
           <meta property="og:type" content="website" />
           <meta property="og:title" content="FutureMD" />
-          <meta
-            property="og:description"
-            content="A youth-led nonprofit organization with the goal to educate teens about life during and after medical school!"
-          />
+          <meta property="og:description" content="A youth-led nonprofit organization with the goal to educate teens about life during and after medical school!" />
           <meta property="og:url" content="https://yourwebsite.com" />
           <meta property="og:image" content="/meta.png" />
           <meta property="og:site_name" content="FutureMD" />
@@ -33,10 +27,7 @@ class MyDocument extends Document {
           {/* Twitter */}
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="FutureMD" />
-          <meta
-            name="twitter:description"
-            content="A youth-led nonprofit organization with the goal to educate teens about life during and after medical school!"
-          />
+          <meta name="twitter:description" content="A youth-led nonprofit organization with the goal to educate teens about life during and after medical school!" />
           <meta name="twitter:image" content="/meta.png" />
           <meta name="twitter:site" content="@your_twitter_handle" />
           <meta name="twitter:creator" content="@your_twitter_handle" />
@@ -44,7 +35,6 @@ class MyDocument extends Document {
           {/* Favicon and Theme */}
           <link rel="shortcut icon" href="/favicon.ico" />
           <meta name="theme-color" content="#5C9CFF" />
-          
           {/* Additional Meta Tags */}
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="630" />
@@ -54,11 +44,11 @@ class MyDocument extends Document {
           <meta name="apple-mobile-web-app-title" content="FutureMD" />
           <meta name="application-name" content="FutureMD" />
           <meta name="format-detection" content="telephone=no" />
-          
+
           {/* Preconnect for Performance */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com"  />
-          
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+
           {/* Custom Theme Script */}
           <script
             dangerouslySetInnerHTML={{

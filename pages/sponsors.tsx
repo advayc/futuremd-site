@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
@@ -8,7 +7,6 @@ import { affiliates } from '@/lib/affiliates';
 import { Footer } from '@/components/footer';
 import Link from 'next/link';
 
-const inter = Inter({ subsets: ["latin"] });
 
 const getTierColor = (tier: string) => {
   switch (tier) {
@@ -42,7 +40,7 @@ export default function About() {
   }, [router.events]);
 
   return (
-    <main className={`min-h-screen items-center justify-between pt-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
+    <main className={`min-h-screen items-center justify-between pt-8  dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
       <Head><title>FutureMD - Sponsors</title></Head>
       <Navbar showAnimation={false} />
       <header className="pt-4 pd-3 px-4 w-full max-w-9xl">

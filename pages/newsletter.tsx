@@ -1,6 +1,5 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
-import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
 import { useRouter } from "next/router";
 import Head from "next/head";
@@ -8,7 +7,6 @@ import { Footer } from "@/components/footer";
 import { RiLoader5Fill } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Newsletter() {
   const router = useRouter();
@@ -77,7 +75,7 @@ export default function Newsletter() {
   };
 
   return (
-    <main className={`min-h-screen flex flex-col justify-center pt-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
+    <main className={`min-h-screen flex flex-col justify-center pt-8  dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
       <Head>
         <title>FutureMD - Newsletter</title>
       </Head>

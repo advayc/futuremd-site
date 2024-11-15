@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
 import { useRouter } from "next/router";
 import { Key, useEffect } from "react";
@@ -10,7 +9,6 @@ import 'react-medium-image-zoom/dist/styles.css';
 import { Footer } from '@/components/footer';
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
-const inter = Inter({ subsets: ["latin"] });
 
 const galleryImages = [
   { src: '/gallery/first.jpg' },
@@ -52,7 +50,7 @@ export default function Media({ instagramImages }: { instagramImages: any[] }) {
   }, [router.events]);
 
   return (
-    <main className={`min-h-screen flex flex-col items-center pt-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
+    <main className={`min-h-screen flex flex-col items-center pt-8  dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
       <Head><title>FutureMD - Media</title></Head>
       <Navbar showAnimation={false} />
       <header className="pt-4 px-4 w-full max-w-9xl">

@@ -1,6 +1,5 @@
 import React from "react";
 import { Card, CardHeader, CardBody } from "@nextui-org/react";
-import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
@@ -9,7 +8,6 @@ import { Footer } from '@/components/footer';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Events() {
   const router = useRouter();
@@ -30,7 +28,7 @@ export default function Events() {
   }, [router.events]);
 
   return (
-    <main className={`min-h-screen items-center justify-between pt-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
+    <main className={`min-h-screen items-center justify-between pt-8  dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
       <Head><title>FutureMD - Events</title></Head>
       <Navbar showAnimation={false} />
       <header className="pt-4 pd-3 px-4 w-full max-w-9xl">

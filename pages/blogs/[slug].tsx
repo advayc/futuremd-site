@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
@@ -12,7 +11,6 @@ import fs from 'fs';
 import path from 'path';
 import Zoom from 'react-medium-image-zoom';
 
-const inter = Inter({ subsets: ["latin"] });
 
 type BlogPostPageProps = {
   post: BlogPost;
@@ -27,7 +25,7 @@ const BlogPostPage = ({ post, mdxSource }: BlogPostPageProps) => {
   }
 
   return (
-    <main className={`${inter.className} min-h-screen pt-8 dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
+    <main className={` min-h-screen pt-8 dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
       <Head>
         <title>{post.title} - FutureMD</title>
       </Head>

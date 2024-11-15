@@ -2,12 +2,10 @@ import React, { useEffect } from 'react';
 import { FaTiktok, FaGlobe } from 'react-icons/fa';
 import Navbar from "@/components/navbar";
 import ContactForm from "@/components/ContactForm";
-import { Inter } from "next/font/google";
 import { useRouter } from "next/router";
 import Head from 'next/head'; 
 import { Footer } from '@/components/footer';
 
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Contact() {
   const router = useRouter();
@@ -28,7 +26,7 @@ export default function Contact() {
   }, [router.events]);
 
   return (
-    <main className={`min-h-screen flex flex-col items-center justify-between pt-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
+    <main className={`min-h-screen flex flex-col items-center justify-between pt-8  dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
       <Head><title>FutureMD - Contact</title></Head>
       <Navbar showAnimation={false} />
       <div className="py-4 px-4 w-full max-w-9xl">

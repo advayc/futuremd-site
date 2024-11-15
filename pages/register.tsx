@@ -5,7 +5,6 @@ import Navbar from '@/components/navbar';
 import { Footer } from '@/components/footer';
 import { Inter } from 'next/font/google';
 
-const inter = Inter({ subsets: ["latin"] });
 
 const Register = () => {
   const router = useRouter();
@@ -50,7 +49,7 @@ const Register = () => {
   }, [isClient]);
 
   return (
-    <main className={`min-h-screen flex flex-col items-center justify-between pt-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
+    <main className={`min-h-screen flex flex-col items-center justify-between pt-8  dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
       <Head>
         <title>FutureMD - Register</title>
       </Head>

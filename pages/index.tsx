@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
 import Head from "next/head";
 import { CiCircleChevDown } from "react-icons/ci";
@@ -6,8 +5,6 @@ import { Footer } from "@/components/footer";
 import { useEffect, useRef, ReactElement } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const router = useRouter();
@@ -59,7 +56,7 @@ export default function Home() {
   };
 
   return (
-    <main className={`flex flex-col items-center justify-center pt-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
+    <main className={`flex flex-col items-center justify-center pt-8  dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
       <Head><title>FutureMD</title></Head>
       <Navbar showAnimation={true} />
       <div ref={(el) => { if (el) fadeRefs.current[0] = el; }} className="f2 mt-16 flex-grow flex flex-col items-center justify-center text-center px-4 md:px-8 w-full h-[calc(100vh-9rem)]">

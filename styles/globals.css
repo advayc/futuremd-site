@@ -11,6 +11,14 @@
   filter: none;
 }
 
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
 .light-theme-date-picker::-moz-calendar-picker-indicator {
   filter: none;
 }

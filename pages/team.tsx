@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
 import { HoverEffect } from "@/components/ui/card";
 import {team} from '@/lib/team';
@@ -9,7 +8,6 @@ import Head from "next/head";
 import { Footer } from '@/components/footer';
 import Link from "next/link";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Team() {
   const router = useRouter();
@@ -30,7 +28,7 @@ export default function Team() {
   }, [router.events]);
 
   return (
-    <main className={`min-h-screen flex-col items-center justify-between pt-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
+    <main className={`min-h-screen flex-col items-center justify-between pt-8  dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
       <Head><title>FutureMD - Our Team</title></Head>
       <Navbar showAnimation={false} />
       <header className="pt-4 pd-3 px-4 w-full max-w-9xl">

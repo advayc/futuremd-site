@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
@@ -7,7 +6,6 @@ import { Footer } from '@/components/footer';
 import { motion, AnimatePresence } from "framer-motion";
 import { MDXRemoteSerializeResult } from "next-mdx-remote";
 
-const inter = Inter({ subsets: ["latin"] });
 
 const BlogPostCard = ({ title, url, image, description, date, author }: BlogPost) => {
   const router = useRouter();
@@ -152,7 +150,7 @@ const Blog: React.FC = () => {
   const sortedBlogPosts = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   return (
-    <main className={`min-h-screen pt-8 ${inter.className} dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
+    <main className={`min-h-screen pt-8  dark:bg-dark-bg bg-light-bg transition-colors duration-700`}>
       <Head><title>FutureMD - Blogs</title></Head>
       <Navbar showAnimation={false} />
       <header className="pt-4 px-4 w-full max-w-7xl mx-auto text-center">
