@@ -75,11 +75,13 @@ export default function Team() {
         <Carousel className="w-full max-w-5xl mx-auto px-8">
           <CarouselContent className="-ml-1">
             {guest_speakers.map((speaker, index) => (
-              <CarouselItem key={index} className="pl-8 md:basis-1/2 lg:basis-1/3" onClick={() => setSelectedSpeaker(speaker)}>
-                <Card>
-                  <CardImage src={speaker.image} alt={speaker.title} />
-                  <CardTitle>{speaker.title}</CardTitle>
-                </Card>
+              <CarouselItem key={index} className="pl-8 md:basis-1/2 lg:basis-1/3">
+                <div className="p-2">
+                  <Card className="hover:scale-105 transition-transform duration-300">
+                    <CardImage src={speaker.image} alt={speaker.title} />
+                    <CardTitle>{speaker.title}</CardTitle>
+                  </Card>
+                </div>
               </CarouselItem>
             ))}
           </CarouselContent>
@@ -87,7 +89,7 @@ export default function Team() {
           <CarouselNext />
         </Carousel>
 
-        <p className="text-center text-lg md:text-xl font-semibold dark:text-zinc-400 text-zinc-600 mt-4">
+        <p className="text-center text-lg md:text-xl font-semibold dark:text-zinc-400 text-zinc-600">
           We are <u>always</u> looking for guest speakers! <br />If you're interested, click the button below!
         </p>
         <div className="flex justify-center">
