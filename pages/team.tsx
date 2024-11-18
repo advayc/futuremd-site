@@ -34,7 +34,6 @@ export default function Team() {
     };
   }, [router.events]);
 
-  // Close the modal when ESC is pressed
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
@@ -76,7 +75,7 @@ export default function Team() {
           <CarouselContent className="-ml-1">
             {guest_speakers.map((speaker, index) => (
               <CarouselItem key={index} className="pl-8 md:basis-1/2 lg:basis-1/3">
-                <div className="p-2">
+                <div className="p-2" onClick={() => setSelectedSpeaker(speaker)}>
                   <Card className="hover:scale-105 transition-transform duration-300">
                     <CardImage src={speaker.image} alt={speaker.title} />
                     <CardTitle>{speaker.title}</CardTitle>
