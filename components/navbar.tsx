@@ -44,7 +44,7 @@ const Navbar: React.FC<NavbarProps> = ({ showAnimation }) => {
           <a href="/" className="hidden md:flex-shrink-0 md:block md:mr-10">
             <img src="/logo.png" alt="Logo" className="h-[50px] logo" />
           </a>
-          {['About Us', 'Our Team', 'Sponsors', 'Events', 'Media', 'Blogs', 'Contact Us'].map((item, idx) => (
+          {['about', 'team', 'sponsors', 'events', 'media', 'blogs', 'contact'].map((item, idx) => (
             <a
               key={idx}
               href={`/${item.toLowerCase().replace(/ /g, '')}`}
