@@ -123,7 +123,6 @@ export const HoverEffect = ({
   );
 };
 
-// Card components remain unchanged
 export const Card = ({
   className,
   children,

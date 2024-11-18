@@ -14,9 +14,16 @@ export const guest_speakers = [
         instagram: "https://www.instagram.com/futuremd_team/",
       },
     {
-      title: "???",
-      description: "Check back soon!",
+      title: "Cheshta Kharbanda",
+      description: "Hi! I’m a second year undergraduate student at the University of Waterloo pursuing a bachelors degree in the Health Sciences Program. As a pre-med student, I am doing research and gaining clinical experience at my university. I aim to pursue a career in medicine, specifically in paediatrics. Outside of academics, I love to play sports and travelling!",
       image: "logo.png",
+      linkedin: "https://ca.linkedin.com/in/cheshta-kharbanda-613978278",
+      instagram: "https://www.instagram.com/futuremd_team/",
+    },
+    {
+      title: "Nitya Kharidehal",
+      description: "I’m a second-year undergraduate student at UTM, pursuing a double major in Psychology and Biology for Health Sciences.  My goal is to attend medical school and specialize in psychiatry or neurology. Aside from academics, I am also involved in volunteering and research projects, which further fuel my passion for healthcare and science.",
+      image: "/team/Nitya.jpg",
       linkedin: "https://www.linkedin.com/company/futuremdteam/mycompany/",
       instagram: "https://www.instagram.com/futuremd_team/",
     },
