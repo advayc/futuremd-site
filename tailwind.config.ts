@@ -10,28 +10,33 @@ const config: Config = {
     "./node_modules/@nextui-org/theme/dist/components/(accordion|divider).js"
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        sans: ['Inter', 'sans-serif'],  // set Inter as the default font
-      },
-      colors: {
-        primary: "#D9E8FF",
-        dprimary: "#171616",
-        hov: "#5C9CFF",
-        navy: "#28387D",
-        li: "#3C55B7",
-        light: {
-          text: "#00000", 
-          bg: "#EFF6FF", 
-        },
-        dark: {
-          text: "#828282",
-          bg: "#000000", 
-        },
-      },
-    },
+  	extend: {
+  		fontFamily: {
+  			sans: ['Inter', 'sans-serif']
+  		},
+  		colors: {
+  			primary: '#D9E8FF',
+  			dprimary: '#171616',
+  			hov: '#5C9CFF',
+  			navy: '#28387D',
+  			li: '#3C55B7',
+  			light: {
+  				text: '#00000',
+  				bg: '#EFF6FF'
+  			},
+  			dark: {
+  				text: '#828282',
+  				bg: '#000000'
+  			}
+  		},
+  		borderRadius: {
+  			lg: 'var(--radius)',
+  			md: 'calc(var(--radius) - 2px)',
+  			sm: 'calc(var(--radius) - 4px)'
+  		}
+  	}
   },
-  plugins: [nextui()],
+  plugins: [nextui(), require("tailwindcss-animate")],
 };
 
 export default config;
