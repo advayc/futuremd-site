@@ -36,7 +36,7 @@ const Navbar: React.FC<NavbarProps> = ({ showAnimation }) => {
     { label: 'Events', href: '/events' },
     { label: 'Media', href: '/media' },
     { label: 'Blogs', href: '/blogs' },
-    { label: 'Contact Us', href: '/contact-us' },
+    { label: 'Contact Us', href: '/contact' },
   ];
 
   return (
