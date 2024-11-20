@@ -16,7 +16,7 @@ export const guest_speakers = [
     {
       title: "Cheshta Kharbanda",
       description: "Hi! I’m a second year undergraduate student at the University of Waterloo pursuing a bachelors degree in the Health Sciences Program. As a pre-med student, I am doing research and gaining clinical experience at my university. I aim to pursue a career in medicine, specifically in paediatrics. Outside of academics, I love to play sports and travelling!",
-      image: "cheshta.jpg",
+      image: "/team/cheshta.jpg",
       linkedin: "https://ca.linkedin.com/in/cheshta-kharbanda-613978278",
       instagram: "https://www.instagram.com/futuremd_team/",
     },
