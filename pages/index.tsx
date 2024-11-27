@@ -84,28 +84,28 @@ export default function Home() {
 
             <a href="/events" className="flex flex-col items-center mb-8 imghov">
               <div className="w-full max-w-xs h-40 overflow-hidden">
-                <img src="/events/path2med.png" alt="Events & Conferences" className="object-cover w-full h-full" />
+                <img src="/gallery/IMG_0291.JPG" alt="Events & Conferences" className="object-cover w-full h-full" />
               </div>
               <p className="text-lg font-bold rounded-b-3xl text-white bg-li dark:bg-navy w-full max-w-xs h-32 px-4 py-2 hover:drop-shadow-2xl">1. Events & Conferences</p>
             </a>
 
             <a href="/team#guests" className="flex flex-col items-center mb-8 imghov">
               <div className="w-full max-w-xs h-40 overflow-hidden">
-                <img src="/guestspeakers.png" alt="Guest Speakers" className="object-cover w-full h-full" />
+                <img src="/gallery/IMG_0229.JPG" alt="Guest Speakers" className="object-cover w-full h-full" />
               </div>
               <p className="text-lg font-bold rounded-b-3xl text-white bg-li dark:bg-navy w-full max-w-xs h-32 px-4 py-2 hover:drop-shadow-2xl">2. Guest Speakers</p>
             </a>
 
             <a href="https://www.instagram.com/p/C9YGo8gheCm/?img_index=1" target="_blank" className="flex flex-col items-center mb-8 imghov">
               <div className="w-full max-w-xs h-40 overflow-hidden">
-                <img src="/instagram/3.jpg" alt="Fairs & Fests" className="object-cover w-full h-full" />
+                <img src="/gallery/IMG_0379.JPG" alt="Fairs & Fests" className="object-cover w-full h-full" />
               </div>
               <p className="text-lg font-bold rounded-b-3xl text-white bg-li dark:bg-navy w-full max-w-xs h-32 px-4 py-2 hover:drop-shadow-2xl">3. Learning Opportunities</p>
             </a>
 
             <a href="/media#gal" className="flex flex-col items-center mb-8 imghov">
               <div className="w-full max-w-xs h-40 overflow-hidden">
-                <img src="/activitiesv2.png" alt="Activities" className="object-cover w-full h-full" />
+                <img src="/gallery/IMG_0194.JPG" alt="Activities" className="object-cover w-full h-full" />
               </div>
               <p className="text-lg font-bold rounded-b-3xl text-white bg-li dark:bg-navy w-full max-w-xs h-32 px-4 py-2 hover:drop-shadow-2xl">4. Activities</p>
             </a>
