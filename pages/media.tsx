@@ -10,9 +10,9 @@ import { Footer } from "@/components/footer";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 const galleryImages = [
-  { src: "/gallery/IMG_0229.JPG" },
-  { src: "/gallery/IMG_0379.JPG" },
-  { src: "/gallery/IMG_0194.JPG" },
+  { src: "/gallery/first.jpg" },
+  { src: "/gallery/second.jpg" },
+  { src: "/gallery/third.jpg" },
 ];
 
 export async function getServerSideProps() {
