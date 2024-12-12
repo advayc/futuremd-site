@@ -87,5 +87,13 @@ export const team = [
       instagram: "https://www.instagram.com/futuremd_team",
       email: "ksp3141@gmail.com",
     },
+    {
+      title: "Kishan Suhirthan",
+      role: "Logistics",
+      description: "Hi, I am Kishan S. I am a passion driven STEM enthusiast with a strong background in robotics. Experienced in designing, building, and wiring robotic systems, with a keen interest in automation and AI. I like to lead in collaborate innovative projects, leveraging skills in mechanical engineering, electronics, and computer science.",
+      image: "logo.png",
+      linkedin: "https://www.linkedin.com/in/kishan-s-998898329//",
+      instagram: "https://www.instagram.com/k1shxnsuhi/",
+      email: "kishansuhirthan@gmail.com",
+    },
 ];
-  
