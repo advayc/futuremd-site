@@ -88,7 +88,7 @@ export const team = [
       email: "ksp3141@gmail.com",
     },
     {
-      title: "Kishan Suhirthan",
+      title: "Kishan S.",
       role: "Logistics",
       description: "Hi, I am Kishan S. I am a passion driven STEM enthusiast with a strong background in robotics. Experienced in designing, building, and wiring robotic systems, with a keen interest in automation and AI. I like to lead in collaborate innovative projects, leveraging skills in mechanical engineering, electronics, and computer science.",
       image: "team/kishan.jpg",
