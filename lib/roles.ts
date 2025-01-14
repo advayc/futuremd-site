@@ -21,7 +21,7 @@ export const roles = [
         - Board certified specialists<br>
         - Specialists in Medicine (professors, retired professionals, etc)<br>
       `,
-      status: "unavailable",
+      status: "available",
       link: "https://prettyform.addxt.com/a/form/?vf=1FAIpQLScBhRPUTpRtPBeFItiRRHsP_-kUZbKmkppOw3JtZ3WjD1CeTQ"
     },
     {
@@ -33,7 +33,7 @@ export const roles = [
         - Managing Event Staff, Volunteers, & overall setup of the event<br>
         - Securing Merchandise for Staff & Attendees
       `,
-      status: "unavailable",
+      status: "available",
       link: "https://prettyform.addxt.com/a/form/?vf=1FAIpQLScBhRPUTpRtPBeFItiRRHsP_-kUZbKmkppOw3JtZ3WjD1CeTQ"
     },
     {
@@ -57,7 +57,7 @@ export const roles = [
         - Approving funding for our different divisions & teams<br>
         - Tracking all our purchases
       `,
-      status: "unavailable",
+      status: "available",
       link: "https://prettyform.addxt.com/a/form/?vf=1FAIpQLScBhRPUTpRtPBeFItiRRHsP_-kUZbKmkppOw3JtZ3WjD1CeTQ"
     },
     {
