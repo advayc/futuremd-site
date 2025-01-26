@@ -157,10 +157,10 @@ export default function Home() {
         <div className="md:w-[40%] w-2/3 sm:w-1/2 mt-8 md:mt-0">
           <img src='/blog.png' alt="Meta" className="imghov" />
         </div>
-        <div id="who-we-are" className="md:flex-1 flex flex-col items-center md:items-start ml-56">
+        <div id="who-we-are" className="md:flex-1 flex flex-col items-center text-center md:text-left md:items-start md:ml-56">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold dark:text-white text-black">Keep Up With All <br/>Our Updates!</h2>
-          <p className="text-lg sm:text-xl md:text-2xl dark:dark-text text-dark-text font-bold leading-9 mt-8 ">
-          Click the button below to take you <br className="hidden md:block" /> to our blogs & updates!
+          <p className="text-lg sm:text-xl md:text-2xl dark:dark-text text-dark-text font-bold leading-9 mt-8">
+            Click the button below to take you <br className="hidden md:block" /> to our blogs & updates!
           </p>
           <Link href='/blogs'>
             <button className="font-semibold mt-6 px-8 py-4 bg-navy text-primary text-lg rounded transition-transform duration-700 transform hover:scale-105 dark:hover:bg-primary hover:bg-navy hover:text-primary dark:hover:text-navy hover:shadow-lg">Learn More</button>
