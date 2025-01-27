@@ -102,7 +102,7 @@ export const blogPosts: BlogPost[] = [
   {
     title: "Path2Med Event Rescheduled",
     url: "/blogs/Path2Med-Event-Reschedule",
-    image: "/events/path2med.png",
+    image: "/events/cancel.png",
     description: "NEW DATE: November 24th, 2024",
     date: "2024-10-30T00:00:00Z",
     author: {
