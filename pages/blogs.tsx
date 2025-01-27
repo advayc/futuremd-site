@@ -112,6 +112,20 @@ export const blogPosts: BlogPost[] = [
       link: "https://www.linkedin.com/in/bobbyf0814/",
     },
     mdxFilePath: "public/blogposts/Path2Med_Event_Update.mdx",
+  },
+  {
+    title: "Path2Med — A Huge Success!",
+    url: "/blogs/afterpath2med",
+    image: "/gallery/event.png",
+    description: "Celebrating FutureMD's first event—Path2Med!",
+    date: "2024-11-25T00:00:00Z",
+    author: {
+      avatar: "/team/bobby.jpg",
+      name: "Bobby Fang",
+      user: 'bobbyf0814',
+      link: "https://www.linkedin.com/in/bobbyf0814/",
+    },
+    mdxFilePath: "public/blogposts/afterpath2med.mdx",
   }
 ];
 
