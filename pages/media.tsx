@@ -10,9 +10,9 @@ import { Footer } from "@/components/footer";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 const galleryImages = [
-  { src: "/gallery/first.jpg" },
-  { src: "/gallery/second.jpg" },
-  { src: "/gallery/third.jpg" },
+  { src: "/gallery/IMG_0194.JPG", width: 900, height: 200 },
+  { src: "/gallery/IMG_0229.JPG", width: 900, height: 200 },
+  { src: "/gallery/IMG_0379.JPG", width: 900, height: 200 },
 ];
 
 export async function getServerSideProps() {
@@ -117,13 +117,14 @@ export default function Media({ instagramImages }: { instagramImages: any[] }) {
               key={index}
               className="relative group rounded-lg overflow-hidden hover:scale-105 transition-transform duration-500"
             >
-              <Zoom>
+              <Zoom zoomMargin={100}>
                 <Image
                   src={image.src}
                   alt={`Gallery image ${index + 1}`}
-                  width={350}
-                  height={350}
-                  className="h-[350px] w-[350px] object-cover"
+                  width={500}
+                  height={image.height}
+                  className="object-cover w-[450px] h-full"
+                  quality={100}
                 />
               </Zoom>
             </div>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Custom404 = () => {
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section className="bg-white dark:bg-black">
       <div className="container flex items-center min-h-screen px-6 py-12 mx-auto">
         <div className="flex flex-col items-center max-w-sm mx-auto text-center">
           <p className="p-3 text-sm font-medium text-blue-500 rounded-full bg-blue-50 dark:bg-gray-800">
@@ -16,7 +16,7 @@ const Custom404 = () => {
 
           <Link href="/">
             <button className="mt-4 w-1/2 px-5 py-2 text-sm tracking-wide text-white transition-colors duration-200 bg-li rounded-lg shrink-0 sm:w-auto">
-              Take me home
+              Take me homel
             </button>
           </Link>
         </div>
