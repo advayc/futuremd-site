@@ -110,7 +110,7 @@ export const Footer = () => {
       
       <div className="mt-8 border-t-2 border-gray-700 pt-4 dark:border-gray-800 px-4 sm:px-12">
         <div className="flex flex-col sm:flex-row sm:justify-between text-center sm:text-left">
-          <p className="text-gray-400 font-bold">© 2024 <span className="text-hov">FutureMD Inc.</span> All Rights Reserved</p>
+          <p className="text-gray-400 font-bold">© 2025 <span className="text-hov">FutureMD Inc.</span> All Rights Reserved</p>
           <ul className="mt-4 sm:mt-0 flex flex-col sm:flex-row justify-center gap-4 text-xs lg:justify-end">
             <li>
               <a href="/terms-and-conditions" className="hover:text-zinc-300 text-gray-400 font-bold text-sm">Terms & Services</a>
