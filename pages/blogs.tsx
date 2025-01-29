@@ -130,7 +130,7 @@ export const blogPosts: BlogPost[] = [
   {
     title: "Something Exciting Is Coming!",
     url: "/blogs/FuturemdxInnovire",
-    image: "/gallery/event.png",
+    image: "/Question Mark.png",
     description: "Clear your schedules and stay tuned!",
     date: "2025-01-28T00:00:00Z",
     author: {
