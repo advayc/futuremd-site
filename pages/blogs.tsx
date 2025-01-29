@@ -132,7 +132,7 @@ export const blogPosts: BlogPost[] = [
     url: "/blogs/FuturemdxInnovire",
     image: "/gallery/event.png",
     description: "Clear your schedules and stay tuned!",
-    date: "2024-01-28T00:00:00Z",
+    date: "2025-01-28T00:00:00Z",
     author: {
       avatar: "/team/nirupa.jpg",
       name: "Nirupa Wimalawickrama",
