@@ -126,6 +126,20 @@ export const blogPosts: BlogPost[] = [
       link: "https://www.linkedin.com/in/bobbyf0814/",
     },
     mdxFilePath: "public/blogposts/afterpath2med.mdx",
+  },
+  {
+    title: "Something Exciting Is Coming!",
+    url: "/blogs/FuturemdxInnovire",
+    image: "/gallery/event.png",
+    description: "Clear your schedules and stay tuned!",
+    date: "2024-01-28T00:00:00Z",
+    author: {
+      avatar: "/team/nirupa.jpg",
+      name: "Nirupa Wimalawickrama",
+      user: 'nirupa.w08',
+      link: "https://www.linkedin.com/in/nirupa-wimalawickrama-096734254/",
+    },
+    mdxFilePath: "public/blogposts/FuturemdxInnovire.mdx",
   }
 ];
 
